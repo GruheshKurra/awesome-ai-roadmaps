@@ -22,25 +22,14 @@ Public writing follows the no-ai-slop skill: no emoji headings, no pep talk, no 
 - Free. No paywall on the core material.
 - AI/ML. Fits the track goal.
 - You (or the maintainer) would actually recommend it.
-- Ranked list of 5–15 items. Fewer is better than padding.
-- Awesome list line format:
-
-  `- [Name](url) - Type: course. Why it belongs here.`
-
-  The description starts with a capital letter and ends with a period. Name the type: course, book, paper, playlist, or repo. Add hours only when you know them.
-- Original wording. Related lists belong in root README Footnotes, not as a paste source.
+- Ranked table of 5–15 rows. Fewer is better than padding.
+- Table columns: `Step | Use this | YouTube`. Put lecture playlists in **YouTube**. Leave that cell empty when there is no video.
+- Short file. No stage essays. No pep talk.
+- Original wording. Do not paste other lists.
 
 ## Track file shape
 
-Copy `tracks/_template.md`. Required fields:
-
-1. Title in title case.
-2. Goal (one sentence). Prereqs (`none` or other slugs).
-3. `Status: stub | filling | done`
-4. **Order** — numbered sequence to consume the ranked list.
-5. **Ranked resources** — max 15, awesome dash format.
-
-Stub files keep headings and `Status: stub`. No fake links.
+Copy `tracks/_template.md`. Title, one-line goal, prereqs, status, then the table. Stub files keep the empty table. No fake links.
 
 ## Fill-one-track workflow
 

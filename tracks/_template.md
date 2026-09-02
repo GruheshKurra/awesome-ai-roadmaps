@@ -1,17 +1,13 @@
 # Track Title
 
-Goal: One sentence. What can someone do after this track.
+Goal: One sentence.
 
 Prereqs: `none` or other track slugs.
 
 Status: stub
 
-## Order
+Python / whatever is assumed. Work **top to bottom**. Prefer the **YouTube** column for lectures.
 
-1.
-
-## Ranked resources
-
-Maximum 15. Rank is the order to use them. Each line:
-
-- [Name](https://example.com) - Type: course. Why it is here.
+| Step | Use this | YouTube |
+| ---: | --- | --- |
+| 1 | | |
