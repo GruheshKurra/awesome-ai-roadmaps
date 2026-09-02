@@ -1,0 +1,44 @@
+name: Suggest a track
+description: Propose a new AI/ML learning path that is not already in STATUS.md.
+title: "[track] "
+labels: ["track"]
+body:
+  - type: input
+    id: slug
+    attributes:
+      label: Suggested slug
+      description: Lowercase, hyphens. Example: causal-inference
+      placeholder: causal-inference
+    validations:
+      required: true
+  - type: input
+    id: title
+    attributes:
+      label: Track title
+      description: Title case. Example: Learn Causal Inference
+      placeholder: Learn Causal Inference
+    validations:
+      required: true
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: One sentence. What can someone do after this track?
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why a new track
+      description: Why this does not fit an existing slug in STATUS.md.
+    validations:
+      required: true
+  - type: checkboxes
+    id: gates
+    attributes:
+      label: Checks
+      options:
+        - label: This is an AI/ML path, not general software engineering or DSA.
+          required: true
+        - label: I looked at STATUS.md and there is no matching slug.
+          required: true

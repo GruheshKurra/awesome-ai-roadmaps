@@ -1,0 +1,78 @@
+name: Suggest a resource
+description: Propose one free book, course, paper, playlist, or learning repo for an existing track.
+title: "[resource] "
+labels: ["resource"]
+body:
+  - type: dropdown
+    id: track
+    attributes:
+      label: Track
+      description: Which track should this sit on?
+      options:
+        - python-for-ml
+        - math-for-ml
+        - ml-basics
+        - deep-learning
+        - nlp
+        - llms
+        - computer-vision
+        - reinforcement-learning
+        - speech-audio
+        - multimodal
+        - graph-ml
+        - from-scratch
+        - become-researcher
+        - become-ml-engineer
+        - mlops
+        - agents-tooling
+        - evals-safety
+        - unsure
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: URL
+      description: Direct link to the free resource. Check that it loads and is not paywalled.
+      placeholder: https://
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Type
+      options:
+        - course
+        - book
+        - paper
+        - playlist
+        - repo
+        - other
+    validations:
+      required: true
+  - type: input
+    id: name
+    attributes:
+      label: Name
+      description: Official title of the resource.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why it belongs
+      description: One or two sentences. What does someone get from this that the track is missing?
+      placeholder: Stanford CS231n lecture videos cover conv nets with assignments you can run locally.
+    validations:
+      required: true
+  - type: checkboxes
+    id: gates
+    attributes:
+      label: Checks
+      options:
+        - label: The core material is free. No required paid certificate, book, or lab wall.
+          required: true
+        - label: I opened the URL and it works.
+          required: true
+        - label: This is AI/ML. Not general DSA or software-interview prep.
+          required: true
