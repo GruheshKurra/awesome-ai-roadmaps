@@ -4,8 +4,20 @@
 *~
 .idea/
 .vscode/
+.cursor/
+
 *.pem
 *.key
 .env
 .env.*
 !.env.example
+
+# Local agent files. Not the public list.
+AGENTS.md
+STATUS.md
+tracks/_template.md
+
+# Unpublished tracks. Un-ignore a slug when that track is done.
+tracks/*
+!tracks/nlp/
+!tracks/nlp/**
