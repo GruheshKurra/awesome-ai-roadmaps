@@ -6,8 +6,8 @@ Prereqs: `none` or other track slugs.
 
 Status: stub
 
-Python / whatever is assumed. Work **top to bottom**. Prefer the **YouTube** column for lectures.
+This table is the syllabus. Each row is one idea and one thing to open. No course homepages. No semester playlists. Bold links are YouTube.
 
-| Step | Use this | YouTube |
-| ---: | --- | --- |
-| 1 | | |
+| Step | Concept | **YouTube** | Read |
+| ---: | --- | --- | --- |
+| 1 | | | |

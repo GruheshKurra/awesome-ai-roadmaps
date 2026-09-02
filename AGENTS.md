@@ -23,8 +23,11 @@ Public writing follows the no-ai-slop skill: no emoji headings, no pep talk, no 
 - AI/ML. Fits the track goal.
 - You (or the maintainer) would actually recommend it.
 - Ranked table of 5–15 rows. Fewer is better than padding.
-- Table columns: `Step | Use this | YouTube`. Put lecture playlists in **YouTube**. Leave that cell empty when there is no video.
-- Short file. No stage essays. No pep talk.
+- Columns: `Step | Concept | YouTube | Read`.
+- This file is the index. Link one video, one paper, or one chapter. Never a course homepage, never a full-semester playlist, never another awesome-list.
+- YouTube cells: the watch URL for that lecture. Bold the link. Empty if there is no video. Prefer a specific video when one exists.
+- Read cells: a PDF, arXiv abs page, or a single article. Empty if the video is enough.
+- Short file. No stage essays.
 - Original wording. Do not paste other lists.
 
 ## Track file shape
@@ -38,8 +41,8 @@ Copy `tracks/_template.md`. Title, one-line goal, prereqs, status, then the tabl
    - If the user named a slug, use that.
    - Else use the first `stub` in `STATUS.md`.
 3. Set that slug to `filling` in `STATUS.md` and in `tracks/<slug>/README.md`.
-4. Search live primary pages (course sites, arXiv, official playlists, project docs). Do not paste another list.
-5. Keep 5–15. Rank. Write original whys. Verify each URL is reachable and free.
+4. Search live pages for a specific video, arXiv abs page, or chapter PDF. Do not paste another list. Do not link a course homepage or a semester playlist.
+5. Keep 5–15. Rank. Verify each URL is reachable and free.
 6. Write the full track README. Set `Status: done`.
 7. Set the slug to `done` in `STATUS.md`.
 8. Add the track to root README **Contents** (only `done` tracks). Keep Contents as the first section. One level of nesting at most.
