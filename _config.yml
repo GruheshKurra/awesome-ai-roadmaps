@@ -45,6 +45,8 @@ track_nav:
     label: NLP
   - slug: ml-basics
     label: ML Basics
+  - slug: deep-learning
+    label: Deep Learning
 
 exclude:
   - LICENSE

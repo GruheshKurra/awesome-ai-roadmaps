@@ -31,3 +31,5 @@ tracks/*
 !tracks/math-for-ml/**
 !tracks/ml-basics/
 !tracks/ml-basics/**
+!tracks/deep-learning/
+!tracks/deep-learning/**
