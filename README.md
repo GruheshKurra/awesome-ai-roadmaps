@@ -2,6 +2,8 @@
 
 Free ranked AI learning paths. Each track is a table of concepts. Each row is one video, paper, or chapter, not a link to someone else's syllabus. More tracks will be added.
 
+[Site](https://gruheshkurra.github.io/awesome-ai-roadmaps/)
+
 ## Contents
 
 | Track | |
