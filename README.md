@@ -7,6 +7,7 @@ Free ranked AI learning paths. Each track is a table of concepts. Each row is on
 | Track | |
 | --- | --- |
 | [Python for ML](tracks/python-for-ml/README.md) | NumPy, notebooks, pandas, plots. |
+| [Math for ML](tracks/math-for-ml/README.md) | Linear algebra, calculus, probability, optimization. |
 | [Learn NLP](tracks/nlp/README.md) | Word vectors through BERT. |
 
 Paid material and DSA/interview lists are out. New links: open an [Issue](https://github.com/GruheshKurra/awesome-ai-roadmaps/issues). No PRs. See [contributing.md](contributing.md).

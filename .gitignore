@@ -24,3 +24,5 @@ tracks/*
 !tracks/nlp/**
 !tracks/python-for-ml/
 !tracks/python-for-ml/**
+!tracks/math-for-ml/
+!tracks/math-for-ml/**
