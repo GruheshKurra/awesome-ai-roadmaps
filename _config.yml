@@ -23,6 +23,9 @@ relative_links:
 readme_index:
   enabled: true
 
+optional_front_matter:
+  enabled: true
+
 titles_from_headings:
   enabled: true
   strip_title: true
