@@ -29,3 +29,5 @@ tracks/*
 !tracks/python-for-ml/**
 !tracks/math-for-ml/
 !tracks/math-for-ml/**
+!tracks/ml-basics/
+!tracks/ml-basics/**
