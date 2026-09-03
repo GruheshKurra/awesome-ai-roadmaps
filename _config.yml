@@ -2,8 +2,6 @@ title: Awesome AI Roadmaps
 description: Free ranked AI learning paths. Each track is a table of concepts.
 url: https://gruheshkurra.github.io
 baseurl: /awesome-ai-roadmaps
-theme: jekyll-theme-cayman
-show_downloads: false
 
 markdown: kramdown
 kramdown:
@@ -16,6 +14,7 @@ plugins:
   - jekyll-readme-index
   - jekyll-default-layout
   - jekyll-titles-from-headings
+  - jekyll-github-metadata
 
 relative_links:
   enabled: true
@@ -28,7 +27,24 @@ titles_from_headings:
   enabled: true
   strip_title: true
 
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+track_nav:
+  - slug: python-for-ml
+    label: Python for ML
+  - slug: math-for-ml
+    label: Math for ML
+  - slug: nlp
+    label: NLP
+
 exclude:
   - LICENSE
   - CODE_OF_CONDUCT.md
+  - AGENTS.md
+  - tracker.md
   - .gitignore
+  - .github

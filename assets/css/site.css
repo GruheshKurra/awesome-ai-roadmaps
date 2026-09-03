@@ -1,0 +1,276 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background: #f4f2ec;
+  color: #141414;
+  font-family: Helvetica, "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+a {
+  color: #111;
+  text-underline-offset: 0.14em;
+}
+
+a:hover {
+  color: #000;
+}
+
+.skip {
+  position: absolute;
+  left: -9999px;
+}
+
+.skip:focus {
+  left: 12px;
+  top: 12px;
+  z-index: 20;
+  padding: 8px 12px;
+  background: #fff;
+  color: #111;
+}
+
+.shell {
+  display: flex;
+  min-height: 100vh;
+  align-items: stretch;
+}
+
+.sidebar {
+  position: sticky;
+  top: 0;
+  flex: 0 0 252px;
+  width: 252px;
+  height: 100vh;
+  padding: 28px 18px 24px;
+  overflow: auto;
+  background: #1c1c1c;
+  color: #f4f2ec;
+}
+
+.brand {
+  display: block;
+  margin: 0 0 32px;
+  color: #f4f2ec;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.25;
+  text-decoration: none;
+}
+
+.brand:hover,
+.sidebar-foot:hover,
+.track-link:hover {
+  color: #fff;
+}
+
+.sidebar-kicker {
+  margin: 0 0 8px 8px;
+  color: #a3a3a3;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.track-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.track-link,
+.sidebar-foot {
+  display: block;
+  padding: 8px 10px;
+  border-radius: 4px;
+  color: #e8e4db;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.track-link.is-current,
+.sidebar-foot.is-current,
+.brand.is-current {
+  background: #2e2e2e;
+  color: #fff;
+  font-weight: 700;
+}
+
+.sidebar-foot {
+  margin-top: 28px;
+  color: #a3a3a3;
+  font-size: 13px;
+}
+
+.pane {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 36px;
+  border-bottom: 1px solid #d9d4c8;
+  background: #f4f2ec;
+}
+
+.back {
+  display: inline-block;
+  padding: 7px 12px;
+  border: 1px solid #141414;
+  border-radius: 4px;
+  color: #141414;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+}
+
+.back:hover {
+  background: #141414;
+  color: #f4f2ec;
+}
+
+.top-note {
+  color: #6a6a6a;
+  font-size: 13px;
+}
+
+.top-github {
+  color: #6a6a6a;
+  font-size: 13px;
+}
+
+.page {
+  flex: 1 1 auto;
+  max-width: 960px;
+  padding: 36px 36px 72px;
+  overflow-x: auto;
+}
+
+.page h1 {
+  margin: 0 0 18px;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  line-height: 1.15;
+}
+
+.page h1 .badge {
+  display: inline-block;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+.page h1 .badge img {
+  display: inline-block;
+  height: 20px;
+}
+
+.page h2 {
+  margin: 32px 0 12px;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.page p,
+.page li {
+  max-width: 64ch;
+}
+
+.page ul,
+.page ol {
+  padding-left: 1.2em;
+}
+
+.page hr {
+  margin: 28px 0;
+  border: 0;
+  border-top: 1px solid #d9d4c8;
+}
+
+.page code {
+  font-family: Helvetica, "Helvetica Neue", sans-serif;
+  font-size: 0.92em;
+}
+
+.page table {
+  width: 100%;
+  margin: 18px 0 32px;
+  border-collapse: collapse;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.page th,
+.page td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #d9d4c8;
+  text-align: left;
+  vertical-align: top;
+}
+
+.page th {
+  background: #ebe7de;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.page tr:hover td {
+  background: #ebe8e0;
+}
+
+.page img {
+  vertical-align: middle;
+}
+
+@media (max-width: 800px) {
+  .sidebar {
+    position: relative;
+    width: auto;
+    height: auto;
+    border-bottom: 1px solid #000;
+  }
+
+  .shell {
+    display: block;
+  }
+
+  .track-nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .sidebar-foot {
+    margin-top: 12px;
+  }
+
+  .top,
+  .page {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .page h1 {
+    font-size: 24px;
+  }
+}

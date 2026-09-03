@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.url == "/" %}{{ site.title }}{% else %}{{ page.title }} · {{ site.title }}{% endif %}</title>
+  <meta name="description" content="{{ site.description }}">
+  <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <div class="shell">
+    {% include sidebar.html %}
+    <div class="pane">
+      <header class="top">
+        {% if page.url == "/" %}
+          <span class="top-note">Home</span>
+        {% else %}
+          <a class="back" href="{{ '/' | relative_url }}">Back to Home</a>
+        {% endif %}
+        {% assign repo = site.github.repository_url | default: "https://github.com/GruheshKurra/awesome-ai-roadmaps" %}
+        <a class="top-github" href="{{ repo }}">GitHub</a>
+      </header>
+      <article class="page" id="content">
+        <h1>
+          {{ page.title }}
+          {% if page.url == "/" %}
+            <a class="badge" href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome"></a>
+          {% endif %}
+        </h1>
+        {{ content }}
+      </article>
+    </div>
+  </div>
+</body>
+</html>

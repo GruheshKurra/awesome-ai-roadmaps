@@ -1,0 +1,28 @@
+<aside class="sidebar">
+  <a class="brand{% if page.url == "/" %} is-current{% endif %}" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+  <p class="sidebar-kicker">Stacks</p>
+  <nav class="track-nav" aria-label="Stacks">
+    {% assign listed = "" %}
+    {% for item in site.track_nav %}
+      {% assign slug = item.slug %}
+      {% capture track_dir %}/tracks/{{ slug }}/{% endcapture %}
+      {% assign href = track_dir | relative_url %}
+      <a class="track-link{% if page.dir == track_dir %} is-current{% endif %}" href="{{ href }}">{{ item.label }}</a>
+      {% capture listed %}{{ listed }}|{{ slug }}|{% endcapture %}
+    {% endfor %}
+    {% for extra in site.pages %}
+      {% if extra.path contains "tracks/" and extra.name == "README.md" %}
+        {% assign bits = extra.path | split: "/" %}
+        {% assign extra_slug = bits[1] %}
+        {% assign needle = "|" | append: extra_slug | append: "|" %}
+        {% unless listed contains needle %}
+          <a class="track-link{% if page.dir == extra.dir %} is-current{% endif %}" href="{{ extra.url | relative_url }}">{{ extra.title }}</a>
+        {% endunless %}
+      {% endif %}
+    {% endfor %}
+  </nav>
+  {% assign contrib = site.pages | where: "path", "contributing.md" | first %}
+  {% if contrib %}
+    <a class="sidebar-foot{% if page.path == "contributing.md" %} is-current{% endif %}" href="{{ contrib.url | relative_url }}">Contributing</a>
+  {% endif %}
+</aside>
