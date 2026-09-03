@@ -47,6 +47,8 @@ track_nav:
     label: ML Basics
   - slug: deep-learning
     label: Deep Learning
+  - slug: computer-vision
+    label: Computer Vision
 
 exclude:
   - LICENSE

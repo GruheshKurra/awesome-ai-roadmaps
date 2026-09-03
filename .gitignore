@@ -33,3 +33,5 @@ tracks/*
 !tracks/ml-basics/**
 !tracks/deep-learning/
 !tracks/deep-learning/**
+!tracks/computer-vision/
+!tracks/computer-vision/**
