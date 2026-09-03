@@ -25,7 +25,7 @@ jobs:
           source: ./
           destination: ./_site
       - name: Drop raw markdown copies
-        run: find _site -name '*.md' -delete
+        run: sudo find _site -name '*.md' -delete
       - uses: actions/upload-pages-artifact@v3
 
   deploy:
