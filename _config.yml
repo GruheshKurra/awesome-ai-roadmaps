@@ -60,6 +60,10 @@ track_nav:
     label: Computer Vision
   - slug: llms
     label: LLMs
+  - slug: from-scratch
+    label: From Scratch
+  - slug: eval-harnesses
+    label: Eval Harnesses
 
 exclude:
   - LICENSE

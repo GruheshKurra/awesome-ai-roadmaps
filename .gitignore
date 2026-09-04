@@ -37,3 +37,7 @@ tracks/*
 !tracks/computer-vision/**
 !tracks/llms/
 !tracks/llms/**
+!tracks/from-scratch/
+!tracks/from-scratch/**
+!tracks/eval-harnesses/
+!tracks/eval-harnesses/**
