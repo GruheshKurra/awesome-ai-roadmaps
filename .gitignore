@@ -41,3 +41,7 @@ tracks/*
 !tracks/from-scratch/**
 !tracks/eval-harnesses/
 !tracks/eval-harnesses/**
+!tracks/rag/
+!tracks/rag/**
+!tracks/agents-tooling/
+!tracks/agents-tooling/**

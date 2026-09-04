@@ -64,6 +64,10 @@ track_nav:
     label: From Scratch
   - slug: eval-harnesses
     label: Eval Harnesses
+  - slug: rag
+    label: RAG
+  - slug: agents-tooling
+    label: Agents & Tooling
 
 exclude:
   - LICENSE
