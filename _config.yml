@@ -49,6 +49,8 @@ track_nav:
     label: Deep Learning
   - slug: computer-vision
     label: Computer Vision
+  - slug: llms
+    label: LLMs
 
 exclude:
   - LICENSE

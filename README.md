@@ -14,5 +14,6 @@ Free ranked AI learning paths. Each track is a table of concepts. Each row is on
 | [ML Basics](tracks/ml-basics/) | Regression, trees, SVM, clustering. |
 | [Deep Learning](tracks/deep-learning/) | Backprop, CNNs, RNNs, optimization. |
 | [Computer Vision](tracks/computer-vision/) | CNNs, detection, segmentation, ViT. |
+| [LLMs](tracks/llms/) | Transformers, GPT family, scaling, RLHF. |
 
 Paid material and DSA/interview lists are out. New links: open an [Issue](https://github.com/GruheshKurra/awesome-ai-roadmaps/issues). No PRs. See [contributing.md](contributing.md).
