@@ -51,3 +51,5 @@ tracks/*
 !tracks/prompt-context/**
 !tracks/fine-tuning/
 !tracks/fine-tuning/**
+!tracks/speech-audio/
+!tracks/speech-audio/**

@@ -74,6 +74,8 @@ track_nav:
     label: Prompting & Context
   - slug: fine-tuning
     label: Fine-Tuning
+  - slug: speech-audio
+    label: Speech & Audio
 
 exclude:
   - LICENSE
