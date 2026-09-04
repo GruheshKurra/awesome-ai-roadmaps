@@ -1,13 +1,25 @@
 <aside class="sidebar">
-  <a class="brand{% if page.url == "/" %} is-current{% endif %}" href="{{ '/' | relative_url }}"{% if page.url == "/" %} aria-current="page"{% endif %}>{{ site.title }}</a>
+  <a class="brand{% if page.url == "/" %} is-current{% endif %}" href="{{ '/' | relative_url }}"{% if page.url == "/" %} aria-current="page"{% endif %}>
+    <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+      <rect class="bar" x="4" y="18" width="6" height="10" rx="1.5"/>
+      <rect class="bar" x="13" y="12" width="6" height="16" rx="1.5"/>
+      <rect class="bar" x="22" y="4" width="6" height="24" rx="1.5"/>
+    </svg>
+    <span>{{ site.title }}</span>
+  </a>
   <p class="sidebar-kicker">Stacks</p>
   <nav class="track-nav" aria-label="Stacks">
     {% assign listed = "" %}
+    {% assign i = 0 %}
     {% for item in site.track_nav %}
+      {% assign i = i | plus: 1 %}
       {% assign slug = item.slug %}
       {% capture track_dir %}/tracks/{{ slug }}/{% endcapture %}
       {% assign href = track_dir | relative_url %}
-      <a class="track-link{% if page.dir == track_dir %} is-current{% endif %}" href="{{ href }}"{% if page.dir == track_dir %} aria-current="page"{% endif %}>{{ item.label }}</a>
+      <a class="track-link{% if page.dir == track_dir %} is-current{% endif %}" href="{{ href }}"{% if page.dir == track_dir %} aria-current="page"{% endif %}>
+        <span class="track-num">{{ i | prepend: "00" | slice: -2, 2 }}</span>
+        <span class="track-label">{{ item.label }}</span>
+      </a>
       {% capture listed %}{{ listed }}|{{ slug }}|{% endcapture %}
     {% endfor %}
     {% for extra in site.pages %}
@@ -16,7 +28,11 @@
         {% assign extra_slug = bits[1] %}
         {% assign needle = "|" | append: extra_slug | append: "|" %}
         {% unless listed contains needle %}
-          <a class="track-link{% if page.dir == extra.dir %} is-current{% endif %}" href="{{ extra.url | relative_url }}"{% if page.dir == extra.dir %} aria-current="page"{% endif %}>{{ extra.title }}</a>
+          {% assign i = i | plus: 1 %}
+          <a class="track-link{% if page.dir == extra.dir %} is-current{% endif %}" href="{{ extra.url | relative_url }}"{% if page.dir == extra.dir %} aria-current="page"{% endif %}>
+            <span class="track-num">{{ i | prepend: "00" | slice: -2, 2 }}</span>
+            <span class="track-label">{{ extra.title }}</span>
+          </a>
         {% endunless %}
       {% endif %}
     {% endfor %}

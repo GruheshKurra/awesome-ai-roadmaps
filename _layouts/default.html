@@ -4,10 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
-  <meta name="theme-color" content="#1c1c1c">
+  <meta name="theme-color" content="#0d0c10">
   <title>{% if page.url == "/" %}{{ site.title }}{% else %}{{ page.title }} · {{ site.title }}{% endif %}</title>
   {% seo title=false %}
   <link rel="icon" type="image/svg+xml" href="{{ '/assets/favicon.svg' | relative_url }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;700&display=swap">
   <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
 </head>
 <body>
@@ -19,12 +22,27 @@
         {% if page.url == "/" %}
           <span class="top-note">Home</span>
         {% else %}
-          <a class="back" href="{{ '/' | relative_url }}">Back to Home</a>
+          <a class="back" href="{{ '/' | relative_url }}">
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M10 3 5 8l5 5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Home
+          </a>
         {% endif %}
         {% assign repo = site.github.repository_url | default: "https://github.com/GruheshKurra/awesome-ai-roadmaps" %}
-        <a class="top-github" href="{{ repo }}">GitHub</a>
+        <div class="top-links">
+          <a class="top-github" href="{{ repo }}">
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0a8 8 0 0 0-2.53 15.59c.4.07.55-.17.55-.38v-1.49c-2.23.48-2.7-1.07-2.7-1.07-.36-.93-.89-1.17-.89-1.17-.72-.5.06-.49.06-.49.8.06 1.23.83 1.23.83.71 1.23 1.87.87 2.33.67.07-.52.28-.87.5-1.08-1.78-.2-3.65-.89-3.65-3.96 0-.88.31-1.59.83-2.15-.08-.2-.36-1.02.08-2.14 0 0 .68-.22 2.2.83a7.6 7.6 0 0 1 4 0c1.53-1.05 2.2-.83 2.2-.83.44 1.12.17 1.94.08 2.14.52.56.83 1.27.83 2.15 0 3.08-1.88 3.75-3.66 3.95.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8 8 0 0 0 8 0Z"/></svg>
+            GitHub
+          </a>
+          <a class="top-star" href="{{ repo }}">
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 .5 10.09 5 15 5.68l-3.5 3.44L12.35 14 8 11.63 3.65 14l.85-4.88L1 5.68 5.91 5 8 .5Z"/></svg>
+            Star
+          </a>
+        </div>
       </header>
-      <article class="page" id="content">
+      <article class="page{% if page.url == "/" %} is-home{% endif %}{% if page.dir contains "/tracks/" %} is-track{% endif %}" id="content">
+        {% if page.dir contains "/tracks/" %}
+          <p class="eyebrow">Track</p>
+        {% endif %}
         <h1>
           {{ page.title }}
           {% if page.url == "/" %}
