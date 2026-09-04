@@ -47,3 +47,7 @@ tracks/*
 !tracks/agents-tooling/**
 !tracks/ai-tools/
 !tracks/ai-tools/**
+!tracks/prompt-context/
+!tracks/prompt-context/**
+!tracks/fine-tuning/
+!tracks/fine-tuning/**

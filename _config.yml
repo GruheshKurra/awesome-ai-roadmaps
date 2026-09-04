@@ -70,6 +70,10 @@ track_nav:
     label: Agents & Tooling
   - slug: ai-tools
     label: AI Tools
+  - slug: prompt-context
+    label: Prompting & Context
+  - slug: fine-tuning
+    label: Fine-Tuning
 
 exclude:
   - LICENSE
