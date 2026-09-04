@@ -3,6 +3,9 @@ description: Free ranked AI learning paths. Each track is a table of concepts.
 url: https://gruheshkurra.github.io
 baseurl: /awesome-ai-roadmaps
 
+twitter:
+  card: summary_large_image
+
 markdown: kramdown
 kramdown:
   input: GFM
@@ -37,6 +40,10 @@ defaults:
       path: ""
     values:
       layout: default
+      image:
+        path: /assets/og-image.png
+        width: 1200
+        height: 630
 
 track_nav:
   - slug: python-for-ml

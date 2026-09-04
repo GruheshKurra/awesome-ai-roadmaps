@@ -1,8 +1,6 @@
 # Awesome AI Roadmaps [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-Free ranked AI learning paths. Each track is a table of concepts. Each row is one video, paper, or chapter, not a link to someone else's syllabus. More tracks will be added.
-
-[Site](https://gruheshkurra.github.io/awesome-ai-roadmaps/)
+Free ranked AI learning paths. Each track is a table of concepts, not a link to someone else's syllabus. Each row is one specific video, paper, or chapter, ranked in the order you should open it. 7 tracks, 81 steps, no paid walls, no course homepages.
 
 ## Contents
 
@@ -16,4 +14,12 @@ Free ranked AI learning paths. Each track is a table of concepts. Each row is on
 | [Computer Vision](tracks/computer-vision/) | CNNs, detection, segmentation, ViT. | 12 |
 | [LLMs](tracks/llms/) | Transformers, GPT family, scaling, RLHF. | 12 |
 
-Paid material and DSA/interview lists are out. New links: open an [Issue](https://github.com/GruheshKurra/awesome-ai-roadmaps/issues). No PRs. See [contributing.md](contributing.md).
+## Why this exists
+
+Most "awesome" AI lists are link dumps: a hundred bookmarks with no order and no opinion. This one ranks each track top to bottom. Work it like a syllabus, not a search result page.
+
+Every row is free and live-checked. Paid courses, certificate walls, and DSA/interview lists are out of scope on purpose.
+
+## Adding a resource
+
+Open an [Issue](https://github.com/GruheshKurra/awesome-ai-roadmaps/issues) with the concept, the URL, and one sentence on why it belongs. No PRs. See [contributing.md](contributing.md).
