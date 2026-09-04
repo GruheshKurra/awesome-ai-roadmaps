@@ -68,6 +68,8 @@ track_nav:
     label: RAG
   - slug: agents-tooling
     label: Agents & Tooling
+  - slug: ai-tools
+    label: AI Tools
 
 exclude:
   - LICENSE

@@ -45,3 +45,5 @@ tracks/*
 !tracks/rag/**
 !tracks/agents-tooling/
 !tracks/agents-tooling/**
+!tracks/ai-tools/
+!tracks/ai-tools/**

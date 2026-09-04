@@ -1,6 +1,6 @@
 # Awesome AI Roadmaps [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-Free ranked AI learning paths. Each track is a table of concepts, not a link to someone else's syllabus. Each row is one specific video, paper, or chapter, ranked in the order you should open it. 11 tracks, 111 steps, no paid walls, no course homepages.
+Free ranked AI learning paths. Each track is a table of concepts, not a link to someone else's syllabus. Each row is one specific video, paper, or chapter, ranked in the order you should open it. 12 tracks, 117 steps, no paid walls, no course homepages.
 
 ## Contents
 
@@ -17,6 +17,7 @@ Free ranked AI learning paths. Each track is a table of concepts, not a link to 
 | [Eval Harnesses](tracks/eval-harnesses/) | Benchmarks, contamination, SWE-bench, LLM-as-judge. | 8 |
 | [RAG](tracks/rag/) | Embeddings, chunking, vector search, eval. | 8 |
 | [Agents & Tooling](tracks/agents-tooling/) | Tool use, ReAct, memory, browser/computer-use. | 7 |
+| [AI Tools](tracks/ai-tools/) | Cursor, Claude Code, local models, MCP, playgrounds. | 6 |
 
 ## Why this exists
 
