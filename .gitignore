@@ -53,3 +53,5 @@ tracks/*
 !tracks/fine-tuning/**
 !tracks/speech-audio/
 !tracks/speech-audio/**
+!tracks/multimodal/
+!tracks/multimodal/**

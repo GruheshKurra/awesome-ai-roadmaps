@@ -76,6 +76,8 @@ track_nav:
     label: Fine-Tuning
   - slug: speech-audio
     label: Speech & Audio
+  - slug: multimodal
+    label: Multimodal
 
 exclude:
   - LICENSE
