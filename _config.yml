@@ -78,6 +78,8 @@ track_nav:
     label: Speech & Audio
   - slug: multimodal
     label: Multimodal
+  - slug: generative-models
+    label: Generative Models
 
 exclude:
   - LICENSE

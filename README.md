@@ -1,6 +1,6 @@
 # Awesome AI Roadmaps [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-Free ranked AI learning paths. Each track is a table of concepts, not a link to someone else's syllabus. Each row is one specific video, paper, or chapter, ranked in the order you should open it. 16 tracks, 151 steps, no paid walls, no course homepages.
+Free ranked AI learning paths. Each track is a table of concepts, not a link to someone else's syllabus. Each row is one specific video, paper, or chapter, ranked in the order you should open it. 17 tracks, 163 steps, no paid walls, no course homepages.
 
 ## Contents
 
@@ -22,6 +22,7 @@ Free ranked AI learning paths. Each track is a table of concepts, not a link to 
 | [Fine-Tuning](tracks/fine-tuning/) | LoRA, QLoRA, DPO, data for adapters. | 6 |
 | [Speech & Audio](tracks/speech-audio/) | Spectrograms, CTC, wav2vec, Whisper, TTS. | 11 |
 | [Multimodal](tracks/multimodal/) | CLIP, Flamingo, BLIP-2, LLaVA, ImageBind. | 11 |
+| [Generative Models](tracks/generative-models/) | VAE, GAN, flows, diffusion, flow matching. | 12 |
 
 ## Why this exists
 
