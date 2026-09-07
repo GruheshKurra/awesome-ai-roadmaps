@@ -80,6 +80,8 @@ track_nav:
     label: Multimodal
   - slug: generative-models
     label: Generative Models
+  - slug: reinforcement-learning
+    label: Reinforcement Learning
 
 exclude:
   - LICENSE
