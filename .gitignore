@@ -17,7 +17,6 @@ vendor/
 
 # Local agent files. Not the public list.
 AGENTS.md
-tracker.md
 STATUS.md
 tracks/_template.md
 
