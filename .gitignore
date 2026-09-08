@@ -70,4 +70,6 @@ tracks/*
 !tracks/interpretability/**
 !tracks/evals-safety/
 !tracks/evals-safety/**
+!tracks/data-centric/
+!tracks/data-centric/**
 

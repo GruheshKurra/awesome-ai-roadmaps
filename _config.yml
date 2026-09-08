@@ -94,6 +94,8 @@ track_nav:
     label: Interpretability
   - slug: evals-safety
     label: Evals & Safety
+  - slug: data-centric
+    label: Data-Centric AI
 
 exclude:
   - LICENSE

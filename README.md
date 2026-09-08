@@ -1,6 +1,6 @@
 # Awesome AI Roadmaps [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-Free ranked AI learning paths. Each track is a table of concepts, not a link to someone else's syllabus. Each row is one specific video, paper, or chapter, ranked in the order you should open it. 24 tracks, 246 steps, no paid walls, no course homepages.
+Free ranked AI learning paths. Each track is a table of concepts, not a link to someone else's syllabus. Each row is one specific video, paper, or chapter, ranked in the order you should open it. 25 tracks, 258 steps, no paid walls, no course homepages.
 
 ## Contents
 
@@ -30,6 +30,7 @@ Free ranked AI learning paths. Each track is a table of concepts, not a link to 
 | [Causal ML](tracks/causal-ml/) | Potential outcomes, DAGs, propensity scores, double ML, LATE, causal forests. | 11 |
 | [Interpretability](tracks/interpretability/) | Permutation importance, PDP, LIME, SHAP, Grad-CAM, TCAV, circuits. | 13 |
 | [Evals & Safety](tracks/evals-safety/) | Alignment, specification gaming, jailbreaks, red teaming, safety evals. | 12 |
+| [Data-Centric AI](tracks/data-centric/) | Datasheets, labeling, weak supervision, label errors, synthetic data, filtering. | 12 |
 
 ## Why this exists
 
