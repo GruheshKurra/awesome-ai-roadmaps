@@ -84,6 +84,8 @@ track_nav:
     label: Reinforcement Learning
   - slug: graph-ml
     label: Graph ML
+  - slug: recsys
+    label: Recommender Systems
 
 exclude:
   - LICENSE

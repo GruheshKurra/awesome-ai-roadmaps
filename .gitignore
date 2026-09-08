@@ -60,3 +60,6 @@ tracks/*
 !tracks/reinforcement-learning/**
 !tracks/graph-ml/
 !tracks/graph-ml/**
+!tracks/recsys/
+!tracks/recsys/**
+
