@@ -1,6 +1,8 @@
 # Awesome AI Roadmaps [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-Free ranked AI learning paths. Each track is a table of concepts, not a link to someone else's syllabus. Each row is one specific video, paper, or chapter, ranked in the order you should open it. 25 tracks, 258 steps, no paid walls, no course homepages.
+Free AI and machine learning roadmaps, from Python and math to deep learning, LLMs, and AI safety. Each step links to a specific video, paper, or chapter in learning order. 25 tracks, 258 steps.
+
+Read on [the website](https://gruheshkurra.github.io/awesome-ai-roadmaps/) or browse the tracks below.
 
 ## Contents
 
@@ -32,13 +34,20 @@ Free ranked AI learning paths. Each track is a table of concepts, not a link to 
 | [Evals & Safety](tracks/evals-safety/) | Alignment, specification gaming, jailbreaks, red teaming, safety evals. | 12 |
 | [Data-Centric AI](tracks/data-centric/) | Datasheets, labeling, weak supervision, label errors, synthetic data, filtering. | 12 |
 
+## Where to start
+
+- **New to machine learning:** [Python for ML](tracks/python-for-ml/) → [Math for ML](tracks/math-for-ml/) → [ML Basics](tracks/ml-basics/) → [Deep Learning](tracks/deep-learning/).
+- **Build with language models:** [LLMs](tracks/llms/) → [Prompting & Context](tracks/prompt-context/) → [RAG](tracks/rag/) → [Eval Harnesses](tracks/eval-harnesses/).
+- **Implement the models:** start with [Deep Learning](tracks/deep-learning/), then follow [From Scratch](tracks/from-scratch/).
+
+Check each track's prerequisites. Work through its numbered steps in order; use the video, reading, or both. YouTube links are bold. An empty cell means that medium is not listed.
+
 ## Why this exists
 
 Most "awesome" AI lists are link dumps: a hundred bookmarks with no order and no opinion. This one ranks each track top to bottom. Work it like a syllabus, not a search result page.
 
-Every row is free and live-checked. Paid courses, certificate walls, and DSA/interview lists are out of scope on purpose.
-
+Resources are selected for free access. Paid courses, certificate walls, and DSA/interview material are out of scope. Links can change; report unavailable resources through the issue forms below.
 
 ## Adding a resource
 
-Open an [Issue](https://github.com/GruheshKurra/awesome-ai-roadmaps/issues) with the concept, the URL, and one sentence on why it belongs. No PRs. See [contributing.md](contributing.md).
+Use the [issue forms](https://github.com/GruheshKurra/awesome-ai-roadmaps/issues/new/choose) to suggest a resource or report a broken link, paywall, or learning gap. See [contributing.md](contributing.md) for the selection criteria. Please use issues for resource suggestions rather than pull requests.

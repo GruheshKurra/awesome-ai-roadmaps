@@ -1,0 +1,33 @@
+name: Report a learning or link problem
+description: Report an unavailable resource, paywall, missing prerequisite, or confusing step.
+title: "Track problem: "
+body:
+  - type: input
+    id: track
+    attributes:
+      label: Track URL and step number
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Problem
+      options:
+        - Broken or unavailable link
+        - Payment or sign-in required
+        - Resource does not match the concept
+        - Missing prerequisite or confusing order
+        - Other learning problem
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: What happened, and what did you expect?
+      description: For access problems, include the resource URL and the error message. Do not include account details.
+    validations:
+      required: true
+  - type: input
+    id: replacement
+    attributes:
+      label: Suggested correction or replacement (optional)

@@ -19,6 +19,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Check catalog
+        run: ruby scripts/catalog.rb
+      - name: Test catalog checks
+        run: python3 -m unittest discover -s scripts/tests
       - uses: actions/configure-pages@v5
       - uses: actions/jekyll-build-pages@v1
         with:
@@ -26,6 +30,8 @@ jobs:
           destination: ./_site
       - name: Drop raw markdown copies
         run: sudo find _site -name '*.md' -delete
+      - name: Check built site
+        run: python3 scripts/check_site.py _site
       - uses: actions/upload-pages-artifact@v3
 
   deploy:

@@ -1,10 +1,9 @@
 title: Awesome AI Roadmaps
-description: Free ranked AI learning paths. Each track is a table of concepts.
+description: Free AI and machine learning roadmaps. Learn Python, math, deep learning, LLMs, and AI safety through ordered videos, papers, and chapters.
+repository: GruheshKurra/awesome-ai-roadmaps
+lang: en
 url: https://gruheshkurra.github.io
 baseurl: /awesome-ai-roadmaps
-
-twitter:
-  card: summary_large_image
 
 markdown: kramdown
 kramdown:
@@ -42,60 +41,164 @@ defaults:
       layout: default
       image:
         path: /assets/og-image.png
-        width: 1200
-        height: 630
+        width: 1730
+        height: 909
+        alt: Awesome AI Roadmaps. Free AI/ML learning paths with specific videos, papers, and chapters.
+
+  # BEGIN CATALOG DESCRIPTIONS
+  - scope:
+      path: tracks/python-for-ml
+    values:
+      description: "Python for ML roadmap: NumPy, notebooks, pandas, plots. Free videos, papers, and chapters in learning order."
+  - scope:
+      path: tracks/math-for-ml
+    values:
+      description: "Math for ML roadmap: Linear algebra, calculus, probability, optimization. Free videos, papers, and chapters in learning order."
+  - scope:
+      path: tracks/nlp
+    values:
+      description: "NLP roadmap: Word vectors through BERT. Free videos, papers, and chapters in learning order."
+  - scope:
+      path: tracks/ml-basics
+    values:
+      description: "ML Basics roadmap: Regression, trees, SVM, clustering. Free videos, papers, and chapters in learning order."
+  - scope:
+      path: tracks/deep-learning
+    values:
+      description: "Deep Learning roadmap: Backprop, CNNs, RNNs, optimization. Free videos, papers, and chapters in learning order."
+  - scope:
+      path: tracks/computer-vision
+    values:
+      description: "Computer Vision roadmap: CNNs, detection, segmentation, ViT. Free videos, papers, and chapters in learning order."
+  - scope:
+      path: tracks/llms
+    values:
+      description: "LLMs roadmap: Transformers, GPT family, scaling, RLHF. Free videos, papers, and chapters in learning order."
+  - scope:
+      path: tracks/from-scratch
+    values:
+      description: "From Scratch roadmap: Autograd, tokenizers, GPT, all hand-built. Free videos, papers, and chapters in learning order."
+  - scope:
+      path: tracks/eval-harnesses
+    values:
+      description: "Eval Harnesses roadmap: Benchmarks, contamination, SWE-bench, LLM-as-judge. Free videos, papers, and chapters in learning order."
+  - scope:
+      path: tracks/rag
+    values:
+      description: "RAG roadmap: Embeddings, chunking, vector search, eval. Free videos, papers, and chapters in learning order."
+  - scope:
+      path: tracks/agents-tooling
+    values:
+      description: "Agents & Tooling roadmap: Tool use, ReAct, memory, browser/computer-use. Free videos, papers, and chapters in learning order."
+  - scope:
+      path: tracks/ai-tools
+    values:
+      description: "AI Tools roadmap: Cursor, Claude Code, local models, MCP, playgrounds. Free videos, papers, and chapters in learning order."
+  - scope:
+      path: tracks/prompt-context
+    values:
+      description: "Prompting & Context roadmap: Prompt structure, chain-of-thought, context engineering. Free videos, papers, and chapters in learning order."
+  - scope:
+      path: tracks/fine-tuning
+    values:
+      description: "Fine-Tuning roadmap: LoRA, QLoRA, DPO, data for adapters. Free videos, papers, and chapters in learning order."
+  - scope:
+      path: tracks/speech-audio
+    values:
+      description: "Speech & Audio roadmap: Spectrograms, CTC, wav2vec, Whisper, TTS. Free videos, papers, and chapters in learning order."
+  - scope:
+      path: tracks/multimodal
+    values:
+      description: "Multimodal roadmap: CLIP, Flamingo, BLIP-2, LLaVA, ImageBind. Free videos, papers, and chapters in learning order."
+  - scope:
+      path: tracks/generative-models
+    values:
+      description: "Generative Models roadmap: VAE, GAN, flows, diffusion, flow matching. Free videos, papers, and chapters in learning order."
+  - scope:
+      path: tracks/reinforcement-learning
+    values:
+      description: "Reinforcement Learning roadmap: MDPs, Q-learning, DQN, policy gradients, PPO, SAC. Free videos, papers, and chapters in learning order."
+  - scope:
+      path: tracks/graph-ml
+    values:
+      description: "Graph ML roadmap: Node embeddings, GCN, GraphSAGE, GAT, GIN, TransE. Free videos, papers, and chapters in learning order."
+  - scope:
+      path: tracks/recsys
+    values:
+      description: "Recommender Systems roadmap: Collaborative filtering, matrix factorization, Wide & Deep, two-tower, SASRec. Free videos, papers, and chapters in learning order."
+  - scope:
+      path: tracks/time-series
+    values:
+      description: "Time Series roadmap: Stationarity, ARIMA, ETS, DeepAR, N-BEATS, TFT, Informer, PatchTST. Free videos, papers, and chapters in learning order."
+  - scope:
+      path: tracks/causal-ml
+    values:
+      description: "Causal ML roadmap: Potential outcomes, DAGs, propensity scores, double ML, LATE, causal forests. Free videos, papers, and chapters in learning order."
+  - scope:
+      path: tracks/interpretability
+    values:
+      description: "Interpretability roadmap: Permutation importance, PDP, LIME, SHAP, Grad-CAM, TCAV, circuits. Free videos, papers, and chapters in learning order."
+  - scope:
+      path: tracks/evals-safety
+    values:
+      description: "Evals & Safety roadmap: Alignment, specification gaming, jailbreaks, red teaming, safety evals. Free videos, papers, and chapters in learning order."
+  - scope:
+      path: tracks/data-centric
+    values:
+      description: "Data-Centric AI roadmap: Datasheets, labeling, weak supervision, label errors, synthetic data, filtering. Free videos, papers, and chapters in learning order."
+  # END CATALOG DESCRIPTIONS
 
 track_nav:
   - slug: python-for-ml
-    label: Python for ML
+    label: "Python for ML"
   - slug: math-for-ml
-    label: Math for ML
+    label: "Math for ML"
   - slug: nlp
-    label: NLP
+    label: "NLP"
   - slug: ml-basics
-    label: ML Basics
+    label: "ML Basics"
   - slug: deep-learning
-    label: Deep Learning
+    label: "Deep Learning"
   - slug: computer-vision
-    label: Computer Vision
+    label: "Computer Vision"
   - slug: llms
-    label: LLMs
+    label: "LLMs"
   - slug: from-scratch
-    label: From Scratch
+    label: "From Scratch"
   - slug: eval-harnesses
-    label: Eval Harnesses
+    label: "Eval Harnesses"
   - slug: rag
-    label: RAG
+    label: "RAG"
   - slug: agents-tooling
-    label: Agents & Tooling
+    label: "Agents & Tooling"
   - slug: ai-tools
-    label: AI Tools
+    label: "AI Tools"
   - slug: prompt-context
-    label: Prompting & Context
+    label: "Prompting & Context"
   - slug: fine-tuning
-    label: Fine-Tuning
+    label: "Fine-Tuning"
   - slug: speech-audio
-    label: Speech & Audio
+    label: "Speech & Audio"
   - slug: multimodal
-    label: Multimodal
+    label: "Multimodal"
   - slug: generative-models
-    label: Generative Models
+    label: "Generative Models"
   - slug: reinforcement-learning
-    label: Reinforcement Learning
+    label: "Reinforcement Learning"
   - slug: graph-ml
-    label: Graph ML
+    label: "Graph ML"
   - slug: recsys
-    label: Recommender Systems
+    label: "Recommender Systems"
   - slug: time-series
-    label: Time Series
+    label: "Time Series"
   - slug: causal-ml
-    label: Causal ML
+    label: "Causal ML"
   - slug: interpretability
-    label: Interpretability
+    label: "Interpretability"
   - slug: evals-safety
-    label: Evals & Safety
+    label: "Evals & Safety"
   - slug: data-centric
-    label: Data-Centric AI
+    label: "Data-Centric AI"
 
 exclude:
   - LICENSE
@@ -104,3 +207,4 @@ exclude:
   - tracker.md
   - .gitignore
   - .github
+  - scripts

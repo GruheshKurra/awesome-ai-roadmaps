@@ -2,21 +2,18 @@
 
 Queue of unpublished tracks. In the git repo. Excluded from GitHub Pages (`_config.yml` `exclude`). Do not add these names to README Contents or the sidebar until the track is `done`.
 
-One unit of work per automation run. The next work is the first unchecked box that is not already in README Contents.
-Do not pre-create empty track folders. Copy `tracks/_template.md` into `tracks/<slug>/README.md` on that run.
+The next topic is the first unchecked box that is not already in README Contents. Completed entries remain checked in their original queue position.
+Use a published track as the Markdown example. Do not pre-create empty track folders.
 
 Series headings are comments. They are not work items.
-If a slug cannot be filled with 5–15 live free URLs, do not commit a stub. Leave the box unchecked and stop; report the blocker. Do not start another track.
+An entry is a candidate, not a claim that suitable resources exist. Verify the topic and find 5–15 useful steps before publishing. Leave unsupported topics unchecked; do not commit a stub.
 
-Keep the operator prompt in `AGENTS.md` in the same slug order as Queue.
+Run `ruby scripts/catalog.rb --write` after changing the published catalog to refresh counts and checkboxes.
 
 | | Count |
 |---|---:|
-| Done | 17 |
-| Queue | 882 |
-| At 5 runs/day | ~177 days |
-| At 10 runs/day | ~89 days |
-| At 15 runs/day | ~59 days |
+| Done | 25 |
+| Queue | 874 |
 
 ## Done
 
@@ -43,14 +40,14 @@ Keep the operator prompt in `AGENTS.md` in the same slug order as Queue.
 
 ### Remaining original
 
-15. [ ] `reinforcement-learning` — MDPs, Q-learning, policy gradients, RLHF as a pointer only.
-16. [ ] `graph-ml` — GNNs, graphs as data.
-17. [ ] `recsys` — Ranking, two-tower, sequential recs.
-18. [ ] `time-series` — Forecasting with ML.
-19. [ ] `causal-ml` — Causal graphs, identification, treatment effects.
-20. [ ] `interpretability` — Features, circuits, attribution.
-21. [ ] `evals-safety` — Benchmarks, jailbreaks at a high level, alignment overviews.
-22. [ ] `data-centric` — Datasets, labeling, synthetic data, filtering.
+15. [x] `reinforcement-learning` — MDPs, Q-learning, policy gradients, RLHF as a pointer only.
+16. [x] `graph-ml` — GNNs, graphs as data.
+17. [x] `recsys` — Ranking, two-tower, sequential recs.
+18. [x] `time-series` — Forecasting with ML.
+19. [x] `causal-ml` — Causal graphs, identification, treatment effects.
+20. [x] `interpretability` — Features, circuits, attribution.
+21. [x] `evals-safety` — Benchmarks, jailbreaks at a high level, alignment overviews.
+22. [x] `data-centric` — Datasets, labeling, synthetic data, filtering.
 23. [ ] `mlops` — Training jobs, tracking, registries, deployment.
 24. [ ] `inference-serving` — Quantization, vLLM, llama.cpp, batching.
 25. [ ] `gpu-systems` — CUDA mental model, mixed precision, profiling.

@@ -1,0 +1,32 @@
+name: Suggest a resource
+description: Recommend a specific free video, paper, article, or chapter.
+title: "Resource: "
+body:
+  - type: input
+    id: track
+    attributes:
+      label: Track and concept
+      description: Name the track and the step this would add or improve.
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Resource URL
+      description: Link directly to the video or reading.
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: Why this resource?
+      description: Explain what it teaches and what it improves over the current selection.
+    validations:
+      required: true
+  - type: checkboxes
+    id: access
+    attributes:
+      label: Access
+      options:
+        - label: The learning material is available without payment or a paid trial.
+          required: true
