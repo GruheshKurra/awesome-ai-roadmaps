@@ -1,6 +1,6 @@
 # Awesome AI Roadmaps [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-Free ranked AI learning paths. Each track is a table of concepts, not a link to someone else's syllabus. Each row is one specific video, paper, or chapter, ranked in the order you should open it. 21 tracks, 210 steps, no paid walls, no course homepages.
+Free ranked AI learning paths. Each track is a table of concepts, not a link to someone else's syllabus. Each row is one specific video, paper, or chapter, ranked in the order you should open it. 22 tracks, 221 steps, no paid walls, no course homepages.
 
 ## Contents
 
@@ -27,12 +27,14 @@ Free ranked AI learning paths. Each track is a table of concepts, not a link to 
 | [Graph ML](tracks/graph-ml/) | Node embeddings, GCN, GraphSAGE, GAT, GIN, TransE. | 11 |
 | [Recommender Systems](tracks/recsys/) | Collaborative filtering, matrix factorization, Wide & Deep, two-tower, SASRec. | 12 |
 | [Time Series](tracks/time-series/) | Stationarity, ARIMA, ETS, DeepAR, N-BEATS, TFT, Informer, PatchTST. | 13 |
+| [Causal ML](tracks/causal-ml/) | Potential outcomes, DAGs, propensity scores, double ML, LATE, causal forests. | 11 |
 
 ## Why this exists
 
 Most "awesome" AI lists are link dumps: a hundred bookmarks with no order and no opinion. This one ranks each track top to bottom. Work it like a syllabus, not a search result page.
 
 Every row is free and live-checked. Paid courses, certificate walls, and DSA/interview lists are out of scope on purpose.
+
 
 ## Adding a resource
 

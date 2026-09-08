@@ -88,6 +88,8 @@ track_nav:
     label: Recommender Systems
   - slug: time-series
     label: Time Series
+  - slug: causal-ml
+    label: Causal ML
 
 exclude:
   - LICENSE
