@@ -1,6 +1,6 @@
 # Awesome AI Roadmaps [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-Free ranked AI learning paths. Each track is a table of concepts, not a link to someone else's syllabus. Each row is one specific video, paper, or chapter, ranked in the order you should open it. 22 tracks, 221 steps, no paid walls, no course homepages.
+Free ranked AI learning paths. Each track is a table of concepts, not a link to someone else's syllabus. Each row is one specific video, paper, or chapter, ranked in the order you should open it. 23 tracks, 234 steps, no paid walls, no course homepages.
 
 ## Contents
 
@@ -28,6 +28,7 @@ Free ranked AI learning paths. Each track is a table of concepts, not a link to 
 | [Recommender Systems](tracks/recsys/) | Collaborative filtering, matrix factorization, Wide & Deep, two-tower, SASRec. | 12 |
 | [Time Series](tracks/time-series/) | Stationarity, ARIMA, ETS, DeepAR, N-BEATS, TFT, Informer, PatchTST. | 13 |
 | [Causal ML](tracks/causal-ml/) | Potential outcomes, DAGs, propensity scores, double ML, LATE, causal forests. | 11 |
+| [Interpretability](tracks/interpretability/) | Permutation importance, PDP, LIME, SHAP, Grad-CAM, TCAV, circuits. | 13 |
 
 ## Why this exists
 

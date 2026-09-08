@@ -90,6 +90,8 @@ track_nav:
     label: Time Series
   - slug: causal-ml
     label: Causal ML
+  - slug: interpretability
+    label: Interpretability
 
 exclude:
   - LICENSE
