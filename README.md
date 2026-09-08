@@ -1,6 +1,6 @@
 # Awesome AI Roadmaps [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-Free ranked AI learning paths. Each track is a table of concepts, not a link to someone else's syllabus. Each row is one specific video, paper, or chapter, ranked in the order you should open it. 18 tracks, 174 steps, no paid walls, no course homepages.
+Free ranked AI learning paths. Each track is a table of concepts, not a link to someone else's syllabus. Each row is one specific video, paper, or chapter, ranked in the order you should open it. 19 tracks, 185 steps, no paid walls, no course homepages.
 
 ## Contents
 
@@ -24,6 +24,7 @@ Free ranked AI learning paths. Each track is a table of concepts, not a link to 
 | [Multimodal](tracks/multimodal/) | CLIP, Flamingo, BLIP-2, LLaVA, ImageBind. | 11 |
 | [Generative Models](tracks/generative-models/) | VAE, GAN, flows, diffusion, flow matching. | 12 |
 | [Reinforcement Learning](tracks/reinforcement-learning/) | MDPs, Q-learning, DQN, policy gradients, PPO, SAC. | 11 |
+| [Graph ML](tracks/graph-ml/) | Node embeddings, GCN, GraphSAGE, GAT, GIN, TransE. | 11 |
 
 ## Why this exists
 

@@ -82,6 +82,8 @@ track_nav:
     label: Generative Models
   - slug: reinforcement-learning
     label: Reinforcement Learning
+  - slug: graph-ml
+    label: Graph ML
 
 exclude:
   - LICENSE
