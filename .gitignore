@@ -62,4 +62,6 @@ tracks/*
 !tracks/graph-ml/**
 !tracks/recsys/
 !tracks/recsys/**
+!tracks/time-series/
+!tracks/time-series/**
 

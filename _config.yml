@@ -86,6 +86,8 @@ track_nav:
     label: Graph ML
   - slug: recsys
     label: Recommender Systems
+  - slug: time-series
+    label: Time Series
 
 exclude:
   - LICENSE
