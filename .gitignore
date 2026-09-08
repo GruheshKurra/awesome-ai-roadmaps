@@ -68,4 +68,6 @@ tracks/*
 !tracks/causal-ml/**
 !tracks/interpretability/
 !tracks/interpretability/**
+!tracks/evals-safety/
+!tracks/evals-safety/**
 

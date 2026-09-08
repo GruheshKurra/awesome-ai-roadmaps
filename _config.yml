@@ -92,6 +92,8 @@ track_nav:
     label: Causal ML
   - slug: interpretability
     label: Interpretability
+  - slug: evals-safety
+    label: Evals & Safety
 
 exclude:
   - LICENSE
