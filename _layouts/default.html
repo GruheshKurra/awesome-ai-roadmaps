@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
   <meta name="theme-color" content="#0d0c10">
-  <title>{% if page.url == "/" %}{{ site.title }}{% else %}{{ page.title }} · {{ site.title }}{% endif %}</title>
+  <title>{% if page.url == "/" %}{{ site.title | escape }}{% else %}{{ page.title | escape }} · {{ site.title | escape }}{% endif %}</title>
   {% seo title=false %}
   <link rel="icon" type="image/svg+xml" href="{{ '/assets/favicon.svg' | relative_url }}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,19 +39,94 @@
           </a>
         </div>
       </header>
-      <article class="page{% if page.url == "/" %} is-home{% endif %}{% if page.dir contains "/tracks/" %} is-track{% endif %}" id="content">
+      <main class="page{% if page.url == "/" %} is-home{% endif %}{% if page.dir contains "/tracks/" %} is-track{% endif %}" id="content" tabindex="-1">
         {% if page.dir contains "/tracks/" %}
           <p class="eyebrow">Track</p>
         {% endif %}
         <h1>
-          {{ page.title }}
+          {{ page.title | escape }}
           {% if page.url == "/" %}
             <a class="badge" href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome"></a>
           {% endif %}
         </h1>
         {{ content }}
-      </article>
+        {% if page.dir contains "/tracks/" %}
+          <p class="track-help">Found a broken link or an unclear step? <a href="{{ repo }}/issues/new?template=problem.yml&amp;track={{ page.url | absolute_url | uri_escape }}">Report a problem with this track</a>.</p>
+        {% endif %}
+      </main>
     </div>
   </div>
+  <script>
+    (() => {
+      const toggle = document.querySelector('.nav-toggle');
+      const menu = document.getElementById('track-menu');
+      const mobile = window.matchMedia('(max-width: 800px)');
+      function setMenu(open) {
+        menu.hidden = !open;
+        toggle.setAttribute('aria-expanded', String(open));
+      }
+      function resizeMenu() {
+        const focusInMenu = menu.contains(document.activeElement);
+        const focusOnToggle = document.activeElement === toggle;
+        toggle.hidden = !mobile.matches;
+        setMenu(!mobile.matches);
+        if (mobile.matches && focusInMenu) toggle.focus();
+        else if (!mobile.matches && focusOnToggle) menu.querySelector('a').focus();
+      }
+      toggle.addEventListener('click', () => setMenu(menu.hidden));
+      menu.addEventListener('keydown', event => {
+        if (event.key === 'Escape' && mobile.matches) {
+          setMenu(false);
+          toggle.focus();
+        }
+      });
+      mobile.addEventListener('change', resizeMenu);
+      resizeMenu();
+
+      document.querySelectorAll('.page table').forEach(table => {
+        const region = document.createElement('div');
+        region.className = 'table-scroll';
+        region.tabIndex = 0;
+        region.setAttribute('role', 'region');
+        region.setAttribute('aria-label', document.querySelector('.is-track') ? 'Learning resources' : 'Learning tracks');
+        table.before(region);
+        region.append(table);
+        table.querySelectorAll('thead th').forEach(cell => cell.scope = 'col');
+      });
+
+      const catalog = document.querySelector('.is-home table');
+      if (!catalog) return;
+      const rows = Array.from(catalog.tBodies[0].rows);
+      const searchable = rows.map(row => row.textContent.toLocaleLowerCase());
+      const search = document.createElement('form');
+      search.className = 'catalog-search';
+      search.setAttribute('role', 'search');
+      search.innerHTML = '<label for="track-search">Find a track</label>' +
+        '<div class="search-controls"><input id="track-search" type="search" placeholder="Try Python, transformers, or safety" aria-describedby="search-status" aria-controls="catalog-table">' +
+        '<button type="reset">Clear</button></div><p id="search-status" role="status" aria-live="polite" aria-atomic="true"></p>';
+      catalog.id = 'catalog-table';
+      catalog.parentElement.before(search);
+      const input = search.querySelector('input');
+      const status = search.querySelector('[role="status"]');
+      function filterTracks() {
+        const terms = input.value.trim().toLocaleLowerCase().split(/\s+/).filter(Boolean);
+        let count = 0;
+        rows.forEach((row, index) => {
+          row.hidden = !terms.every(term => searchable[index].includes(term));
+          if (!row.hidden) count++;
+        });
+        status.textContent = count ? `${count} of ${rows.length} tracks` : 'No tracks match. Try another term or clear the search.';
+      }
+      input.addEventListener('input', filterTracks);
+      search.addEventListener('submit', event => event.preventDefault());
+      search.addEventListener('reset', event => {
+        event.preventDefault();
+        input.value = '';
+        filterTracks();
+        input.focus();
+      });
+      filterTracks();
+    })();
+  </script>
 </body>
 </html>

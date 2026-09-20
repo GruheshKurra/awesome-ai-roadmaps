@@ -3,20 +3,23 @@ name: Deploy GitHub Pages
 on:
   push:
     branches: [main]
+  pull_request:
+    branches: [main]
   workflow_dispatch:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 concurrency:
-  group: pages
+  group: pages-${{ github.event.pull_request.number || github.ref }}
   cancel-in-progress: false
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: read
     steps:
       - uses: actions/checkout@v4
       - name: Check catalog
@@ -24,6 +27,7 @@ jobs:
       - name: Test catalog checks
         run: python3 -m unittest discover -s scripts/tests
       - uses: actions/configure-pages@v5
+        if: github.event_name != 'pull_request'
       - uses: actions/jekyll-build-pages@v1
         with:
           source: ./
@@ -33,10 +37,15 @@ jobs:
       - name: Check built site
         run: python3 scripts/check_site.py _site
       - uses: actions/upload-pages-artifact@v3
+        if: github.event_name != 'pull_request'
 
   deploy:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
     needs: build
     runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

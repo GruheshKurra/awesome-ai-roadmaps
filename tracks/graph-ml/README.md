@@ -6,7 +6,7 @@ Prereqs: Deep Learning. ML Basics helps for the embedding and classification fra
 
 Status: done
 
-This table is the syllabus. Each row is one idea and one thing to open. No course homepages. No semester playlists. Work top to bottom. Bold links are YouTube.
+Work through the steps in order. Bold links open YouTube.
 
 | Step | Concept | **YouTube** | Read |
 | ---: | --- | --- | --- |

@@ -204,6 +204,8 @@ exclude:
   - LICENSE
   - CODE_OF_CONDUCT.md
   - AGENTS.md
+  - LearningPreferences.md
+  - tasks
   - tracker.md
   - .gitignore
   - .github

@@ -44,7 +44,7 @@ Check each track's prerequisites. Work through its numbered steps in order; use 
 
 ## Why this exists
 
-Most "awesome" AI lists are link dumps: a hundred bookmarks with no order and no opinion. This one ranks each track top to bottom. Work it like a syllabus, not a search result page.
+Each track puts concepts in learning order and links directly to lessons, papers, and chapters. Follow a track from the top, or use its prerequisites to find the preparation you need.
 
 Resources are selected for free access. Paid courses, certificate walls, and DSA/interview material are out of scope. Links can change; report unavailable resources through the issue forms below.
 

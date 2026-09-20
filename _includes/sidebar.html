@@ -7,8 +7,10 @@
     </svg>
     <span>{{ site.title }}</span>
   </a>
-  <p class="sidebar-kicker">Stacks</p>
-  <nav class="track-nav" aria-label="Stacks">
+  <button class="nav-toggle" type="button" aria-controls="track-menu" aria-expanded="true" hidden>Browse tracks</button>
+  <div id="track-menu">
+  <p class="sidebar-kicker">Learning tracks</p>
+  <nav class="track-nav" aria-label="Learning tracks">
     {% assign listed = "" %}
     {% assign i = 0 %}
     {% for item in site.track_nav %}
@@ -41,4 +43,5 @@
   {% if contrib %}
     <a class="sidebar-foot{% if page.path == "contributing.md" %} is-current{% endif %}" href="{{ contrib.url | relative_url }}"{% if page.path == "contributing.md" %} aria-current="page"{% endif %}>Contributing</a>
   {% endif %}
+  </div>
 </aside>

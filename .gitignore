@@ -9,6 +9,10 @@ vendor/
 .vscode/
 .cursor/
 __pycache__/
+.jekyll-cache/
+.jekyll-metadata
+LearningPreferences.md
+tasks/
 
 *.pem
 *.key
@@ -73,4 +77,3 @@ tracks/*
 !tracks/evals-safety/**
 !tracks/data-centric/
 !tracks/data-centric/**
-

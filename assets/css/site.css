@@ -1,15 +1,15 @@
 :root {
   --bg: #faf8f4;
   --fg: #0d0c10;
-  --muted: #5b5762;
+  --muted: #534f5a;
   --border: #e3dfd6;
-  --surface: #f0ece3;
-  --surface-hover: #ebe6db;
+  --surface: #f5f2ed;
+  --surface-hover: #f4f1eb;
   --accent: #4a3ad1;
   --accent-contrast: #ffffff;
   --sidebar-bg: #0d0c10;
   --sidebar-fg: #faf8f4;
-  --sidebar-muted: #948f9c;
+  --sidebar-muted: #aaa4b2;
   --sidebar-link: #d8d4de;
   --sidebar-active-bg: #1c1a22;
   --sidebar-accent: #b7acff;
@@ -22,7 +22,7 @@
   :root {
     --bg: #121014;
     --fg: #f4f1ec;
-    --muted: #9d97a6;
+    --muted: #aaa4b2;
     --border: #2b2830;
     --surface: #1c1a20;
     --surface-hover: #211f26;
@@ -64,10 +64,20 @@ a:hover {
 }
 
 a:focus-visible,
-button:focus-visible {
+button:focus-visible,
+input:focus-visible,
+.table-scroll:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 2px;
   border-radius: 2px;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+.sidebar :focus-visible {
+  outline-color: var(--sidebar-accent);
 }
 
 .skip {
@@ -137,7 +147,7 @@ button:focus-visible {
 .brand:hover,
 .sidebar-foot:hover,
 .track-link:hover {
-  color: #fff;
+  color: var(--sidebar-fg);
 }
 
 .sidebar-kicker {
@@ -181,7 +191,7 @@ button:focus-visible {
 
 .track-link.is-current {
   background: var(--sidebar-active-bg);
-  color: #fff;
+  color: var(--sidebar-fg);
   font-weight: 700;
   border-left-color: var(--sidebar-accent);
 }
@@ -203,7 +213,7 @@ button:focus-visible {
 
 .sidebar-foot.is-current {
   background: var(--sidebar-active-bg);
-  color: #fff;
+  color: var(--sidebar-fg);
   font-weight: 700;
 }
 
@@ -306,6 +316,9 @@ button:focus-visible {
   flex: 1 1 auto;
   max-width: 880px;
   padding: 44px 40px 80px;
+  width: 100%;
+  min-width: 0;
+  overflow-wrap: anywhere;
   overflow-x: auto;
 }
 
@@ -446,7 +459,105 @@ button:focus-visible {
 }
 
 .page img {
+  max-width: 100%;
   vertical-align: middle;
+}
+
+.table-scroll {
+  overflow-x: auto;
+  margin: 18px 0 34px;
+}
+
+.table-scroll table {
+  margin: 0;
+}
+
+.is-track table {
+  min-width: 620px;
+}
+
+.is-track table th:first-child {
+  min-width: 64px;
+  white-space: nowrap;
+}
+
+.page pre {
+  overflow-x: auto;
+  padding: 16px;
+  background: var(--surface);
+}
+
+.catalog-search {
+  margin-top: 18px;
+}
+
+.catalog-search label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.search-controls {
+  display: flex;
+  gap: 8px;
+}
+
+.search-controls input,
+.search-controls button {
+  min-height: 44px;
+  border: 1px solid var(--muted);
+  border-radius: 6px;
+  background: var(--bg);
+  color: var(--fg);
+  font: inherit;
+  padding: 10px 12px;
+}
+
+.search-controls input {
+  flex: 1;
+  min-width: 0;
+  width: 100%;
+}
+
+.search-controls input::placeholder {
+  color: var(--muted);
+  opacity: 1;
+}
+
+.search-controls button {
+  cursor: pointer;
+}
+
+.search-controls button:hover {
+  background: var(--surface-hover);
+}
+
+#search-status,
+.track-help {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.nav-toggle {
+  width: 100%;
+  min-height: 44px;
+  padding: 10px 12px;
+  border: 1px solid var(--sidebar-muted);
+  border-radius: 6px;
+  background: var(--sidebar-active-bg);
+  color: var(--sidebar-fg);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.nav-toggle::after {
+  content: '+';
+  float: right;
+}
+
+.nav-toggle[aria-expanded="true"]::after {
+  content: '−';
 }
 
 .is-home table tr:hover td:first-child {
@@ -469,7 +580,16 @@ button:focus-visible {
     position: relative;
     width: auto;
     height: auto;
-    border-bottom: 1px solid #000;
+    padding: 20px;
+    border-bottom: 1px solid var(--sidebar-active-bg);
+  }
+
+  .brand {
+    margin-bottom: 18px;
+  }
+
+  #track-menu {
+    margin-top: 18px;
   }
 
   .shell {
@@ -500,9 +620,27 @@ button:focus-visible {
   }
 }
 
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    transition: none !important;
+  }
+}
+
 @media print {
+  :root {
+    --bg: #ffffff;
+    --fg: #0d0c10;
+    --muted: #534f5a;
+    --surface: #ffffff;
+    --surface-hover: #ffffff;
+    --accent: #4a3ad1;
+  }
+
   .sidebar,
-  .top {
+  .top,
+  .skip,
+  .catalog-search,
+  .track-help {
     display: none;
   }
 
@@ -516,8 +654,20 @@ button:focus-visible {
     overflow: visible;
   }
 
+  .table-scroll {
+    overflow: visible;
+  }
+
+  .is-track table {
+    min-width: 0;
+  }
+
+  .page tr[hidden] {
+    display: table-row !important;
+  }
+
   a {
-    color: #000;
+    color: var(--fg);
     text-decoration: underline;
   }
 }

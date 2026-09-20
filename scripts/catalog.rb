@@ -56,6 +56,7 @@ class Catalog
     check(slugs.uniq == slugs, 'README Contents contains duplicate tracks')
     check(contents.lines.count { |line| line.match?(/^\| \[/) } == tracks.length,
           'Contents rows must use folder links and numeric step counts')
+    check(!readme.match?(/^\s*\{:/), 'README must use GitHub-compatible Markdown, not kramdown attributes')
     files = @root.glob('tracks/*/README.md').map { |path| path.parent.basename.to_s }
     check(files.sort == slugs.sort, 'Track folders and README Contents disagree')
     ignore = read('.gitignore')
@@ -66,10 +67,12 @@ class Catalog
       next unless path.file?
 
       text = path.read
-      check(text.match?(/^# .+$/), "#{slug}: missing title")
+      check(text.scan(/^# .+$/).length == 1, "#{slug}: expected one title")
       check(text.match?(/^Goal: .+$/), "#{slug}: missing goal")
       check(text.match?(/^Prereqs: .+$/), "#{slug}: missing prerequisites")
       check(text.match?(/^Status: done$/), "#{slug}: only done tracks may be published")
+      check(!text.match?(/^\s*\{:/), "#{slug}: kramdown attributes do not render on GitHub")
+      check(text.scan(/^Status:/).length == 1, "#{slug}: expected one status")
       table = text.lines.select { |line| line.start_with?('|') }
       check(cells(table.first.to_s).map { |cell| cell.delete('*') } == %w[Step Concept YouTube Read],
             "#{slug}: expected Step | Concept | YouTube | Read")
@@ -125,6 +128,9 @@ class Catalog
     YAML.safe_load(updated_config)
 
     tracker = read('tracker.md')
+    queue_slugs = tracker.scan(/\[[ x]\] `([^`]+)`/).flatten
+    check(queue_slugs.uniq == queue_slugs, 'Tracker contains duplicate track slugs')
+    check((slugs - queue_slugs).empty?, 'Published tracks must have tracker entries')
     updated_tracker = tracker.gsub(/\[([ x])\] `([^`]+)`/) do
       checked, slug = Regexp.last_match.captures
       check(checked != 'x' || slugs.include?(slug), "#{slug}: checked in tracker but not published")

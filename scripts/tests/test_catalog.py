@@ -99,6 +99,35 @@ class CatalogTests(unittest.TestCase):
         (folder / "README.md").write_text("# Unpublished\n")
         self.assertIn("folders and README Contents disagree", self.run_catalog().stderr)
 
+    def test_duplicate_tracker_entry_is_rejected(self):
+        self.replace("tracker.md", "[x] `llms`", "[x] `llms`\n- [x] `llms`")
+        self.assertIn("duplicate track slugs", self.run_catalog().stderr)
+
+    def test_missing_tracker_entry_blocks_writes(self):
+        self.replace("tracker.md", "[x] `llms`", "LLMs")
+        before = (self.root / "_config.yml").read_bytes()
+        self.assertIn("must have tracker entries", self.run_catalog("--write").stderr)
+        self.assertEqual(before, (self.root / "_config.yml").read_bytes())
+
+    def test_duplicate_title_is_rejected(self):
+        self.replace("tracks/llms/README.md", "# LLMs", "# LLMs\n\n# Second title")
+        self.assertIn("expected one title", self.run_catalog().stderr)
+
+    def test_conflicting_status_is_rejected(self):
+        self.replace("tracks/llms/README.md", "Status: done", "Status: done\n\nStatus: filling")
+        self.assertIn("expected one status", self.run_catalog().stderr)
+
+    def test_kramdown_attributes_are_rejected(self):
+        self.replace("tracks/llms/README.md", "Status: done", "Status: done\n{: .special}")
+        self.assertIn("do not render on GitHub", self.run_catalog().stderr)
+
+    def test_youtube_playlist_is_rejected(self):
+        path = self.root / "tracks/llms/README.md"
+        text = path.read_text()
+        row = next(line for line in text.splitlines() if line.startswith("| 1 |"))
+        path.write_text(text.replace(row, "| 1 | Introduction | **[Video](https://www.youtube.com/watch?v=abcdefghijk&list=playlist)** | |"))
+        self.assertIn("expected one bold YouTube watch link", self.run_catalog().stderr)
+
 
 if __name__ == "__main__":
     unittest.main()

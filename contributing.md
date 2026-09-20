@@ -30,3 +30,7 @@ jekyll build --destination /tmp/roadmaps-site
 find /tmp/roadmaps-site -name '*.md' -delete
 python3 scripts/check_site.py /tmp/roadmaps-site
 ```
+
+The website adds a search box above Contents and a collapsible track menu on small screens. Search uses the names and descriptions already in the Contents table. All tracks and links remain available without JavaScript. When changing the layout, check search results, the empty state, Clear, mobile menu open/close, Escape, keyboard focus, and a track's resource links.
+
+The test suite also checks text contrast in light and dark modes. The built-site check covers all published pages, including the 404 page, internal anchors, image metadata, accessibility references, and private-file exclusions. Pull requests run the same validation as pushes. Deployment runs only from `main`.

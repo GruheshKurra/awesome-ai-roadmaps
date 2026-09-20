@@ -34,36 +34,74 @@ def check_site(site, root):
     contents = readme.split("## Contents\n", 1)[1].split("\n## ", 1)[0]
     slugs = re.findall(r"\]\(tracks/([a-z0-9-]+)/\)", contents)
     config = (root / "_config.yml").read_text()
-    origin = re.search(r"^url: (.+)$", config, re.M)[1].rstrip("/")
-    base = re.search(r"^baseurl: (.*)$", config, re.M)[1].rstrip("/")
+    origin = re.search(r"^url: ([^\n]+)$", config, re.M)[1].strip().strip('"\'').rstrip("/")
+    base = re.search(r"^baseurl:[ \t]*([^\n]*)$", config, re.M)[1].strip().strip('"\'').rstrip("/")
     expected_nav = [f"{base}/tracks/{slug}/" for slug in slugs]
-    paths = ["", "contributing/"] + [f"tracks/{slug}/" for slug in slugs]
+    paths = ["", "contributing/"] + [f"tracks/{slug}/" for slug in slugs] + ["404.html"]
     descriptions = []
     sitemap = ElementTree.parse(site / "sitemap.xml")
     sitemap_urls = {element.text for element in sitemap.iter()
                     if element.tag.endswith("}loc")}
+    parsed = {}
+
+    def parse(file):
+        if file not in parsed:
+            parsed[file] = Page(file.read_text())
+        return parsed[file]
+
+    def check_link(url, canonical, name):
+        resolved = urlsplit(urljoin(canonical, url))
+        if resolved.netloc != urlsplit(origin).netloc:
+            return
+        if not resolved.path.startswith(base + "/"):
+            check(False, f"{name}: link escapes site base: {url}")
+            return
+        local = unquote(resolved.path.removeprefix(base + "/"))
+        target = (site / local).resolve()
+        if not target.is_relative_to(site.resolve()):
+            check(False, f"{name}: link escapes artifact: {url}")
+            return
+        if resolved.path.endswith("/"):
+            target /= "index.html"
+        check(target.is_file(), f"{name}: broken internal link: {url}")
+        # Text fragments (#:~:text=...) are browser directives, not element IDs.
+        fragment = unquote(resolved.fragment.split(":~:", 1)[0])
+        if fragment and target.is_file() and target.suffix == ".html":
+            ids = {attrs.get("id") for _, attrs in parse(target).tags}
+            anchors = {attrs.get("name") for attrs in parse(target).elements("a")}
+            check(fragment in ids | anchors, f"{name}: broken internal anchor: {url}")
 
     for path in paths:
         name = path or "home"
-        file = site / path / "index.html"
+        file = site / path if path.endswith(".html") else site / path / "index.html"
         check(file.is_file(), f"{name}: missing HTML")
         if not file.is_file():
             continue
         text = file.read_text()
-        page = Page(text)
+        page = parse(file.resolve())
         canonical = f"{origin}{base}/{path}"
         check(text.lower().startswith("<!doctype html>"), f"{name}: not an HTML document")
         check(len(page.elements("h1")) == 1, f"{name}: expected one h1")
         check(len(page.elements("title")) == 1, f"{name}: expected one title")
+        check(len(page.elements("main", id="content")) == 1, f"{name}: missing main content landmark")
+        check(bool(page.elements("html", lang="en")), f"{name}: missing document language")
+        ids = [attrs["id"] for _, attrs in page.tags if "id" in attrs]
+        check(len(ids) == len(set(ids)), f"{name}: duplicate element IDs")
         check(page.elements("link", rel="canonical") == [{"rel": "canonical", "href": canonical}],
               f"{name}: wrong canonical URL")
-        check(canonical in sitemap_urls, f"{name}: absent from sitemap")
+        if path == "404.html":
+            check(canonical not in sitemap_urls, "404 page must not be in sitemap")
+        else:
+            check(canonical in sitemap_urls, f"{name}: absent from sitemap")
         metadata = page.elements("meta", name="description")
         check(len(metadata) == 1 and bool(metadata[0].get("content")), f"{name}: missing description")
         if metadata:
             descriptions.append(metadata[0].get("content"))
         for property_name in ("og:title", "og:description", "og:image", "og:image:alt"):
-            check(bool(page.elements("meta", property=property_name)), f"{name}: missing {property_name}")
+            values = page.elements("meta", property=property_name)
+            check(len(values) == 1 and bool(values[0].get("content")), f"{name}: missing {property_name}")
+            if property_name == "og:image" and values and values[0].get("content"):
+                check_link(values[0]["content"], canonical, name)
         for data in re.findall(r'<script type="application/ld\+json">(.*?)</script>', text, re.S):
             json.loads(data)
         nav = [attrs for tag, attrs in page.tags
@@ -77,22 +115,29 @@ def check_site(site, root):
             check(bool(page.elements("table")), f"{name}: missing resource table")
         for tag, attrs in page.tags:
             check(attrs.get("target") != "_blank", f"{name}: forbidden new-tab target")
+            if tag == "img":
+                check("alt" in attrs, f"{name}: image is missing alt text")
+            for attribute in ("aria-controls", "aria-labelledby", "aria-describedby"):
+                for reference in attrs.get(attribute, "").split():
+                    check(reference in ids, f"{name}: {attribute} points to missing ID {reference}")
             url = attrs.get("href") if tag in ("a", "link") else attrs.get("src")
-            if not url or url.startswith(("mailto:", "data:", "javascript:")):
+            if not url:
                 continue
-            resolved = urlsplit(urljoin(canonical, url))
-            if resolved.netloc != urlsplit(origin).netloc:
+            scheme = urlsplit(url).scheme.lower()
+            check(scheme in ("", "http", "https", "mailto", "tel", "data"),
+                  f"{name}: unsafe URL scheme: {scheme}")
+            if scheme not in ("", "http", "https"):
                 continue
-            check(resolved.path.startswith(base + "/"), f"{name}: link escapes site base: {url}")
-            local = unquote(resolved.path.removeprefix(base + "/"))
-            target = site / local
-            if resolved.path.endswith("/"):
-                target /= "index.html"
-            check(target.is_file(), f"{name}: broken internal link: {url}")
+            check_link(url, canonical, name)
 
     check(len(descriptions) == len(set(descriptions)), "Pages share duplicate descriptions")
     check(not list(site.rglob("*.md")), "Raw Markdown must not be deployed")
     check(not (site / "scripts").exists(), "Maintenance scripts must not be deployed")
+    for private in ("AGENTS.html", "LearningPreferences.html", "tracker.html", "tasks", ".git", ".github"):
+        check(not (site / private).exists(), f"Private path must not be deployed: {private}")
+    for file in site.rglob("*"):
+        check(not (file.name.startswith((".env", "credentials.", "secrets.")) or
+                   file.suffix in (".pem", ".key")), f"Secret-bearing path must not be deployed: {file.relative_to(site)}")
     check((site / "404.html").is_file(), "Missing 404 page")
     check((site / "robots.txt").is_file(), "Missing robots.txt")
     check(not any("tracker" in url or "README.md" in url for url in sitemap_urls),
