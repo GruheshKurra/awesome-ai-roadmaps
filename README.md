@@ -1,6 +1,6 @@
 # Awesome AI Roadmaps [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-Free AI and machine learning roadmaps, from Python and math to deep learning, LLMs, and AI safety. Each step links to a specific video, paper, or chapter in learning order. 25 tracks, 258 steps.
+Free AI and machine learning roadmaps, from Python and math to deep learning, LLMs, and AI safety. Each step links to a specific video, paper, or chapter in learning order. 26 tracks, 266 steps.
 
 Read on [the website](https://gruheshkurra.github.io/awesome-ai-roadmaps/) or browse the tracks below.
 
@@ -33,6 +33,7 @@ Read on [the website](https://gruheshkurra.github.io/awesome-ai-roadmaps/) or br
 | [Interpretability](tracks/interpretability/) | Permutation importance, PDP, LIME, SHAP, Grad-CAM, TCAV, circuits. | 13 |
 | [Evals & Safety](tracks/evals-safety/) | Alignment, specification gaming, jailbreaks, red teaming, safety evals. | 12 |
 | [Data-Centric AI](tracks/data-centric/) | Datasheets, labeling, weak supervision, label errors, synthetic data, filtering. | 12 |
+| [MLOps](tracks/mlops/) | Data versioning, pipelines, experiment tracking, model registry, serving, monitoring. | 8 |
 
 ## Where to start
 

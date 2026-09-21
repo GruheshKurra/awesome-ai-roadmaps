@@ -2,11 +2,11 @@
 
 Goal: Linear algebra, calculus, probability, optimization.
 
-Prereqs: none
+Prereqs: School algebra, functions, and graphs.
 
 Status: done
 
-Work through the steps in order. Bold links open YouTube.
+Start with the visual lessons. Step 8 assumes basic derivatives and familiarity with neural networks; you can return to it after the first three steps of [Deep Learning](../deep-learning/).
 
 | Step | Concept | **YouTube** | Read |
 | ---: | --- | --- | --- |

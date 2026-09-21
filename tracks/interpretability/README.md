@@ -2,7 +2,7 @@
 
 Goal: Learn how to explain model predictions and inspect internals, from permutation importance, PDP/ICE, LIME, and SHAP through gradient attribution, Grad-CAM, concept tests, faithfulness checks, and circuits.
 
-Prereqs: ML Basics. Deep Learning helps for attribution, Grad-CAM, and circuits.
+Prereqs: [ML Basics](../ml-basics/). For neural-network attribution and circuits, study [Deep Learning](../deep-learning/); the final video also assumes the transformer basics in [LLMs](../llms/).
 
 Status: done
 

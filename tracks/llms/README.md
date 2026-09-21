@@ -2,7 +2,7 @@
 
 Goal: Large language models from the transformer stack through pretraining, scaling, and instruction alignment.
 
-Prereqs: Deep Learning. NLP through transformers helps.
+Prereqs: [Deep Learning](../deep-learning/). [Learn NLP](../nlp/) through transformers helps.
 
 Status: done
 

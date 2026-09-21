@@ -12,8 +12,8 @@ Run `ruby scripts/catalog.rb --write` after changing the published catalog to re
 
 | | Count |
 |---|---:|
-| Done | 25 |
-| Queue | 874 |
+| Done | 26 |
+| Queue | 873 |
 
 ## Done
 
@@ -48,7 +48,7 @@ Run `ruby scripts/catalog.rb --write` after changing the published catalog to re
 20. [x] `interpretability` — Features, circuits, attribution.
 21. [x] `evals-safety` — Benchmarks, jailbreaks at a high level, alignment overviews.
 22. [x] `data-centric` — Datasets, labeling, synthetic data, filtering.
-23. [ ] `mlops` — Training jobs, tracking, registries, deployment.
+23. [x] `mlops` — Training jobs, tracking, registries, deployment.
 24. [ ] `inference-serving` — Quantization, vLLM, llama.cpp, batching.
 25. [ ] `gpu-systems` — CUDA mental model, mixed precision, profiling.
 26. [ ] `distributed-training` — Data parallel, FSDP, multi-node.

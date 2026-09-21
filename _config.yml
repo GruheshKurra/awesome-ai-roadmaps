@@ -146,6 +146,10 @@ defaults:
       path: tracks/data-centric
     values:
       description: "Data-Centric AI roadmap: Datasheets, labeling, weak supervision, label errors, synthetic data, filtering. Free videos, papers, and chapters in learning order."
+  - scope:
+      path: tracks/mlops
+    values:
+      description: "MLOps roadmap: Data versioning, pipelines, experiment tracking, model registry, serving, monitoring. Free videos, papers, and chapters in learning order."
   # END CATALOG DESCRIPTIONS
 
 track_nav:
@@ -199,6 +203,8 @@ track_nav:
     label: "Evals & Safety"
   - slug: data-centric
     label: "Data-Centric AI"
+  - slug: mlops
+    label: "MLOps"
 
 exclude:
   - LICENSE
