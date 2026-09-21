@@ -79,3 +79,5 @@ tracks/*
 !tracks/data-centric/**
 !tracks/mlops/
 !tracks/mlops/**
+!tracks/inference-serving/
+!tracks/inference-serving/**

@@ -150,6 +150,10 @@ defaults:
       path: tracks/mlops
     values:
       description: "MLOps roadmap: Data versioning, pipelines, experiment tracking, model registry, serving, monitoring. Free videos, papers, and chapters in learning order."
+  - scope:
+      path: tracks/inference-serving
+    values:
+      description: "Inference & Serving roadmap: KV cache, quantization, batching, llama.cpp, vLLM, latency and throughput. Free videos, papers, and chapters in learning order."
   # END CATALOG DESCRIPTIONS
 
 track_nav:
@@ -205,6 +209,8 @@ track_nav:
     label: "Data-Centric AI"
   - slug: mlops
     label: "MLOps"
+  - slug: inference-serving
+    label: "Inference & Serving"
 
 exclude:
   - LICENSE

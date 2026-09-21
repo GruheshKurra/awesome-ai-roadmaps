@@ -2,7 +2,7 @@
 
 Goal: Learn ranking and retrieval for personalized recommendations, from classical collaborative filtering through matrix factorization, deep CTR models, two-stage industrial systems, and sequential recommenders.
 
-Prereqs: ML Basics. Deep Learning helps for the neural ranking and retrieval papers.
+Prereqs: [ML Basics](../ml-basics/). Complete [Deep Learning](../deep-learning/) before the neural ranking and retrieval papers in steps 7–12.
 
 Status: done
 
