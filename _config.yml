@@ -93,7 +93,7 @@ defaults:
   - scope:
       path: tracks/ai-tools
     values:
-      description: "AI Tools roadmap: Cursor, Claude Code, local models, MCP, playgrounds. Free videos, papers, and chapters in learning order."
+      description: "AI Tools roadmap: Cursor, Claude Code, local models, MCP, hosted demos. Free videos, papers, and chapters in learning order."
   - scope:
       path: tracks/prompt-context
     values:
@@ -154,6 +154,10 @@ defaults:
       path: tracks/inference-serving
     values:
       description: "Inference & Serving roadmap: KV cache, quantization, batching, llama.cpp, vLLM, latency and throughput. Free videos, papers, and chapters in learning order."
+  - scope:
+      path: tracks/gpu-systems
+    values:
+      description: "GPU Systems roadmap: CUDA, GPU memory, benchmarking, profiling, mixed precision, Triton kernels. Free videos, papers, and chapters in learning order."
   # END CATALOG DESCRIPTIONS
 
 track_nav:
@@ -211,6 +215,8 @@ track_nav:
     label: "MLOps"
   - slug: inference-serving
     label: "Inference & Serving"
+  - slug: gpu-systems
+    label: "GPU Systems"
 
 exclude:
   - LICENSE

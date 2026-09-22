@@ -81,3 +81,5 @@ tracks/*
 !tracks/mlops/**
 !tracks/inference-serving/
 !tracks/inference-serving/**
+!tracks/gpu-systems/
+!tracks/gpu-systems/**

@@ -2,7 +2,7 @@
 
 Goal: Learn how to estimate treatment effects from experiments and observational data, from potential outcomes and DAGs through propensity weighting, doubly robust and double ML estimators, instrumental variables, meta-learners, causal forests, and difference-in-differences.
 
-Prereqs: ML Basics. Math for ML helps for identification arguments.
+Prereqs: [ML Basics](../ml-basics/), especially regression. Review probability in [Math for ML](../math-for-ml/) before the identification arguments.
 
 Status: done
 

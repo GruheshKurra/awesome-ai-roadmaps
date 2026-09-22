@@ -2,7 +2,7 @@
 
 Goal: Tool use, ReAct, memory, and browser/computer-use agents.
 
-Prereqs: LLMs.
+Prereqs: [LLMs](../llms/) and [Python for ML](../python-for-ml/) for the implementation steps.
 
 Status: done
 
@@ -10,7 +10,7 @@ Work through the steps in order. Bold links open YouTube.
 
 | Step | Concept | **YouTube** | Read |
 | ---: | --- | --- | --- |
-| 1 | What an agent loop actually is | | [Anthropic — Building Effective AI Agents](https://www.anthropic.com/research/building-effective-agents) |
+| 1 | Agent loops and predefined workflows | | [Anthropic — Building Effective AI Agents](https://www.anthropic.com/research/building-effective-agents) |
 | 2 | ReAct: reasoning and acting | | [Yao et al. 2022 — ReAct: Synergizing Reasoning and Acting in Language Models](https://arxiv.org/abs/2210.03629) |
 | 3 | Build a ReAct agent yourself, no framework | **[Python: Create a ReAct Agent from Scratch](https://www.youtube.com/watch?v=hKVhRA9kfeM)** | |
 | 4 | Tool use and function calling | **[James Briggs — Building Chatbot Agents from Scratch with OpenAI Functions](https://www.youtube.com/watch?v=dgV4WFisK5Y)** | [Schick et al. 2023 — Toolformer](https://arxiv.org/abs/2302.04761) |

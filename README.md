@@ -1,6 +1,6 @@
 # Awesome AI Roadmaps [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-Free AI and machine learning roadmaps, from Python and math to deep learning, LLMs, and AI safety. Each step links to a specific video, paper, or chapter in learning order. 27 tracks, 274 steps.
+Free AI and machine learning roadmaps, from Python and math to deep learning, LLMs, and AI safety. Each step links to a specific video, paper, or chapter in learning order. 28 tracks, 282 steps.
 
 Read on [the website](https://gruheshkurra.github.io/awesome-ai-roadmaps/) or browse the tracks below.
 
@@ -19,7 +19,7 @@ Read on [the website](https://gruheshkurra.github.io/awesome-ai-roadmaps/) or br
 | [Eval Harnesses](tracks/eval-harnesses/) | Benchmarks, contamination, SWE-bench, LLM-as-judge. | 8 |
 | [RAG](tracks/rag/) | Embeddings, chunking, vector search, eval. | 8 |
 | [Agents & Tooling](tracks/agents-tooling/) | Tool use, ReAct, memory, browser/computer-use. | 7 |
-| [AI Tools](tracks/ai-tools/) | Cursor, Claude Code, local models, MCP, playgrounds. | 6 |
+| [AI Tools](tracks/ai-tools/) | Cursor, Claude Code, local models, MCP, hosted demos. | 6 |
 | [Prompting & Context](tracks/prompt-context/) | Prompt structure, chain-of-thought, context engineering. | 6 |
 | [Fine-Tuning](tracks/fine-tuning/) | LoRA, QLoRA, DPO, data for adapters. | 6 |
 | [Speech & Audio](tracks/speech-audio/) | Spectrograms, CTC, wav2vec, Whisper, TTS. | 11 |
@@ -35,6 +35,7 @@ Read on [the website](https://gruheshkurra.github.io/awesome-ai-roadmaps/) or br
 | [Data-Centric AI](tracks/data-centric/) | Datasheets, labeling, weak supervision, label errors, synthetic data, filtering. | 12 |
 | [MLOps](tracks/mlops/) | Data versioning, pipelines, experiment tracking, model registry, serving, monitoring. | 8 |
 | [Inference & Serving](tracks/inference-serving/) | KV cache, quantization, batching, llama.cpp, vLLM, latency and throughput. | 8 |
+| [GPU Systems](tracks/gpu-systems/) | CUDA, GPU memory, benchmarking, profiling, mixed precision, Triton kernels. | 8 |
 
 ## Where to start
 
