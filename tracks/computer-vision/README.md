@@ -2,7 +2,7 @@
 
 Goal: Image classification, detection, and segmentation with convolutional networks and vision transformers.
 
-Prereqs: Deep Learning.
+Prereqs: [Deep Learning](../deep-learning/), especially backpropagation and convolutional networks.
 
 Status: done
 

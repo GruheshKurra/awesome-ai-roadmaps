@@ -2,7 +2,7 @@
 
 Goal: Learn how to improve models by improving data, from data-centric development and data cascades through datasheets, labeling, active learning, weak supervision, label-error detection, synthetic data, deduplication, and web-scale filtering.
 
-Prereqs: ML Basics. LLMs helps for pretraining-data filtering.
+Prereqs: [ML Basics](../ml-basics/). Review GANs in [Generative Models](../generative-models/) before synthetic tabular data, and [LLMs](../llms/) before pretraining-data filtering.
 
 Status: done
 

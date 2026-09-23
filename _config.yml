@@ -158,6 +158,10 @@ defaults:
       path: tracks/gpu-systems
     values:
       description: "GPU Systems roadmap: CUDA, GPU memory, benchmarking, profiling, mixed precision, Triton kernels. Free videos, papers, and chapters in learning order."
+  - scope:
+      path: tracks/distributed-training
+    values:
+      description: "Distributed Training roadmap: DDP, torchrun, multi-node training, FSDP2, tensor and pipeline parallelism. Free videos, papers, and chapters in learning order."
   # END CATALOG DESCRIPTIONS
 
 track_nav:
@@ -217,6 +221,8 @@ track_nav:
     label: "Inference & Serving"
   - slug: gpu-systems
     label: "GPU Systems"
+  - slug: distributed-training
+    label: "Distributed Training"
 
 exclude:
   - LICENSE

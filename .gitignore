@@ -83,3 +83,5 @@ tracks/*
 !tracks/inference-serving/**
 !tracks/gpu-systems/
 !tracks/gpu-systems/**
+!tracks/distributed-training/
+!tracks/distributed-training/**
