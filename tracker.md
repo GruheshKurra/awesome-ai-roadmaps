@@ -12,8 +12,8 @@ Run `ruby scripts/catalog.rb --write` after changing the published catalog to re
 
 | | Count |
 |---|---:|
-| Done | 29 |
-| Queue | 870 |
+| Done | 30 |
+| Queue | 869 |
 
 ## Done
 
@@ -52,7 +52,7 @@ Run `ruby scripts/catalog.rb --write` after changing the published catalog to re
 24. [x] `inference-serving` — Quantization, vLLM, llama.cpp, batching.
 25. [x] `gpu-systems` — CUDA mental model, mixed precision, profiling.
 26. [x] `distributed-training` — Data parallel, FSDP, multi-node.
-27. [ ] `compression` — Distillation, pruning, small models.
+27. [x] `compression` — Distillation, pruning, small models.
 28. [ ] `coding-agents` — Repo agents, patches, test loops.
 29. [ ] `embodied-ai` — Robotics, sim, vision-action.
 30. [ ] `become-ml-engineer` — Job-shaped path: ship a model end to end.

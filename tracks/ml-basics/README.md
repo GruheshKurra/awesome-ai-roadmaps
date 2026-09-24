@@ -1,12 +1,12 @@
 # ML Basics
 
-Goal: Classic supervised and unsupervised learning.
+Goal: Fit and evaluate regression and classification models, then explore clustering and dimensionality reduction.
 
-Prereqs: Python for ML and Math for ML.
+Prereqs: [Python for ML](../python-for-ml/) and [Math for ML](../math-for-ml/).
 
 Status: done
 
-Work through the steps in order. Bold links open YouTube.
+Use cross-validation to compare models and keep a separate test set for the final evaluation. Fit preprocessing on training data only; step 5 explains how pipelines keep it inside each training fold.
 
 | Step | Concept | **YouTube** | Read |
 | ---: | --- | --- | --- |

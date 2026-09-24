@@ -2,7 +2,7 @@
 
 Goal: Connect vision and language with contrastive encoders, then generative VLMs (Flamingo, BLIP-2, LLaVA), and finally joint spaces across many modalities.
 
-Prereqs: Deep Learning. Computer Vision and LLMs help.
+Prereqs: [Deep Learning](../deep-learning/), plus familiarity with vision encoders from [Computer Vision](../computer-vision/) and transformers from [LLMs](../llms/).
 
 Status: done
 

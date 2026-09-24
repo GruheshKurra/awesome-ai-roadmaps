@@ -162,6 +162,10 @@ defaults:
       path: tracks/distributed-training
     values:
       description: "Distributed Training roadmap: DDP, torchrun, multi-node training, FSDP2, tensor and pipeline parallelism. Free videos, papers, and chapters in learning order."
+  - scope:
+      path: tracks/compression
+    values:
+      description: "Model Compression roadmap: Pruning, quantization, distillation, MobileNetV2, sparse inference. Free videos, papers, and chapters in learning order."
   # END CATALOG DESCRIPTIONS
 
 track_nav:
@@ -223,6 +227,8 @@ track_nav:
     label: "GPU Systems"
   - slug: distributed-training
     label: "Distributed Training"
+  - slug: compression
+    label: "Model Compression"
 
 exclude:
   - LICENSE

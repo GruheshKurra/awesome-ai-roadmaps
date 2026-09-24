@@ -85,3 +85,5 @@ tracks/*
 !tracks/gpu-systems/**
 !tracks/distributed-training/
 !tracks/distributed-training/**
+!tracks/compression/
+!tracks/compression/**
