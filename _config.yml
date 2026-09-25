@@ -91,6 +91,10 @@ defaults:
     values:
       description: "Agents & Tooling roadmap: Tool use, ReAct, memory, browser/computer-use. Free videos, papers, and chapters in learning order."
   - scope:
+      path: tracks/coding-agents
+    values:
+      description: "Coding Agents roadmap: Repository context, edit formats, test loops, SWE-agent, Agentless, patch evaluation. Free videos, papers, and chapters in learning order."
+  - scope:
       path: tracks/ai-tools
     values:
       description: "AI Tools roadmap: Cursor, Claude Code, local models, MCP, hosted demos. Free videos, papers, and chapters in learning order."
@@ -121,7 +125,7 @@ defaults:
   - scope:
       path: tracks/graph-ml
     values:
-      description: "Graph ML roadmap: Node embeddings, GCN, GraphSAGE, GAT, GIN, TransE. Free videos, papers, and chapters in learning order."
+      description: "Graph ML roadmap: Node embeddings, GCN, PyTorch Geometric, GraphSAGE, GAT, GIN, TransE. Free videos, papers, and chapters in learning order."
   - scope:
       path: tracks/recsys
     values:
@@ -191,6 +195,8 @@ track_nav:
     label: "RAG"
   - slug: agents-tooling
     label: "Agents & Tooling"
+  - slug: coding-agents
+    label: "Coding Agents"
   - slug: ai-tools
     label: "AI Tools"
   - slug: prompt-context

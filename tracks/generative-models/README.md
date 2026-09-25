@@ -2,7 +2,7 @@
 
 Goal: Learn how models sample new data: autoregressive likelihoods, VAEs, GANs, normalizing flows, then diffusion and flow matching.
 
-Prereqs: Deep Learning. Computer Vision helps for the image papers.
+Prereqs: [Deep Learning](../deep-learning/), plus probability and calculus from [Math for ML](../math-for-ml/). [Computer Vision](../computer-vision/) helps for the image papers.
 
 Status: done
 

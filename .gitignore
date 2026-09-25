@@ -87,3 +87,5 @@ tracks/*
 !tracks/distributed-training/**
 !tracks/compression/
 !tracks/compression/**
+!tracks/coding-agents/
+!tracks/coding-agents/**
