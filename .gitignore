@@ -89,3 +89,5 @@ tracks/*
 !tracks/compression/**
 !tracks/coding-agents/
 !tracks/coding-agents/**
+!tracks/embodied-ai/
+!tracks/embodied-ai/**

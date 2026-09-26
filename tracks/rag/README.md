@@ -6,7 +6,7 @@ Prereqs: [Python for ML](../python-for-ml/) and [LLMs](../llms/).
 
 Status: done
 
-In step 8, use the guide's Local Models (Ollama) option for the evaluator and a locally run RAG system.
+Step 6 uses local embeddings, PostgreSQL/pgvector, and llama.cpp. In step 8, use the guide's Local Models (Ollama) option for the evaluator and a locally run RAG system.
 
 | Step | Concept | **YouTube** | Read |
 | ---: | --- | --- | --- |
@@ -15,6 +15,6 @@ In step 8, use the guide's Local Models (Ollama) option for the evaluator and a 
 | 3 | Embeddings for retrieval | **[James Briggs — Intro to Sentence Embeddings with Transformers](https://www.youtube.com/watch?v=WS1uVMGhlWQ)** | |
 | 4 | Chunking strategy | | [Weaviate — Chunking Strategies to Improve LLM RAG Pipeline Performance](https://weaviate.io/blog/chunking-strategies-for-rag) |
 | 5 | Vector indexes and approximate nearest neighbor search | | [Pinecone — Vector Indexes](https://www.pinecone.io/learn/series/faiss/vector-indexes/) |
-| 6 | Building RAG components from scratch | | [LlamaIndex — Building RAG from Scratch](https://developers.llamaindex.ai/python/framework/optimizing/building_rag_from_scratch/) |
+| 6 | Build ingestion, retrieval, and generation with local components | | [LlamaIndex — Building RAG from Scratch (Open-source only!)](https://developers.llamaindex.ai/python/examples/low_level/oss_ingestion_retrieval/) |
 | 7 | Evaluating RAG without ground truth | | [Es et al. 2023 — Ragas: Automated Evaluation of Retrieval Augmented Generation](https://arxiv.org/abs/2309.15217) |
 | 8 | Run evaluations and save results | | [Ragas — Evaluation quickstart with a local-model option](https://docs.ragas.io/en/stable/getstarted/quickstart/) |

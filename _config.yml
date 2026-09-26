@@ -123,6 +123,10 @@ defaults:
     values:
       description: "Reinforcement Learning roadmap: MDPs, Q-learning, DQN, policy gradients, PPO, SAC. Free videos, papers, and chapters in learning order."
   - scope:
+      path: tracks/embodied-ai
+    values:
+      description: "Embodied AI roadmap: Robot simulation, imitation learning, ACT, diffusion policies, OpenVLA, sim-to-real transfer. Free videos, papers, and chapters in learning order."
+  - scope:
       path: tracks/graph-ml
     values:
       description: "Graph ML roadmap: Node embeddings, GCN, PyTorch Geometric, GraphSAGE, GAT, GIN, TransE. Free videos, papers, and chapters in learning order."
@@ -211,6 +215,8 @@ track_nav:
     label: "Generative Models"
   - slug: reinforcement-learning
     label: "Reinforcement Learning"
+  - slug: embodied-ai
+    label: "Embodied AI"
   - slug: graph-ml
     label: "Graph ML"
   - slug: recsys

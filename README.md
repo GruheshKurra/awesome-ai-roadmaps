@@ -1,6 +1,6 @@
 # Awesome AI Roadmaps [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-Free AI and machine learning roadmaps, from Python and math to deep learning, LLMs, and AI safety. Each step links to a specific video, paper, or chapter in learning order. 31 tracks, 305 steps.
+Free AI and machine learning roadmaps, from Python and math to deep learning, LLMs, and AI safety. Each step links to a specific video, paper, or chapter in learning order. 32 tracks, 313 steps.
 
 Read on [the website](https://gruheshkurra.github.io/awesome-ai-roadmaps/) or browse the tracks below.
 
@@ -27,6 +27,7 @@ Read on [the website](https://gruheshkurra.github.io/awesome-ai-roadmaps/) or br
 | [Multimodal](tracks/multimodal/) | CLIP, Flamingo, BLIP-2, LLaVA, ImageBind. | 11 |
 | [Generative Models](tracks/generative-models/) | VAE, GAN, flows, diffusion, flow matching. | 12 |
 | [Reinforcement Learning](tracks/reinforcement-learning/) | MDPs, Q-learning, DQN, policy gradients, PPO, SAC. | 11 |
+| [Embodied AI](tracks/embodied-ai/) | Robot simulation, imitation learning, ACT, diffusion policies, OpenVLA, sim-to-real transfer. | 8 |
 | [Graph ML](tracks/graph-ml/) | Node embeddings, GCN, PyTorch Geometric, GraphSAGE, GAT, GIN, TransE. | 12 |
 | [Recommender Systems](tracks/recsys/) | Collaborative filtering, matrix factorization, Wide & Deep, two-tower, SASRec. | 12 |
 | [Time Series](tracks/time-series/) | Stationarity, ARIMA, ETS, DeepAR, N-BEATS, TFT, Informer, PatchTST. | 13 |
