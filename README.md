@@ -1,6 +1,6 @@
 # Awesome AI Roadmaps [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-Free AI and machine learning roadmaps, from Python and math to deep learning, LLMs, and AI safety. Each step links to a specific video, paper, or chapter in learning order. 32 tracks, 313 steps.
+Free AI and machine learning roadmaps, from Python and math to deep learning, LLMs, and AI safety. Each step links to a specific video, paper, or chapter in learning order. 33 tracks, 323 steps.
 
 Read on [the website](https://gruheshkurra.github.io/awesome-ai-roadmaps/) or browse the tracks below.
 
@@ -16,13 +16,13 @@ Read on [the website](https://gruheshkurra.github.io/awesome-ai-roadmaps/) or br
 | [Computer Vision](tracks/computer-vision/) | CNNs, detection, segmentation, ViT. | 12 |
 | [LLMs](tracks/llms/) | Transformers, GPT family, scaling, RLHF. | 12 |
 | [From Scratch](tracks/from-scratch/) | Autograd, tokenizers, GPT, all hand-built. | 7 |
-| [Eval Harnesses](tracks/eval-harnesses/) | Benchmarks, contamination, SWE-bench, LLM-as-judge. | 8 |
+| [Eval Harnesses](tracks/eval-harnesses/) | Benchmarks, contamination, SWE-bench, LLM-as-judge, custom eval tasks. | 8 |
 | [RAG](tracks/rag/) | Embeddings, chunking, vector search, eval. | 8 |
 | [Agents & Tooling](tracks/agents-tooling/) | Tool use, ReAct, memory, browser/computer-use. | 7 |
 | [Coding Agents](tracks/coding-agents/) | Repository context, edit formats, test loops, SWE-agent, Agentless, patch evaluation. | 7 |
 | [AI Tools](tracks/ai-tools/) | Cursor, Claude Code, local models, MCP, hosted demos. | 6 |
 | [Prompting & Context](tracks/prompt-context/) | Prompt structure, chain-of-thought, context engineering. | 6 |
-| [Fine-Tuning](tracks/fine-tuning/) | LoRA, QLoRA, DPO, data for adapters. | 6 |
+| [Fine-Tuning](tracks/fine-tuning/) | LoRA, QLoRA, supervised fine-tuning, DPO, data for adapters. | 7 |
 | [Speech & Audio](tracks/speech-audio/) | Spectrograms, CTC, wav2vec, Whisper, TTS. | 11 |
 | [Multimodal](tracks/multimodal/) | CLIP, Flamingo, BLIP-2, LLaVA, ImageBind. | 11 |
 | [Generative Models](tracks/generative-models/) | VAE, GAN, flows, diffusion, flow matching. | 12 |
@@ -36,6 +36,7 @@ Read on [the website](https://gruheshkurra.github.io/awesome-ai-roadmaps/) or br
 | [Evals & Safety](tracks/evals-safety/) | Alignment, specification gaming, jailbreaks, red teaming, safety evals. | 12 |
 | [Data-Centric AI](tracks/data-centric/) | Datasheets, labeling, weak supervision, label errors, synthetic data, filtering. | 12 |
 | [MLOps](tracks/mlops/) | Data versioning, pipelines, experiment tracking, model registry, serving, monitoring. | 8 |
+| [ML Engineering Project](tracks/become-ml-engineer/) | Problem framing, data leakage, pipelines, threshold tuning, local serving, model cards. | 9 |
 | [Inference & Serving](tracks/inference-serving/) | KV cache, quantization, batching, llama.cpp, vLLM, latency and throughput. | 8 |
 | [GPU Systems](tracks/gpu-systems/) | CUDA, GPU memory, benchmarking, profiling, mixed precision, Triton kernels. | 8 |
 | [Distributed Training](tracks/distributed-training/) | DDP, torchrun, multi-node training, FSDP2, tensor and pipeline parallelism. | 7 |
@@ -46,6 +47,7 @@ Read on [the website](https://gruheshkurra.github.io/awesome-ai-roadmaps/) or br
 - **New to machine learning:** [Python for ML](tracks/python-for-ml/) → [Math for ML](tracks/math-for-ml/) → [ML Basics](tracks/ml-basics/) → [Deep Learning](tracks/deep-learning/).
 - **Build with language models:** [LLMs](tracks/llms/) → [Prompting & Context](tracks/prompt-context/) → [RAG](tracks/rag/) → [Eval Harnesses](tracks/eval-harnesses/).
 - **Implement the models:** start with [Deep Learning](tracks/deep-learning/), then follow [From Scratch](tracks/from-scratch/).
+- **Ship a first ML project:** [ML Basics](tracks/ml-basics/) → [ML Engineering Project](tracks/become-ml-engineer/) → [MLOps](tracks/mlops/).
 
 Check each track's prerequisites. Work through its numbered steps in order; use the video, reading, or both. YouTube links are bold. An empty cell means that medium is not listed.
 

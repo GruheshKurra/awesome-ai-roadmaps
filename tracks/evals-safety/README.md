@@ -2,7 +2,7 @@
 
 Goal: Learn how to frame, attack, and measure model safety, from the alignment problem, specification gaming, and goal misgeneralization through red teaming, jailbreaks, Constitutional AI, and toxicity, truthfulness, and refusal evals.
 
-Prereqs: LLMs. Eval Harnesses helps for harness tooling. Fine-Tuning helps for RLHF and preference training context.
+Prereqs: [LLMs](../llms/). [Eval Harnesses](../eval-harnesses/) helps for harness tooling. [Fine-Tuning](../fine-tuning/) helps for preference training context.
 
 Status: done
 

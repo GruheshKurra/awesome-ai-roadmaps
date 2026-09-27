@@ -1,12 +1,12 @@
 # Eval Harnesses
 
-Goal: Unit tests for models, SWE-bench-style harnesses, regression evals.
+Goal: Choose LLM benchmarks, recognize contamination, and run repeatable evaluations with custom tasks and metrics.
 
-Prereqs: LLMs.
+Prereqs: [LLMs](../llms/) and [Python for ML](../python-for-ml/), plus basic command-line use.
 
 Status: done
 
-Work through the steps in order. Bold links open YouTube.
+For the hands-on steps, use the harness's local Hugging Face backend with a model that fits your hardware. Save the model revision, task configuration, scores, and sample outputs so you can compare runs and inspect failures.
 
 | Step | Concept | **YouTube** | Read |
 | ---: | --- | --- | --- |
@@ -16,5 +16,5 @@ Work through the steps in order. Bold links open YouTube.
 | 4 | Functional-correctness code evals | | [Chen et al. 2021 — Evaluating Large Language Models Trained on Code (HumanEval)](https://arxiv.org/abs/2107.03374) |
 | 5 | Repo-level agent evals | **[How SWE-bench Changed the Way We Test AI Coders](https://www.youtube.com/watch?v=uamd4C7AFXo)** | [Jimenez et al. 2023 — SWE-bench: Can Language Models Resolve Real-World GitHub Issues?](https://arxiv.org/abs/2310.06770) |
 | 6 | LLM-as-judge for open-ended tasks | | [Zheng et al. 2023 — Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena](https://arxiv.org/abs/2306.05685) |
-| 7 | Running an open eval harness | | [EleutherAI — lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness) |
-| 8 | Writing evals for your own app | | [OpenAI — evals](https://github.com/openai/evals) |
+| 7 | Run benchmarks and save scores and sample outputs | | [EleutherAI — Evaluation harness user guide](https://github.com/EleutherAI/lm-evaluation-harness/blob/main/docs/interface.md) |
+| 8 | Define custom datasets, prompts, and scoring rules | | [EleutherAI — New Task Guide](https://github.com/EleutherAI/lm-evaluation-harness/blob/main/docs/new_task_guide.md) |

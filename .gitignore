@@ -91,3 +91,5 @@ tracks/*
 !tracks/coding-agents/**
 !tracks/embodied-ai/
 !tracks/embodied-ai/**
+!tracks/become-ml-engineer/
+!tracks/become-ml-engineer/**

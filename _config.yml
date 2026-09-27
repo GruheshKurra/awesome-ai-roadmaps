@@ -81,7 +81,7 @@ defaults:
   - scope:
       path: tracks/eval-harnesses
     values:
-      description: "Eval Harnesses roadmap: Benchmarks, contamination, SWE-bench, LLM-as-judge. Free videos, papers, and chapters in learning order."
+      description: "Eval Harnesses roadmap: Benchmarks, contamination, SWE-bench, LLM-as-judge, custom eval tasks. Free videos, papers, and chapters in learning order."
   - scope:
       path: tracks/rag
     values:
@@ -105,7 +105,7 @@ defaults:
   - scope:
       path: tracks/fine-tuning
     values:
-      description: "Fine-Tuning roadmap: LoRA, QLoRA, DPO, data for adapters. Free videos, papers, and chapters in learning order."
+      description: "Fine-Tuning roadmap: LoRA, QLoRA, supervised fine-tuning, DPO, data for adapters. Free videos, papers, and chapters in learning order."
   - scope:
       path: tracks/speech-audio
     values:
@@ -158,6 +158,10 @@ defaults:
       path: tracks/mlops
     values:
       description: "MLOps roadmap: Data versioning, pipelines, experiment tracking, model registry, serving, monitoring. Free videos, papers, and chapters in learning order."
+  - scope:
+      path: tracks/become-ml-engineer
+    values:
+      description: "ML Engineering Project roadmap: Problem framing, data leakage, pipelines, threshold tuning, local serving, model cards. Free videos, papers, and chapters in learning order."
   - scope:
       path: tracks/inference-serving
     values:
@@ -233,6 +237,8 @@ track_nav:
     label: "Data-Centric AI"
   - slug: mlops
     label: "MLOps"
+  - slug: become-ml-engineer
+    label: "ML Engineering Project"
   - slug: inference-serving
     label: "Inference & Serving"
   - slug: gpu-systems
