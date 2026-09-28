@@ -93,3 +93,5 @@ tracks/*
 !tracks/embodied-ai/**
 !tracks/become-ml-engineer/
 !tracks/become-ml-engineer/**
+!tracks/become-researcher/
+!tracks/become-researcher/**

@@ -12,8 +12,8 @@ Run `ruby scripts/catalog.rb --write` after changing the published catalog to re
 
 | | Count |
 |---|---:|
-| Done | 33 |
-| Queue | 866 |
+| Done | 34 |
+| Queue | 865 |
 
 ## Done
 
@@ -56,7 +56,7 @@ Run `ruby scripts/catalog.rb --write` after changing the published catalog to re
 28. [x] `coding-agents` — Repo agents, patches, test loops.
 29. [x] `embodied-ai` — Robotics, sim, vision-action.
 30. [x] `become-ml-engineer` — Job-shaped path: ship a model end to end.
-31. [ ] `become-researcher` — Papers, reproduce a result, write a short argument.
+31. [x] `become-researcher` — Papers, reproduce a result, write a short argument.
 
 ### Build from scratch
 

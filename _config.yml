@@ -163,6 +163,10 @@ defaults:
     values:
       description: "ML Engineering Project roadmap: Problem framing, data leakage, pipelines, threshold tuning, local serving, model cards. Free videos, papers, and chapters in learning order."
   - scope:
+      path: tracks/become-researcher
+    values:
+      description: "ML Research Practice roadmap: Paper reading, baselines, ablations, reproducibility, uncertainty, research writing. Free videos, papers, and chapters in learning order."
+  - scope:
       path: tracks/inference-serving
     values:
       description: "Inference & Serving roadmap: KV cache, quantization, batching, llama.cpp, vLLM, latency and throughput. Free videos, papers, and chapters in learning order."
@@ -239,6 +243,8 @@ track_nav:
     label: "MLOps"
   - slug: become-ml-engineer
     label: "ML Engineering Project"
+  - slug: become-researcher
+    label: "ML Research Practice"
   - slug: inference-serving
     label: "Inference & Serving"
   - slug: gpu-systems

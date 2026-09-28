@@ -2,11 +2,11 @@
 
 Goal: Learn representation learning on graphs from node embeddings through message-passing GNNs, knowledge-graph models, graph generation, and graph transformers.
 
-Prereqs: [Deep Learning](../deep-learning/) and a PyTorch training loop for the implementation step. [ML Basics](../ml-basics/) helps for the embedding and classification framing.
+Prereqs: [Deep Learning](../deep-learning/) and a PyTorch training loop for the implementation step. [ML Basics](../ml-basics/) helps for the embedding and classification framing. Review the first three steps of [LLMs](../llms/) before the graph transformer paper.
 
 Status: done
 
-Work through the steps in order. Bold links open YouTube.
+Step 6 predicts held-out node labels on a graph available during training. Step 7 introduces learning for unseen nodes; keep this distinction in mind when comparing results.
 
 | Step | Concept | **YouTube** | Read |
 | ---: | --- | --- | --- |
