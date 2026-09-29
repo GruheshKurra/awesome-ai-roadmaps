@@ -6,7 +6,7 @@ Prereqs: [ML Basics](../ml-basics/). Review GANs in [Generative Models](../gener
 
 Status: done
 
-Work through the steps in order. Bold links open YouTube.
+Step 9 puts label auditing into practice with cross-validation and a tabular classifier. Treat flagged labels as candidates for manual review before changing data or trusting evaluation scores.
 
 | Step | Concept | **YouTube** | Read |
 | ---: | --- | --- | --- |
@@ -18,7 +18,8 @@ Work through the steps in order. Bold links open YouTube.
 | 6 | Active learning for labeling | | [Settles 2009 — Active Learning Literature Survey](https://burrsettles.com/pub/settles.activelearning.pdf) |
 | 7 | Weak supervision and Snorkel | **[Ratner — Programmatically Building Training Data with Snorkel](https://www.youtube.com/watch?v=fGBGSoW-g-E)** | [Ratner et al. 2017 — Snorkel: Rapid Training Data Creation with Weak Supervision](https://arxiv.org/abs/1711.10160) |
 | 8 | Confident learning and label errors | **[Cleanlab: AI to Find and Fix Errors in ML Datasets](https://www.youtube.com/watch?v=BnOTv0f9Msk)** | [Northcutt, Jiang & Chuang 2021 — Confident Learning: Estimating Uncertainty in Dataset Labels](https://arxiv.org/abs/1911.00068) |
-| 9 | Pervasive label errors in test sets | | [Northcutt, Athalye & Mueller 2021 — Pervasive Label Errors in Test Sets Destabilize Machine Learning Benchmarks](https://arxiv.org/abs/2103.14749) |
-| 10 | Synthetic tabular data | | [Xu et al. 2019 — Modeling Tabular data using Conditional GAN](https://arxiv.org/abs/1907.00503) |
-| 11 | Deduplicating training data | | [Lee et al. 2022 — Deduplicating Training Data Makes Language Models Better](https://arxiv.org/abs/2107.06499) |
-| 12 | Filtering web-scale pretraining data | **[How to Create an LLM Dataset: FineWeb Overview](https://www.youtube.com/watch?v=vB9pHTZKoGQ)** | [Penedo et al. 2024 — The FineWeb Datasets: Decanting the Web for the Finest Text Data at Scale](https://arxiv.org/abs/2406.17557) |
+| 9 | Audit tabular labels with out-of-sample predictions | | [Cleanlab — Classification with Structured/Tabular Data and Noisy Labels](https://docs.cleanlab.ai/stable/tutorials/clean_learning/tabular.html) |
+| 10 | Pervasive label errors in test sets | | [Northcutt, Athalye & Mueller 2021 — Pervasive Label Errors in Test Sets Destabilize Machine Learning Benchmarks](https://arxiv.org/abs/2103.14749) |
+| 11 | Synthetic tabular data | | [Xu et al. 2019 — Modeling Tabular data using Conditional GAN](https://arxiv.org/abs/1907.00503) |
+| 12 | Deduplicating training data | | [Lee et al. 2022 — Deduplicating Training Data Makes Language Models Better](https://arxiv.org/abs/2107.06499) |
+| 13 | Filtering web-scale pretraining data | **[How to Create an LLM Dataset: FineWeb Overview](https://www.youtube.com/watch?v=vB9pHTZKoGQ)** | [Penedo et al. 2024 — The FineWeb Datasets: Decanting the Web for the Finest Text Data at Scale](https://arxiv.org/abs/2406.17557) |

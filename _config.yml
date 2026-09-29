@@ -153,7 +153,7 @@ defaults:
   - scope:
       path: tracks/data-centric
     values:
-      description: "Data-Centric AI roadmap: Datasheets, labeling, weak supervision, label errors, synthetic data, filtering. Free videos, papers, and chapters in learning order."
+      description: "Data-Centric AI roadmap: Datasheets, weak supervision, label auditing, synthetic data, filtering. Free videos, papers, and chapters in learning order."
   - scope:
       path: tracks/mlops
     values:
