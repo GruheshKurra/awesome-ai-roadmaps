@@ -1,12 +1,12 @@
 # Evals & Safety
 
-Goal: Learn how to frame, attack, and measure model safety, from the alignment problem, specification gaming, and goal misgeneralization through red teaming, jailbreaks, Constitutional AI, and toxicity, truthfulness, and refusal evals.
+Goal: Explain alignment failures and evaluate language-model toxicity, truthfulness, harmful compliance, and false refusals.
 
 Prereqs: [LLMs](../llms/). [Eval Harnesses](../eval-harnesses/) helps for harness tooling. [Fine-Tuning](../fine-tuning/) helps for preference training context.
 
 Status: done
 
-Work through the steps in order. Bold links open YouTube.
+Start with alignment failures, then study red teaming and safety training before comparing evaluation methods. For refusal evaluations, measure both compliance with harmful requests and rejection of harmless ones; the final two papers cover these complementary checks.
 
 | Step | Concept | **YouTube** | Read |
 | ---: | --- | --- | --- |
@@ -22,3 +22,4 @@ Work through the steps in order. Bold links open YouTube.
 | 10 | Toxicity evaluation | | [Gehman et al. 2020 — RealToxicityPrompts: Evaluating Neural Toxic Degeneration in Language Models](https://arxiv.org/abs/2009.11462) |
 | 11 | Truthfulness evaluation | | [Lin, Hilton & Evans 2021 — TruthfulQA: Measuring How Models Mimic Human Falsehoods](https://arxiv.org/abs/2109.07958) |
 | 12 | Standardized red-team and refusal evals | | [Mazeika et al. 2024 — HarmBench: A Standardized Evaluation Framework for Automated Red Teaming and Robust Refusal](https://arxiv.org/abs/2402.04249) |
+| 13 | Detect false refusals with safe prompts and unsafe contrasts | | [Röttger et al. 2024 — XSTest: A Test Suite for Identifying Exaggerated Safety Behaviours in Large Language Models](https://arxiv.org/abs/2308.01263) |

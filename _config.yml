@@ -77,7 +77,7 @@ defaults:
   - scope:
       path: tracks/from-scratch
     values:
-      description: "From Scratch roadmap: Autograd, tokenizers, GPT, all hand-built. Free videos, papers, and chapters in learning order."
+      description: "From Scratch roadmap: Autograd, tokenizers, GPT-2, LayerNorm in C, C/CUDA training. Free videos, papers, and chapters in learning order."
   - scope:
       path: tracks/eval-harnesses
     values:
@@ -149,7 +149,7 @@ defaults:
   - scope:
       path: tracks/evals-safety
     values:
-      description: "Evals & Safety roadmap: Alignment, specification gaming, jailbreaks, red teaming, safety evals. Free videos, papers, and chapters in learning order."
+      description: "Evals & Safety roadmap: Alignment, specification gaming, red teaming, toxicity, truthfulness, false refusals. Free videos, papers, and chapters in learning order."
   - scope:
       path: tracks/data-centric
     values:

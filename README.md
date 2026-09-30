@@ -1,6 +1,6 @@
 # Awesome AI Roadmaps [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-Free AI and machine learning roadmaps, from Python and math to deep learning, LLMs, and AI safety. Each step links to a specific video, paper, or chapter in learning order. 34 tracks, 332 steps.
+Free AI and machine learning roadmaps, from Python and math to deep learning, LLMs, and AI safety. Each step links to a specific video, paper, or chapter in learning order. 34 tracks, 334 steps.
 
 Read on [the website](https://gruheshkurra.github.io/awesome-ai-roadmaps/) or browse the tracks below.
 
@@ -15,7 +15,7 @@ Read on [the website](https://gruheshkurra.github.io/awesome-ai-roadmaps/) or br
 | [Deep Learning](tracks/deep-learning/) | Backprop, CNNs, RNNs, optimization. | 12 |
 | [Computer Vision](tracks/computer-vision/) | CNNs, detection, segmentation, ViT. | 12 |
 | [LLMs](tracks/llms/) | Transformers, GPT family, scaling, RLHF. | 12 |
-| [From Scratch](tracks/from-scratch/) | Autograd, tokenizers, GPT, all hand-built. | 7 |
+| [From Scratch](tracks/from-scratch/) | Autograd, tokenizers, GPT-2, LayerNorm in C, C/CUDA training. | 8 |
 | [Eval Harnesses](tracks/eval-harnesses/) | Benchmarks, contamination, SWE-bench, LLM-as-judge, custom eval tasks. | 8 |
 | [RAG](tracks/rag/) | Embeddings, chunking, vector search, eval. | 8 |
 | [Agents & Tooling](tracks/agents-tooling/) | Tool use, ReAct, memory, browser/computer-use. | 7 |
@@ -33,7 +33,7 @@ Read on [the website](https://gruheshkurra.github.io/awesome-ai-roadmaps/) or br
 | [Time Series](tracks/time-series/) | Stationarity, ARIMA, ETS, DeepAR, N-BEATS, TFT, Informer, PatchTST. | 13 |
 | [Causal ML](tracks/causal-ml/) | Potential outcomes, DAGs, propensity scores, double ML, LATE, causal forests. | 11 |
 | [Interpretability](tracks/interpretability/) | Permutation importance, PDP, LIME, SHAP, Grad-CAM, TCAV, circuits. | 13 |
-| [Evals & Safety](tracks/evals-safety/) | Alignment, specification gaming, jailbreaks, red teaming, safety evals. | 12 |
+| [Evals & Safety](tracks/evals-safety/) | Alignment, specification gaming, red teaming, toxicity, truthfulness, false refusals. | 13 |
 | [Data-Centric AI](tracks/data-centric/) | Datasheets, weak supervision, label auditing, synthetic data, filtering. | 13 |
 | [MLOps](tracks/mlops/) | Data versioning, pipelines, experiment tracking, model registry, serving, monitoring. | 8 |
 | [ML Engineering Project](tracks/become-ml-engineer/) | Problem framing, data leakage, pipelines, threshold tuning, local serving, model cards. | 9 |
