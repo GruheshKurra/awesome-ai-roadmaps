@@ -49,6 +49,7 @@ Read on [the website](https://gruheshkurra.github.io/awesome-ai-roadmaps/) or br
 - **Build with language models:** [LLMs](tracks/llms/) → [Prompting & Context](tracks/prompt-context/) → [RAG](tracks/rag/) → [Eval Harnesses](tracks/eval-harnesses/).
 - **Implement the models:** start with [Deep Learning](tracks/deep-learning/), then follow [From Scratch](tracks/from-scratch/).
 - **Ship a first ML project:** [ML Basics](tracks/ml-basics/) → [ML Engineering Project](tracks/become-ml-engineer/) → [MLOps](tracks/mlops/).
+- **Run and optimize LLMs:** [LLMs](tracks/llms/) → [Inference & Serving](tracks/inference-serving/) → [GPU Systems](tracks/gpu-systems/).
 
 Check each track's prerequisites. Work through its numbered steps in order; use the video, reading, or both. YouTube links are bold. An empty cell means that medium is not listed.
 

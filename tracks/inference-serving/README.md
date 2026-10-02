@@ -6,7 +6,7 @@ Prereqs: [Python for ML](../python-for-ml/) and [LLMs](../llms/), plus basic com
 
 Status: done
 
-Start with a small model that fits your hardware. The llama.cpp server supports CPU inference; vLLM examples need a supported hardware setup. The readings are free, and local serving avoids paid API calls. Compare memory use, response quality, latency, and throughput on the same workload.
+Start with a small model that fits your hardware. The llama.cpp server supports CPU inference; vLLM examples need a supported hardware setup. The readings are free, and local serving avoids paid API calls. Compare memory use, response quality, and throughput on the same workload. Record time to first token and inter-token latency separately. Keep cache state consistent: repeating a benchmark can reuse cached prompts and inflate throughput.
 
 | Step | Concept | **YouTube** | Read |
 | ---: | --- | --- | --- |
@@ -16,5 +16,5 @@ Start with a small model that fits your hardware. The llama.cpp server supports 
 | 4 | Serve a local model over HTTP | | [llama.cpp — Server build, requests, and health checks](https://github.com/ggml-org/llama.cpp/blob/master/tools/server/README.md) |
 | 5 | PagedAttention and KV memory sharing | | [vLLM — Serving with PagedAttention](https://blog.vllm.ai/2023/06/20/vllm.html) |
 | 6 | Serve requests with vLLM | | [vLLM — OpenAI-Compatible Server](https://docs.vllm.ai/en/latest/serving/online_serving/openai_compatible_server/) |
-| 7 | Reuse shared prompt prefixes | | [vLLM — Automatic Prefix Caching](https://docs.vllm.ai/en/latest/features/automatic_prefix_caching/) |
-| 8 | Measure throughput and token latency | | [vLLM — Benchmark CLI](https://docs.vllm.ai/en/latest/benchmarking/cli/) |
+| 7 | Reuse shared prompt prefixes during prefill | | [vLLM — Automatic Prefix Caching](https://docs.vllm.ai/en/latest/features/automatic_prefix_caching/) |
+| 8 | Measure first-token latency, inter-token latency, and throughput | | [vLLM — Benchmark CLI](https://docs.vllm.ai/en/latest/benchmarking/cli/) |
