@@ -6,7 +6,7 @@ Prereqs: [ML Basics](../ml-basics/). For neural-network attribution and circuits
 
 Status: done
 
-Work through the steps in order. Bold links open YouTube.
+Compare explanations of one prediction with effects averaged across a dataset. For PDPs, check whether correlated features create unrealistic inputs. Use the sanity checks in step 10 to test whether a saliency map depends on learned parameters and training labels.
 
 | Step | Concept | **YouTube** | Read |
 | ---: | --- | --- | --- |

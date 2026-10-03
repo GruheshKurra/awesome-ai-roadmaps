@@ -12,8 +12,8 @@ Run `ruby scripts/catalog.rb --write` after changing the published catalog to re
 
 | | Count |
 |---|---:|
-| Done | 34 |
-| Queue | 865 |
+| Done | 35 |
+| Queue | 864 |
 
 ## Done
 
@@ -65,7 +65,7 @@ Run `ruby scripts/catalog.rb --write` after changing the published catalog to re
 34. [ ] `build-llm-c` — GPT-2 training in C/CUDA with llm.c. No PyTorch.
 35. [ ] `build-nanochat` — Karpathy nanochat: a small ChatGPT-style stack trained end to end.
 36. [ ] `build-llm101n` — LLM101n: tokenizer through a tiny storyteller model in Python and C.
-37. [ ] `build-deepseek-v3` — DeepSeek-V3 report: MLA, DeepSeekMoE, multi-token prediction, training setup.
+37. [x] `build-deepseek-v3` — DeepSeek-V3 report: MLA, DeepSeekMoE, multi-token prediction, training setup.
 38. [ ] `build-deepseek-v4` — DeepSeek V4 family: MoE scale, 1M context, Engram-style memory, Flash vs Pro.
 39. [ ] `build-deepseek-r1` — R1 pipeline: cold-start SFT, GRPO, reasoning traces, distillation.
 40. [ ] `build-moe` — Mixture of experts from equations: router, experts, load-balance, aux loss.

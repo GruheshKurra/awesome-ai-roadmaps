@@ -1,6 +1,6 @@
 # Math for ML
 
-Goal: Linear algebra, calculus, probability, optimization.
+Goal: Use matrices, derivatives, gradient descent, and probability to follow basic ML models and their training objectives.
 
 Prereqs: School algebra, functions, and graphs.
 
@@ -18,5 +18,6 @@ Start with the visual lessons. Step 8 assumes basic derivatives and familiarity 
 | 6 | Chain rule | **[StatQuest — The Chain Rule](https://www.youtube.com/watch?v=wl1myxrtQHQ)** | |
 | 7 | Gradient descent | **[StatQuest — Gradient Descent, Step-by-Step](https://www.youtube.com/watch?v=sDv4f4s2SB8)** | |
 | 8 | Matrix calculus | | [The Matrix Calculus You Need For Deep Learning](https://explained.ai/matrix-calculus/) |
-| 9 | Bayes | **[StatQuest — Bayes' Theorem](https://www.youtube.com/watch?v=9wCnvr7Xw4E)** | |
-| 10 | Gaussians | **[StatQuest — The Normal Distribution](https://www.youtube.com/watch?v=rzFX5NWojp0)** | [CS229 — Probability Theory Review](https://cs229.stanford.edu/section/cs229-prob.pdf) |
+| 9 | Random variables, expectation, variance, and conditional probability | | [CS229 — Probability Theory Review](https://cs229.stanford.edu/section/cs229-prob.pdf) |
+| 10 | Bayes' theorem | **[StatQuest — Bayes' Theorem](https://www.youtube.com/watch?v=9wCnvr7Xw4E)** | |
+| 11 | Gaussian distributions | **[StatQuest — The Normal Distribution](https://www.youtube.com/watch?v=rzFX5NWojp0)** | |

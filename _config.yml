@@ -53,7 +53,7 @@ defaults:
   - scope:
       path: tracks/math-for-ml
     values:
-      description: "Math for ML roadmap: Linear algebra, calculus, probability, optimization. Free videos, papers, and chapters in learning order."
+      description: "Math for ML roadmap: Matrices, derivatives, gradient descent, random variables, Bayes. Free videos, papers, and chapters in learning order."
   - scope:
       path: tracks/nlp
     values:
@@ -74,6 +74,10 @@ defaults:
       path: tracks/llms
     values:
       description: "LLMs roadmap: Transformers, GPT family, scaling, RLHF. Free videos, papers, and chapters in learning order."
+  - scope:
+      path: tracks/build-deepseek-v3
+    values:
+      description: "DeepSeek-V3 Architecture roadmap: Sparse MoE, expert balancing, MLA, multi-token prediction, FP8 training. Free videos, papers, and chapters in learning order."
   - scope:
       path: tracks/from-scratch
     values:
@@ -199,6 +203,8 @@ track_nav:
     label: "Computer Vision"
   - slug: llms
     label: "LLMs"
+  - slug: build-deepseek-v3
+    label: "DeepSeek-V3 Architecture"
   - slug: from-scratch
     label: "From Scratch"
   - slug: eval-harnesses

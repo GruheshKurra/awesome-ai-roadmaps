@@ -95,3 +95,5 @@ tracks/*
 !tracks/become-ml-engineer/**
 !tracks/become-researcher/
 !tracks/become-researcher/**
+!tracks/build-deepseek-v3/
+!tracks/build-deepseek-v3/**
