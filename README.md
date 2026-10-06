@@ -1,6 +1,6 @@
 # Awesome AI Roadmaps [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-Free AI and machine learning roadmaps, from Python and math to deep learning, LLMs, and AI safety. Each step links to a specific video, paper, or chapter in learning order. 35 tracks, 341 steps.
+Free AI and machine learning roadmaps, from Python and math to deep learning, LLMs, and AI safety. Each step links to a specific video, paper, or chapter in learning order. 35 tracks, 342 steps.
 
 Read on [the website](https://gruheshkurra.github.io/awesome-ai-roadmaps/) or browse the tracks below.
 
@@ -14,7 +14,7 @@ Read on [the website](https://gruheshkurra.github.io/awesome-ai-roadmaps/) or br
 | [ML Basics](tracks/ml-basics/) | Regression, trees, SVM, clustering. | 12 |
 | [Deep Learning](tracks/deep-learning/) | Backprop, CNNs, RNNs, optimization. | 12 |
 | [Computer Vision](tracks/computer-vision/) | CNNs, detection, segmentation, ViT. | 12 |
-| [LLMs](tracks/llms/) | Transformers, GPT family, scaling, RLHF. | 12 |
+| [LLMs](tracks/llms/) | Transformers, GPT, decoding, sampling, scaling, RLHF. | 13 |
 | [DeepSeek-V3 Architecture](tracks/build-deepseek-v3/) | Sparse MoE, expert balancing, MLA, multi-token prediction, FP8 training. | 6 |
 | [From Scratch](tracks/from-scratch/) | Autograd, tokenizers, GPT-2, LayerNorm in C, C/CUDA training. | 8 |
 | [Eval Harnesses](tracks/eval-harnesses/) | Benchmarks, contamination, SWE-bench, LLM-as-judge, custom eval tasks. | 8 |

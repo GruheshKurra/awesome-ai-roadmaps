@@ -73,7 +73,7 @@ defaults:
   - scope:
       path: tracks/llms
     values:
-      description: "LLMs roadmap: Transformers, GPT family, scaling, RLHF. Free videos, papers, and chapters in learning order."
+      description: "LLMs roadmap: Transformers, GPT, decoding, sampling, scaling, RLHF. Free videos, papers, and chapters in learning order."
   - scope:
       path: tracks/build-deepseek-v3
     values:
