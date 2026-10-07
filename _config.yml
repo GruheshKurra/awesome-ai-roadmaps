@@ -61,7 +61,7 @@ defaults:
   - scope:
       path: tracks/ml-basics
     values:
-      description: "ML Basics roadmap: Regression, trees, SVM, clustering. Free videos, papers, and chapters in learning order."
+      description: "ML Basics roadmap: Regression, cross-validation, classification metrics, trees, SVM, clustering, PCA. Free videos, papers, and chapters in learning order."
   - scope:
       path: tracks/deep-learning
     values:

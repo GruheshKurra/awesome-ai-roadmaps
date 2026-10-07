@@ -11,7 +11,7 @@ Read on [the website](https://gruheshkurra.github.io/awesome-ai-roadmaps/) or br
 | [Python for ML](tracks/python-for-ml/) | NumPy, notebooks, pandas, plots. | 9 |
 | [Math for ML](tracks/math-for-ml/) | Matrices, derivatives, gradient descent, random variables, Bayes. | 11 |
 | [Learn NLP](tracks/nlp/) | Word vectors through BERT. | 14 |
-| [ML Basics](tracks/ml-basics/) | Regression, trees, SVM, clustering. | 12 |
+| [ML Basics](tracks/ml-basics/) | Regression, cross-validation, classification metrics, trees, SVM, clustering, PCA. | 12 |
 | [Deep Learning](tracks/deep-learning/) | Backprop, CNNs, RNNs, optimization. | 12 |
 | [Computer Vision](tracks/computer-vision/) | CNNs, detection, segmentation, ViT. | 12 |
 | [LLMs](tracks/llms/) | Transformers, GPT, decoding, sampling, scaling, RLHF. | 13 |
