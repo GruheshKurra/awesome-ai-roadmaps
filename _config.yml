@@ -57,7 +57,7 @@ defaults:
   - scope:
       path: tracks/nlp
     values:
-      description: "NLP roadmap: Word vectors through BERT. Free videos, papers, and chapters in learning order."
+      description: "NLP roadmap: Word vectors, tokenization, parsing, RNNs, transformers, BERT. Free videos, papers, and chapters in learning order."
   - scope:
       path: tracks/ml-basics
     values:
