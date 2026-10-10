@@ -2,7 +2,7 @@
 
 Goal: Represent audio for models, then cover ASR (CTC, wav2vec, Whisper) and synthesis (WaveNet, Tacotron 2), plus controllable music generation.
 
-Prereqs: Deep Learning.
+Prereqs: [Deep Learning](../deep-learning/).
 
 Status: done
 

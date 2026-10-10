@@ -2,7 +2,7 @@
 
 Goal: Learn sequential decision making from MDPs and value methods through deep RL, policy gradients, and model-based planning. RLHF appears only as a short pointer at the end.
 
-Prereqs: Deep Learning. Probability from Math for ML helps.
+Prereqs: [Deep Learning](../deep-learning/). Review probability in [Math for ML](../math-for-ml/).
 
 Status: done
 

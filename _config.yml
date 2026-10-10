@@ -141,7 +141,7 @@ defaults:
   - scope:
       path: tracks/time-series
     values:
-      description: "Time Series roadmap: Stationarity, ARIMA, ETS, DeepAR, N-BEATS, TFT, Informer, PatchTST. Free videos, papers, and chapters in learning order."
+      description: "Time Series roadmap: Time-aware evaluation, naïve baselines, ARIMA, ETS, DeepAR, N-BEATS, TFT, PatchTST. Free videos, papers, and chapters in learning order."
   - scope:
       path: tracks/causal-ml
     values:
