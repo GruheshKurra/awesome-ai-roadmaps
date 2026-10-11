@@ -1,12 +1,12 @@
 # Agents & Tooling
 
-Goal: Tool use, ReAct, memory, and browser/computer-use agents.
+Goal: Understand tool use, ReAct, memory, and browser/computer-use agents, then evaluate whether they complete tasks correctly.
 
 Prereqs: [LLMs](../llms/) and [Python for ML](../python-for-ml/) for the implementation steps.
 
 Status: done
 
-Work through the steps in order. Bold links open YouTube.
+Start with the workflow and agent distinction, then study tool use and memory before browser and computer interaction. Finish by checking task outcomes with WebArena; its paper explains reproducible environments and functional-correctness evaluation. For general benchmark design, continue with [Eval Harnesses](../eval-harnesses/). Bold links open YouTube.
 
 | Step | Concept | **YouTube** | Read |
 | ---: | --- | --- | --- |
@@ -17,3 +17,4 @@ Work through the steps in order. Bold links open YouTube.
 | 5 | Long-term memory for agents | | [Packer et al. 2023 — MemGPT: Towards LLMs as Operating Systems](https://arxiv.org/abs/2310.08560) |
 | 6 | Browser agents | **[Build an AI Agent that Browses the Web](https://www.youtube.com/watch?v=oW0tf0IXX5U)** | [browser-use — make websites accessible to AI agents](https://github.com/browser-use/browser-use) |
 | 7 | Computer-use agents | **[Claude — Computer use for coding](https://www.youtube.com/watch?v=vH2f7cjXjKI)** | [Claude Docs — Computer use tool](https://platform.claude.com/docs/en/agents-and-tools/tool-use/computer-use-tool) |
+| 8 | Evaluate browser agents by task completion | | [Zhou et al. 2023 — WebArena: A Realistic Web Environment for Building Autonomous Agents](https://arxiv.org/abs/2307.13854) |

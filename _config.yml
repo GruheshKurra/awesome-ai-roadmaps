@@ -93,7 +93,7 @@ defaults:
   - scope:
       path: tracks/agents-tooling
     values:
-      description: "Agents & Tooling roadmap: Tool use, ReAct, memory, browser/computer-use. Free videos, papers, and chapters in learning order."
+      description: "Agents & Tooling roadmap: Tool use, ReAct, memory, browser/computer-use, task-completion evaluation. Free videos, papers, and chapters in learning order."
   - scope:
       path: tracks/coding-agents
     values:
