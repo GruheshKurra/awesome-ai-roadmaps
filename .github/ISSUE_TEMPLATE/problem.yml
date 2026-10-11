@@ -1,11 +1,11 @@
 name: Report a learning or link problem
 description: Report an unavailable resource, paywall, missing prerequisite, or confusing step.
-title: "Track problem: "
+title: "Problem: "
 body:
   - type: input
-    id: track
+    id: row
     attributes:
-      label: Track URL and step number
+      label: Which README row (concept name)?
     validations:
       required: true
   - type: dropdown

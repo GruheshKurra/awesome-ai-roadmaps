@@ -22,10 +22,8 @@ jobs:
       pages: read
     steps:
       - uses: actions/checkout@v4
-      - name: Check catalog
-        run: ruby scripts/catalog.rb
-      - name: Test catalog checks
-        run: python3 -m unittest discover -s scripts/tests
+      - name: Check README and link ledger
+        run: python3 scripts/check.py
       - uses: actions/configure-pages@v5
         if: github.event_name != 'pull_request'
       - uses: actions/jekyll-build-pages@v1
@@ -34,8 +32,8 @@ jobs:
           destination: ./_site
       - name: Drop raw markdown copies
         run: sudo find _site -name '*.md' -delete
-      - name: Check built site
-        run: python3 scripts/check_site.py _site
+      - name: Check built site has the main pages
+        run: test -s _site/index.html && test -s _site/tips/index.html && test -s _site/contributing/index.html
       - uses: actions/upload-pages-artifact@v3
         if: github.event_name != 'pull_request'
 

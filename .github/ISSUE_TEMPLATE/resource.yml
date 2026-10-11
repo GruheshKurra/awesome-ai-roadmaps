@@ -5,8 +5,8 @@ body:
   - type: input
     id: track
     attributes:
-      label: Track and concept
-      description: Name the track and the step this would add or improve.
+      label: Concept
+      description: Which concept is this for? Name the README row it would replace, or the gap it fills.
     validations:
       required: true
   - type: input
@@ -20,7 +20,7 @@ body:
     id: reason
     attributes:
       label: Why this resource?
-      description: Explain what it teaches and what it improves over the current selection.
+      description: Explain what it teaches and why it is better than the current pick.
     validations:
       required: true
   - type: checkboxes
