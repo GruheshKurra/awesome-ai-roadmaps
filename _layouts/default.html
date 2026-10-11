@@ -4,129 +4,25 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
-  <meta name="theme-color" content="#0d0c10">
-  <title>{% if page.url == "/" %}{{ site.title | escape }}{% else %}{{ page.title | escape }} · {{ site.title | escape }}{% endif %}</title>
+  <title>{% if page.url == "/" %}{{ site.title | escape }}: one good video per AI concept{% else %}{{ page.title | escape }} · {{ site.title | escape }}{% endif %}</title>
   {% seo title=false %}
   <link rel="icon" type="image/svg+xml" href="{{ '/assets/favicon.svg' | relative_url }}">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;700&display=swap">
   <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
 </head>
 <body>
   <a class="skip" href="#content">Skip to content</a>
-  <div class="shell">
-    {% include sidebar.html %}
-    <div class="pane">
-      <header class="top">
-        {% if page.url == "/" %}
-          <span class="top-note">Home</span>
-        {% else %}
-          <a class="back" href="{{ '/' | relative_url }}">
-            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M10 3 5 8l5 5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            Home
-          </a>
-        {% endif %}
-        {% assign repo = site.github.repository_url | default: "https://github.com/GruheshKurra/awesome-ai-roadmaps" %}
-        <div class="top-links">
-          <a class="top-github" href="{{ repo }}">
-            <svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0a8 8 0 0 0-2.53 15.59c.4.07.55-.17.55-.38v-1.49c-2.23.48-2.7-1.07-2.7-1.07-.36-.93-.89-1.17-.89-1.17-.72-.5.06-.49.06-.49.8.06 1.23.83 1.23.83.71 1.23 1.87.87 2.33.67.07-.52.28-.87.5-1.08-1.78-.2-3.65-.89-3.65-3.96 0-.88.31-1.59.83-2.15-.08-.2-.36-1.02.08-2.14 0 0 .68-.22 2.2.83a7.6 7.6 0 0 1 4 0c1.53-1.05 2.2-.83 2.2-.83.44 1.12.17 1.94.08 2.14.52.56.83 1.27.83 2.15 0 3.08-1.88 3.75-3.66 3.95.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8 8 0 0 0 8 0Z"/></svg>
-            GitHub
-          </a>
-          <a class="top-star" href="{{ repo }}">
-            <svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 .5 10.09 5 15 5.68l-3.5 3.44L12.35 14 8 11.63 3.65 14l.85-4.88L1 5.68 5.91 5 8 .5Z"/></svg>
-            Star
-          </a>
-        </div>
-      </header>
-      <main class="page{% if page.url == "/" %} is-home{% endif %}{% if page.dir contains "/tracks/" %} is-track{% endif %}" id="content" tabindex="-1">
-        {% if page.dir contains "/tracks/" %}
-          <p class="eyebrow">Track</p>
-        {% endif %}
-        <h1>
-          {{ page.title | escape }}
-          {% if page.url == "/" %}
-            <a class="badge" href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome"></a>
-          {% endif %}
-        </h1>
-        {{ content }}
-        {% if page.dir contains "/tracks/" %}
-          <p class="track-help">Found a broken link or an unclear step? <a href="{{ repo }}/issues/new?template=problem.yml&amp;track={{ page.url | absolute_url | uri_escape }}">Report a problem with this track</a>.</p>
-        {% endif %}
-      </main>
-    </div>
-  </div>
-  <script>
-    (() => {
-      const toggle = document.querySelector('.nav-toggle');
-      const menu = document.getElementById('track-menu');
-      const mobile = window.matchMedia('(max-width: 800px)');
-      function setMenu(open) {
-        menu.hidden = !open;
-        toggle.setAttribute('aria-expanded', String(open));
-      }
-      function resizeMenu() {
-        const focusInMenu = menu.contains(document.activeElement);
-        const focusOnToggle = document.activeElement === toggle;
-        toggle.hidden = !mobile.matches;
-        setMenu(!mobile.matches);
-        if (mobile.matches && focusInMenu) toggle.focus();
-        else if (!mobile.matches && focusOnToggle) menu.querySelector('a').focus();
-      }
-      toggle.addEventListener('click', () => setMenu(menu.hidden));
-      menu.addEventListener('keydown', event => {
-        if (event.key === 'Escape' && mobile.matches) {
-          setMenu(false);
-          toggle.focus();
-        }
-      });
-      mobile.addEventListener('change', resizeMenu);
-      resizeMenu();
-
-      document.querySelectorAll('.page table').forEach(table => {
-        const region = document.createElement('div');
-        region.className = 'table-scroll';
-        region.tabIndex = 0;
-        region.setAttribute('role', 'region');
-        region.setAttribute('aria-label', document.querySelector('.is-track') ? 'Learning resources' : 'Learning tracks');
-        table.before(region);
-        region.append(table);
-        table.querySelectorAll('thead th').forEach(cell => cell.scope = 'col');
-      });
-
-      const catalog = document.querySelector('.is-home table');
-      if (!catalog) return;
-      const rows = Array.from(catalog.tBodies[0].rows);
-      const searchable = rows.map(row => row.textContent.toLocaleLowerCase());
-      const search = document.createElement('form');
-      search.className = 'catalog-search';
-      search.setAttribute('role', 'search');
-      search.innerHTML = '<label for="track-search">Find a track</label>' +
-        '<div class="search-controls"><input id="track-search" type="search" placeholder="Try Python, transformers, or safety" aria-describedby="search-status" aria-controls="catalog-table">' +
-        '<button type="reset">Clear</button></div><p id="search-status" role="status" aria-live="polite" aria-atomic="true"></p>';
-      catalog.id = 'catalog-table';
-      catalog.parentElement.before(search);
-      const input = search.querySelector('input');
-      const status = search.querySelector('[role="status"]');
-      function filterTracks() {
-        const terms = input.value.trim().toLocaleLowerCase().split(/\s+/).filter(Boolean);
-        let count = 0;
-        rows.forEach((row, index) => {
-          row.hidden = !terms.every(term => searchable[index].includes(term));
-          if (!row.hidden) count++;
-        });
-        status.textContent = count ? `${count} of ${rows.length} tracks` : 'No tracks match. Try another term or clear the search.';
-      }
-      input.addEventListener('input', filterTracks);
-      search.addEventListener('submit', event => event.preventDefault());
-      search.addEventListener('reset', event => {
-        event.preventDefault();
-        input.value = '';
-        filterTracks();
-        input.focus();
-      });
-      filterTracks();
-    })();
-  </script>
+  <header class="top">
+    <a class="brand" href="{{ '/' | relative_url }}">Awesome AI Roadmaps</a>
+    <nav aria-label="Site">
+      <a href="{{ '/tips/' | relative_url }}">Tips</a>
+      <a href="{{ '/contributing/' | relative_url }}">Contribute</a>
+      <a class="star" href="https://github.com/GruheshKurra/awesome-ai-roadmaps">Star on GitHub</a>
+    </nav>
+  </header>
+  <main id="content" tabindex="-1">
+    {% unless content contains '<h1' %}<h1>{{ page.title | escape }}</h1>{% endunless %}
+    {{ content }}
+  </main>
+  <footer>Free resources, checked daily. <a href="https://github.com/GruheshKurra/awesome-ai-roadmaps/issues/new/choose">Suggest a better pick</a>.</footer>
 </body>
 </html>

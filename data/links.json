@@ -1,0 +1,612 @@
+{
+ "http://joschu.net/blog/opinionated-guide-ml-research.html": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://aider.chat/docs/repomap.html": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://arxiv.org/abs/1312.5602": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://arxiv.org/abs/1312.6114": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://arxiv.org/abs/1406.2661": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://arxiv.org/abs/1412.6980": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://arxiv.org/abs/1502.03167": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://arxiv.org/abs/1512.03385": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://arxiv.org/abs/1607.06450": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://arxiv.org/abs/1705.07874": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://arxiv.org/abs/1707.06347": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://arxiv.org/abs/1911.00068": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://arxiv.org/abs/2005.11401": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://arxiv.org/abs/2010.11929": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://arxiv.org/abs/2103.00020": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://arxiv.org/abs/2106.09685": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://arxiv.org/abs/2112.10752": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://arxiv.org/abs/2203.02155": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://arxiv.org/abs/2203.15556": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://arxiv.org/abs/2205.13504": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://arxiv.org/abs/2210.02747": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://arxiv.org/abs/2212.04356": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://arxiv.org/abs/2305.18290": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://arxiv.org/abs/2306.05685": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://arxiv.org/abs/2309.15217": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://arxiv.org/abs/2406.17557": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://blog.vllm.ai/2023/06/20/vllm.html": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://cs.uwaterloo.ca/~brecht/courses/854-http-video-2012/readings/keshav-paper-reading.pdf": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://cs231n.github.io/convolutional-networks/": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://cs231n.github.io/optimization-2/": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://deepmind.google/blog/specification-gaming-the-flip-side-of-ai-ingenuity/": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://developers.google.com/machine-learning/crash-course/classification/accuracy-precision-recall": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://developers.google.com/machine-learning/guides/rules-of-ml": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://distill.pub/2020/circuits/zoom-in/": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://distill.pub/2021/gnn-intro/": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://docs.nvidia.com/deeplearning/performance/dl-performance-gpu-background/index.html": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://docs.pytorch.org/tutorials/recipes/recipes/amp_recipe.html": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://en.wikipedia.org/wiki/Stationary_process": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://explained.ai/matrix-calculus/": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://huggingface.co/blog/how-to-generate": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://huggingface.co/docs/transformers/cache_explanation": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://jalammar.github.io/illustrated-transformer/": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://ketanhdoshi.github.io/Audio-Mel/": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://lilianweng.github.io/posts/2018-02-19-rl-overview/": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://lilianweng.github.io/posts/2018-04-08-policy-gradient/": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://lilianweng.github.io/posts/2021-07-11-diffusion-models/": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://matheusfacure.github.io/python-causality-handbook/04-Graphical-Causal-Models.html": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://matheusfacure.github.io/python-causality-handbook/11-Propensity-Score.html": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://modelcontextprotocol.io/introduction": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://numpy.org/doc/stable/user/absolute_beginners.html": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://numpy.org/doc/stable/user/basics.broadcasting.html": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://pandas.pydata.org/docs/user_guide/10min.html": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://research.google.com/pubs/archive/aad9f93b86b7addfea4c419b9100c6cdd26cacea.pdf": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://scikit-learn.org/stable/common_pitfalls.html": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://scikit-learn.org/stable/modules/cross_validation.html": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://spinningup.openai.com/en/latest/spinningup/rl_intro.html": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/45530.pdf": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://weaviate.io/blog/chunking-strategies-for-rag": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://web.stanford.edu/~jurafsky/slp3/7.pdf": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://www.anthropic.com/research/building-effective-agents": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://www.microsoft.com/en-us/research/wp-content/uploads/2015/02/simon-peyton-jones_paper.pdf": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://www.youtube.com/watch?v=2pWv7GOvuf0": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://www.youtube.com/watch?v=2uvysYbKdjM": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://www.youtube.com/watch?v=344w5h24-h8": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://www.youtube.com/watch?v=6OBtO9niT00": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://www.youtube.com/watch?v=7ArmBVF2dCs": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://www.youtube.com/watch?v=9GHCiiDLHQ4": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://www.youtube.com/watch?v=9wCnvr7Xw4E": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://www.youtube.com/watch?v=BnOTv0f9Msk": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://www.youtube.com/watch?v=CDjjaTALI68": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://www.youtube.com/watch?v=EWvNQjAaOHw": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://www.youtube.com/watch?v=EuBBz3bI-aA": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://www.youtube.com/watch?v=FgakZw6K1QQ": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://www.youtube.com/watch?v=GB9ByFAIAH4": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://www.youtube.com/watch?v=J4Wdy0Wc_xQ": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://www.youtube.com/watch?v=J87hffSMB60": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://www.youtube.com/watch?v=JAB_plj2rbA": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://www.youtube.com/watch?v=JXQT_vxqwIs": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://www.youtube.com/watch?v=KHZVXao4qXs": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://www.youtube.com/watch?v=KV5gbOmHbjU": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://www.youtube.com/watch?v=Kdsp6soqA7o": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://www.youtube.com/watch?v=KuXjwB4LzSA": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://www.youtube.com/watch?v=M87HSyA51-8": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://www.youtube.com/watch?v=MEt6rrxH8W4": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://www.youtube.com/watch?v=P6sfmUTpUmc": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://www.youtube.com/watch?v=PFDu9oVAE-g": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://www.youtube.com/watch?v=Su2Bj37rAFs": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://www.youtube.com/watch?v=T-D1OfcDW1M": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://www.youtube.com/watch?v=T9XSU0pKX2E": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://www.youtube.com/watch?v=TrdevFK_am4": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://www.youtube.com/watch?v=VK51E3gHENc": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://www.youtube.com/watch?v=VMj-3S1tku0": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://www.youtube.com/watch?v=VUwAGLM6K_8": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://www.youtube.com/watch?v=WK_Nr4tUtl8": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://www.youtube.com/watch?v=YQDMlNIQSA8": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://www.youtube.com/watch?v=ZILIbUvp5lk": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://www.youtube.com/watch?v=aircAruvnKk": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://www.youtube.com/watch?v=cO6Ly7mIziQ": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://www.youtube.com/watch?v=eMlx5fFNoYc": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://www.youtube.com/watch?v=eyxmSmjmNS0": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://www.youtube.com/watch?v=fSytzGwwBVw": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://www.youtube.com/watch?v=hKVhRA9kfeM": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://www.youtube.com/watch?v=jQOBaGka7O0": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://www.youtube.com/watch?v=k2pD3k1485A": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://www.youtube.com/watch?v=kCc8FmEb1nY": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://www.youtube.com/watch?v=kYB8IZa5AuE": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://www.youtube.com/watch?v=l8pRSuU81PU": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://www.youtube.com/watch?v=o-pZk5R0TZg": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://www.youtube.com/watch?v=oY-j2Wof51c": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://www.youtube.com/watch?v=rFwQDDbYTm4": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://www.youtube.com/watch?v=sDv4f4s2SB8": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://www.youtube.com/watch?v=uFOkMme19Zs": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://www.youtube.com/watch?v=uiza7wp1KrE": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://www.youtube.com/watch?v=vB9pHTZKoGQ": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://www.youtube.com/watch?v=vjvP9oRgZyM": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://www.youtube.com/watch?v=wjZofJX0v4M": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://www.youtube.com/watch?v=wl1myxrtQHQ": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://www.youtube.com/watch?v=x_bw_IHjCWU": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://www.youtube.com/watch?v=yIYKR4sgzI8": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ },
+ "https://www.youtube.com/watch?v=zduSFxRajkE": {
+  "status": "carried-over",
+  "checked": null,
+  "note": "Kept from the earlier list; not yet re-opened by the maintainer agent."
+ }
+}
