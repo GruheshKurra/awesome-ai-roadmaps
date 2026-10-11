@@ -3,7 +3,7 @@
 Keep under 300 lines. Compress every Sunday. Newest entries first in logs.
 
 ## Settings
-- MODE: pr   <!-- change to `direct` after ~7 clean daily PRs -->
+- MODE: direct (fully autonomous; push to main, PR+self-merge only as fallback)
 - Goal: one best free, underrated, verified resource per AI concept. Stars are a side effect of usefulness + human-led sharing.
 
 ## Diagnosis at start (2026-10-11)

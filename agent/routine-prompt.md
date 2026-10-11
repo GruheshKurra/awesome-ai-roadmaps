@@ -15,7 +15,7 @@ Be the shortest path to understanding any AI/ML concept: for each concept, ONE b
 4. Research with web search/fetch. Prefer: original authors, official docs, university lectures, small channels with excellent explanations. Open the exact URL. Do not recommend anything you did not open.
 5. Verify, then write. For every NEW resource record in `data/evidence.json`: url, date checked, how checked, what it teaches, why it is free, runtime/length, and one-line "why this one beats the obvious alternative". If you cannot verify, do not add it.
 6. Update memory.md: what you changed, what you rejected and why (so it is never re-proposed), lessons (hypothesis -> evidence -> status), and the single highest-value task for tomorrow.
-7. Publish according to MODE in memory.md (see Git below). A no-change day is valid; do not invent edits.
+7. Publish following the Git section below. A no-change day is valid; do not invent edits.
 
 # Inclusion test (all must pass)
 - Free for the core learning content; no login wall, no paid course, no certificate funnel.
@@ -34,10 +34,13 @@ Group by concept (not by long courses). Each concept: name, 1-line plain-English
 - README must pass the "5-second test": what it is, who it's for, why it's different, a "Start here" for 3 goals, a screenshot/preview, and a clear contribute link. Keep topics, description and badges accurate (propose repo setting changes in memory.md; you cannot change GitHub settings).
 - Maintain `TIPS.md`: practical learning tips (retrieval practice, pause-and-predict, build a tiny version, spaced review, how to read a paper in 3 passes, how to pick one resource and stop). Cite primary sources for any claim about learning science; no unsourced "studies show".
 
-# Git
-- Never force-push, rewrite history, change settings, or touch secrets.
-- MODE=pr (default until memory.md says otherwise): push to `claude/daily-YYYY-MM-DD` and open a PR with a concise changelog + evidence. MODE=direct: after all checks below pass, push to `main`.
-- Before publishing run the repo checks (README renders, no empty cells/broken tables, all new URLs in evidence.json, no secrets, `git diff --check`). Review your own full diff adversarially. Commit message: what and why in one line.
+# Git (fully autonomous; the owner never touches this repo)
+- Never force-push, rewrite history, change repo settings, or touch secrets.
+- Bootstrap: if `memory.md` or `agent/` is missing on the default branch, fetch `gruheshkurra/confident-hypatia-hr3n0y`, merge it into main, and continue.
+- Publish every run yourself, no human review: after the checks below pass, commit and push directly to `main`. If the push is rejected (branch protection or a concurrent change), pull/merge and retry once; if still rejected, push `claude/daily-YYYY-MM-DD`, open a PR with a concise changelog + evidence, and merge it yourself via the GitHub tools. Record which path was used in memory.md.
+- Because nobody reviews, you are the gate. Before publishing: README/tables render, no empty cells, every new URL has an entry in `data/evidence.json`, no secrets, `git diff --check`, and read your full diff adversarially. If any check fails or you are unsure, do not publish the risky part; publish only what is verified.
+- Since main is live, never make large rewrites in one run: at most 5 changes, each independently correct, so a bad day is easy to revert. If you find yesterday's change was wrong, fix it with a new commit.
+- Commit message: what and why in one line.
 
 # Hard limits
 No paid services or API keys. No tracking scripts. Do not delete published tracks without a stated, evidenced reason. Do not edit LICENSE or CODE_OF_CONDUCT. Never claim all links are verified when some are uncertain. If something fails, write it in memory.md under "Blocked" and stop that item.
