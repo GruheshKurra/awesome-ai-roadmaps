@@ -22,15 +22,19 @@ Keep under 300 lines. Compress every Sunday. Newest entries first in logs.
 (none yet)
 
 ## Blocked
-(none yet)
+- 2026-10-11 run 2: the routine prompt assumes README tables (`Concept|Watch|Read|Why`), `data/links.json` and `scripts/check.py`. None exist: the repo is 35 `tracks/*/README.md` files (344 steps) with only `scripts/check_site.py`. Link verification, the 80-150 entry cap and the ledger cannot run until the structure is migrated (Backlog item 1).
+- YouTube is unreachable from the cloud sandbox (curl 000, WebFetch ENOTFOUND www.youtube.com). Per the rules, no YouTube pick can be verified, so none was added or changed. Check whether the environment's network policy allows youtube.com; otherwise verification must use other sources (e.g. noembed or page metadata via an allowed host).
+- Open issue count is 1; not inspected beyond the count.
+- Owner decision needed: migrate to the one-pick-per-concept README + ledger + check.py, or update the prompt to the track structure.
 
 ## Metrics (one row per run)
 | date | stars | forks | issues | change made |
 |---|---:|---:|---:|---|
 | 2026-10-11 | 4 | 0 | 0 | baseline |
+| 2026-10-11 (run 2) | 4 | 0 | 1 | no content change (blocked, see below) |
 
 ## Lessons (hypothesis -> evidence -> status)
 (none yet; add only when supported by 7+ days of data)
 
 ## Next run
-Start with the first unchecked Backlog item.
+Once YouTube access works, build `data/links.json` and `scripts/check.py` from the existing tracks, then do Backlog item 1. If YouTube is still blocked, build those with only non-YouTube links.
