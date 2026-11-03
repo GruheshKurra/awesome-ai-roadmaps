@@ -5,8 +5,8 @@
 <p>
 <a href="https://github.com/GruheshKurra/awesome-ai-roadmaps/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/GruheshKurra/awesome-ai-roadmaps?style=flat&amp;logo=github"></a>
 <a href="https://github.com/GruheshKurra/awesome-ai-roadmaps/commits/main"><img alt="Last commit" src="https://img.shields.io/github/last-commit/GruheshKurra/awesome-ai-roadmaps?style=flat"></a>
-<a href="LICENSE"><img alt="License: CC0" src="https://img.shields.io/badge/license-CC0-blue?style=flat"></a>
-<a href="contributing.md"><img alt="Contributions welcome" src="https://img.shields.io/badge/contributions-welcome-brightgreen?style=flat"></a>
+<a href="https://github.com/GruheshKurra/awesome-ai-roadmaps/blob/main/LICENSE"><img alt="License: CC0" src="https://img.shields.io/badge/license-CC0-blue?style=flat"></a>
+<a href="https://github.com/GruheshKurra/awesome-ai-roadmaps/blob/main/contributing.md"><img alt="Contributions welcome" src="https://img.shields.io/badge/contributions-welcome-brightgreen?style=flat"></a>
 </p>
 
 34 tracks, 362 steps. All free, with no sign-up walls and no paid courses. Every link is machine-checked. Each track ends with **Build it** projects so you finish with something to show.
@@ -164,4 +164,4 @@ Found a better video, a broken link, or a missing topic? [Open an issue](https:/
 
 ## License
 
-[CC0 1.0](LICENSE). Do anything you want with this list. The linked resources belong to their authors.
+[CC0 1.0](https://github.com/GruheshKurra/awesome-ai-roadmaps/blob/main/LICENSE). Do anything you want with this list. The linked resources belong to their authors.
