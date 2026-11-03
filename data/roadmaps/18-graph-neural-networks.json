@@ -1,0 +1,71 @@
+{
+  "slug": "graph-neural-networks",
+  "order": 18,
+  "title": "Graph Neural Networks",
+  "level": "Advanced",
+  "tagline": "Learn from data shaped like networks: node embeddings, message passing, GCN, GAT, GraphSAGE, link prediction, and real uses.",
+  "prereqs": "Deep Learning. Linear algebra helps.",
+  "steps": [
+    {
+      "title": "Graph neural networks from the ground up",
+      "video": "GXhBEj1ZtE8",
+      "why": "Why graphs need their own kind of network."
+    },
+    {
+      "title": "Node embeddings and node2vec",
+      "video": "pS_POUVFXvk",
+      "why": "Map nodes to vectors with random walks."
+    },
+    {
+      "title": "Message passing",
+      "video": "ijmxpItkRjc",
+      "why": "The loop every GNN layer repeats: gather, combine, update."
+    },
+    {
+      "title": "Graph convolutional networks",
+      "video": "2KRAOZIULzw",
+      "why": "The simplest popular GNN layer, with the intuition."
+    },
+    {
+      "title": "Graph attention networks",
+      "video": "A-yKQamf2Fc",
+      "why": "Let nodes weigh their neighbors differently."
+    },
+    {
+      "title": "GraphSAGE",
+      "video": "3AzphNf5ja8",
+      "why": "Sample neighbors to train on graphs too big for memory."
+    },
+    {
+      "title": "What GNNs can and cannot tell apart",
+      "video": "e4e6h9arD78",
+      "why": "The Weisfeiler-Lehman test as a limit on expressiveness."
+    },
+    {
+      "title": "Hands-on with PyTorch Geometric",
+      "video": "-UjytpbqX4A",
+      "why": "Build and train GNNs with the standard library.",
+      "repo": "pyg-team/pytorch_geometric"
+    },
+    {
+      "title": "Link prediction",
+      "video": "4dVwlE9jYxY",
+      "why": "Predict missing edges with features and learned embeddings."
+    },
+    {
+      "title": "Recommenders with GNNs",
+      "video": "NyNqzDKcKG4",
+      "why": "Treat users and items as a bipartite graph."
+    },
+    {
+      "title": "GNNs that generate molecules",
+      "video": "fzSL7MWfXtQ",
+      "why": "Atoms as nodes, bonds as edges: a GNN proposes new molecules."
+    }
+  ],
+  "projects": [
+    "Classify nodes in Cora with GCN, GAT, and GraphSAGE, and compare the three.",
+    "Predict missing links on a citation graph and report ROC-AUC against a node2vec baseline.",
+    "Train a GNN on the MUTAG molecule dataset in PyTorch Geometric to classify whole graphs, and compare it with a simple baseline."
+  ]
+}

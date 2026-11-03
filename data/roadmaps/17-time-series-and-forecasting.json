@@ -1,0 +1,73 @@
+{
+  "slug": "time-series-and-forecasting",
+  "order": 17,
+  "title": "Time Series & Forecasting",
+  "level": "Intermediate",
+  "tagline": "Predict what happens next: trend, seasonality, ARIMA, boosted trees, deep models, and today's pretrained forecasting models.",
+  "prereqs": "Machine Learning. Deep Learning helps for the later steps.",
+  "steps": [
+    {
+      "title": "Stationarity",
+      "video": "oY-j2Wof51c",
+      "why": "Why most classical models need a steady mean and variance."
+    },
+    {
+      "title": "Trend, seasonality, and decomposition",
+      "video": "0ar9extHObg",
+      "why": "Split a series into parts you can reason about."
+    },
+    {
+      "title": "Exponential smoothing and Holt-Winters",
+      "video": "LM6ynZc-KGI",
+      "why": "A strong baseline that handles trend and seasons.",
+      "repo": "Nixtla/statsforecast"
+    },
+    {
+      "title": "ARIMA",
+      "video": "-_2wOrEuFaM",
+      "why": "Autoregression, differencing, and moving averages in one model."
+    },
+    {
+      "title": "Cross-validation for time series",
+      "video": "1rZpbvSI26c",
+      "why": "Validate forward in time so you never peek at the future."
+    },
+    {
+      "title": "Forecasting with XGBoost",
+      "video": "vV12dGe_Fho",
+      "why": "Lag and calendar features with gradient-boosted trees."
+    },
+    {
+      "title": "LSTM forecasting",
+      "video": "c0k-YLQGKjY",
+      "why": "A first neural forecaster, with its limits shown clearly."
+    },
+    {
+      "title": "Temporal Fusion Transformer",
+      "video": "V14qoa5vZ1I",
+      "why": "Multi-horizon forecasts with attention and interpretable features.",
+      "repo": "Nixtla/neuralforecast"
+    },
+    {
+      "title": "Time series foundation models",
+      "video": "REzWTRKRwzk",
+      "why": "Why pretrained forecasters can work zero-shot."
+    },
+    {
+      "title": "Chronos: pretrained forecasting",
+      "video": "EEZ6DefhCvE",
+      "why": "Forecast with a pretrained model and read its probabilistic output.",
+      "repo": "amazon-science/chronos-forecasting"
+    },
+    {
+      "title": "Anomaly detection basics",
+      "video": "qy41dXGbAxY",
+      "why": "Spot unusual points with robust statistics and isolation forests."
+    }
+  ],
+  "projects": [
+    "Forecast daily demand for one public dataset with seasonal-naive, ARIMA, and XGBoost baselines, scored with rolling-origin validation.",
+    "Compare a pretrained model such as Chronos with your best classical model on three series.",
+    "Build an anomaly detector for sensor or server data using z-scores and Isolation Forest, and plot its alerts."
+  ]
+}

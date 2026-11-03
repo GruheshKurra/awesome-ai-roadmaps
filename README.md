@@ -10,7 +10,7 @@
 <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge-flat2.svg" height="28"></a>
 </p>
 
-<p align="center"><b>15 roadmaps · 189 videos · 123 hours of video · 63 GitHub repos</b></p>
+<p align="center"><b>20 roadmaps · 246 videos · 157 hours of video · 78 GitHub repos</b></p>
 
 <p align="center"><a href="https://gruheshkurra.github.io/awesome-ai-roadmaps/"><b>Open the interactive website →</b></a> (track your progress, step by step)</p>
 
@@ -33,6 +33,11 @@
 | 13 | **[Robotics & Embodied AI](roadmaps/robotics-and-embodied-ai.md)**<br><sub>Teach robots with data: robot learning basics, imitation learning, ACT, diffusion policies, vision-language-action models, and sim-to-real.</sub> | Advanced | 10 | 7h 28m |
 | 14 | **[Interpretability](roadmaps/interpretability.md)**<br><sub>Open the black box: circuits, superposition, sparse autoencoders, induction heads, grokking, and tracing what LLMs compute.</sub> | Advanced | 12 | 5h 36m |
 | 15 | **[AI Safety & Alignment](roadmaps/ai-safety-and-alignment.md)**<br><sub>Why powerful AI can go wrong and what researchers do about it: specification gaming, inner alignment, deception, oversight, and evals.</sub> | Intermediate | 12 | 4h 17m |
+| 16 | **[Recommender Systems](roadmaps/recommender-systems.md)**<br><sub>How Netflix, YouTube, and TikTok pick what you see: collaborative filtering, matrix factorization, two-tower retrieval, ranking, and evaluation.</sub> | Intermediate | 12 | 3h 14m |
+| 17 | **[Time Series & Forecasting](roadmaps/time-series-and-forecasting.md)**<br><sub>Predict what happens next: trend, seasonality, ARIMA, boosted trees, deep models, and today's pretrained forecasting models.</sub> | Intermediate | 11 | 3h 48m |
+| 18 | **[Graph Neural Networks](roadmaps/graph-neural-networks.md)**<br><sub>Learn from data shaped like networks: node embeddings, message passing, GCN, GAT, GraphSAGE, link prediction, and real uses.</sub> | Advanced | 11 | 3h 26m |
+| 19 | **[Multimodal & Vision-Language Models](roadmaps/multimodal-and-vision-language-models.md)**<br><sub>How models see and talk: CLIP, SigLIP, Flamingo, BLIP-2, LLaVA-style models, and building a vision-language model yourself.</sub> | Advanced | 12 | 11h 09m |
+| 20 | **[GPU Programming & CUDA](roadmaps/gpu-programming-and-cuda.md)**<br><sub>Understand why GPUs are fast and write your own kernels: CUDA basics, memory, tiled matmul, Triton, and FlashAttention.</sub> | Advanced | 11 | 11h 37m |
 
 ## Pick a path
 
@@ -59,8 +64,8 @@ The GitHub repos the roadmaps use most. Clone them and code along.
 
 | Repo | Stars | Used in |
 | --- | ---: | --- |
-| [ollama/ollama](https://github.com/ollama/ollama) | ★ 185.7k | [AI Engineering](roadmaps/ai-engineering.md) |
-| [Comfy-Org/ComfyUI](https://github.com/Comfy-Org/ComfyUI) | ★ 144.7k | [Generative AI: Images & Video](roadmaps/generative-ai.md) |
+| [ollama/ollama](https://github.com/ollama/ollama) | ★ 185.8k | [AI Engineering](roadmaps/ai-engineering.md) |
+| [Comfy-Org/ComfyUI](https://github.com/Comfy-Org/ComfyUI) | ★ 144.8k | [Generative AI: Images & Video](roadmaps/generative-ai.md) |
 | [ggml-org/llama.cpp](https://github.com/ggml-org/llama.cpp) | ★ 133.2k | [Run, Serve & Scale AI](roadmaps/deploy-and-scale.md) |
 | [openai/whisper](https://github.com/openai/whisper) | ★ 111.8k | [Speech & Audio AI](roadmaps/speech-and-audio-ai.md) |
 | [rasbt/LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch) | ★ 107.7k | [LLMs from Scratch](roadmaps/llms-from-scratch.md) |
@@ -70,10 +75,10 @@ The GitHub repos the roadmaps use most. Clone them and code along.
 | [mlabonne/llm-course](https://github.com/mlabonne/llm-course) | ★ 84.9k | [Fine-Tuning & Reasoning Models](roadmaps/fine-tuning.md) |
 | [dair-ai/Prompt-Engineering-Guide](https://github.com/dair-ai/Prompt-Engineering-Guide) | ★ 79.8k | [AI Engineering](roadmaps/ai-engineering.md) |
 | [unslothai/unsloth](https://github.com/unslothai/unsloth) | ★ 79k | [Fine-Tuning & Reasoning Models](roadmaps/fine-tuning.md) |
-| [microsoft/ai-agents-for-beginners](https://github.com/microsoft/ai-agents-for-beginners) | ★ 78.7k | [AI Agents & MCP](roadmaps/ai-agents.md) |
+| [microsoft/ai-agents-for-beginners](https://github.com/microsoft/ai-agents-for-beginners) | ★ 78.8k | [AI Agents & MCP](roadmaps/ai-agents.md) |
 | [karpathy/nanoGPT](https://github.com/karpathy/nanoGPT) | ★ 64.4k | [LLMs from Scratch](roadmaps/llms-from-scratch.md) |
-| [ultralytics/ultralytics](https://github.com/ultralytics/ultralytics) | ★ 63k | [Computer Vision](roadmaps/computer-vision.md) |
-| [karpathy/nanochat](https://github.com/karpathy/nanochat) | ★ 59.9k | [LLMs from Scratch](roadmaps/llms-from-scratch.md) |
+| [ultralytics/ultralytics](https://github.com/ultralytics/ultralytics) | ★ 63.1k | [Computer Vision](roadmaps/computer-vision.md) |
+| [karpathy/nanochat](https://github.com/karpathy/nanochat) | ★ 60.1k | [LLMs from Scratch](roadmaps/llms-from-scratch.md) |
 
 ## How it works
 
@@ -87,11 +92,6 @@ The GitHub repos the roadmaps use most. Clone them and code along.
 
 New roadmaps are added regularly. Next up:
 
-- Recommender Systems
-- Time Series & Forecasting
-- Graph Neural Networks
-- Multimodal & Vision-Language Models
-- GPU Programming & CUDA
 - Data Engineering for AI
 - Math for ML, deeper
 - Bayesian ML & Probabilistic Programming
@@ -99,6 +99,10 @@ New roadmaps are added regularly. Next up:
 - AI for Science: Protein Folding & Drug Discovery
 - Knowledge Graphs & GraphRAG
 - Synthetic Data & Data-Centric AI
+- Federated Learning & Privacy-Preserving ML
+- Causal Inference & Causal ML
+- Evaluation & Benchmarking for LLMs
+- Quantum Machine Learning
 
 Watch or star the repo to get them as they land.
 

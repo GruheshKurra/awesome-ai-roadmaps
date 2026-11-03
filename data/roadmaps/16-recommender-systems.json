@@ -1,0 +1,78 @@
+{
+  "slug": "recommender-systems",
+  "order": 16,
+  "title": "Recommender Systems",
+  "level": "Intermediate",
+  "tagline": "How Netflix, YouTube, and TikTok pick what you see: collaborative filtering, matrix factorization, two-tower retrieval, ranking, and evaluation.",
+  "prereqs": "Machine Learning. Deep Learning helps for the later steps.",
+  "steps": [
+    {
+      "title": "The math behind recommenders",
+      "video": "n3RKsY2H-NE",
+      "why": "The core idea of predicting ratings from similar users and items."
+    },
+    {
+      "title": "Content-based vs collaborative filtering",
+      "video": "v90un9ALRzw",
+      "why": "Two basic strategies and when each one works."
+    },
+    {
+      "title": "Collaborative filtering in practice",
+      "video": "Fmtorg_dmM0",
+      "why": "User-based and item-based neighbors, with their weak spots."
+    },
+    {
+      "title": "Matrix factorization",
+      "video": "ZspR5PZemcs",
+      "why": "Learn hidden taste factors from a sparse ratings table."
+    },
+    {
+      "title": "Build a recommender in Python",
+      "video": "G4MBc40rQ2k",
+      "why": "Turn the ideas into working code on a movie dataset."
+    },
+    {
+      "title": "Neural collaborative filtering",
+      "video": "O4lk9Lw7lS0",
+      "why": "Replace the dot product with a neural network in PyTorch.",
+      "repo": "RUCAIBox/RecBole"
+    },
+    {
+      "title": "Two-tower retrieval",
+      "video": "o-pZk5R0TZg",
+      "why": "How big systems narrow millions of items to a few hundred.",
+      "repo": "tensorflow/recommenders"
+    },
+    {
+      "title": "Fast nearest-neighbor search",
+      "video": "chz74Mtd1AA",
+      "why": "Serve embeddings at scale with approximate search indexes.",
+      "repo": "facebookresearch/faiss"
+    },
+    {
+      "title": "YouTube's deep recommender paper",
+      "video": "7C11p47NW44",
+      "why": "Walk through the classic two-stage candidate and ranking design."
+    },
+    {
+      "title": "Design a recommendation engine",
+      "video": "FoSCaue3lcg",
+      "why": "See retrieval, ranking, and serving fit into one system."
+    },
+    {
+      "title": "Ranking metrics: MRR, MAP, NDCG",
+      "video": "2XegvMul_mE",
+      "why": "Measure whether the right items land near the top."
+    },
+    {
+      "title": "Explore versus exploit with bandits",
+      "video": "e3L4VocZnnQ",
+      "why": "Handle new items and users while still learning from clicks."
+    }
+  ],
+  "projects": [
+    "Train matrix factorization on MovieLens and report NDCG@10 against a popularity baseline.",
+    "Build a two-tower model on MovieLens and serve its embeddings through a FAISS index.",
+    "Write a short comparison of three recommenders on one dataset, with metrics and failure cases."
+  ]
+}

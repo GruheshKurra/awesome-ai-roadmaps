@@ -1,0 +1,75 @@
+{
+  "slug": "gpu-programming-and-cuda",
+  "order": 20,
+  "title": "GPU Programming & CUDA",
+  "level": "Advanced",
+  "tagline": "Understand why GPUs are fast and write your own kernels: CUDA basics, memory, tiled matmul, Triton, and FlashAttention.",
+  "prereqs": "Deep Learning (PyTorch and attention basics). C or C++ basics help. Needs an NVIDIA GPU or a free Colab GPU.",
+  "steps": [
+    {
+      "title": "CUDA clicks in 30 minutes",
+      "video": "xewKxorikwE",
+      "why": "Threads, blocks, and grids from a first principles view."
+    },
+    {
+      "title": "Write your first CUDA kernel",
+      "video": "2-bCyCVlAxM",
+      "why": "Launch a kernel and see the grid, block, and thread layout."
+    },
+    {
+      "title": "GPU memory hierarchy",
+      "video": "Zrbw0zajhJM",
+      "why": "Registers, shared memory, and global memory, and what each costs."
+    },
+    {
+      "title": "Memory coalescing",
+      "video": "QmKNE3viwIE",
+      "why": "A small access-pattern change gives a large speedup."
+    },
+    {
+      "title": "Tiled matrix multiplication",
+      "video": "Q3GgbfGTnVc",
+      "why": "Use shared memory to cut slow global reads.",
+      "repo": "siboehm/SGEMM_CUDA"
+    },
+    {
+      "title": "Profile CUDA kernels in PyTorch",
+      "video": "LuhJEEJQgUM",
+      "why": "Find where time goes before you optimize.",
+      "repo": "gpu-mode/lectures"
+    },
+    {
+      "title": "Custom PyTorch operators",
+      "video": "LI3h8aVchwo",
+      "why": "Hook your own CUDA or C++ code into PyTorch."
+    },
+    {
+      "title": "Practitioner's guide to Triton",
+      "video": "DdTsX6DQk24",
+      "why": "Write fast kernels in Python-like code.",
+      "repo": "triton-lang/triton"
+    },
+    {
+      "title": "A fast softmax kernel",
+      "video": "IpHjDoW4ffw",
+      "why": "Fuse steps to avoid extra trips through memory."
+    },
+    {
+      "title": "How FlashAttention works",
+      "video": "gBMO1JZav44",
+      "why": "Tile attention so the big matrix never hits slow memory.",
+      "repo": "Dao-AILab/flash-attention"
+    },
+    {
+      "title": "FlashAttention from first principles in Triton",
+      "video": "zy8ChVd_oTM",
+      "why": "Derive it and code the forward and backward pass.",
+      "repo": "hkproj/triton-flash-attention"
+    }
+  ],
+  "projects": [
+    "Write a vector add and a naive matmul in CUDA, then add tiling and chart the speedup.",
+    "Implement a fused softmax in Triton and benchmark it against PyTorch.",
+    "Profile one PyTorch model layer, find its bottleneck, and write up what you changed."
+  ]
+}

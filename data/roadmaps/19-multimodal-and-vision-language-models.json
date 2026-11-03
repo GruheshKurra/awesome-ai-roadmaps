@@ -1,0 +1,79 @@
+{
+  "slug": "multimodal-and-vision-language-models",
+  "order": 19,
+  "title": "Multimodal & Vision-Language Models",
+  "level": "Advanced",
+  "tagline": "How models see and talk: CLIP, SigLIP, Flamingo, BLIP-2, LLaVA-style models, and building a vision-language model yourself.",
+  "prereqs": "LLMs from Scratch. Computer Vision helps.",
+  "steps": [
+    {
+      "title": "How multimodal models work",
+      "video": "WkoytlA3MoQ",
+      "why": "A plain overview of joining text, images, and audio."
+    },
+    {
+      "title": "Vision Transformers",
+      "video": "Hnsrm1ezI3g",
+      "why": "Cut an image into patches and run a transformer."
+    },
+    {
+      "title": "CLIP",
+      "video": "8sVgLz3-W_s",
+      "why": "Learn a shared space for images and captions.",
+      "repo": "mlfoundations/open_clip"
+    },
+    {
+      "title": "Multimodal embeddings in Python",
+      "video": "YOvxh_ma5qE",
+      "why": "Search images with text and text with images.",
+      "repo": "ShawhinT/YouTube-Blog"
+    },
+    {
+      "title": "SigLIP",
+      "video": "Nk9YnMHB6hU",
+      "why": "A simpler loss that scales contrastive training."
+    },
+    {
+      "title": "What vision language models are",
+      "video": "lOD_EE96jhM",
+      "why": "The standard recipe: vision encoder, adapter, language model."
+    },
+    {
+      "title": "Flamingo",
+      "video": "6MbEAWJnpo8",
+      "why": "Few-shot learning over mixed image and text prompts."
+    },
+    {
+      "title": "BLIP-2",
+      "video": "k0DAtZCCl1w",
+      "why": "Bridge a frozen image encoder and a frozen LLM."
+    },
+    {
+      "title": "Fine-tune a VLM with LoRA",
+      "video": "3ypHZayanBI",
+      "why": "Adapt a vision-language model to your data on one GPU.",
+      "repo": "uygarkurt/Fine-Tune-VLMs"
+    },
+    {
+      "title": "Vision-language models in CS231N",
+      "video": "mQOK0Mfyrkk",
+      "why": "A university lecture on the current VLM landscape."
+    },
+    {
+      "title": "Fine-tuning PaliGemma",
+      "video": "z14pypZebtQ",
+      "why": "Adapt a compact open VLM to a custom task."
+    },
+    {
+      "title": "Code a vision language model from scratch",
+      "video": "vAmKB7iPkWw",
+      "why": "Implement PaliGemma end to end in PyTorch.",
+      "repo": "hkproj/pytorch-paligemma"
+    }
+  ],
+  "projects": [
+    "Build a text-to-image search app over your own photos with CLIP embeddings.",
+    "Fine-tune a small open VLM on a custom visual question set and measure accuracy before and after.",
+    "Write a short comparison of three open VLMs on ten of your own images."
+  ]
+}
