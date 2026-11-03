@@ -52,12 +52,22 @@
   const hero = page.querySelector('.rm-hero');
   const done = read(slug);
   const boxes = [...page.querySelectorAll('.done input')];
+  const next = page.querySelector('.continue');
   const sync = () => {
     boxes.forEach(box => {
       box.checked = done.has(box.dataset.id);
       box.closest('.step').classList.toggle('is-done', box.checked);
     });
-    paint(hero, boxes.filter(b => b.checked).length, total);
+    const count = boxes.filter(b => b.checked).length;
+    paint(hero, count, total);
+    const first = boxes.findIndex(b => !b.checked);
+    if (next) {
+      next.hidden = !count || first < 0;
+      if (first >= 0) {
+        next.href = '#step-' + (first + 1);
+        next.textContent = `Continue with step ${first + 1} →`;
+      }
+    }
   };
   boxes.forEach(box => box.addEventListener('change', () => {
     box.checked ? done.add(box.dataset.id) : done.delete(box.dataset.id);
