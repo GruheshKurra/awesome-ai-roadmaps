@@ -14,6 +14,8 @@
 
 <p align="center"><a href="https://gruheshkurra.github.io/awesome-ai-roadmaps/"><b>Open the interactive website →</b></a> (track your progress, step by step)</p>
 
+<p align="center"><a href="https://gruheshkurra.github.io/awesome-ai-roadmaps/"><picture><source media="(prefers-color-scheme: dark)" srcset=".github/assets/website-dark.jpg"><img src=".github/assets/website-light.jpg" width="800" alt="The AI Roadmaps website: a short headline, a Start button, and the first roadmap's videos in order"></picture></a></p>
+
 ## Roadmaps
 
 | # | Roadmap | Level | Steps | Video time |
