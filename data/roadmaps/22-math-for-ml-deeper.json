@@ -1,0 +1,87 @@
+{
+  "slug": "math-for-ml-deeper",
+  "order": 22,
+  "title": "Math for ML, Deeper",
+  "level": "Intermediate",
+  "tagline": "The next layer of math behind ML papers: change of basis, SVD, Jacobians, Hessians, convexity, Lagrange multipliers, Gaussians, and KL divergence.",
+  "prereqs": "Python & Math for AI (vectors, matrices, derivatives, Bayes' theorem, the normal distribution).",
+  "steps": [
+    {
+      "title": "Span and basis vectors",
+      "video": "k7RM-ot2NWY",
+      "why": "What it means for vectors to build a whole space."
+    },
+    {
+      "title": "Dot products and duality",
+      "video": "LyGKycYT2v0",
+      "why": "Why a dot product is secretly a projection and a linear map."
+    },
+    {
+      "title": "Change of basis",
+      "video": "P2LTAUO1TdA",
+      "why": "Describe the same vector in different coordinate systems."
+    },
+    {
+      "title": "Singular value decomposition",
+      "video": "vSczTbgc8Rc",
+      "why": "Any matrix factors into rotate or reflect, scale, then rotate or reflect.",
+      "repo": "fastai/numerical-linear-algebra"
+    },
+    {
+      "title": "The multivariable chain rule",
+      "video": "NO3AqAaAE6o",
+      "why": "The rule backpropagation applies over and over."
+    },
+    {
+      "title": "The Jacobian matrix",
+      "video": "bohL918kXQk",
+      "why": "All partial derivatives of a vector function in one matrix."
+    },
+    {
+      "title": "The Hessian matrix",
+      "video": "LbBcuZukCAw",
+      "why": "Second derivatives describe curvature around a point."
+    },
+    {
+      "title": "Taylor series",
+      "video": "3d6DsjIBzJ4",
+      "why": "Approximate a function near a point with polynomials."
+    },
+    {
+      "title": "Convexity",
+      "video": "9WXVgQFFsDI",
+      "why": "Why every local minimum of a convex function is also a global one.",
+      "repo": "cvxpy/cvxpy"
+    },
+    {
+      "title": "Lagrange multipliers",
+      "video": "5A39Ht9Wcu0",
+      "why": "Optimize a function while obeying a constraint."
+    },
+    {
+      "title": "The covariance matrix",
+      "video": "152tSYtiQbw",
+      "why": "How features vary together, summed up in one matrix."
+    },
+    {
+      "title": "The multivariate Gaussian",
+      "video": "UVvuwv-ne1I",
+      "why": "The bell curve in many dimensions, shaped by covariance."
+    },
+    {
+      "title": "The central limit theorem",
+      "video": "zeJD6dqJ5lo",
+      "why": "Why sums of random things look normal."
+    },
+    {
+      "title": "Entropy, cross-entropy, and KL divergence",
+      "video": "ErfnhcEV1O8",
+      "why": "The information theory behind the most common loss function."
+    }
+  ],
+  "projects": [
+    "Compress a photo with NumPy's SVD at several ranks and plot quality against storage size.",
+    "Check your hand-derived Jacobian of a small two-layer network against autograd in PyTorch.",
+    "Write a notebook that computes entropy, cross-entropy, and KL divergence for two distributions and shows KL is not symmetric."
+  ]
+}

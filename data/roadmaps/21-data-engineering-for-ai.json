@@ -1,0 +1,98 @@
+{
+  "slug": "data-engineering-for-ai",
+  "order": 21,
+  "title": "Data Engineering for AI",
+  "level": "Intermediate",
+  "tagline": "Move, store, clean, and version the data that models learn from: SQL, Parquet, DuckDB, pipelines, labeling, and LLM-scale dataset curation.",
+  "prereqs": "Python & Math for AI (Python and pandas basics). Machine Learning helps for the feature and labeling steps.",
+  "steps": [
+    {
+      "title": "What data engineers do",
+      "video": "qWru-b6m030",
+      "why": "How raw data becomes something analysts and models can use."
+    },
+    {
+      "title": "SQL basics",
+      "video": "kbKty5ZVKMY",
+      "why": "SELECT, WHERE, GROUP BY, and JOIN: the language of data."
+    },
+    {
+      "title": "ETL vs ELT",
+      "video": "KIv2Na2-u24",
+      "why": "Two ways to build pipelines, and why AI teams care."
+    },
+    {
+      "title": "Warehouse, lake, and lakehouse",
+      "video": "yRerKDM1h74",
+      "why": "Where data lives, and the trade-offs of each design."
+    },
+    {
+      "title": "The Parquet file format",
+      "video": "5NA57Pfpdr4",
+      "why": "Columnar files make big datasets small and fast to read."
+    },
+    {
+      "title": "Query files with DuckDB",
+      "video": "ZX5FdqzGT1E",
+      "why": "Run fast SQL on local CSV and Parquet with no server.",
+      "repo": "duckdb/duckdb"
+    },
+    {
+      "title": "Fast dataframes with Polars",
+      "video": "OlsRyy-au0E",
+      "why": "A quicker, lazier alternative to pandas for big tables.",
+      "repo": "pola-rs/polars"
+    },
+    {
+      "title": "What Apache Spark is",
+      "video": "nKRwjXRs4mY",
+      "why": "How data gets split across many machines when one is not enough."
+    },
+    {
+      "title": "Schedule pipelines with Airflow",
+      "video": "5peQThvQmQk",
+      "why": "DAGs, tasks, and schedules for jobs that run every day.",
+      "repo": "apache/airflow"
+    },
+    {
+      "title": "Validate data with Pandera",
+      "video": "-tU7fuUiq7w",
+      "why": "Catch bad rows before they silently break training.",
+      "repo": "unionai-oss/pandera"
+    },
+    {
+      "title": "Version data with DVC",
+      "video": "kLKBcPonMYw",
+      "why": "Track datasets like code so experiments stay reproducible.",
+      "repo": "treeverse/dvc"
+    },
+    {
+      "title": "Feature stores",
+      "video": "DESBDukN9gw",
+      "why": "Serve the same features in training and in production."
+    },
+    {
+      "title": "Label data with Label Studio",
+      "video": "R1ozTMrujOE",
+      "why": "Annotate text and images to build your own training set.",
+      "repo": "HumanSignal/label-studio"
+    },
+    {
+      "title": "Find near-duplicates with MinHash",
+      "video": "e_SBq3s20M8",
+      "why": "Shingling and LSH spot repeated documents at scale.",
+      "repo": "ekzhu/datasketch"
+    },
+    {
+      "title": "How an LLM dataset is built",
+      "video": "vB9pHTZKoGQ",
+      "why": "FineWeb's filtering and deduplication of web data, step by step.",
+      "repo": "huggingface/datatrove"
+    }
+  ],
+  "projects": [
+    "Turn a public CSV dataset into partitioned Parquet files and answer five questions about it with DuckDB SQL.",
+    "Write an Airflow DAG that downloads a daily dataset, validates it with Pandera, and saves a versioned copy with DVC.",
+    "Deduplicate a few thousand scraped web pages with MinHash and report how many near-duplicates you removed."
+  ]
+}

@@ -1,13 +1,13 @@
 [
-  "Data Engineering for AI",
-  "Math for ML, deeper",
-  "Bayesian ML & Probabilistic Programming",
-  "TinyML & Edge AI",
-  "AI for Science: Protein Folding & Drug Discovery",
   "Knowledge Graphs & GraphRAG",
   "Synthetic Data & Data-Centric AI",
   "Federated Learning & Privacy-Preserving ML",
   "Causal Inference & Causal ML",
   "Evaluation & Benchmarking for LLMs",
-  "Quantum Machine Learning"
+  "Quantum Machine Learning",
+  "LLM Security & Red Teaming",
+  "Medical AI & Imaging",
+  "Self-Driving Cars & Autonomous Systems",
+  "Mixture of Experts & Efficient LLM Architectures",
+  "Classic NLP before LLMs"
 ]

@@ -1,0 +1,95 @@
+{
+  "slug": "bayesian-ml-and-probabilistic-programming",
+  "order": 23,
+  "title": "Bayesian ML & Probabilistic Programming",
+  "level": "Advanced",
+  "tagline": "Reason with uncertainty: priors and posteriors, MCMC, PyMC, hierarchical models, Gaussian processes, variational inference, and Bayesian deep learning.",
+  "prereqs": "Machine Learning and Math for ML, Deeper (probability distributions, MLE, the multivariate Gaussian, KL divergence).",
+  "steps": [
+    {
+      "title": "Probabilities of probabilities",
+      "video": "8idr1WZ1A7Q",
+      "why": "Treat an unknown rate as something you can be uncertain about."
+    },
+    {
+      "title": "Bayesian updating by counting",
+      "video": "R1vcdhPBlXA",
+      "why": "McElreath builds a posterior from counted ways the data could occur."
+    },
+    {
+      "title": "Conjugate priors",
+      "video": "GqSX-8AQL90",
+      "why": "Update a Beta prior with data in closed form."
+    },
+    {
+      "title": "MLE vs MAP",
+      "video": "9Ahdh_8xAEI",
+      "why": "How adding a prior turns maximum likelihood into MAP."
+    },
+    {
+      "title": "Bayesian linear regression",
+      "video": "Z6HGJMUakmc",
+      "why": "Regression with a distribution over weights, not one answer."
+    },
+    {
+      "title": "Markov chain Monte Carlo",
+      "video": "yApmR-c_hKU",
+      "why": "Sample a posterior known only up to its normalizing constant."
+    },
+    {
+      "title": "Metropolis-Hastings",
+      "video": "yCv2N7wGDCw",
+      "why": "The classic accept-or-reject MCMC sampler."
+    },
+    {
+      "title": "Hamiltonian Monte Carlo",
+      "video": "a-wydhEuAm0",
+      "why": "Use gradients to make big, efficient sampler moves."
+    },
+    {
+      "title": "Bayesian modeling with PyMC",
+      "video": "911d4A1U0BE",
+      "why": "Write a model in Python and let PyMC sample it.",
+      "repo": "pymc-devs/pymc"
+    },
+    {
+      "title": "Posterior predictive checks",
+      "video": "yDPJnV9vcHs",
+      "why": "Simulate fake data from the model to see if it fits.",
+      "repo": "arviz-devs/arviz"
+    },
+    {
+      "title": "Hierarchical models",
+      "video": "GUx5sOIAlCg",
+      "why": "Share strength across groups with partial pooling."
+    },
+    {
+      "title": "Gaussian processes",
+      "video": "UBDgSHPxVME",
+      "why": "A prior over whole functions, with error bars for free.",
+      "repo": "cornellius-gp/gpytorch"
+    },
+    {
+      "title": "Bayesian optimization",
+      "video": "Kq6_kzlwSUQ",
+      "why": "Tune expensive black boxes with a GP and an acquisition function.",
+      "repo": "bayesian-optimization/BayesianOptimization"
+    },
+    {
+      "title": "Variational inference and the ELBO",
+      "video": "HxQ94L8n0vU",
+      "why": "Turn inference into optimization when sampling is too slow.",
+      "repo": "pyro-ppl/numpyro"
+    },
+    {
+      "title": "Bayesian neural networks",
+      "video": "dj-FKXxy7HQ",
+      "why": "Get uncertainty estimates out of deep networks."
+    }
+  ],
+  "projects": [
+    "Estimate a coin's bias three ways (grid, conjugate Beta update, and PyMC) and plot the three posteriors together.",
+    "Fit a hierarchical PyMC model to per-group data (e.g. ratings by restaurant) and compare it with no pooling and full pooling.",
+    "Use Bayesian optimization to tune two hyperparameters of a scikit-learn model and compare it with random search."
+  ]
+}

@@ -30,6 +30,11 @@
    "channel": "Computerphile",
    "seconds": 1016
   },
+  "-tU7fuUiq7w": {
+   "title": "How to Use Pandas With Pandera to Validate Your Data in Python",
+   "channel": "ArjanCodes",
+   "seconds": 691
+  },
   "00Q0G84kq3M": {
    "title": "RAG vs. Fine Tuning",
    "channel": "IBM Technology",
@@ -54,6 +59,11 @@
    "title": "What is Time Series Decomposition",
    "channel": "Aric LaBarr",
    "seconds": 293
+  },
+  "152tSYtiQbw": {
+   "title": "The Covariance Matrix : Data Science Basics",
+   "channel": "ritvikmath",
+   "seconds": 659
   },
   "1CIpzeNxIhU": {
    "title": "How AI Image Generators Work (Stable Diffusion / Dall-E) - Computerphile",
@@ -115,10 +125,25 @@
    "channel": "Computerphile",
    "seconds": 1200
   },
+  "3d6DsjIBzJ4": {
+   "title": "Taylor series | Chapter 11, Essence of calculus",
+   "channel": "3Blue1Brown",
+   "seconds": 1339
+  },
+  "3gSy_yN9YBo": {
+   "title": "how AlphaFold *actually* works",
+   "channel": "Looking Glass Universe",
+   "seconds": 762
+  },
   "3ypHZayanBI": {
    "title": "Fine-Tune Visual Language Models (VLMs) - HuggingFace, PyTorch, LoRA, Quantization, TRL",
    "channel": "Uygar Kurt",
    "seconds": 2748
+  },
+  "47nNIPj3B98": {
+   "title": "EfficientML.ai Lecture 3 - Pruning and Sparsity (Part I) (MIT 6.5940 Fall 2026)",
+   "channel": "MIT HAN Lab",
+   "seconds": 2517
   },
   "4PyWLgrt7YY": {
    "title": "Reinforcement Learning:  AlphaGo",
@@ -140,6 +165,21 @@
    "channel": "StatQuest with Josh Starmer",
    "seconds": 977
   },
+  "4kQvYG6DXN0": {
+   "title": "Molecular Property Prediction with Graph Neural Networks",
+   "channel": "Center for Computer-Assisted Synthesis",
+   "seconds": 953
+  },
+  "5A39Ht9Wcu0": {
+   "title": "Understanding Lagrange Multipliers Visually",
+   "channel": "Serpentine Integral",
+   "seconds": 798
+  },
+  "5NA57Pfpdr4": {
+   "title": "Parquet File Format - Explained to a 5 Year Old!",
+   "channel": "Data Mozart",
+   "seconds": 688
+  },
   "5VHLd9eCZ-w": {
    "title": "Simply Explaining Proximal Policy Optimization (PPO) | Deep Reinforcement Learning",
    "channel": "Johnny Code",
@@ -149,6 +189,11 @@
    "title": "Fast LLM Serving with vLLM and PagedAttention",
    "channel": "Anyscale",
    "seconds": 1927
+  },
+  "5peQThvQmQk": {
+   "title": "Learn Apache Airflow in 10 Minutes | High-Paying Skills for Data Engineers",
+   "channel": "Darshil Parmar",
+   "seconds": 757
   },
   "6MbEAWJnpo8": {
    "title": "DeepMind Flamingo explained - 32 images are enough",
@@ -200,10 +245,20 @@
    "channel": "freeCodeCamp.org",
    "seconds": 42911
   },
+  "8WKMU0WWuwQ": {
+   "title": "Optimize your TensorFlow Lite models | Session",
+   "channel": "TensorFlow",
+   "seconds": 809
+  },
   "8dZUOo5xWFw": {
    "title": "LLMs Meet Robotics: What Are Vision-Language-Action Models? (VLA Series Ep.1)",
    "channel": "Ilia",
    "seconds": 2106
+  },
+  "8idr1WZ1A7Q": {
+   "title": "Binomial distributions | Probabilities of probabilities, part 1",
+   "channel": "3Blue1Brown",
+   "seconds": 754
   },
   "8jtAzxUwDj0": {
    "title": "Proximal Policy Optimization (PPO) for LLMs Explained Intuitively",
@@ -220,15 +275,40 @@
    "channel": "3Blue1Brown",
    "seconds": 1362
   },
+  "911d4A1U0BE": {
+   "title": "Chris Fonnesbeck - Probabilistic Python: An Introduction to Bayesian Modeling with PyMC",
+   "channel": "PyData",
+   "seconds": 5194
+  },
   "98o_L3jlixw": {
    "title": "AI Engineering with Chip Huyen",
    "channel": "The Pragmatic Engineer",
    "seconds": 4484
   },
+  "9Ahdh_8xAEI": {
+   "title": "What are Maximum Likelihood (ML) and Maximum a posteriori (MAP)? (\"Best explanation on YouTube\")",
+   "channel": "Iain Explains Signals, Systems, and Digital Comms",
+   "seconds": 1099
+  },
+  "9DL1aX5fM_I": {
+   "title": "Protein Language Models",
+   "channel": "RosettaCommons",
+   "seconds": 2028
+  },
   "9GHCiiDLHQ4": {
    "title": "Mel Spectrograms Explained Easily",
    "channel": "Valerio Velardo - The Sound of AI",
    "seconds": 1831
+  },
+  "9WXVgQFFsDI": {
+   "title": "Convexity 101 [Optimization Bootcamp]",
+   "channel": "Steve Brunton",
+   "seconds": 897
+  },
+  "9Z9XM9xamDU": {
+   "title": "Chemistry with Python - an Introduction to RDKit",
+   "channel": "Bernhard Wannasek",
+   "seconds": 1002
   },
   "9eXV64O2Xp8": {
    "title": "Alignment faking in large language models",
@@ -300,6 +380,11 @@
    "channel": "AI Papers Academy",
    "seconds": 549
   },
+  "DESBDukN9gw": {
+   "title": "What is a Feature Store for Machine Learning?",
+   "channel": "Hopsworks",
+   "seconds": 263
+  },
   "DdTsX6DQk24": {
    "title": "Lecture 14: Practitioners Guide to Triton",
    "channel": "GPU MODE",
@@ -320,6 +405,11 @@
    "channel": "AutoML Space",
    "seconds": 2917
   },
+  "EW9B43cs6Yc": {
+   "title": "Revolutionizing drug discovery with artificial intelligence",
+   "channel": "RAZOR Science Show",
+   "seconds": 814
+  },
   "EWvNQjAaOHw": {
    "title": "How I use LLMs",
    "channel": "Andrej Karpathy",
@@ -334,6 +424,11 @@
    "title": "Diffusion Models: DDPM | Generative AI Animated",
    "channel": "Deepia",
    "seconds": 1925
+  },
+  "ErfnhcEV1O8": {
+   "title": "A Short Introduction to Entropy, Cross-Entropy and KL-Divergence",
+   "channel": "Aurélien Géron",
+   "seconds": 640
   },
   "EuBBz3bI-aA": {
    "title": "Machine Learning Fundamentals: Bias and Variance",
@@ -365,6 +460,11 @@
    "channel": "Hamel Husain",
    "seconds": 1695
   },
+  "GUx5sOIAlCg": {
+   "title": "Statistical Gold Nuggets | Bayesian Hierarchical Models",
+   "channel": "Very Normal",
+   "seconds": 792
+  },
   "GXhBEj1ZtE8": {
    "title": "Graph Neural Networks - a perspective from the ground up",
    "channel": "Alex Foo",
@@ -374,6 +474,11 @@
    "title": "Docker in 100 Seconds",
    "channel": "Fireship",
    "seconds": 127
+  },
+  "GqSX-8AQL90": {
+   "title": "Bayesian Updates and Conjugate Priors",
+   "channel": "Steve Brunton",
+   "seconds": 1057
   },
   "HMOI_lkzW08": {
    "title": "StatQuest: PCA main ideas in only 5 minutes!!!",
@@ -394,6 +499,11 @@
    "title": "Vision Transformers - Explained!",
    "channel": "CodeEmporium",
    "seconds": 1341
+  },
+  "HxQ94L8n0vU": {
+   "title": "Variational Inference | Evidence Lower Bound (ELBO) | Intuition & Visualization",
+   "channel": "Machine Learning & Simulation",
+   "seconds": 1506
   },
   "IHZwWFHWa-w": {
    "title": "Gradient descent, how neural networks learn | Deep Learning Chapter 2",
@@ -440,6 +550,11 @@
    "channel": "EMBER Center @ UC Berkeley",
    "seconds": 3643
   },
+  "KIv2Na2-u24": {
+   "title": "ETL vs ELT: Powering Data Pipelines for AI & Analytics",
+   "channel": "IBM Technology",
+   "seconds": 411
+  },
   "KcSXcpluDe4": {
    "title": "How AI 'Understands' Images (CLIP) - Computerphile",
    "channel": "Computerphile",
@@ -449,6 +564,11 @@
    "title": "Machine Learning Fundamentals: The Confusion Matrix",
    "channel": "StatQuest with Josh Starmer",
    "seconds": 432
+  },
+  "Kq6_kzlwSUQ": {
+   "title": "Bayesian Optimization",
+   "channel": "DataMListic",
+   "seconds": 494
   },
   "KuXjwB4LzSA": {
    "title": "But what is a convolution?",
@@ -475,10 +595,20 @@
    "channel": "3Blue1Brown",
    "seconds": 478
   },
+  "LbBcuZukCAw": {
+   "title": "The Hessian matrix | Multivariable calculus | Khan Academy",
+   "channel": "Khan Academy",
+   "seconds": 370
+  },
   "LuhJEEJQgUM": {
    "title": "Lecture 1 How to profile CUDA kernels in PyTorch",
    "channel": "GPU MODE",
    "seconds": 3373
+  },
+  "LyGKycYT2v0": {
+   "title": "Dot products and duality | Chapter 9, Essence of linear algebra",
+   "channel": "3Blue1Brown",
+   "seconds": 851
   },
   "MD2fYip6QsQ": {
    "title": "Who's Adam and What's He Optimizing? | Deep Dive into Optimizers for Machine Learning!",
@@ -494,6 +624,11 @@
    "title": "Reinforcement Learning, by the Book",
    "channel": "Mutual Information",
    "seconds": 1098
+  },
+  "NO3AqAaAE6o": {
+   "title": "Multivariable chain rule",
+   "channel": "Khan Academy",
+   "seconds": 572
   },
   "NhdzGfB1q74": {
    "title": "The U-Net (actually) explained in 10 minutes",
@@ -535,6 +670,11 @@
    "channel": "AI Engineer",
    "seconds": 9747
   },
+  "OlsRyy-au0E": {
+   "title": "Polars Crash Course - Modern Data Frames in Python",
+   "channel": "NeuralNine",
+   "seconds": 3608
+  },
   "OqvXHi_QtT0": {
    "title": "Getting Started with Stable Baselines3 - Lowest Learning Curve Python Reinforcement Learning Library",
    "channel": "Johnny Code",
@@ -544,6 +684,11 @@
    "title": "XGBoost Part 1 (of 4): Regression",
    "channel": "StatQuest with Josh Starmer",
    "seconds": 1546
+  },
+  "P2LTAUO1TdA": {
+   "title": "Change of basis | Chapter 13, Essence of linear algebra",
+   "channel": "3Blue1Brown",
+   "seconds": 770
   },
   "P6sfmUTpUmc": {
    "title": "Building makemore Part 3: Activations & Gradients, BatchNorm",
@@ -555,15 +700,30 @@
    "channel": "IBM Technology",
    "seconds": 554
   },
+  "PD1v5PCJs_o": {
+   "title": "GraphCast: Learning skillful medium-range global weather forecasting",
+   "channel": "Greg Bronevetsky",
+   "seconds": 3556
+  },
   "PFDu9oVAE-g": {
    "title": "Eigenvectors and eigenvalues | Chapter 14, Essence of linear algebra",
    "channel": "3Blue1Brown",
    "seconds": 1035
   },
+  "P_fHJIYENdI": {
+   "title": "AlphaFold - The Most Useful Thing AI Has Ever Done",
+   "channel": "Veritasium",
+   "seconds": 1491
+  },
   "PaCmpygFfXo": {
    "title": "The spelled-out intro to language modeling: building makemore",
    "channel": "Andrej Karpathy",
    "seconds": 7065
+  },
+  "Pwo1bLDB-jA": {
+   "title": "Knowledge Distillation - Explained",
+   "channel": "DataMListic",
+   "seconds": 333
   },
   "Q3GgbfGTnVc": {
    "title": "Must Know Technique in GPU Computing | Episode 4: Tiled Matrix Multiplication in CUDA C",
@@ -579,6 +739,16 @@
    "title": "4.5x Faster CUDA C with just Two Variable Changes || Episode 3: Memory Coalescing",
    "channel": "Tushar Gautam",
    "seconds": 365
+  },
+  "R1ozTMrujOE": {
+   "title": "Label Studio: The Easiest Way To Annotate Your Datasets",
+   "channel": "NeuralNine",
+   "seconds": 1226
+  },
+  "R1vcdhPBlXA": {
+   "title": "Statistical Rethinking 2023 - 02 - The Garden of Forking Data",
+   "channel": "Richard McElreath",
+   "seconds": 5826
   },
   "REzWTRKRwzk": {
    "title": "Time Series Foundation Models",
@@ -625,10 +795,20 @@
    "channel": "Anthropic",
    "seconds": 233
   },
+  "UBDgSHPxVME": {
+   "title": "Gaussian Processes",
+   "channel": "Mutual Information",
+   "seconds": 1427
+  },
   "UGO_Ehywuxc": {
    "title": "The Dark Matter of AI [Mechanistic Interpretability]",
    "channel": "Welch Labs",
    "seconds": 1449
+  },
+  "UVvuwv-ne1I": {
+   "title": "Multivariate Normal (Gaussian) Distribution Explained",
+   "channel": "DataMListic",
+   "seconds": 427
   },
   "UtSSMs6ObqY": {
    "title": "Learn Ollama in 15 Minutes - Run LLM Models Locally for FREE",
@@ -645,6 +825,11 @@
    "channel": "Andrej Karpathy",
    "seconds": 8752
   },
+  "VWdJ4BCtam8": {
+   "title": "Getting Started with the Jetson Orin Nano Developer Kit",
+   "channel": "NVIDIA Developer",
+   "seconds": 293
+  },
   "WUvTyaaNkzM": {
    "title": "The essence of calculus",
    "channel": "3Blue1Brown",
@@ -660,10 +845,20 @@
    "channel": "AssemblyAI",
    "seconds": 404
   },
+  "Wp5PaRpudlk": {
+   "title": "Introduction to ONNX Runtime",
+   "channel": "NVIDIA Developer",
+   "seconds": 493
+  },
   "X0k14u6pSxw": {
    "title": "Robot Learning 2026 – Lecture 1: Introduction to Robot Learning | ETH Zürich",
    "channel": "Oier Mees",
    "seconds": 3875
+  },
+  "X30Zuoc-66k": {
+   "title": "What is the Protein Folding Problem?",
+   "channel": "The Sheekey Science Show",
+   "seconds": 477
   },
   "XZLc09hkMwA": {
    "title": "Direct Preference Optimization: Your Language Model is Secretly a Reward Model | DPO paper explained",
@@ -684,6 +879,11 @@
    "title": "The Complete Guide to Hybrid Search in RAG (BM25 + Embeddings + Reranker)",
    "channel": "Dave Ebbelaar",
    "seconds": 3557
+  },
+  "Y1qwcPqxkp0": {
+   "title": "What is TinyML?",
+   "channel": "Arm®",
+   "seconds": 372
   },
   "Y5zHHoLrvAE": {
    "title": "How do AI video generation models work?",
@@ -710,10 +910,20 @@
    "channel": "StatQuest with Josh Starmer",
    "seconds": 1093
   },
+  "Z6HGJMUakmc": {
+   "title": "Bayesian Linear Regression : Data Science Concepts",
+   "channel": "ritvikmath",
+   "seconds": 987
+  },
   "ZBKpAp_6TGI": {
    "title": "Coding Stable Diffusion from scratch in PyTorch",
    "channel": "Umar Jamil",
    "seconds": 18211
+  },
+  "ZX5FdqzGT1E": {
+   "title": "DuckDB Tutorial For Beginners In 12 min",
+   "channel": "MotherDuck",
+   "seconds": 685
   },
   "ZeecOKBus3Q": {
    "title": "Why Would AI Want to do Bad Things? Instrumental Convergence",
@@ -745,6 +955,11 @@
    "channel": "Caleb Writes Code",
    "seconds": 618
   },
+  "a-wydhEuAm0": {
+   "title": "The intuition behind the Hamiltonian Monte Carlo algorithm",
+   "channel": "Ben Lambert",
+   "seconds": 1928
+  },
   "a4Yfz2FxXiY": {
    "title": "Diffusion models from scratch in PyTorch",
    "channel": "DeepFindr",
@@ -775,6 +990,11 @@
    "channel": "Tech With Tim",
    "seconds": 2059
   },
+  "bZIKVaD3dRk": {
+   "title": "How to do Object Detection using ESP32-CAM and Edge Impulse YOLO Model",
+   "channel": "Circuit Digest",
+   "seconds": 1010
+  },
   "bZcKYiwtw1I": {
    "title": "Finetune LLMs to teach them ANYTHING with Huggingface and Pytorch | Step-by-step tutorial",
    "channel": "Neural Breakdown with AVB",
@@ -784,6 +1004,11 @@
    "title": "MLOps Explained - What It Is, Why You Need It and How It Works",
    "channel": "TechWorld with Nana",
    "seconds": 1583
+  },
+  "bohL918kXQk": {
+   "title": "The Jacobian matrix",
+   "channel": "Khan Academy",
+   "seconds": 382
   },
   "c0k-YLQGKjY": {
    "title": "LSTM Time Series Forecasting Tutorial in Python",
@@ -820,6 +1045,11 @@
    "channel": "Valerio Velardo - The Sound of AI",
    "seconds": 1516
   },
+  "dj-FKXxy7HQ": {
+   "title": "Uncertainty estimation and Bayesian Neural Networks - Marcin Możejko",
+   "channel": "PyData",
+   "seconds": 1847
+  },
   "dzPkabHQ_80": {
    "title": "Superposition: More Features Than Neurons",
    "channel": "DataMListic",
@@ -844,6 +1074,11 @@
    "title": "Attention in transformers, step-by-step | Deep Learning Chapter 6",
    "channel": "3Blue1Brown",
    "seconds": 1569
+  },
+  "e_SBq3s20M8": {
+   "title": "Locality Sensitive Hashing (LSH) for Search with Shingling + MinHashing (Python)",
+   "channel": "James Briggs",
+   "seconds": 1626
   },
   "ejk6-ffDXFw": {
    "title": "Pi0 - generalist Vision Language Action policy for robots (VLA Series Ep.2)",
@@ -890,6 +1125,16 @@
    "channel": "Jia-Bin Huang",
    "seconds": 714
   },
+  "gDFWCxrJruQ": {
+   "title": "TinyML: Getting Started with TensorFlow Lite for Microcontrollers | Digi-Key Electronics",
+   "channel": "DigiKey",
+   "seconds": 1115
+  },
+  "gIbCAcMDM7E": {
+   "title": "Faster AlphaFold protein structure predictions using ColabFold",
+   "channel": "UCSF ChimeraX",
+   "seconds": 608
+  },
   "h5wLuVDr0oc": {
    "title": "Deploy ML models with FastAPI, Docker, and Heroku | Tutorial",
    "channel": "AssemblyAI",
@@ -909,6 +1154,16 @@
    "title": "Intelligence and Stupidity: The Orthogonality Thesis",
    "channel": "Robert Miles AI Safety",
    "seconds": 782
+  },
+  "hHooQmmzG4k": {
+   "title": "Accelerating Scientific Discovery with AI - lecture by Sir Demis Hassabis",
+   "channel": "CambridgeComputerLab",
+   "seconds": 3850
+  },
+  "hok2hyED9go": {
+   "title": "Protein Structure and Folding",
+   "channel": "Amoeba Sisters",
+   "seconds": 466
   },
   "iLVyYDbdSmM": {
    "title": "Welcome To The Agents Course! Introduction to the Course and Q&A",
@@ -955,15 +1210,35 @@
    "channel": "Hugging Face",
    "seconds": 2563
   },
+  "k7RM-ot2NWY": {
+   "title": "Linear combinations, span, and basis vectors | Chapter 2, Essence of linear algebra",
+   "channel": "3Blue1Brown",
+   "seconds": 599
+  },
   "kCc8FmEb1nY": {
    "title": "Let's build GPT: from scratch, in code, spelled out.",
    "channel": "Andrej Karpathy",
    "seconds": 6980
   },
+  "kLKBcPonMYw": {
+   "title": "Versioning Data with DVC (Hands-On Tutorial!)",
+   "channel": "DVCorg",
+   "seconds": 784
+  },
   "kYB8IZa5AuE": {
    "title": "Linear transformations and matrices | Chapter 3, Essence of linear algebra",
    "channel": "3Blue1Brown",
    "seconds": 658
+  },
+  "kZhAj8--t8w": {
+   "title": "Gemma 4 on Raspberry Pi 5: A Surprisingly Usable Local AI Setup",
+   "channel": "Zero to MVP",
+   "seconds": 548
+  },
+  "kbKty5ZVKMY": {
+   "title": "Learn Basic SQL in 15 Minutes | Business Intelligence For Beginners | SQL Tutorial For Beginners 1/3",
+   "channel": "Adam Finer - Learn BI",
+   "seconds": 1059
   },
   "l8pRSuU81PU": {
    "title": "Let's reproduce GPT-2 (124M)",
@@ -999,6 +1274,11 @@
    "title": "9 Examples of Specification Gaming",
    "channel": "Robert Miles AI Safety",
    "seconds": 580
+  },
+  "nKRwjXRs4mY": {
+   "title": "What is Spark? (Visual Explanation)",
+   "channel": "Data with Baraa",
+   "seconds": 718
   },
   "o-pZk5R0TZg": {
    "title": "Building Scalable Retrieval System with Two-Tower Models | Query-Item Retrieval Recsys Model | ML AI",
@@ -1065,6 +1345,11 @@
    "channel": "StatQuest with Josh Starmer",
    "seconds": 1081
   },
+  "qWru-b6m030": {
+   "title": "How Data Engineering Works",
+   "channel": "AltexSoft",
+   "seconds": 853
+  },
   "quh7z1q7-uc": {
    "title": "Building LLMs from the Ground Up: A 3-hour Coding Workshop",
    "channel": "Sebastian Raschka",
@@ -1094,6 +1379,11 @@
    "title": "The Normal Distribution, Clearly Explained!!!",
    "channel": "StatQuest with Josh Starmer",
    "seconds": 312
+  },
+  "rzMs-wKQU_U": {
+   "title": "Understanding int8 neural network quantization",
+   "channel": "Oscar Savolainen",
+   "seconds": 1372
   },
   "sDv4f4s2SB8": {
    "title": "Gradient Descent, Step-by-Step",
@@ -1125,6 +1415,16 @@
    "channel": "3Blue1Brown",
    "seconds": 617
   },
+  "tY75czj43_4": {
+   "title": "EfficientML.ai Lecture 1 - Introduction (MIT 6.5940 Fall 2026)",
+   "channel": "MIT HAN Lab",
+   "seconds": 3795
+  },
+  "toirKRTLgJA": {
+   "title": "ExecuTorch 1.0: General Availability Status for Mobile and Embedded...- Mergen Nachin & Cemal Bilgin",
+   "channel": "PyTorch",
+   "seconds": 1485
+  },
   "uiza7wp1KrE": {
    "title": "AI Evaluations Clearly Explained in 50 Minutes (Real Example) | Hamel Husain",
    "channel": "Peter Yang",
@@ -1140,15 +1440,30 @@
    "channel": "Umar Jamil",
    "seconds": 20765
   },
+  "vB9pHTZKoGQ": {
+   "title": "How to Create an LLM Dataset | FineWeb Overview",
+   "channel": "Hugging Face",
+   "seconds": 1731
+  },
   "vFdIrZyKEwQ": {
    "title": "ReAct AI Agents, clearly explained!",
    "channel": "Akshay Pachaar",
    "seconds": 345
   },
+  "vSczTbgc8Rc": {
+   "title": "SVD Visualized, Singular Value Decomposition explained | SEE Matrix , Chapter 3 #SoME2",
+   "channel": "Visual Kernel",
+   "seconds": 987
+  },
   "vV12dGe_Fho": {
    "title": "Time Series Forecasting with XGBoost - Use python and machine learning to predict energy consumption",
    "channel": "Rob Mulla",
    "seconds": 1388
+  },
+  "vbIg4Up1Ts0": {
+   "title": "Build Your Own ML-Powered Keyword Spotting Model in 30KB RAM",
+   "channel": "Edge Impulse",
+   "seconds": 1695
   },
   "veT2VI4vHyU": {
    "title": "Neel Nanda – Mechanistic Interpretability: A Whirlwind Tour",
@@ -1159,6 +1474,16 @@
    "title": "How to evaluate agents in practice",
    "channel": "Google Cloud Tech",
    "seconds": 653
+  },
+  "vyd1bFxPjL8": {
+   "title": "EfficientML.ai Lecture 10 - MCUNet and TinyML (MIT 6.5940 Fall 2026)",
+   "channel": "MIT HAN Lab",
+   "seconds": 3755
+  },
+  "wIHwHDt2NoI": {
+   "title": "RFDiffusion: Accurate protein design using structure prediction and diffusion generative models",
+   "channel": "ML for protein engineering seminar series",
+   "seconds": 2632
   },
   "wL22URoMZjo": {
    "title": "Sleeper Agents in Large Language Models - Computerphile",
@@ -1195,10 +1520,30 @@
    "channel": "Efficient NLP",
    "seconds": 1040
   },
+  "yApmR-c_hKU": {
+   "title": "Markov Chain Monte Carlo (MCMC) : Data Science Concepts",
+   "channel": "ritvikmath",
+   "seconds": 730
+  },
+  "yCv2N7wGDCw": {
+   "title": "Metropolis - Hastings : Data Science Concepts",
+   "channel": "ritvikmath",
+   "seconds": 1095
+  },
+  "yDPJnV9vcHs": {
+   "title": "What is a posterior predictive check and why is it useful?",
+   "channel": "Ben Lambert",
+   "seconds": 676
+  },
   "yIYKR4sgzI8": {
    "title": "StatQuest: Logistic Regression",
    "channel": "StatQuest with Josh Starmer",
    "seconds": 527
+  },
+  "yRerKDM1h74": {
+   "title": "Data Warehouse vs Data Lake vs Data Lakehouse | ETL, OLAP vs OLTP",
+   "channel": "codebasics",
+   "seconds": 977
   },
   "ysPbXH0LpIE": {
    "title": "Prompting 101 | Code w/ Claude",
@@ -1214,6 +1559,11 @@
    "title": "Let's build the GPT Tokenizer",
    "channel": "Andrej Karpathy",
    "seconds": 8014
+  },
+  "zeJD6dqJ5lo": {
+   "title": "But what is the Central Limit Theorem?",
+   "channel": "3Blue1Brown",
+   "seconds": 1874
   },
   "zjkBMFhNj_g": {
    "title": "[1hr Talk] Intro to Large Language Models",
@@ -1237,7 +1587,7 @@
    "description": ""
   },
   "Comfy-Org/ComfyUI": {
-   "stars": 144780,
+   "stars": 144858,
    "description": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. The fastest local inference engine in the world."
   },
   "DLR-RM/stable-baselines3": {
@@ -1245,43 +1595,51 @@
    "description": "PyTorch version of Stable Baselines, reliable implementations of reinforcement learning algorithms. "
   },
   "Dao-AILab/flash-attention": {
-   "stars": 25244,
+   "stars": 25245,
    "description": "Fast and memory-efficient exact attention"
   },
   "DataTalksClub/mlops-zoomcamp": {
-   "stars": 15518,
+   "stars": 15521,
    "description": "Free MLOps course from DataTalks.Club. Register here 👇🏼 to get notified about the next cohort"
   },
   "Farama-Foundation/Gymnasium": {
-   "stars": 12763,
+   "stars": 12767,
    "description": "A standard API for single-agent reinforcement learning environments, with popular reference environments and related utilities (formerly Gym)"
   },
   "GokuMohandas/Made-With-ML": {
-   "stars": 49907,
+   "stars": 49919,
    "description": "Learn how to develop, deploy and iterate on production-grade ML applications."
   },
+  "HumanSignal/label-studio": {
+   "stars": 28619,
+   "description": "Label Studio is a multi-type data labeling and annotation tool with standardized output format"
+  },
   "NirDiamant/RAG_Techniques": {
-   "stars": 30206,
+   "stars": 30214,
    "description": "This repository showcases various advanced techniques for Retrieval-Augmented Generation (RAG) systems. Each technique has a detailed notebook tutorial."
   },
   "Nixtla/neuralforecast": {
-   "stars": 4305,
+   "stars": 4306,
    "description": "Scalable and user friendly neural :brain: forecasting algorithms."
   },
   "Nixtla/statsforecast": {
-   "stars": 4958,
+   "stars": 4959,
    "description": "Lightning ⚡️ fast forecasting with statistical and econometric models."
   },
   "Physical-Intelligence/openpi": {
-   "stars": 14512,
+   "stars": 14522,
    "description": ""
   },
   "RUCAIBox/RecBole": {
-   "stars": 4607,
+   "stars": 4609,
    "description": "A unified, comprehensive and efficient recommendation library"
   },
+  "RosettaCommons/RFdiffusion": {
+   "stars": 3118,
+   "description": "Code for running RFdiffusion"
+  },
   "SWE-agent/mini-swe-agent": {
-   "stars": 9048,
+   "stars": 9063,
    "description": "The 100 line AI agent that solves GitHub issues or helps you in your command line. Radically simple, no huge configs, no giant monorepo—but scores >74% on SWE-bench verified!"
   },
   "ShawhinT/YouTube-Blog": {
@@ -1289,47 +1647,87 @@
    "description": "Codes to complement YouTube videos and blog posts on Medium."
   },
   "TransformerLensOrg/TransformerLens": {
-   "stars": 4034,
+   "stars": 4035,
    "description": "A library for mechanistic interpretability of GPT-style language models"
   },
   "ageron/handson-ml3": {
-   "stars": 14427,
+   "stars": 14431,
    "description": "A series of Jupyter notebooks that walk you through the fundamentals of Machine Learning and Deep Learning in Python using Scikit-Learn, Keras and TensorFlow 2."
   },
   "amazon-science/chronos-forecasting": {
-   "stars": 6240,
+   "stars": 6245,
    "description": "Chronos: Pretrained Models for Time Series Forecasting"
   },
   "anthropics/claude-cookbooks": {
-   "stars": 54136,
+   "stars": 54159,
    "description": "A collection of notebooks/recipes showcasing some fun and effective ways of using Claude."
   },
+  "apache/airflow": {
+   "stars": 47354,
+   "description": "Apache Airflow - A platform to programmatically author, schedule, and monitor workflows"
+  },
+  "arviz-devs/arviz": {
+   "stars": 1862,
+   "description": "Exploratory analysis of Bayesian models with Python"
+  },
+  "bayesian-optimization/BayesianOptimization": {
+   "stars": 8729,
+   "description": "A Python implementation of global optimization with gaussian processes."
+  },
   "chiphuyen/aie-book": {
-   "stars": 18206,
+   "stars": 18208,
    "description": "[WIP] Resources for AI engineers. Also contains supporting materials for the book AI Engineering (Chip Huyen, 2025)"
   },
+  "cornellius-gp/gpytorch": {
+   "stars": 3932,
+   "description": "A highly efficient implementation of Gaussian Processes in PyTorch"
+  },
+  "cvxpy/cvxpy": {
+   "stars": 6385,
+   "description": "A Python-embedded modeling language for convex optimization problems."
+  },
   "dair-ai/Prompt-Engineering-Guide": {
-   "stars": 79767,
+   "stars": 79776,
    "description": "🐙 Guides, papers, lessons, notebooks and resources for prompt engineering, context engineering, RAG, and AI Agents."
   },
+  "deepchem/deepchem": {
+   "stars": 7123,
+   "description": "Democratizing Deep-Learning for Drug Discovery, Quantum Chemistry, Materials Science and Biology"
+  },
+  "duckdb/duckdb": {
+   "stars": 42785,
+   "description": "DuckDB is a high-performance analytical database system"
+  },
+  "ekzhu/datasketch": {
+   "stars": 2978,
+   "description": "MinHash, LSH, LSH Forest, Weighted MinHash, HyperLogLog, HyperLogLog++, LSH Ensemble and HNSW"
+  },
   "facebookresearch/faiss": {
-   "stars": 41253,
+   "stars": 41255,
    "description": "A library for efficient similarity search and clustering of dense vectors."
   },
   "facebookresearch/sam2": {
-   "stars": 20095,
+   "stars": 20097,
    "description": "The repository provides code for running inference with the Meta Segment Anything Model 2 (SAM 2), links for downloading the trained model checkpoints, and example notebooks that show how to use the model."
   },
+  "fastai/numerical-linear-algebra": {
+   "stars": 11015,
+   "description": "Free online textbook of Jupyter notebooks for fast.ai Computational Linear Algebra course"
+  },
   "ggml-org/llama.cpp": {
-   "stars": 133246,
+   "stars": 133280,
    "description": "LLM inference in C/C++"
+  },
+  "google-deepmind/weathernext": {
+   "stars": 7730,
+   "description": ""
   },
   "gpu-mode/lectures": {
    "stars": 6948,
    "description": "Material for gpu-mode lectures"
   },
   "guipsamora/pandas_exercises": {
-   "stars": 13311,
+   "stars": 13313,
    "description": "Practice your pandas skills!"
   },
   "hkproj/pytorch-paligemma": {
@@ -1341,31 +1739,35 @@
    "description": ""
   },
   "huggingface/agents-course": {
-   "stars": 34396,
+   "stars": 34428,
    "description": "This repository contains the Hugging Face Agents Course. "
   },
   "huggingface/audio-transformers-course": {
    "stars": 529,
    "description": "The Hugging Face Course on Transformers for Audio"
   },
+  "huggingface/datatrove": {
+   "stars": 3414,
+   "description": "Freeing data processing from scripting madness by providing a set of platform-agnostic customizable pipeline processing blocks."
+  },
   "huggingface/deep-rl-class": {
    "stars": 5087,
    "description": "This repo contains the Hugging Face Deep Reinforcement Learning Course."
   },
   "huggingface/diffusers": {
-   "stars": 34855,
+   "stars": 34856,
    "description": "🤗 Diffusers: State-of-the-art diffusion models for image, video, and audio generation in PyTorch."
   },
   "huggingface/diffusion-models-class": {
-   "stars": 4385,
+   "stars": 4386,
    "description": "Materials for the Hugging Face Diffusion Models Course"
   },
   "huggingface/lerobot": {
-   "stars": 28658,
+   "stars": 28666,
    "description": "🤗 LeRobot: Making AI for Robotics more accessible with end-to-end learning"
   },
   "huggingface/open-r1": {
-   "stars": 26474,
+   "stars": 26475,
    "description": "Fully open reproduction of DeepSeek-R1"
   },
   "huggingface/peft": {
@@ -1377,47 +1779,47 @@
    "description": "The largest collection of PyTorch image encoders / backbones. Including train, eval, inference, export scripts, and pretrained weights -- ResNet, ResNeXT, EfficientNet, NFNet, Vision Transformer (ViT), MobileNetV4, MobileNet-V3 & V2, RegNet, DPN, CSPNet, Swin Transformer, MaxViT, CoAtNet, ConvNeXt, and more"
   },
   "huggingface/trl": {
-   "stars": 19661,
+   "stars": 19665,
    "description": "Train transformer language models with reinforcement learning."
   },
   "isaac-sim/IsaacLab": {
-   "stars": 8558,
+   "stars": 8563,
    "description": "Unified framework for robot learning with multi-physics/renderer support"
   },
   "jakevdp/PythonDataScienceHandbook": {
-   "stars": 50345,
+   "stars": 50354,
    "description": "Python Data Science Handbook: full text in Jupyter Notebooks"
   },
   "karpathy/llm.c": {
-   "stars": 31382,
+   "stars": 31386,
    "description": "LLM training in simple, raw C/CUDA"
   },
   "karpathy/micrograd": {
-   "stars": 18647,
+   "stars": 18656,
    "description": "A tiny scalar-valued autograd engine and a neural net library on top of it with PyTorch-like API"
   },
   "karpathy/minbpe": {
-   "stars": 11001,
+   "stars": 11005,
    "description": "Minimal, clean code for the Byte Pair Encoding (BPE) algorithm commonly used in LLM tokenization."
   },
   "karpathy/nanoGPT": {
-   "stars": 64416,
+   "stars": 64431,
    "description": "The simplest, fastest repository for training/finetuning medium-sized GPTs."
   },
   "karpathy/nanochat": {
-   "stars": 60120,
+   "stars": 60186,
    "description": "The best ChatGPT that $100 can buy."
   },
   "karpathy/nn-zero-to-hero": {
-   "stars": 25253,
+   "stars": 25266,
    "description": "Neural Networks: Zero to Hero"
   },
   "kyutai-labs/moshi": {
-   "stars": 11396,
+   "stars": 11407,
    "description": "Moshi is a speech-text foundation model and full-duplex spoken dialogue framework. It uses Mimi, a state-of-the-art streaming neural audio codec."
   },
   "langchain-ai/rag-from-scratch": {
-   "stars": 9592,
+   "stars": 9596,
    "description": ""
   },
   "lucidrains/denoising-diffusion-pytorch": {
@@ -1425,19 +1827,27 @@
    "description": "Implementation of Denoising Diffusion Probabilistic Model in Pytorch"
   },
   "microsoft/ML-For-Beginners": {
-   "stars": 91959,
+   "stars": 91979,
    "description": "12 weeks, 26 lessons, 52 quizzes, classic Machine Learning for all"
   },
   "microsoft/ai-agents-for-beginners": {
-   "stars": 78769,
+   "stars": 78827,
    "description": "18 Lessons to Get Started Building AI Agents"
   },
+  "microsoft/onnxruntime": {
+   "stars": 22218,
+   "description": "ONNX Runtime: cross-platform, high performance ML inferencing and training accelerator"
+  },
+  "mit-han-lab/tinyengine": {
+   "stars": 968,
+   "description": "[NeurIPS 2020] MCUNet: Tiny Deep Learning on IoT Devices; [NeurIPS 2021] MCUNetV2: Memory-Efficient Patch-based Inference for Tiny Deep Learning; [NeurIPS 2022] MCUNetV3: On-Device Training Under 256KB Memory"
+  },
   "mlabonne/llm-course": {
-   "stars": 84876,
+   "stars": 84887,
    "description": "Course to get into Large Language Models (LLMs) with roadmaps and Colab notebooks."
   },
   "mlflow/mlflow": {
-   "stars": 28641,
+   "stars": 28651,
    "description": "The open source AI engineering platform for agents, LLMs, and ML models. MLflow enables teams of all sizes to debug, evaluate, monitor, and optimize production-quality AI applications while controlling costs and managing access to models and data."
   },
   "mlfoundations/open_clip": {
@@ -1445,19 +1855,19 @@
    "description": "An open source implementation of CLIP."
   },
   "mml-book/mml-book.github.io": {
-   "stars": 16184,
+   "stars": 16185,
    "description": "Companion webpage to the book \"Mathematics For Machine Learning\""
   },
   "modelcontextprotocol/python-sdk": {
-   "stars": 24745,
+   "stars": 24747,
    "description": "The official Python SDK for Model Context Protocol servers and clients"
   },
   "modelcontextprotocol/servers": {
-   "stars": 91763,
+   "stars": 91769,
    "description": "Model Context Protocol Servers"
   },
   "mrdbourke/pytorch-deep-learning": {
-   "stars": 19356,
+   "stars": 19355,
    "description": "Materials for the Learn PyTorch for Deep Learning: Zero to Mastery course."
   },
   "naklecha/llama3-from-scratch": {
@@ -1465,36 +1875,56 @@
    "description": "llama3 implementation one matrix multiplication at a time"
   },
   "ollama/ollama": {
-   "stars": 185763,
+   "stars": 185810,
    "description": "Get up and running with Kimi, GLM, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models."
   },
   "openai/CLIP": {
-   "stars": 34562,
+   "stars": 34565,
    "description": "CLIP (Contrastive Language-Image Pretraining),  Predict the most relevant text snippet given an image"
   },
   "openai/openai-agents-python": {
-   "stars": 30471,
+   "stars": 30480,
    "description": "A lightweight, powerful framework for multi-agent workflows"
   },
   "openai/spinningup": {
-   "stars": 12027,
+   "stars": 12028,
    "description": "An educational resource to help anyone learn deep reinforcement learning."
   },
   "openai/whisper": {
-   "stars": 111845,
+   "stars": 111877,
    "description": "Robust Speech Recognition via Large-Scale Weak Supervision"
   },
   "openvla/openvla": {
-   "stars": 7256,
+   "stars": 7260,
    "description": "OpenVLA: An open-source vision-language-action model for robotic manipulation."
   },
+  "pola-rs/polars": {
+   "stars": 40257,
+   "description": "Extremely fast Query Engine for DataFrames, written in Rust"
+  },
   "pyg-team/pytorch_geometric": {
-   "stars": 24132,
+   "stars": 24133,
    "description": "Graph Neural Network Library for PyTorch"
   },
+  "pymc-devs/pymc": {
+   "stars": 9827,
+   "description": "Bayesian Modeling and Probabilistic Programming in Python"
+  },
+  "pyro-ppl/numpyro": {
+   "stars": 2775,
+   "description": "Probabilistic programming with NumPy powered by JAX for autograd and JIT compilation to GPU/TPU/CPU."
+  },
+  "pytorch/executorch": {
+   "stars": 5152,
+   "description": "On-device AI across mobile, embedded and edge for PyTorch"
+  },
   "rasbt/LLMs-from-scratch": {
-   "stars": 107734,
+   "stars": 107766,
    "description": "Implement a ChatGPT-like LLM in PyTorch from scratch, step by step"
+  },
+  "rdkit/rdkit": {
+   "stars": 3665,
+   "description": "The official sources for the RDKit library"
   },
   "roboflow/notebooks": {
    "stars": 9736,
@@ -1508,32 +1938,48 @@
    "stars": 1355,
    "description": "Fast CUDA matrix multiplication from scratch"
   },
+  "sokrypton/ColabFold": {
+   "stars": 2977,
+   "description": "Making Protein folding accessible to all!"
+  },
   "srush/GPU-Puzzles": {
-   "stars": 12559,
+   "stars": 12558,
    "description": "Solve puzzles. Learn CUDA."
   },
   "stanford-cs336/assignment1-basics": {
-   "stars": 3131,
+   "stars": 3134,
    "description": "Student version of Assignment 1 for Stanford CS336 - Language Modeling From Scratch"
   },
   "stas00/ml-engineering": {
-   "stars": 19657,
+   "stars": 19659,
    "description": "Machine Learning Engineering Open Book"
   },
   "tensorflow/recommenders": {
    "stars": 2038,
    "description": "TensorFlow Recommenders is a library for building recommender system models using TensorFlow."
   },
+  "tensorflow/tflite-micro": {
+   "stars": 3142,
+   "description": "Infrastructure to enable deployment of ML models to low-power resource-constrained embedded targets (including microcontrollers and digital signal processors)."
+  },
+  "treeverse/dvc": {
+   "stars": 15955,
+   "description": "🦉 Data Versioning and ML Experiments"
+  },
   "triton-lang/triton": {
    "stars": 20513,
    "description": "Development repository for the Triton language and compiler"
   },
   "ultralytics/ultralytics": {
-   "stars": 63069,
+   "stars": 63087,
    "description": "Ultralytics YOLO27, YOLO26, YOLO11, YOLOv8 — object detection, instance segmentation, semantic segmentation, image classification, pose estimation, object tracking"
   },
+  "unionai-oss/pandera": {
+   "stars": 4508,
+   "description": "A light-weight, flexible, and expressive statistical data testing library"
+  },
   "unslothai/unsloth": {
-   "stars": 78995,
+   "stars": 79012,
    "description": "Local UI to run and train LLMs and diffusion models. Supports GGUF, MLX, Qwen3.8, DeepSeek-V4.1, MiniMax-H3, Gemma 4, FLUX and more."
   },
   "uygarkurt/Fine-Tune-VLMs": {
@@ -1541,7 +1987,7 @@
    "description": ""
   },
   "vllm-project/vllm": {
-   "stars": 96203,
+   "stars": 96237,
    "description": "A high-throughput and memory-efficient inference and serving engine for LLMs"
   }
  }

@@ -10,7 +10,7 @@
 <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge-flat2.svg" height="28"></a>
 </p>
 
-<p align="center"><b>20 roadmaps · 246 videos · 157 hours of video · 78 GitHub repos</b></p>
+<p align="center"><b>25 roadmaps · 316 videos · 182 hours of video · 102 GitHub repos</b></p>
 
 <p align="center"><a href="https://gruheshkurra.github.io/awesome-ai-roadmaps/"><b>Open the interactive website →</b></a> (track your progress, step by step)</p>
 
@@ -38,6 +38,11 @@
 | 18 | **[Graph Neural Networks](roadmaps/graph-neural-networks.md)**<br><sub>Learn from data shaped like networks: node embeddings, message passing, GCN, GAT, GraphSAGE, link prediction, and real uses.</sub> | Advanced | 11 | 3h 26m |
 | 19 | **[Multimodal & Vision-Language Models](roadmaps/multimodal-and-vision-language-models.md)**<br><sub>How models see and talk: CLIP, SigLIP, Flamingo, BLIP-2, LLaVA-style models, and building a vision-language model yourself.</sub> | Advanced | 12 | 11h 09m |
 | 20 | **[GPU Programming & CUDA](roadmaps/gpu-programming-and-cuda.md)**<br><sub>Understand why GPUs are fast and write your own kernels: CUDA basics, memory, tiled matmul, Triton, and FlashAttention.</sub> | Advanced | 11 | 11h 37m |
+| 21 | **[Data Engineering for AI](roadmaps/data-engineering-for-ai.md)**<br><sub>Move, store, clean, and version the data that models learn from: SQL, Parquet, DuckDB, pipelines, labeling, and LLM-scale dataset curation.</sub> | Intermediate | 15 | 4h 28m |
+| 22 | **[Math for ML, Deeper](roadmaps/math-for-ml-deeper.md)**<br><sub>The next layer of math behind ML papers: change of basis, SVD, Jacobians, Hessians, convexity, Lagrange multipliers, Gaussians, and KL divergence.</sub> | Intermediate | 14 | 3h 06m |
+| 23 | **[Bayesian ML & Probabilistic Programming](roadmaps/bayesian-ml-and-probabilistic-programming.md)**<br><sub>Reason with uncertainty: priors and posteriors, MCMC, PyMC, hierarchical models, Gaussian processes, variational inference, and Bayesian deep learning.</sub> | Advanced | 15 | 7h 04m |
+| 24 | **[TinyML & Edge AI](roadmaps/tinyml-and-edge-ai.md)**<br><sub>Shrink models and run them on microcontrollers, phones, and small boards: pruning, quantization, distillation, TFLite Micro, Edge Impulse, ONNX, and ExecuTorch.</sub> | Advanced | 14 | 5h 27m |
+| 25 | **[AI for Science](roadmaps/ai-for-science.md)**<br><sub>How AI is changing biology and chemistry: protein folding, AlphaFold, protein language models, protein design, molecules in Python, and AI weather models.</sub> | Intermediate | 12 | 5h 11m |
 
 ## Pick a path
 
@@ -65,10 +70,10 @@ The GitHub repos the roadmaps use most. Clone them and code along.
 | Repo | Stars | Used in |
 | --- | ---: | --- |
 | [ollama/ollama](https://github.com/ollama/ollama) | ★ 185.8k | [AI Engineering](roadmaps/ai-engineering.md) |
-| [Comfy-Org/ComfyUI](https://github.com/Comfy-Org/ComfyUI) | ★ 144.8k | [Generative AI: Images & Video](roadmaps/generative-ai.md) |
-| [ggml-org/llama.cpp](https://github.com/ggml-org/llama.cpp) | ★ 133.2k | [Run, Serve & Scale AI](roadmaps/deploy-and-scale.md) |
-| [openai/whisper](https://github.com/openai/whisper) | ★ 111.8k | [Speech & Audio AI](roadmaps/speech-and-audio-ai.md) |
-| [rasbt/LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch) | ★ 107.7k | [LLMs from Scratch](roadmaps/llms-from-scratch.md) |
+| [Comfy-Org/ComfyUI](https://github.com/Comfy-Org/ComfyUI) | ★ 144.9k | [Generative AI: Images & Video](roadmaps/generative-ai.md) |
+| [ggml-org/llama.cpp](https://github.com/ggml-org/llama.cpp) | ★ 133.3k | [Run, Serve & Scale AI](roadmaps/deploy-and-scale.md), [TinyML & Edge AI](roadmaps/tinyml-and-edge-ai.md) |
+| [openai/whisper](https://github.com/openai/whisper) | ★ 111.9k | [Speech & Audio AI](roadmaps/speech-and-audio-ai.md) |
+| [rasbt/LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch) | ★ 107.8k | [LLMs from Scratch](roadmaps/llms-from-scratch.md) |
 | [vllm-project/vllm](https://github.com/vllm-project/vllm) | ★ 96.2k | [Run, Serve & Scale AI](roadmaps/deploy-and-scale.md) |
 | [microsoft/ML-For-Beginners](https://github.com/microsoft/ML-For-Beginners) | ★ 92k | [Machine Learning](roadmaps/machine-learning.md) |
 | [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) | ★ 91.8k | [AI Agents & MCP](roadmaps/ai-agents.md) |
@@ -78,7 +83,7 @@ The GitHub repos the roadmaps use most. Clone them and code along.
 | [microsoft/ai-agents-for-beginners](https://github.com/microsoft/ai-agents-for-beginners) | ★ 78.8k | [AI Agents & MCP](roadmaps/ai-agents.md) |
 | [karpathy/nanoGPT](https://github.com/karpathy/nanoGPT) | ★ 64.4k | [LLMs from Scratch](roadmaps/llms-from-scratch.md) |
 | [ultralytics/ultralytics](https://github.com/ultralytics/ultralytics) | ★ 63.1k | [Computer Vision](roadmaps/computer-vision.md) |
-| [karpathy/nanochat](https://github.com/karpathy/nanochat) | ★ 60.1k | [LLMs from Scratch](roadmaps/llms-from-scratch.md) |
+| [karpathy/nanochat](https://github.com/karpathy/nanochat) | ★ 60.2k | [LLMs from Scratch](roadmaps/llms-from-scratch.md) |
 
 ## How it works
 
@@ -92,17 +97,17 @@ The GitHub repos the roadmaps use most. Clone them and code along.
 
 New roadmaps are added regularly. Next up:
 
-- Data Engineering for AI
-- Math for ML, deeper
-- Bayesian ML & Probabilistic Programming
-- TinyML & Edge AI
-- AI for Science: Protein Folding & Drug Discovery
 - Knowledge Graphs & GraphRAG
 - Synthetic Data & Data-Centric AI
 - Federated Learning & Privacy-Preserving ML
 - Causal Inference & Causal ML
 - Evaluation & Benchmarking for LLMs
 - Quantum Machine Learning
+- LLM Security & Red Teaming
+- Medical AI & Imaging
+- Self-Driving Cars & Autonomous Systems
+- Mixture of Experts & Efficient LLM Architectures
+- Classic NLP before LLMs
 
 Watch or star the repo to get them as they land.
 

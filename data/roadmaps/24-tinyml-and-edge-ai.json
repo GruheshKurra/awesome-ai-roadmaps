@@ -1,0 +1,90 @@
+{
+  "slug": "tinyml-and-edge-ai",
+  "order": 24,
+  "title": "TinyML & Edge AI",
+  "level": "Advanced",
+  "tagline": "Shrink models and run them on microcontrollers, phones, and small boards: pruning, quantization, distillation, TFLite Micro, Edge Impulse, ONNX, and ExecuTorch.",
+  "prereqs": "Deep Learning (training a CNN in PyTorch or Keras). Hardware steps use a microcontroller board such as an ESP32-CAM or Arduino Nano 33 BLE Sense, a Jetson, or a Raspberry Pi; the rest run on a laptop.",
+  "steps": [
+    {
+      "title": "What TinyML is",
+      "video": "Y1qwcPqxkp0",
+      "why": "Why running ML on tiny, battery-powered chips matters."
+    },
+    {
+      "title": "Why efficient ML",
+      "video": "tY75czj43_4",
+      "why": "MIT's course intro: the gap between model size and hardware."
+    },
+    {
+      "title": "Pruning and sparsity",
+      "video": "47nNIPj3B98",
+      "why": "Remove weights a model does not need, and keep accuracy."
+    },
+    {
+      "title": "int8 quantization",
+      "video": "rzMs-wKQU_U",
+      "why": "Store weights and activations in 8 bits instead of 32."
+    },
+    {
+      "title": "Knowledge distillation",
+      "video": "Pwo1bLDB-jA",
+      "why": "Train a small student model to copy a big teacher."
+    },
+    {
+      "title": "TinyML on microcontrollers",
+      "video": "vyd1bFxPjL8",
+      "why": "MCUNet fits vision models into kilobytes of memory.",
+      "repo": "mit-han-lab/tinyengine"
+    },
+    {
+      "title": "Optimize TensorFlow Lite models",
+      "video": "8WKMU0WWuwQ",
+      "why": "Post-training quantization and pruning in the TFLite toolchain."
+    },
+    {
+      "title": "TensorFlow Lite for Microcontrollers",
+      "video": "gDFWCxrJruQ",
+      "why": "Deploy a first model to a microcontroller, end to end.",
+      "repo": "tensorflow/tflite-micro"
+    },
+    {
+      "title": "Keyword spotting in 30 KB of RAM",
+      "video": "vbIg4Up1Ts0",
+      "why": "Collect audio, train, and deploy a wake-word model."
+    },
+    {
+      "title": "Object detection on an ESP32-CAM",
+      "video": "bZIKVaD3dRk",
+      "why": "Run a tiny detector on a cheap camera board."
+    },
+    {
+      "title": "ONNX Runtime",
+      "video": "Wp5PaRpudlk",
+      "why": "Export once, then run the model fast on many devices.",
+      "repo": "microsoft/onnxruntime"
+    },
+    {
+      "title": "On-device PyTorch with ExecuTorch",
+      "video": "toirKRTLgJA",
+      "why": "PyTorch's runtime for phones and embedded chips.",
+      "repo": "pytorch/executorch"
+    },
+    {
+      "title": "Get started with a Jetson Orin Nano",
+      "video": "VWdJ4BCtam8",
+      "why": "Set up a small GPU board for edge vision and LLMs."
+    },
+    {
+      "title": "Run an LLM on a Raspberry Pi 5",
+      "video": "kZhAj8--t8w",
+      "why": "What a small language model can do on a cheap single-board computer.",
+      "repo": "ggml-org/llama.cpp"
+    }
+  ],
+  "projects": [
+    "Quantize a small CNN to int8 and report size, latency, and accuracy before and after.",
+    "Train a two-word keyword spotter and run it on a microcontroller board (or the board's simulator).",
+    "Export a PyTorch image classifier to ONNX and compare its speed with ONNX Runtime and plain PyTorch on your laptop."
+  ]
+}

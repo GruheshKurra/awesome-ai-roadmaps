@@ -1,0 +1,80 @@
+{
+  "slug": "ai-for-science",
+  "order": 25,
+  "title": "AI for Science",
+  "level": "Intermediate",
+  "tagline": "How AI is changing biology and chemistry: protein folding, AlphaFold, protein language models, protein design, molecules in Python, and AI weather models.",
+  "prereqs": "Deep Learning (transformers help). Graph Neural Networks helps for the molecule steps. No biology background needed; step 1 covers it.",
+  "steps": [
+    {
+      "title": "Protein structure and folding",
+      "video": "hok2hyED9go",
+      "why": "The biology you need: amino acids fold into 3D shapes."
+    },
+    {
+      "title": "The protein folding problem",
+      "video": "X30Zuoc-66k",
+      "why": "Why predicting shape from sequence was a 50-year puzzle."
+    },
+    {
+      "title": "The AlphaFold story",
+      "video": "P_fHJIYENdI",
+      "why": "How DeepMind cracked protein folding and why it matters."
+    },
+    {
+      "title": "How AlphaFold works",
+      "video": "3gSy_yN9YBo",
+      "why": "Evolution, attention, and geometry inside the model."
+    },
+    {
+      "title": "Predict a structure with ColabFold",
+      "video": "gIbCAcMDM7E",
+      "why": "Fold your own protein for free in a notebook.",
+      "repo": "sokrypton/ColabFold"
+    },
+    {
+      "title": "Protein language models",
+      "video": "9DL1aX5fM_I",
+      "why": "Language model ideas applied to amino acid sequences."
+    },
+    {
+      "title": "Design new proteins with RFdiffusion",
+      "video": "wIHwHDt2NoI",
+      "why": "Diffusion models generate proteins that never existed.",
+      "repo": "RosettaCommons/RFdiffusion"
+    },
+    {
+      "title": "AI in drug discovery",
+      "video": "EW9B43cs6Yc",
+      "why": "Where AI helps find and test new medicines."
+    },
+    {
+      "title": "Molecules in Python with RDKit",
+      "video": "9Z9XM9xamDU",
+      "why": "Read SMILES, draw molecules, and compute properties.",
+      "repo": "rdkit/rdkit"
+    },
+    {
+      "title": "Molecular property prediction with GNNs",
+      "video": "4kQvYG6DXN0",
+      "why": "Treat molecules as graphs to predict how they behave.",
+      "repo": "deepchem/deepchem"
+    },
+    {
+      "title": "AI weather forecasting with GraphCast",
+      "video": "PD1v5PCJs_o",
+      "why": "A graph network that beats classic 10-day forecasts.",
+      "repo": "google-deepmind/weathernext"
+    },
+    {
+      "title": "Accelerating science with AI",
+      "video": "hHooQmmzG4k",
+      "why": "Demis Hassabis on what AI can do for science next."
+    }
+  ],
+  "projects": [
+    "Fold a small protein with ColabFold and compare it with its experimental structure from the PDB.",
+    "Use RDKit to compute properties for 100 drug molecules from SMILES and plot which ones pass Lipinski's rule of five.",
+    "Train a DeepChem graph model to predict solubility on the ESOL dataset and report its error on a held-out split."
+  ]
+}

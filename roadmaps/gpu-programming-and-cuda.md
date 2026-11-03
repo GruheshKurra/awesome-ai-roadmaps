@@ -26,3 +26,5 @@ Level: **Advanced** · 11 steps · 11h 37m of video · Prerequisites: Deep Learn
 - Write a vector add and a naive matmul in CUDA, then add tiling and chart the speedup.
 - Implement a fused softmax in Triton and benchmark it against PyTorch.
 - Profile one PyTorch model layer, find its bottleneck, and write up what you changed.
+
+**Next:** [Data Engineering for AI](data-engineering-for-ai.md)
