@@ -1,0 +1,75 @@
+{
+  "slug": "reinforcement-learning",
+  "order": 11,
+  "title": "Reinforcement Learning",
+  "level": "Intermediate",
+  "tagline": "Agents that learn by trial and error: from Bellman equations and Q-learning to PPO, AlphaGo, and the RL behind reasoning models.",
+  "prereqs": "Deep Learning. Fine-Tuning & Reasoning Models pairs well at the end.",
+  "steps": [
+    {
+      "title": "Reinforcement learning, the essentials",
+      "video": "Z-T0iJEXiwM",
+      "why": "Rewards, policies, and the learning loop in plain language."
+    },
+    {
+      "title": "The RL framework, by the book",
+      "video": "NFo9v_yKQXA",
+      "why": "States, actions, returns, and how the pieces fit together.",
+      "repo": "openai/spinningup"
+    },
+    {
+      "title": "Bellman equations and dynamic programming",
+      "video": "_j6pvGEchWU",
+      "why": "The recursion every value-based method builds on."
+    },
+    {
+      "title": "Q-learning",
+      "video": "TiAXhVAZQl8",
+      "why": "Learn action values from experience without a model."
+    },
+    {
+      "title": "Deep Q-learning",
+      "video": "wrBUkpiRvCA",
+      "why": "Replace the Q-table with a neural network.",
+      "repo": "huggingface/deep-rl-class"
+    },
+    {
+      "title": "Policy gradients",
+      "video": "e20EY4tFC_Q",
+      "why": "Optimize the policy directly instead of values."
+    },
+    {
+      "title": "PPO, step by step",
+      "video": "5VHLd9eCZ-w",
+      "why": "The stable default policy-gradient algorithm, explained simply.",
+      "repo": "DLR-RM/stable-baselines3"
+    },
+    {
+      "title": "Get started with Stable Baselines3",
+      "video": "OqvXHi_QtT0",
+      "why": "Train your first agent on a Gymnasium environment in Python.",
+      "repo": "Farama-Foundation/Gymnasium"
+    },
+    {
+      "title": "AlphaGo",
+      "video": "4PyWLgrt7YY",
+      "why": "How RL plus tree search beat a Go champion."
+    },
+    {
+      "title": "PPO for language models",
+      "video": "8jtAzxUwDj0",
+      "why": "How PPO adapts to training LLMs with feedback.",
+      "repo": "huggingface/trl"
+    },
+    {
+      "title": "GRPO and reasoning RL",
+      "video": "mg-iU-WxiNs",
+      "why": "The simpler RL recipe behind DeepSeek-R1-style reasoning."
+    }
+  ],
+  "projects": [
+    "Train a DQN on CartPole, then plot reward per episode and compare against a random agent.",
+    "Solve LunarLander with PPO in Stable Baselines3 and record a video of the trained agent.",
+    "Write tabular Q-learning for FrozenLake from scratch and visualize the learned policy."
+  ]
+}

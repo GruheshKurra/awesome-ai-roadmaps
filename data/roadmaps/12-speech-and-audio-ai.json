@@ -1,0 +1,68 @@
+{
+  "slug": "speech-and-audio-ai",
+  "order": 12,
+  "title": "Speech & Audio AI",
+  "level": "Intermediate",
+  "tagline": "How machines hear and speak: waveforms, spectrograms, speech recognition with Whisper, text-to-speech, audio codecs, and voice agents.",
+  "prereqs": "Deep Learning. LLMs from Scratch helps for the later steps.",
+  "steps": [
+    {
+      "title": "The Fourier transform",
+      "video": "spUNpyF58BY",
+      "why": "Why any sound is a sum of frequencies."
+    },
+    {
+      "title": "Understanding audio signals",
+      "video": "daB9naGBVv4",
+      "why": "Sampling, waveforms, and how audio becomes model input."
+    },
+    {
+      "title": "Mel spectrograms",
+      "video": "9GHCiiDLHQ4",
+      "why": "The image-like input most speech models actually use.",
+      "repo": "huggingface/audio-transformers-course"
+    },
+    {
+      "title": "MFCCs",
+      "video": "SJo7vPgRlBQ",
+      "why": "Classic compact audio features, and why they mattered."
+    },
+    {
+      "title": "CTC loss",
+      "video": "jDPl1QJGLpE",
+      "why": "Train speech recognition without frame-level alignments."
+    },
+    {
+      "title": "wav2vec 2.0",
+      "video": "fMqYul2TvBE",
+      "why": "Self-supervised pretraining for speech representations."
+    },
+    {
+      "title": "Whisper",
+      "video": "AwJf8aQfChE",
+      "why": "Large-scale weak supervision gives robust open speech recognition.",
+      "repo": "openai/whisper"
+    },
+    {
+      "title": "Modern text-to-speech",
+      "video": "jaQrfdUzkQ4",
+      "why": "How VITS-style models turn text into natural voices."
+    },
+    {
+      "title": "Neural audio codecs",
+      "video": "L6wiWYCCGFM",
+      "why": "Compress audio into tokens that language models can handle."
+    },
+    {
+      "title": "Full-duplex voice models",
+      "video": "JKA_v5Bb_tI",
+      "why": "Moshi: a voice model that listens and talks at once.",
+      "repo": "kyutai-labs/moshi"
+    }
+  ],
+  "projects": [
+    "Transcribe a podcast episode with Whisper and measure word error rate on a 5-minute hand-corrected sample.",
+    "Plot waveform, spectrogram, and mel spectrogram for three sounds and write what changes between them.",
+    "Build a small voice assistant: Whisper in, an LLM in the middle, a local TTS voice out."
+  ]
+}

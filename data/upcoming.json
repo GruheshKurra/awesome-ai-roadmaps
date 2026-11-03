@@ -1,14 +1,14 @@
 [
-  "Reinforcement Learning",
-  "Speech & Audio AI",
-  "Robotics & Embodied AI",
-  "Interpretability",
-  "AI Safety & Alignment",
   "Recommender Systems",
   "Time Series & Forecasting",
   "Graph Neural Networks",
   "Multimodal & Vision-Language Models",
   "GPU Programming & CUDA",
   "Data Engineering for AI",
-  "Math for ML, deeper"
+  "Math for ML, deeper",
+  "Bayesian ML & Probabilistic Programming",
+  "TinyML & Edge AI",
+  "AI for Science: Protein Folding & Drug Discovery",
+  "Knowledge Graphs & GraphRAG",
+  "Synthetic Data & Data-Centric AI"
 ]

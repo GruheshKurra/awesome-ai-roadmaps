@@ -30,3 +30,5 @@ Level: **Advanced** · 15 steps · 17h 44m of video · Prerequisites: Deep Learn
 - Serve a quantized model with llama.cpp and compare tokens/sec at 4-bit and 8-bit.
 - Load-test vLLM at 1, 8, and 32 concurrent users and chart time-to-first-token.
 - Solve the first 10 GPU Puzzles, then write a fused softmax kernel and benchmark it.
+
+**Next:** [Reinforcement Learning](reinforcement-learning.md)

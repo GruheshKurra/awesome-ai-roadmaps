@@ -1,0 +1,77 @@
+{
+  "slug": "interpretability",
+  "order": 14,
+  "title": "Interpretability",
+  "level": "Advanced",
+  "tagline": "Open the black box: circuits, superposition, sparse autoencoders, induction heads, grokking, and tracing what LLMs compute.",
+  "prereqs": "LLMs from Scratch.",
+  "steps": [
+    {
+      "title": "What is interpretability?",
+      "video": "TxhhMTOTMDg",
+      "why": "The goal and the motivation, in under four minutes."
+    },
+    {
+      "title": "The dark matter of AI",
+      "video": "UGO_Ehywuxc",
+      "why": "A visual tour of how researchers read model internals."
+    },
+    {
+      "title": "Mechanistic interpretability: an introduction",
+      "video": "0704iLc55Fs",
+      "why": "Neel Nanda on features, circuits, and open questions."
+    },
+    {
+      "title": "A whirlwind tour",
+      "video": "veT2VI4vHyU",
+      "why": "The core ideas and techniques in one fast talk.",
+      "repo": "TransformerLensOrg/TransformerLens"
+    },
+    {
+      "title": "Superposition",
+      "video": "dzPkabHQ_80",
+      "why": "Why models pack more features than neurons."
+    },
+    {
+      "title": "Transformer circuits and induction heads",
+      "video": "pC4zRb_5noQ",
+      "why": "The circuit behind in-context learning."
+    },
+    {
+      "title": "Grokking, reverse-engineered",
+      "video": "D8GOeCFFby4",
+      "why": "How a small network learns modular addition with Fourier features."
+    },
+    {
+      "title": "Sparse autoencoders",
+      "video": "HPLIl9ZOpUQ",
+      "why": "Pull interpretable features out of model activations."
+    },
+    {
+      "title": "Intro to mechanistic interpretability (ARENA)",
+      "video": "lfwT79Hgytc",
+      "why": "A hands-on lecture to start coding experiments.",
+      "repo": "ARENA-education/ARENA_materials"
+    },
+    {
+      "title": "Steering vectors",
+      "video": "cp-YSyc5aW8",
+      "why": "Change model behavior by editing activations."
+    },
+    {
+      "title": "Tracing the thoughts of an LLM",
+      "video": "Bj9BD2D3DzA",
+      "why": "What attribution graphs revealed inside Claude."
+    },
+    {
+      "title": "Circuit tracing in practice",
+      "video": "ig5RNJJaFJE",
+      "why": "How the circuit-tracing methods work and what they found."
+    }
+  ],
+  "projects": [
+    "Load GPT-2 in TransformerLens and find which heads attend to previous tokens on repeated text.",
+    "Train a small sparse autoencoder on one layer of a small model and list five features you can name.",
+    "Use activation patching to locate which layer decides the answer on a simple factual prompt."
+  ]
+}

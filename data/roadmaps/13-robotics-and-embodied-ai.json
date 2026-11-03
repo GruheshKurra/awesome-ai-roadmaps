@@ -1,0 +1,70 @@
+{
+  "slug": "robotics-and-embodied-ai",
+  "order": 13,
+  "title": "Robotics & Embodied AI",
+  "level": "Advanced",
+  "tagline": "Teach robots with data: robot learning basics, imitation learning, ACT, diffusion policies, vision-language-action models, and sim-to-real.",
+  "prereqs": "Reinforcement Learning. Deep Learning. Hardware: step 9 wants a recent NVIDIA GPU or a cloud GPU; step 10 needs a physical SO-101 arm, so treat it as optional and use the ACT and Diffusion Policy steps with LeRobot simulation datasets instead.",
+  "steps": [
+    {
+      "title": "Introduction to robot learning",
+      "video": "X0k14u6pSxw",
+      "why": "What makes learning for robots different from other ML."
+    },
+    {
+      "title": "Imitation learning",
+      "video": "Ef4R5s1LqoQ",
+      "why": "Behavior cloning, its failure modes, and common fixes."
+    },
+    {
+      "title": "ALOHA and Action Chunking Transformers",
+      "video": "ft73x0LfGpM",
+      "why": "Predict chunks of actions for smooth, precise manipulation.",
+      "repo": "huggingface/lerobot"
+    },
+    {
+      "title": "Diffusion policy",
+      "video": "NjeOF1Yq0Ms",
+      "why": "Generate robot actions with diffusion models."
+    },
+    {
+      "title": "Vision-language-action models",
+      "video": "8dZUOo5xWFw",
+      "why": "How LLM-style models become robot controllers."
+    },
+    {
+      "title": "VLA models compared",
+      "video": "iNS7zaxWvJ8",
+      "why": "OpenVLA, pi0, and RT-2 side by side.",
+      "repo": "openvla/openvla"
+    },
+    {
+      "title": "Pi0: a generalist robot policy",
+      "video": "ejk6-ffDXFw",
+      "why": "A flow-matching VLA trained across many robots.",
+      "repo": "Physical-Intelligence/openpi"
+    },
+    {
+      "title": "Robot foundation models",
+      "video": "KEbE33iGaIk",
+      "why": "Sergey Levine on where generalist robot models are headed."
+    },
+    {
+      "title": "Reinforcement learning for robots in simulation",
+      "video": "TMHkFDhVt7g",
+      "why": "Train locomotion policies in Isaac Lab.",
+      "repo": "isaac-sim/IsaacLab"
+    },
+    {
+      "title": "Optional: train a real robot arm with LeRobot",
+      "video": "7tGT8hqRSAo",
+      "why": "Hardware-dependent: collect demos and train a policy on a low-cost arm.",
+      "repo": "huggingface/lerobot"
+    }
+  ],
+  "projects": [
+    "Train an ACT or diffusion policy in LeRobot on a public dataset and report success rate in simulation.",
+    "Write behavior cloning for a simulated task and show where it drifts, then add DAgger-style corrections.",
+    "Train a quadruped to walk in Isaac Lab and compare two reward designs."
+  ]
+}

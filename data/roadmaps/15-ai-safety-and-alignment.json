@@ -1,0 +1,75 @@
+{
+  "slug": "ai-safety-and-alignment",
+  "order": 15,
+  "title": "AI Safety & Alignment",
+  "level": "Intermediate",
+  "tagline": "Why powerful AI can go wrong and what researchers do about it: specification gaming, inner alignment, deception, oversight, and evals.",
+  "prereqs": "Basic ML helps. Reinforcement Learning is useful context.",
+  "steps": [
+    {
+      "title": "Intro to AI safety",
+      "video": "pYXy-A4siMw",
+      "why": "The core problems, laid out clearly for newcomers."
+    },
+    {
+      "title": "The orthogonality thesis",
+      "video": "hEUO6pjwFOo",
+      "why": "Why smart does not mean it shares our values."
+    },
+    {
+      "title": "Instrumental convergence",
+      "video": "ZeecOKBus3Q",
+      "why": "Why most goals push agents toward power and self-preservation."
+    },
+    {
+      "title": "The AI stop button problem",
+      "video": "3TYT1QfdfsM",
+      "why": "Why switching off a goal-driven agent is hard."
+    },
+    {
+      "title": "Specification gaming",
+      "video": "nKJlF-olKmg",
+      "why": "Real cases of systems exploiting badly written objectives."
+    },
+    {
+      "title": "Mesa-optimizers and inner alignment",
+      "video": "bJLcIBixGj8",
+      "why": "When a trained model pursues a goal you did not set."
+    },
+    {
+      "title": "Real inner misalignment",
+      "video": "zkbPdEHEyEI",
+      "why": "Experiments showing goal misgeneralization in practice."
+    },
+    {
+      "title": "Constitutional AI",
+      "video": "quyqRIHRa60",
+      "why": "Train models against written principles, not only human labels."
+    },
+    {
+      "title": "Sleeper agents",
+      "video": "wL22URoMZjo",
+      "why": "Backdoored behavior that survives safety training."
+    },
+    {
+      "title": "AI will try to cheat and escape",
+      "video": "AqJnK9Dh-eQ",
+      "why": "Evidence of scheming-like behavior in current models."
+    },
+    {
+      "title": "Alignment faking in LLMs",
+      "video": "9eXV64O2Xp8",
+      "why": "A model behaving differently when it thinks it is watched."
+    },
+    {
+      "title": "Dangerous capability evaluations",
+      "video": "pO8IcIqhHuk",
+      "why": "How labs test frontier models for serious risks."
+    }
+  ],
+  "projects": [
+    "Write one page explaining specification gaming with three real examples and one fix for each.",
+    "Build a tiny RL environment with a deliberate reward loophole and show an agent exploiting it.",
+    "Design 10 eval prompts for one risky behavior, run them on a model, and report the failure rate."
+  ]
+}

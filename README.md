@@ -10,7 +10,7 @@
 <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge-flat2.svg" height="28"></a>
 </p>
 
-<p align="center"><b>10 roadmaps · 134 videos · 99 hours of video · 50 GitHub repos</b></p>
+<p align="center"><b>15 roadmaps · 189 videos · 123 hours of video · 63 GitHub repos</b></p>
 
 <p align="center"><a href="https://gruheshkurra.github.io/awesome-ai-roadmaps/"><b>Open the interactive website →</b></a> (track your progress, step by step)</p>
 
@@ -28,6 +28,11 @@
 | 8 | **[Computer Vision](roadmaps/computer-vision.md)**<br><sub>Teach machines to see: CNNs, transfer learning, YOLO detection, segmentation, ViT, and CLIP.</sub> | Intermediate | 12 | 4h 40m |
 | 9 | **[Generative AI: Images & Video](roadmaps/generative-ai.md)**<br><sub>How machines create images and video: VAEs, GANs, diffusion, latent diffusion, and flow matching.</sub> | Intermediate | 12 | 9h 21m |
 | 10 | **[Run, Serve & Scale AI](roadmaps/deploy-and-scale.md)**<br><sub>Get models into production and make them fast: Docker, MLOps, quantization, vLLM, GPUs, CUDA, and FSDP.</sub> | Advanced | 15 | 17h 44m |
+| 11 | **[Reinforcement Learning](roadmaps/reinforcement-learning.md)**<br><sub>Agents that learn by trial and error: from Bellman equations and Q-learning to PPO, AlphaGo, and the RL behind reasoning models.</sub> | Intermediate | 11 | 3h 28m |
+| 12 | **[Speech & Audio AI](roadmaps/speech-and-audio-ai.md)**<br><sub>How machines hear and speak: waveforms, spectrograms, speech recognition with Whisper, text-to-speech, audio codecs, and voice agents.</sub> | Intermediate | 10 | 4h 07m |
+| 13 | **[Robotics & Embodied AI](roadmaps/robotics-and-embodied-ai.md)**<br><sub>Teach robots with data: robot learning basics, imitation learning, ACT, diffusion policies, vision-language-action models, and sim-to-real.</sub> | Advanced | 10 | 7h 28m |
+| 14 | **[Interpretability](roadmaps/interpretability.md)**<br><sub>Open the black box: circuits, superposition, sparse autoencoders, induction heads, grokking, and tracing what LLMs compute.</sub> | Advanced | 12 | 5h 36m |
+| 15 | **[AI Safety & Alignment](roadmaps/ai-safety-and-alignment.md)**<br><sub>Why powerful AI can go wrong and what researchers do about it: specification gaming, inner alignment, deception, oversight, and evals.</sub> | Intermediate | 12 | 4h 17m |
 
 ## Pick a path
 
@@ -57,6 +62,7 @@ The GitHub repos the roadmaps use most. Clone them and code along.
 | [ollama/ollama](https://github.com/ollama/ollama) | ★ 185.7k | [AI Engineering](roadmaps/ai-engineering.md) |
 | [Comfy-Org/ComfyUI](https://github.com/Comfy-Org/ComfyUI) | ★ 144.7k | [Generative AI: Images & Video](roadmaps/generative-ai.md) |
 | [ggml-org/llama.cpp](https://github.com/ggml-org/llama.cpp) | ★ 133.2k | [Run, Serve & Scale AI](roadmaps/deploy-and-scale.md) |
+| [openai/whisper](https://github.com/openai/whisper) | ★ 111.8k | [Speech & Audio AI](roadmaps/speech-and-audio-ai.md) |
 | [rasbt/LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch) | ★ 107.7k | [LLMs from Scratch](roadmaps/llms-from-scratch.md) |
 | [vllm-project/vllm](https://github.com/vllm-project/vllm) | ★ 96.2k | [Run, Serve & Scale AI](roadmaps/deploy-and-scale.md) |
 | [microsoft/ML-For-Beginners](https://github.com/microsoft/ML-For-Beginners) | ★ 92k | [Machine Learning](roadmaps/machine-learning.md) |
@@ -68,7 +74,6 @@ The GitHub repos the roadmaps use most. Clone them and code along.
 | [karpathy/nanoGPT](https://github.com/karpathy/nanoGPT) | ★ 64.4k | [LLMs from Scratch](roadmaps/llms-from-scratch.md) |
 | [ultralytics/ultralytics](https://github.com/ultralytics/ultralytics) | ★ 63k | [Computer Vision](roadmaps/computer-vision.md) |
 | [karpathy/nanochat](https://github.com/karpathy/nanochat) | ★ 59.9k | [LLMs from Scratch](roadmaps/llms-from-scratch.md) |
-| [anthropics/claude-cookbooks](https://github.com/anthropics/claude-cookbooks) | ★ 54.1k | [AI Engineering](roadmaps/ai-engineering.md) |
 
 ## How it works
 
@@ -82,11 +87,6 @@ The GitHub repos the roadmaps use most. Clone them and code along.
 
 New roadmaps are added regularly. Next up:
 
-- Reinforcement Learning
-- Speech & Audio AI
-- Robotics & Embodied AI
-- Interpretability
-- AI Safety & Alignment
 - Recommender Systems
 - Time Series & Forecasting
 - Graph Neural Networks
@@ -94,6 +94,11 @@ New roadmaps are added regularly. Next up:
 - GPU Programming & CUDA
 - Data Engineering for AI
 - Math for ML, deeper
+- Bayesian ML & Probabilistic Programming
+- TinyML & Edge AI
+- AI for Science: Protein Folding & Drug Discovery
+- Knowledge Graphs & GraphRAG
+- Synthetic Data & Data-Centric AI
 
 Watch or star the repo to get them as they land.
 
