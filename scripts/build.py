@@ -9,6 +9,7 @@ data/meta.json, which scripts/refresh_meta.py fills in.
 
 import json
 import shutil
+import subprocess
 import sys
 from html import escape
 from pathlib import Path
@@ -86,6 +87,25 @@ def yt(video_id):
 
 def thumb(video_id):
     return f"https://i.ytimg.com/vi/{video_id}/mqdefault.jpg"
+
+
+def iso_duration(seconds):
+    hours, minutes = divmod(round(seconds / 60), 60)
+    return f"PT{hours}H{minutes}M"
+
+
+def last_changed(*paths):
+    """Date of the last commit touching paths, for sitemap lastmod. None outside git."""
+    try:
+        out = subprocess.run(["git", "log", "-1", "--format=%cs", "--", *paths], cwd=ROOT, capture_output=True, text=True, check=True).stdout.strip()
+    except (OSError, subprocess.CalledProcessError):
+        return None
+    return out or None
+
+
+def json_ld(data):
+    text = json.dumps(data, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
+    return f'<script type="application/ld+json">{text}</script>'
 
 
 def md_cell(text):
@@ -191,9 +211,11 @@ def roadmap_md(r, roadmaps, meta):
 
 # ---------- website ----------
 
-def page(title, description, body, path="", depth=0):
+def page(title, description, body, path="", depth=0, schema=(), index=True):
     up = "../" * depth
     canonical = f"{SITE_URL}/{path}"
+    robots = "max-image-preview:large" if index else "noindex"
+    ld = "".join(f"\n{json_ld(s)}" for s in schema)
     return f"""<!doctype html>
 <html lang="en">
 <head>
@@ -201,14 +223,24 @@ def page(title, description, body, path="", depth=0):
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{escape(title)}</title>
 <meta name="description" content="{escape(description)}">
+<meta name="robots" content="{robots}">
 <link rel="canonical" href="{canonical}">
+<meta name="theme-color" content="#ff5a1f">
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="AI Roadmaps">
+<meta property="og:locale" content="en_US">
 <meta property="og:title" content="{escape(title)}">
 <meta property="og:description" content="{escape(description)}">
 <meta property="og:url" content="{canonical}">
 <meta property="og:image" content="{SITE_URL}/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="AI Roadmaps: learn AI from free YouTube videos and GitHub repos">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="{up}assets/favicon.svg" type="image/svg+xml">
+<meta name="twitter:title" content="{escape(title)}">
+<meta name="twitter:description" content="{escape(description)}">
+<meta name="twitter:image" content="{SITE_URL}/assets/og.png">
+<link rel="icon" href="{up}assets/favicon.svg" type="image/svg+xml">{ld}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -262,6 +294,15 @@ def home_html(roadmaps, meta, upcoming):
         m = meta["repos"][key]
         repo_cards.append(f'<a class="repo" href="https://github.com/{key}" target="_blank" rel="noopener"><span class="repo-name">{escape(key)}</span><span class="repo-desc">{escape(m["description"][:110])}</span><span class="repo-stars">★ {stars(m["stars"])}</span></a>')
     soon = "".join(f"<li>{escape(item)}</li>" for item in upcoming)
+    first = roadmaps[0]
+    faq = [
+        ("How can I learn AI for free?", f"Pick a roadmap and watch its videos in order. All {len(roadmaps)} roadmaps are made of free YouTube videos and open-source GitHub repos, with no sign-up, paywall, or trial."),
+        ("Where should a complete beginner start?", f"Start with {first['title']} ({duration(first['seconds'])} of video), then Machine Learning and Deep Learning. After that, choose a roadmap for what you want to build: LLMs, agents, computer vision, generative AI, or deployment."),
+        ("How long does each roadmap take?", f"Between {duration(min(r['seconds'] for r in roadmaps))} and {duration(max(r['seconds'] for r in roadmaps))} of video, {total_hours(seconds)} hours in total. Plan for about twice that if you code along and build one of the projects at the end of each roadmap."),
+        ("Do I need an account to track my progress?", "No. Tick off each step as you finish it. Your progress is saved in your browser, and nothing is sent anywhere."),
+        ("How are the videos chosen?", "One specific video per step, never a whole playlist. Clear and short beats famous and long, every video is free to watch, and links are checked regularly so dead videos get replaced. Anyone can suggest a better one on GitHub."),
+    ]
+    faq_html = "".join(f"<details><summary>{escape(q)}</summary><p>{escape(a)}</p></details>" for q, a in faq)
     body = f"""<main>
 <section class="hero">
   <p class="eyebrow">Free · Video-first · In order</p>
@@ -302,8 +343,18 @@ def home_html(roadmaps, meta, upcoming):
   <p class="muted">New roadmaps land regularly. <a href="{REPO_URL}">Star the repo</a> to catch them.</p>
   <ul>{soon}</ul>
 </section>
+<section class="section faq">
+  <h2>Questions</h2>
+  {faq_html}
+</section>
 </main>"""
-    return page(f"AI Roadmaps: {TAGLINE}", f"{len(roadmaps)} free AI roadmaps built from {videos} YouTube videos and {len(repos)} GitHub repos: Python, ML, deep learning, LLMs, agents, fine-tuning, vision, diffusion, and deployment.", body)
+    description = f"{len(roadmaps)} free AI roadmaps built from {videos} YouTube videos and {len(repos)} GitHub repos: Python, ML, deep learning, LLMs, agents, fine-tuning, vision, diffusion, and deployment."
+    schema = [
+        {"@context": "https://schema.org", "@type": "WebSite", "name": "AI Roadmaps", "alternateName": "Awesome AI Roadmaps", "url": f"{SITE_URL}/", "description": description, "inLanguage": "en", "sameAs": [REPO_URL]},
+        {"@context": "https://schema.org", "@type": "ItemList", "name": "AI roadmaps", "itemListElement": [{"@type": "ListItem", "position": i, "url": f"{SITE_URL}/{r['slug']}/", "name": r["title"]} for i, r in enumerate(roadmaps, 1)]},
+        {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faq]},
+    ]
+    return page("Free AI Roadmaps: Learn AI with YouTube Videos & GitHub Repos", description, body, schema=schema)
 
 
 def roadmap_html(r, roadmaps, meta):
@@ -334,6 +385,20 @@ def roadmap_html(r, roadmaps, meta):
     if index + 1 < len(roadmaps):
         nxt = roadmaps[index + 1]
         nav = f'<a class="next" href="../{nxt["slug"]}/"><span class="muted">Next roadmap</span><strong>{escape(nxt["title"])} →</strong></a>'
+    others = "".join(f'<a href="../{o["slug"]}/">{escape(o["title"])}</a>' for o in roadmaps if o is not r)
+    url = f"{SITE_URL}/{r['slug']}/"
+    description = f"{r['title']}: {r['tagline']} {len(r['steps'])} free YouTube videos with GitHub repos to code along."
+    schema = [
+        {"@context": "https://schema.org", "@type": "Course", "name": f"{r['title']} roadmap", "description": r["tagline"], "url": url, "inLanguage": "en",
+         "provider": {"@type": "Organization", "name": "AI Roadmaps", "url": f"{SITE_URL}/"},
+         "isAccessibleForFree": True, "educationalLevel": r["level"], "coursePrerequisites": r["prereqs"], "timeRequired": iso_duration(r["seconds"]),
+         "offers": {"@type": "Offer", "category": "Free", "price": 0, "priceCurrency": "USD"},
+         "hasCourseInstance": {"@type": "CourseInstance", "courseMode": "Online", "courseWorkload": iso_duration(r["seconds"])},
+         "syllabusSections": [{"@type": "Syllabus", "name": s["title"], "description": s["why"]} for s in r["steps"]]},
+        {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "AI Roadmaps", "item": f"{SITE_URL}/"},
+            {"@type": "ListItem", "position": 2, "name": r["title"], "item": url}]},
+    ]
     body = f"""<main class="roadmap" data-slug="{r['slug']}" data-total="{len(r['steps'])}">
 <section class="rm-hero">
   <a class="back muted" href="../">← All roadmaps</a>
@@ -355,8 +420,12 @@ def roadmap_html(r, roadmaps, meta):
   <ul>{projects}</ul>
 </section>
 {nav}
+<nav class="more" aria-label="More roadmaps">
+  <h2>More free AI roadmaps</h2>
+  <div class="more-links">{others}</div>
+</nav>
 </main>"""
-    return page(f"{r['title']} roadmap: free videos in order | AI Roadmaps", f"{r['title']}: {r['tagline']} {len(r['steps'])} free YouTube videos with GitHub repos to code along.", body, f"{r['slug']}/", 1)
+    return page(f"{r['title']} Roadmap: Free Video Course in {len(r['steps'])} Steps | AI Roadmaps", description, body, f"{r['slug']}/", 1, schema)
 
 
 def build_site(roadmaps, meta, upcoming):
@@ -367,10 +436,17 @@ def build_site(roadmaps, meta, upcoming):
     for r in roadmaps:
         (site / r["slug"]).mkdir()
         (site / r["slug"] / "index.html").write_text(roadmap_html(r, roadmaps, meta))
-    (site / "404.html").write_text(page("Page not found | AI Roadmaps", "This page does not exist.", '<main class="notfound"><h1>Lost?</h1><p class="lead">That page doesn\'t exist, or a roadmap moved.</p><a class="btn primary" href="/awesome-ai-roadmaps/">See all roadmaps</a></main>', "404.html"))
-    urls = [f"{SITE_URL}/"] + [f"{SITE_URL}/{r['slug']}/" for r in roadmaps]
-    (site / "sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "".join(f"  <url><loc>{u}</loc></url>\n" for u in urls) + "</urlset>\n")
+    (site / "404.html").write_text(page("Page not found | AI Roadmaps", "This page does not exist.", '<main class="notfound"><h1>Lost?</h1><p class="lead">That page doesn\'t exist, or a roadmap moved.</p><a class="btn primary" href="/awesome-ai-roadmaps/">See all roadmaps</a></main>', "404.html", index=False))
+    files = sorted((ROOT / "data/roadmaps").glob("*.json"))
+    urls = [(f"{SITE_URL}/", last_changed("data", "scripts/build.py", "site"))]
+    urls += [(f"{SITE_URL}/{r['slug']}/", last_changed(str(f.relative_to(ROOT)), "data/meta.json")) for r, f in zip(roadmaps, files)]
+    entries = "".join(f"  <url><loc>{u}</loc>{f'<lastmod>{d}</lastmod>' if d else ''}</url>\n" for u, d in urls)
+    (site / "sitemap.xml").write_text(f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{entries}</urlset>\n')
     (site / "robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {SITE_URL}/sitemap.xml\n")
+    lines = [f"# AI Roadmaps\n\n> {TAGLINE} Free, video-first learning paths: each step is one YouTube video plus a GitHub repo to code along with.\n\n## Roadmaps\n"]
+    lines += [f"- [{r['title']}]({SITE_URL}/{r['slug']}/): {r['level']}, {len(r['steps'])} steps, {duration(r['seconds'])} of video. {r['tagline']}" for r in roadmaps]
+    lines += [f"\n## Source\n\n- [GitHub repository]({REPO_URL}): roadmap data, CC0 licensed.\n"]
+    (site / "llms.txt").write_text("\n".join(lines))
 
 
 def main():

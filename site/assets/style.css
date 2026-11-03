@@ -259,6 +259,17 @@ h1 { font-size: clamp(36px, 6vw, 64px); line-height: 1.04; letter-spacing: -.035
 }
 .next strong { font-size: 20px; }
 .next:hover { border-color: var(--accent); }
+.more { margin: 40px 0 0; }
+.more h2 { margin: 0 0 12px; font-size: 18px; }
+.more-links { display: flex; flex-wrap: wrap; gap: 8px; font-size: 14px; }
+.more-links a { padding: 6px 12px; border-radius: 8px; background: var(--surface-2); text-decoration: none; font-weight: 500; }
+.more-links a:hover { color: var(--accent); }
+
+/* FAQ */
+.faq details { max-width: 760px; border-bottom: 1px solid var(--line); }
+.faq summary { padding: 16px 0; font-weight: 600; cursor: pointer; }
+.faq summary:hover { color: var(--accent); }
+.faq details p { margin: 0 0 16px; color: var(--muted); }
 
 .notfound { padding: 80px 20px; text-align: center; }
 
