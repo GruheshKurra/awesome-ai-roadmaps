@@ -1,4 +1,4 @@
-name: Deploy GitHub Pages
+name: Build and deploy site
 
 on:
   push:
@@ -17,27 +17,21 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      pages: read
     steps:
       - uses: actions/checkout@v4
-      - name: Check catalog
-        run: ruby scripts/catalog.rb
-      - name: Test catalog checks
-        run: python3 -m unittest discover -s scripts/tests
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check README and roadmap pages match data/
+        run: python3 scripts/build.py --check
+      - name: Build site
+        run: python3 scripts/build.py
       - uses: actions/configure-pages@v5
         if: github.event_name != 'pull_request'
-      - uses: actions/jekyll-build-pages@v1
-        with:
-          source: ./
-          destination: ./_site
-      - name: Drop raw markdown copies
-        run: sudo find _site -name '*.md' -delete
-      - name: Check built site
-        run: python3 scripts/check_site.py _site
       - uses: actions/upload-pages-artifact@v3
         if: github.event_name != 'pull_request'
+        with:
+          path: _site
 
   deploy:
     if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'

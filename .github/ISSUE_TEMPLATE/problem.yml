@@ -1,11 +1,11 @@
-name: Report a learning or link problem
-description: Report an unavailable resource, paywall, missing prerequisite, or confusing step.
-title: "Track problem: "
+name: Report a problem
+description: A dead video, a missing repo, a step in the wrong order, or a website bug.
+title: "Problem: "
 body:
   - type: input
-    id: track
+    id: where
     attributes:
-      label: Track URL and step number
+      label: Roadmap and step (or page URL)
     validations:
       required: true
   - type: dropdown
@@ -13,21 +13,17 @@ body:
     attributes:
       label: Problem
       options:
-        - Broken or unavailable link
-        - Payment or sign-in required
-        - Resource does not match the concept
-        - Missing prerequisite or confusing order
-        - Other learning problem
+        - Video removed or unavailable
+        - Repo missing or archived
+        - Video doesn't match the step
+        - Step order or prerequisite is confusing
+        - Website bug
+        - Other
     validations:
       required: true
   - type: textarea
     id: details
     attributes:
-      label: What happened, and what did you expect?
-      description: For access problems, include the resource URL and the error message. Do not include account details.
+      label: What happened?
     validations:
       required: true
-  - type: input
-    id: replacement
-    attributes:
-      label: Suggested correction or replacement (optional)

@@ -1,26 +1,25 @@
-name: Suggest a resource
-description: Recommend a specific free video, paper, article, or chapter.
-title: "Resource: "
+name: Suggest a video or repo
+description: Recommend a better YouTube video or GitHub repo for a roadmap step, or a new roadmap.
+title: "Suggestion: "
 body:
   - type: input
-    id: track
+    id: roadmap
     attributes:
-      label: Track and concept
-      description: Name the track and the step this would add or improve.
+      label: Roadmap and step
+      description: For example "AI Agents & MCP, step 7", or "New roadmap".
     validations:
       required: true
   - type: input
     id: url
     attributes:
-      label: Resource URL
-      description: Link directly to the video or reading.
+      label: YouTube video or GitHub repo URL
     validations:
       required: true
   - type: textarea
     id: reason
     attributes:
-      label: Why this resource?
-      description: Explain what it teaches and what it improves over the current selection.
+      label: Why is it better?
+      description: What does it explain more clearly, more correctly, or more currently than the current pick? Say if you made it or are affiliated with it.
     validations:
       required: true
   - type: checkboxes
@@ -28,5 +27,5 @@ body:
     attributes:
       label: Access
       options:
-        - label: The learning material is available without payment or a paid trial.
+        - label: It is free to watch or use, with no paid course or sign-up wall.
           required: true

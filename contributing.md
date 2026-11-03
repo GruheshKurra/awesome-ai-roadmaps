@@ -1,40 +1,29 @@
----
-description: Suggest a free AI/ML learning resource, fix a link, or improve a roadmap step.
-permalink: /contributing/
----
-
 # Contributing
 
-Thanks for helping people learn AI. The fastest way to contribute is an [issue](https://github.com/GruheshKurra/awesome-ai-roadmaps/issues/new/choose): suggest a resource, or report a broken link, a paywall, or a confusing step. Pull requests that fix links or improve a track are welcome too.
+Thanks for helping people learn AI. The easiest way to help is an [issue](https://github.com/GruheshKurra/awesome-ai-roadmaps/issues/new/choose): suggest a better video, report a dead one, or propose a roadmap.
 
-## What makes a good resource
+## What makes a good pick
 
-- **Free.** No paid course, trial, certificate funnel, or login wall for the core content.
-- **Specific.** One video, paper, article, or chapter. Not a course homepage, a playlist, a channel, or another list.
-- **Better than what's there.** Say why it teaches the concept more clearly, more correctly, or more currently than the existing step.
-- **Teaches, doesn't sell.** No product ads dressed as tutorials. Please say if you are affiliated with the author or publisher.
+- **A YouTube video first.** One specific video, not a playlist or a channel. Clear beats famous; short beats long when it teaches the same thing.
+- **A GitHub repo when it helps.** Code to read or run alongside the video. Not archived.
+- **Free.** No paid course, trial, or sign-up wall.
+- **Honest.** Say if you made it or are affiliated with it.
 
-DSA and interview prep are out of scope.
+## How the repo is built
 
-## Track format
+Everything is generated from `data/`:
 
-Each track lives in `tracks/<slug>/README.md` and has a title, `Goal:`, `Prereqs:`, `Time:`, `Status: done`, a numbered `Step | Concept | YouTube | Read` table with 5–15 steps, and a `## Build it` section with two or three projects. YouTube links are bold and use `youtube.com/watch?v=` URLs without playlists. Each cell holds one link.
+- `data/roadmaps/NN-slug.json` holds one roadmap: title, level, tagline, prerequisites, steps (`title`, `video` ID, `why`, optional `repo`), and `projects`.
+- `data/meta.json` holds video titles, channels, lengths, and repo stars. Don't edit it by hand.
+- `data/upcoming.json` lists the roadmaps planned next.
 
-## Checks
-
-After editing a track or the README Contents tables, run:
-
-```sh
-ruby scripts/catalog.rb --write
-python3 -m unittest discover -s scripts/tests
-```
-
-The first command refreshes step counts, the site sidebar, and page descriptions. The tests check table structure and the built-site rules. A weekly GitHub Action checks every link, and pull requests that touch tracks run it too.
-
-To preview the website locally, install Jekyll with the plugins in `_config.yml`, then:
+After changing a roadmap:
 
 ```sh
-jekyll build --destination /tmp/roadmaps-site
-find /tmp/roadmaps-site -name '*.md' -delete
-python3 scripts/check_site.py /tmp/roadmaps-site
+python3 scripts/refresh_meta.py   # fetch details for new videos and refresh repo stars
+python3 scripts/build.py          # regenerate README.md, roadmaps/*.md, and the site in _site/
 ```
+
+Preview the site with `python3 -m http.server --directory _site`. Don't edit `README.md` or `roadmaps/*.md` directly; CI fails if they don't match `data/`.
+
+Run `python3 scripts/refresh_meta.py --all` now and then to re-check every video. It is slow on purpose so YouTube doesn't rate-limit you.

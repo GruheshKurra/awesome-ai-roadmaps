@@ -1,0 +1,88 @@
+{
+  "slug": "deep-learning",
+  "order": 3,
+  "title": "Deep Learning",
+  "level": "Intermediate",
+  "tagline": "Neural networks from the inside: backprop, build your own autograd, CNNs, RNNs, and PyTorch.",
+  "prereqs": "Python & Math for AI. Machine Learning helps.",
+  "steps": [
+    {
+      "title": "What is a neural network?",
+      "video": "aircAruvnKk",
+      "why": "The clearest 20 minutes on neurons, weights, and layers."
+    },
+    {
+      "title": "How networks learn",
+      "video": "IHZwWFHWa-w",
+      "why": "Gradient descent applied to millions of weights."
+    },
+    {
+      "title": "Backpropagation, intuitively",
+      "video": "Ilg3gGewQ5U",
+      "why": "What the algorithm is really doing."
+    },
+    {
+      "title": "Backpropagation calculus",
+      "video": "tIeHLnjs5U8",
+      "why": "The chain rule that makes it work."
+    },
+    {
+      "title": "Build an autograd engine",
+      "video": "VMj-3S1tku0",
+      "why": "Write backprop yourself in about 100 lines. Nothing beats this.",
+      "repo": "karpathy/micrograd"
+    },
+    {
+      "title": "Your first language model",
+      "video": "PaCmpygFfXo",
+      "why": "A bigram model, then a neural one, from a blank file.",
+      "repo": "karpathy/nn-zero-to-hero"
+    },
+    {
+      "title": "Multilayer perceptrons",
+      "video": "TCH_1BHY58I",
+      "why": "Embeddings, hidden layers, and training splits done properly."
+    },
+    {
+      "title": "Activations, gradients, BatchNorm",
+      "video": "P6sfmUTpUmc",
+      "why": "Why deep nets fail to train and how to fix it."
+    },
+    {
+      "title": "Optimizers: SGD to Adam",
+      "video": "MD2fYip6QsQ",
+      "why": "What momentum and Adam actually change."
+    },
+    {
+      "title": "Convolutions",
+      "video": "KuXjwB4LzSA",
+      "why": "The operation behind image models, explained visually."
+    },
+    {
+      "title": "Recurrent neural networks",
+      "video": "AsNTP8Kwu80",
+      "why": "How networks handle sequences, and why they struggle."
+    },
+    {
+      "title": "LSTMs",
+      "video": "YCzL96nL7j0",
+      "why": "The gating trick that made RNNs useful."
+    },
+    {
+      "title": "Residual connections",
+      "video": "o_3mboe1jYI",
+      "why": "The skip connection that lets networks go hundreds of layers deep."
+    },
+    {
+      "title": "PyTorch crash course",
+      "video": "OIenNRt2bjg",
+      "why": "Tensors, autograd, models, and the training loop in under an hour. The repo has a full free course when you want more.",
+      "repo": "mrdbourke/pytorch-deep-learning"
+    }
+  ],
+  "projects": [
+    "Extend micrograd with ReLU and a softmax loss, then train it on a toy dataset.",
+    "Train an MLP on MNIST in raw PyTorch, then add BatchNorm and dropout one at a time and record what changes.",
+    "Train a small ResNet on CIFAR-10 with and without skip connections and compare the curves."
+  ]
+}

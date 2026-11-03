@@ -19,3 +19,6 @@ tasks/
 .env
 .env.*
 !.env.example
+
+_site/
+.claude/

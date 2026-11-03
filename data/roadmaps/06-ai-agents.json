@@ -1,0 +1,91 @@
+{
+  "slug": "ai-agents",
+  "order": 6,
+  "title": "AI Agents & MCP",
+  "level": "Intermediate",
+  "tagline": "Agents that call tools, use MCP servers, plan, and coordinate, and how to tell if they work.",
+  "prereqs": "AI Engineering.",
+  "steps": [
+    {
+      "title": "What are AI agents?",
+      "video": "F8NKVhkZZWI",
+      "why": "The core loop: reason, act, observe."
+    },
+    {
+      "title": "How Anthropic builds effective agents",
+      "video": "D7_ipDqhtwk",
+      "why": "When to build an agent, and when a workflow is better."
+    },
+    {
+      "title": "Tool calling",
+      "video": "h8gMhXYAv1k",
+      "why": "How a model decides to call your function."
+    },
+    {
+      "title": "ReAct: reasoning plus acting",
+      "video": "vFdIrZyKEwQ",
+      "why": "The pattern behind most agents."
+    },
+    {
+      "title": "Build an agent from scratch",
+      "video": "bTMPwUgLZf0",
+      "why": "A working agent in Python in about 30 minutes.",
+      "repo": "microsoft/ai-agents-for-beginners"
+    },
+    {
+      "title": "What is MCP?",
+      "video": "eur8dUO9mvE",
+      "why": "The USB-C port for connecting AI to tools and data."
+    },
+    {
+      "title": "How MCP works",
+      "video": "cGuyrANVi4A",
+      "why": "Hosts, clients, servers, and the messages between them."
+    },
+    {
+      "title": "Build an MCP server",
+      "video": "-8k9lGpGQ6g",
+      "why": "Expose your own tools to Claude, Cursor, and others.",
+      "repo": "modelcontextprotocol/python-sdk"
+    },
+    {
+      "title": "MCP, the full course",
+      "video": "DosHnyq78xY",
+      "why": "Servers, resources, prompts, and deployment.",
+      "repo": "modelcontextprotocol/servers"
+    },
+    {
+      "title": "Context engineering for agents",
+      "video": "BwXremQ-i6I",
+      "why": "Four ways agents fail because of what's in their context."
+    },
+    {
+      "title": "Skills instead of agents",
+      "video": "CEvIs9y1uog",
+      "why": "Package expertise as files an agent loads only when needed."
+    },
+    {
+      "title": "Multi-agent systems",
+      "video": "Mi5wOpAgixw",
+      "why": "When splitting work across agents helps, and when it hurts.",
+      "repo": "openai/openai-agents-python"
+    },
+    {
+      "title": "Agents with Hugging Face",
+      "video": "iLVyYDbdSmM",
+      "why": "Kick-off for a free, hands-on agents course.",
+      "repo": "huggingface/agents-course"
+    },
+    {
+      "title": "Evaluate agents",
+      "video": "vuBvf7ZRKTA",
+      "why": "Measure trajectories and outcomes, not vibes.",
+      "repo": "SWE-agent/mini-swe-agent"
+    }
+  ],
+  "projects": [
+    "Write a 150-line agent with no framework: a model, three tools, a loop, and a log of every step.",
+    "Turn something you use daily (notes folder, a database, a GitHub repo) into an MCP server and connect it to a desktop client.",
+    "Write 20 tasks with checkable answers and measure your agent's success rate over 3 runs each."
+  ]
+}

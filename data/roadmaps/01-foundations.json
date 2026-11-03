@@ -1,0 +1,84 @@
+{
+  "slug": "foundations",
+  "order": 1,
+  "title": "Python & Math for AI",
+  "level": "Beginner",
+  "tagline": "The Python, NumPy, linear algebra, calculus, and probability you actually need before touching models.",
+  "prereqs": "None. Start here if you have never coded.",
+  "steps": [
+    {
+      "title": "Python from zero",
+      "video": "K5KVEU3aaeQ",
+      "why": "Variables, loops, functions, and classes in one sitting."
+    },
+    {
+      "title": "NumPy arrays",
+      "video": "QUT1VHiLmmI",
+      "why": "Every ML library speaks NumPy. Learn arrays, slicing, and broadcasting.",
+      "repo": "rougier/numpy-100"
+    },
+    {
+      "title": "Pandas for data",
+      "video": "2uvysYbKdjM",
+      "why": "Load, filter, group, and clean real tables.",
+      "repo": "guipsamora/pandas_exercises"
+    },
+    {
+      "title": "Plotting with Matplotlib",
+      "video": "7Lc2AxiM17o",
+      "why": "If you can't plot your data, you can't debug your model.",
+      "repo": "jakevdp/PythonDataScienceHandbook"
+    },
+    {
+      "title": "Vectors",
+      "video": "fNk_zzaMoSs",
+      "why": "The building block of embeddings, weights, and everything else."
+    },
+    {
+      "title": "Matrices as transformations",
+      "video": "kYB8IZa5AuE",
+      "why": "The single best intuition for what a neural-network layer does."
+    },
+    {
+      "title": "Matrix multiplication",
+      "video": "XkY2DOUCWMU",
+      "why": "Why stacking layers is composing functions."
+    },
+    {
+      "title": "Eigenvectors and eigenvalues",
+      "video": "PFDu9oVAE-g",
+      "why": "The idea behind PCA and many stability tricks."
+    },
+    {
+      "title": "The essence of calculus",
+      "video": "WUvTyaaNkzM",
+      "why": "Derivatives and integrals, visually, without the textbook pain."
+    },
+    {
+      "title": "Derivatives",
+      "video": "9vKqVkMQHKk",
+      "why": "Gradients are just derivatives, and gradients train every model."
+    },
+    {
+      "title": "Bayes' theorem",
+      "video": "HZGCoVF3YvM",
+      "why": "How to update beliefs with evidence. Shows up everywhere in ML."
+    },
+    {
+      "title": "The normal distribution",
+      "video": "rzFX5NWojp0",
+      "why": "The distribution behind initialization, noise, and diffusion."
+    },
+    {
+      "title": "Maximum likelihood",
+      "video": "XepXtl9YKwc",
+      "why": "The principle behind almost every loss function.",
+      "repo": "mml-book/mml-book.github.io"
+    }
+  ],
+  "projects": [
+    "Load a real CSV (e.g. NYC taxi trips) with pandas, clean it, and answer five questions with one chart each.",
+    "Solve the first 30 numpy-100 exercises without a single Python loop.",
+    "Implement linear regression with plain NumPy and gradient descent, then plot the loss curve."
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "slug": "machine-learning",
+  "order": 2,
+  "title": "Machine Learning",
+  "level": "Beginner",
+  "tagline": "Classic ML the way practitioners use it: regression, trees, boosting, evaluation, and scikit-learn.",
+  "prereqs": "Python & Math for AI.",
+  "steps": [
+    {
+      "title": "Bias and variance",
+      "video": "EuBBz3bI-aA",
+      "why": "The trade-off behind every modeling decision.",
+      "repo": "microsoft/ML-For-Beginners"
+    },
+    {
+      "title": "Linear regression",
+      "video": "7ArmBVF2dCs",
+      "why": "The simplest model, and the one everything else gets compared to."
+    },
+    {
+      "title": "Gradient descent",
+      "video": "sDv4f4s2SB8",
+      "why": "How models actually learn, step by step."
+    },
+    {
+      "title": "Logistic regression",
+      "video": "yIYKR4sgzI8",
+      "why": "Your first classifier, and still a strong baseline."
+    },
+    {
+      "title": "Cross-validation",
+      "video": "fSytzGwwBVw",
+      "why": "How to know if your model works on data it hasn't seen."
+    },
+    {
+      "title": "The confusion matrix",
+      "video": "Kdsp6soqA7o",
+      "why": "Accuracy lies. Precision and recall don't."
+    },
+    {
+      "title": "ROC and AUC",
+      "video": "4jRBRDbJemM",
+      "why": "Compare classifiers across every threshold at once."
+    },
+    {
+      "title": "Decision trees",
+      "video": "_L39rN6gz7Y",
+      "why": "Readable models that split data into simple rules."
+    },
+    {
+      "title": "Random forests",
+      "video": "J4Wdy0Wc_xQ",
+      "why": "Many trees beat one tree. Still a top choice for tabular data."
+    },
+    {
+      "title": "Gradient boosting",
+      "video": "3CC4N4z3GJc",
+      "why": "The idea behind the models that win Kaggle tabular competitions."
+    },
+    {
+      "title": "XGBoost",
+      "video": "OtD8wVaFm6E",
+      "why": "The library that made boosting fast and famous."
+    },
+    {
+      "title": "K-means clustering",
+      "video": "4b5d3muPQmA",
+      "why": "Find groups in data with no labels."
+    },
+    {
+      "title": "PCA",
+      "video": "HMOI_lkzW08",
+      "why": "Squash many features into a few you can actually look at."
+    },
+    {
+      "title": "Scikit-learn in practice",
+      "video": "0B5eIE_1vpU",
+      "why": "Put it all together with the library everyone uses.",
+      "repo": "ageron/handson-ml3"
+    }
+  ],
+  "projects": [
+    "Enter Kaggle's Titanic or House Prices competition with a cross-validated scikit-learn pipeline.",
+    "On an imbalanced dataset, plot precision and recall as you move the threshold, and pick one for a stated cost.",
+    "Compare logistic regression, a random forest, and XGBoost on the same splits and explain the gap."
+  ]
+}

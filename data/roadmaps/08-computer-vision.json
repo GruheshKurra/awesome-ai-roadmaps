@@ -1,0 +1,80 @@
+{
+  "slug": "computer-vision",
+  "order": 8,
+  "title": "Computer Vision",
+  "level": "Intermediate",
+  "tagline": "Teach machines to see: CNNs, transfer learning, YOLO detection, segmentation, ViT, and CLIP.",
+  "prereqs": "Deep Learning.",
+  "steps": [
+    {
+      "title": "Deep learning for vision",
+      "video": "2fq9wYslV0A",
+      "why": "Stanford CS231n lecture 1: the field in one hour."
+    },
+    {
+      "title": "CNNs explained",
+      "video": "YRhxdVk_sIs",
+      "why": "Filters, feature maps, and pooling."
+    },
+    {
+      "title": "Build a CNN in PyTorch",
+      "video": "pDdP0TFzsoQ",
+      "why": "Train an image classifier from scratch."
+    },
+    {
+      "title": "CNN architectures",
+      "video": "aVJy4O5TOk8",
+      "why": "AlexNet to ResNet: what each one changed."
+    },
+    {
+      "title": "Transfer learning",
+      "video": "K0lWSB2QoIQ",
+      "why": "Reuse a pretrained network and train on a few hundred images.",
+      "repo": "huggingface/pytorch-image-models"
+    },
+    {
+      "title": "Data augmentation",
+      "video": "rfM4DaLTkMs",
+      "why": "Get more out of small datasets for free.",
+      "repo": "roboflow/notebooks"
+    },
+    {
+      "title": "How YOLO works",
+      "video": "svn9-xV7wjk",
+      "why": "Real-time object detection in one pass."
+    },
+    {
+      "title": "Train YOLO on your own data",
+      "video": "r0RspiLG260",
+      "why": "Label, train, and run a detector in Colab.",
+      "repo": "ultralytics/ultralytics"
+    },
+    {
+      "title": "U-Net segmentation",
+      "video": "NhdzGfB1q74",
+      "why": "Classify every pixel, the architecture diffusion models also use."
+    },
+    {
+      "title": "Segment Anything",
+      "video": "OhxJkqD1vuE",
+      "why": "A foundation model that segments any object from a click.",
+      "repo": "facebookresearch/sam2"
+    },
+    {
+      "title": "Vision transformers",
+      "video": "j3VNqtJUoz0",
+      "why": "Images as sequences of patches, with code."
+    },
+    {
+      "title": "CLIP",
+      "video": "KcSXcpluDe4",
+      "why": "Connect images and text in one embedding space.",
+      "repo": "openai/CLIP"
+    }
+  ],
+  "projects": [
+    "Fine-tune a pretrained model on 5 classes of your own photos, 50 images each.",
+    "Train a YOLO detector on a custom dataset and run it on a video from your phone.",
+    "Build text-to-image search over 1,000 of your photos with CLIP embeddings."
+  ]
+}

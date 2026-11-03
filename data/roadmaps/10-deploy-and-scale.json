@@ -1,0 +1,98 @@
+{
+  "slug": "deploy-and-scale",
+  "order": 10,
+  "title": "Run, Serve & Scale AI",
+  "level": "Advanced",
+  "tagline": "Get models into production and make them fast: Docker, MLOps, quantization, vLLM, GPUs, CUDA, and FSDP.",
+  "prereqs": "Deep Learning. LLMs from Scratch for the inference steps.",
+  "steps": [
+    {
+      "title": "Docker in 100 seconds",
+      "video": "Gjnup-PuquQ",
+      "why": "The tool every deployment starts with."
+    },
+    {
+      "title": "Docker for an ML project",
+      "video": "-l7YocEQtA0",
+      "why": "Package a model so it runs anywhere."
+    },
+    {
+      "title": "Serve a model with FastAPI",
+      "video": "h5wLuVDr0oc",
+      "why": "Turn a trained model into an HTTP API.",
+      "repo": "GokuMohandas/Made-With-ML"
+    },
+    {
+      "title": "MLOps explained",
+      "video": "biqYkVf-a7Y",
+      "why": "Versioning, pipelines, deployment, and monitoring.",
+      "repo": "DataTalksClub/mlops-zoomcamp"
+    },
+    {
+      "title": "Track experiments with MLflow",
+      "video": "6ngxBkx05Fs",
+      "why": "Never lose the settings behind a good result.",
+      "repo": "mlflow/mlflow"
+    },
+    {
+      "title": "Quantization",
+      "video": "3EDI4akymhA",
+      "why": "8-bit, 4-bit, and GGUF: smaller models, small quality loss."
+    },
+    {
+      "title": "llama.cpp",
+      "video": "P8m5eHAyrFM",
+      "why": "The engine that runs LLMs on laptops and phones.",
+      "repo": "ggml-org/llama.cpp"
+    },
+    {
+      "title": "The KV cache",
+      "video": "80bIUggRJf4",
+      "why": "Why inference memory grows with context length."
+    },
+    {
+      "title": "vLLM and PagedAttention",
+      "video": "5ZlavKF_98U",
+      "why": "Serve many users at once without wasting GPU memory.",
+      "repo": "vllm-project/vllm"
+    },
+    {
+      "title": "Inference engines",
+      "video": "_xM8scs4_x4",
+      "why": "How serving systems batch, cache, and schedule."
+    },
+    {
+      "title": "How GPUs work",
+      "video": "h9Z4oGN89MU",
+      "why": "The hardware every model runs on, beautifully animated."
+    },
+    {
+      "title": "CUDA in 100 seconds",
+      "video": "pPStdjuYzSI",
+      "why": "What GPU programming is, in under 4 minutes."
+    },
+    {
+      "title": "GPUs for LLMs",
+      "video": "6OBtO9niT00",
+      "why": "Stanford CS336: memory hierarchy, arithmetic intensity, and why kernels matter.",
+      "repo": "gpu-mode/lectures"
+    },
+    {
+      "title": "CUDA programming",
+      "video": "86FAWCzIe_4",
+      "why": "Write your own kernels, from scratch.",
+      "repo": "srush/GPU-Puzzles"
+    },
+    {
+      "title": "Sharded training with FSDP",
+      "video": "By_O0k102PY",
+      "why": "Train models that don't fit on one GPU.",
+      "repo": "stas00/ml-engineering"
+    }
+  ],
+  "projects": [
+    "Serve a quantized model with llama.cpp and compare tokens/sec at 4-bit and 8-bit.",
+    "Load-test vLLM at 1, 8, and 32 concurrent users and chart time-to-first-token.",
+    "Solve the first 10 GPU Puzzles, then write a fused softmax kernel and benchmark it."
+  ]
+}

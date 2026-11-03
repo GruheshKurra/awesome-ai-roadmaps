@@ -1,0 +1,876 @@
+{
+ "videos": {
+  "-8k9lGpGQ6g": {
+   "title": "Build Anything With a CUSTOM MCP Server - Python Tutorial",
+   "channel": "Tech With Tim",
+   "seconds": 1560
+  },
+  "-W2JdSl1v48": {
+   "title": "Is Fine-Tuning Still Needed? LLMs, RAG, & LoRA",
+   "channel": "IBM Technology",
+   "seconds": 652
+  },
+  "-l7YocEQtA0": {
+   "title": "Docker Simply Explained with a Machine Learning Project for Beginners",
+   "channel": "Python Simplified",
+   "seconds": 1531
+  },
+  "-lz30by8-sU": {
+   "title": "Stable Diffusion in Code (AI Image Generation) - Computerphile",
+   "channel": "Computerphile",
+   "seconds": 1016
+  },
+  "00Q0G84kq3M": {
+   "title": "RAG vs. Fine Tuning",
+   "channel": "IBM Technology",
+   "seconds": 537
+  },
+  "0B5eIE_1vpU": {
+   "title": "Scikit-learn Crash Course - Machine Learning Library for Python",
+   "channel": "freeCodeCamp.org",
+   "seconds": 7762
+  },
+  "0VLAoVGf_74": {
+   "title": "How DeepSeek Rewrote the Transformer [MLA]",
+   "channel": "Welch Labs",
+   "seconds": 1089
+  },
+  "1CIpzeNxIhU": {
+   "title": "How AI Image Generators Work (Stable Diffusion / Dall-E) - Computerphile",
+   "channel": "Computerphile",
+   "seconds": 1070
+  },
+  "23VkGD-4uwk": {
+   "title": "How to use ComfyUI for beginners.",
+   "channel": "Sebastian Kamph",
+   "seconds": 2351
+  },
+  "2fq9wYslV0A": {
+   "title": "Stanford CS231N Deep Learning for Computer Vision | Spring 2025 | Lecture 1: Introduction",
+   "channel": "Stanford Online",
+   "seconds": 3772
+  },
+  "2uvysYbKdjM": {
+   "title": "Complete Python Pandas Data Science Tutorial! (2025 Updated Edition)",
+   "channel": "Keith Galli",
+   "seconds": 5651
+  },
+  "3CC4N4z3GJc": {
+   "title": "Gradient Boost Part 1 (of 4): Regression Main Ideas",
+   "channel": "StatQuest with Josh Starmer",
+   "seconds": 952
+  },
+  "3EDI4akymhA": {
+   "title": "Quantizing LLMs - How & Why (8-Bit, 4-Bit, GGUF & More)",
+   "channel": "Adam Lucek",
+   "seconds": 1586
+  },
+  "4b5d3muPQmA": {
+   "title": "StatQuest: K-means clustering",
+   "channel": "StatQuest with Josh Starmer",
+   "seconds": 510
+  },
+  "4jRBRDbJemM": {
+   "title": "ROC and AUC, Clearly Explained!",
+   "channel": "StatQuest with Josh Starmer",
+   "seconds": 977
+  },
+  "5ZlavKF_98U": {
+   "title": "Fast LLM Serving with vLLM and PagedAttention",
+   "channel": "Anyscale",
+   "seconds": 1927
+  },
+  "6OBtO9niT00": {
+   "title": "Stanford CS336 I Language Modeling from Scratch | Spring 2025 | Lecture 5: GPUs",
+   "channel": "Stanford Online",
+   "seconds": 4461
+  },
+  "6ngxBkx05Fs": {
+   "title": "MLFlow Tutorial | ML Ops Tutorial",
+   "channel": "codebasics",
+   "seconds": 3031
+  },
+  "7ArmBVF2dCs": {
+   "title": "Linear Regression, Clearly Explained!!!",
+   "channel": "StatQuest with Josh Starmer",
+   "seconds": 1646
+  },
+  "7Lc2AxiM17o": {
+   "title": "Learn Matplotlib in 30 Minutes - Python Matplotlib Tutorial",
+   "channel": "Tech With Tim",
+   "seconds": 1851
+  },
+  "7xTGNNLPyMI": {
+   "title": "Deep Dive into LLMs like ChatGPT",
+   "channel": "Andrej Karpathy",
+   "seconds": 12683
+  },
+  "80bIUggRJf4": {
+   "title": "The KV Cache: Memory Usage in Transformers",
+   "channel": "Efficient NLP",
+   "seconds": 513
+  },
+  "86FAWCzIe_4": {
+   "title": "CUDA Programming Course – High-Performance Computing with GPUs",
+   "channel": "freeCodeCamp.org",
+   "seconds": 42911
+  },
+  "9-Jl0dxWQs8": {
+   "title": "How might LLMs store facts | Deep Learning Chapter 7",
+   "channel": "3Blue1Brown",
+   "seconds": 1362
+  },
+  "98o_L3jlixw": {
+   "title": "AI Engineering with Chip Huyen",
+   "channel": "The Pragmatic Engineer",
+   "seconds": 4484
+  },
+  "9vKqVkMQHKk": {
+   "title": "The paradox of the derivative | Chapter 2, Essence of calculus",
+   "channel": "3Blue1Brown",
+   "seconds": 1010
+  },
+  "AsNTP8Kwu80": {
+   "title": "Recurrent Neural Networks (RNNs), Clearly Explained!!!",
+   "channel": "StatQuest with Josh Starmer",
+   "seconds": 997
+  },
+  "BBPQYtR7oUk": {
+   "title": "Context engineering explained: What every AI developer should know",
+   "channel": "Google Cloud Tech",
+   "seconds": 605
+  },
+  "BwXremQ-i6I": {
+   "title": "Context Engineering for AI Agents: 4 Failure Modes to Avoid",
+   "channel": "IBM Technology",
+   "seconds": 620
+  },
+  "By_O0k102PY": {
+   "title": "How Fully Sharded Data Parallel (FSDP) works?",
+   "channel": "Ahmed Taha",
+   "seconds": 1951
+  },
+  "CEvIs9y1uog": {
+   "title": "Don't Build Agents, Build Skills Instead – Barry Zhang & Mahesh Murag, Anthropic",
+   "channel": "AI Engineer",
+   "seconds": 982
+  },
+  "D7_ipDqhtwk": {
+   "title": "How We Build Effective Agents: Barry Zhang, Anthropic",
+   "channel": "AI Engineer",
+   "seconds": 909
+  },
+  "DCqqCLlsIBU": {
+   "title": "DeepSeek-R1 Paper Explained - A New RL LLMs Era in AI?",
+   "channel": "AI Papers Academy",
+   "seconds": 549
+  },
+  "DhRoTONcyZE": {
+   "title": "What is Low-Rank Adaptation (LoRA) | explained by the inventor",
+   "channel": "Edward Hu",
+   "seconds": 448
+  },
+  "DosHnyq78xY": {
+   "title": "Intro to MCP Servers – Model Context Protocol with Python Course",
+   "channel": "freeCodeCamp.org",
+   "seconds": 4362
+  },
+  "EWvNQjAaOHw": {
+   "title": "How I use LLMs",
+   "channel": "Andrej Karpathy",
+   "seconds": 7872
+  },
+  "EhndHhIvWWw": {
+   "title": "Diffusion Models: DDPM | Generative AI Animated",
+   "channel": "Deepia",
+   "seconds": 1925
+  },
+  "EuBBz3bI-aA": {
+   "title": "Machine Learning Fundamentals: Bias and Variance",
+   "channel": "StatQuest with Josh Starmer",
+   "seconds": 396
+  },
+  "F8NKVhkZZWI": {
+   "title": "What are AI Agents?",
+   "channel": "IBM Technology",
+   "seconds": 748
+  },
+  "GL0XhAj5LPE": {
+   "title": "LLM Evals: Common Mistakes",
+   "channel": "Hamel Husain",
+   "seconds": 1695
+  },
+  "Gjnup-PuquQ": {
+   "title": "Docker in 100 Seconds",
+   "channel": "Fireship",
+   "seconds": 127
+  },
+  "HMOI_lkzW08": {
+   "title": "StatQuest: PCA main ideas in only 5 minutes!!!",
+   "channel": "StatQuest with Josh Starmer",
+   "seconds": 364
+  },
+  "HZGCoVF3YvM": {
+   "title": "Bayes theorem, the geometry of changing beliefs",
+   "channel": "3Blue1Brown",
+   "seconds": 911
+  },
+  "IHZwWFHWa-w": {
+   "title": "Gradient descent, how neural networks learn | Deep Learning Chapter 2",
+   "channel": "3Blue1Brown",
+   "seconds": 1233
+  },
+  "Ilg3gGewQ5U": {
+   "title": "Backpropagation, intuitively | Deep Learning Chapter 3",
+   "channel": "3Blue1Brown",
+   "seconds": 767
+  },
+  "J4Wdy0Wc_xQ": {
+   "title": "StatQuest: Random Forests Part 1 - Building, Using and Evaluating",
+   "channel": "StatQuest with Josh Starmer",
+   "seconds": 594
+  },
+  "J87hffSMB60": {
+   "title": "How does Stable Diffusion work? – Latent Diffusion Models EXPLAINED",
+   "channel": "AI Coffee Break with Letitia",
+   "seconds": 796
+  },
+  "K0lWSB2QoIQ": {
+   "title": "PyTorch Tutorial 15 - Transfer Learning",
+   "channel": "Patrick Loeber",
+   "seconds": 894
+  },
+  "K5KVEU3aaeQ": {
+   "title": "Python Full Course for Beginners",
+   "channel": "Programming with Mosh",
+   "seconds": 7340
+  },
+  "KcSXcpluDe4": {
+   "title": "How AI 'Understands' Images (CLIP) - Computerphile",
+   "channel": "Computerphile",
+   "seconds": 1084
+  },
+  "Kdsp6soqA7o": {
+   "title": "Machine Learning Fundamentals: The Confusion Matrix",
+   "channel": "StatQuest with Josh Starmer",
+   "seconds": 432
+  },
+  "KuXjwB4LzSA": {
+   "title": "But what is a convolution?",
+   "channel": "3Blue1Brown",
+   "seconds": 1381
+  },
+  "LPZh9BOjkQs": {
+   "title": "Large Language Models explained briefly",
+   "channel": "3Blue1Brown",
+   "seconds": 478
+  },
+  "MD2fYip6QsQ": {
+   "title": "Who's Adam and What's He Optimizing? | Deep Dive into Optimizers for Machine Learning!",
+   "channel": "Sourish Kundu",
+   "seconds": 1400
+  },
+  "Mi5wOpAgixw": {
+   "title": "Multi-agent Systems Explained in 17 Minutes",
+   "channel": "Shaw Talebi",
+   "seconds": 1059
+  },
+  "NhdzGfB1q74": {
+   "title": "The U-Net (actually) explained in 10 minutes",
+   "channel": "rupert ai",
+   "seconds": 631
+  },
+  "OIenNRt2bjg": {
+   "title": "PyTorch Crash Course - Getting Started with Deep Learning",
+   "channel": "AssemblyAI",
+   "seconds": 2994
+  },
+  "OhxJkqD1vuE": {
+   "title": "Explaining the Segment Anything Model - Network architecture, Dataset, Training",
+   "channel": "Neural Breakdown with AVB",
+   "seconds": 782
+  },
+  "OkEGJ5G3foU": {
+   "title": "[Full Workshop] Reinforcement Learning, Kernels, Reasoning, Quantization & Agents — Daniel Han",
+   "channel": "AI Engineer",
+   "seconds": 9747
+  },
+  "OtD8wVaFm6E": {
+   "title": "XGBoost Part 1 (of 4): Regression",
+   "channel": "StatQuest with Josh Starmer",
+   "seconds": 1546
+  },
+  "P6sfmUTpUmc": {
+   "title": "Building makemore Part 3: Activations & Gradients, BatchNorm",
+   "channel": "Andrej Karpathy",
+   "seconds": 6957
+  },
+  "P8m5eHAyrFM": {
+   "title": "What Is Llama.cpp? The LLM Inference Engine for Local AI",
+   "channel": "IBM Technology",
+   "seconds": 554
+  },
+  "PFDu9oVAE-g": {
+   "title": "Eigenvectors and eigenvalues | Chapter 14, Essence of linear algebra",
+   "channel": "3Blue1Brown",
+   "seconds": 1035
+  },
+  "PaCmpygFfXo": {
+   "title": "The spelled-out intro to language modeling: building makemore",
+   "channel": "Andrej Karpathy",
+   "seconds": 7065
+  },
+  "QUT1VHiLmmI": {
+   "title": "Python NumPy Tutorial for Beginners",
+   "channel": "freeCodeCamp.org",
+   "seconds": 3489
+  },
+  "SQ3fZ1sAqXI": {
+   "title": "Stanford CS336 Language Modeling from Scratch | Spring 2025 | Lecture 1: Overview and Tokenization",
+   "channel": "Stanford Online",
+   "seconds": 4739
+  },
+  "Sw9r8CL98N0": {
+   "title": "Generative Adversarial Networks (GANs) - Computerphile",
+   "channel": "Computerphile",
+   "seconds": 1281
+  },
+  "T-D1OfcDW1M": {
+   "title": "What is Retrieval-Augmented Generation (RAG)?",
+   "channel": "IBM Technology",
+   "seconds": 395
+  },
+  "TCH_1BHY58I": {
+   "title": "Building makemore Part 2: MLP",
+   "channel": "Andrej Karpathy",
+   "seconds": 4539
+  },
+  "UtSSMs6ObqY": {
+   "title": "Learn Ollama in 15 Minutes - Run LLM Models Locally for FREE",
+   "channel": "Tech With Tim",
+   "seconds": 841
+  },
+  "VMj-3S1tku0": {
+   "title": "The spelled-out intro to neural networks and backpropagation: building micrograd",
+   "channel": "Andrej Karpathy",
+   "seconds": 8752
+  },
+  "WUvTyaaNkzM": {
+   "title": "The essence of calculus",
+   "channel": "3Blue1Brown",
+   "seconds": 1024
+  },
+  "W_xh6qNSfAQ": {
+   "title": "Fine-Tuning Local LLMs with Unsloth & Ollama",
+   "channel": "NeuralNine",
+   "seconds": 1987
+  },
+  "XZLc09hkMwA": {
+   "title": "Direct Preference Optimization: Your Language Model is Secretly a Reward Model | DPO paper explained",
+   "channel": "AI Coffee Break with Letitia",
+   "seconds": 535
+  },
+  "XepXtl9YKwc": {
+   "title": "Maximum Likelihood, clearly explained!!!",
+   "channel": "StatQuest with Josh Starmer",
+   "seconds": 372
+  },
+  "XkY2DOUCWMU": {
+   "title": "Matrix multiplication as composition | Chapter 4, Essence of linear algebra",
+   "channel": "3Blue1Brown",
+   "seconds": 603
+  },
+  "XvKiTfd6Xvo": {
+   "title": "The Complete Guide to Hybrid Search in RAG (BM25 + Embeddings + Reranker)",
+   "channel": "Dave Ebbelaar",
+   "seconds": 3557
+  },
+  "Y5zHHoLrvAE": {
+   "title": "How do AI video generation models work?",
+   "channel": "Google for Developers",
+   "seconds": 713
+  },
+  "YCzL96nL7j0": {
+   "title": "Long Short-Term Memory (LSTM), Clearly Explained",
+   "channel": "StatQuest with Josh Starmer",
+   "seconds": 1245
+  },
+  "YRhxdVk_sIs": {
+   "title": "Convolutional Neural Networks (CNNs) explained",
+   "channel": "deeplizard",
+   "seconds": 517
+  },
+  "ZBKpAp_6TGI": {
+   "title": "Coding Stable Diffusion from scratch in PyTorch",
+   "channel": "Umar Jamil",
+   "seconds": 18211
+  },
+  "_L39rN6gz7Y": {
+   "title": "Decision and Classification Trees, Clearly Explained!!!",
+   "channel": "StatQuest with Josh Starmer",
+   "seconds": 1088
+  },
+  "_xM8scs4_x4": {
+   "title": "Inference Engines explained in 10min..",
+   "channel": "Caleb Writes Code",
+   "seconds": 618
+  },
+  "a4Yfz2FxXiY": {
+   "title": "Diffusion models from scratch in PyTorch",
+   "channel": "DeepFindr",
+   "seconds": 1854
+  },
+  "aVJy4O5TOk8": {
+   "title": "Stanford CS231N Deep Learning for Computer Vision | Spring 2025 | Lecture 6: CNN Architectures",
+   "channel": "Stanford Online",
+   "seconds": 4267
+  },
+  "aircAruvnKk": {
+   "title": "But what is a neural network? | Deep learning chapter 1",
+   "channel": "3Blue1Brown",
+   "seconds": 1120
+  },
+  "bAWV_yrqx4w": {
+   "title": "[GRPO Explained] DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models",
+   "channel": "Yannic Kilcher",
+   "seconds": 4140
+  },
+  "bTMPwUgLZf0": {
+   "title": "Build an AI Agent From Scratch in Python - Tutorial for Beginners",
+   "channel": "Tech With Tim",
+   "seconds": 2059
+  },
+  "bZcKYiwtw1I": {
+   "title": "Finetune LLMs to teach them ANYTHING with Huggingface and Pytorch | Step-by-step tutorial",
+   "channel": "Neural Breakdown with AVB",
+   "seconds": 2335
+  },
+  "biqYkVf-a7Y": {
+   "title": "MLOps Explained - What It Is, Why You Need It and How It Works",
+   "channel": "TechWorld with Nana",
+   "seconds": 1583
+  },
+  "cGuyrANVi4A": {
+   "title": "How Model Context Protocol (MCP) actually works",
+   "channel": "Google Cloud Tech",
+   "seconds": 478
+  },
+  "cy6EAp4iNN4": {
+   "title": "How To Build an API with Python (LLM Integration, FastAPI, Ollama & More)",
+   "channel": "Tech With Tim",
+   "seconds": 1276
+  },
+  "dN0lsF2cvm4": {
+   "title": "Vector Databases simply explained! (Embeddings & Indexes)",
+   "channel": "AssemblyAI",
+   "seconds": 263
+  },
+  "eMlx5fFNoYc": {
+   "title": "Attention in transformers, step-by-step | Deep Learning Chapter 6",
+   "channel": "3Blue1Brown",
+   "seconds": 1569
+  },
+  "eur8dUO9mvE": {
+   "title": "What is MCP? Integrate AI Agents with Databases & APIs",
+   "channel": "IBM Technology",
+   "seconds": 226
+  },
+  "fNk_zzaMoSs": {
+   "title": "Vectors | Chapter 1, Essence of linear algebra",
+   "channel": "3Blue1Brown",
+   "seconds": 591
+  },
+  "fSytzGwwBVw": {
+   "title": "Machine Learning Fundamentals: Cross Validation",
+   "channel": "StatQuest with Josh Starmer",
+   "seconds": 364
+  },
+  "firXjwZ_6KI": {
+   "title": "Flow-Matching vs Diffusion Models explained side by side",
+   "channel": "AI Coffee Break with Letitia",
+   "seconds": 968
+  },
+  "h5wLuVDr0oc": {
+   "title": "Deploy ML models with FastAPI, Docker, and Heroku | Tutorial",
+   "channel": "AssemblyAI",
+   "seconds": 1125
+  },
+  "h8gMhXYAv1k": {
+   "title": "What is Tool Calling? Connecting LLMs to Your Data",
+   "channel": "IBM Technology",
+   "seconds": 296
+  },
+  "h9Z4oGN89MU": {
+   "title": "How do Graphics Cards Work?  Exploring GPU Architecture",
+   "channel": "Branch Education",
+   "seconds": 1710
+  },
+  "iLVyYDbdSmM": {
+   "title": "Welcome To The Agents Course! Introduction to the Course and Q&A",
+   "channel": "Hugging Face",
+   "seconds": 3488
+  },
+  "iv-5mZ_9CPY": {
+   "title": "But how do AI images and videos actually work? | Guest video by Welch Labs",
+   "channel": "3Blue1Brown",
+   "seconds": 2240
+  },
+  "j3VNqtJUoz0": {
+   "title": "Vision Transformer Quick Guide - Theory and Code in (almost) 15 min",
+   "channel": "DeepFindr",
+   "seconds": 1011
+  },
+  "kCc8FmEb1nY": {
+   "title": "Let's build GPT: from scratch, in code, spelled out.",
+   "channel": "Andrej Karpathy",
+   "seconds": 6980
+  },
+  "kYB8IZa5AuE": {
+   "title": "Linear transformations and matrices | Chapter 3, Essence of linear algebra",
+   "channel": "3Blue1Brown",
+   "seconds": 658
+  },
+  "l8pRSuU81PU": {
+   "title": "Let's reproduce GPT-2 (124M)",
+   "channel": "Andrej Karpathy",
+   "seconds": 14486
+  },
+  "o29P0Kpobz0": {
+   "title": "Rotary Positional Embeddings: Combining Absolute and Relative",
+   "channel": "Efficient NLP",
+   "seconds": 677
+  },
+  "oM4VmoabDAI": {
+   "title": "Coding LLaMA 2 from scratch in PyTorch - KV Cache, Grouped Query Attention, Rotary PE, RMSNorm",
+   "channel": "Umar Jamil",
+   "seconds": 11051
+  },
+  "o_3mboe1jYI": {
+   "title": "ResNet (actually) explained in under 10 minutes",
+   "channel": "rupert ai",
+   "seconds": 587
+  },
+  "pDdP0TFzsoQ": {
+   "title": "PyTorch Tutorial 14 - Convolutional Neural Network (CNN)",
+   "channel": "Patrick Loeber",
+   "seconds": 1326
+  },
+  "pPStdjuYzSI": {
+   "title": "Nvidia CUDA in 100 Seconds",
+   "channel": "Fireship",
+   "seconds": 192
+  },
+  "qJeaCHQ1k2w": {
+   "title": "Variational Autoencoders | Generative AI Animated",
+   "channel": "Deepia",
+   "seconds": 1209
+  },
+  "qPN_XZcJf_s": {
+   "title": "Reinforcement Learning with Human Feedback (RLHF), Clearly Explained!!!",
+   "channel": "StatQuest with Josh Starmer",
+   "seconds": 1081
+  },
+  "quh7z1q7-uc": {
+   "title": "Building LLMs from the Ground Up: A 3-hour Coding Workshop",
+   "channel": "Sebastian Raschka",
+   "seconds": 9909
+  },
+  "r0RspiLG260": {
+   "title": "How to Train YOLO Object Detection Models in Google Colab (YOLO26, YOLO11, YOLOv8)",
+   "channel": "Edje Electronics",
+   "seconds": 1285
+  },
+  "rfM4DaLTkMs": {
+   "title": "Data Augmentation explained",
+   "channel": "deeplizard",
+   "seconds": 199
+  },
+  "rzFX5NWojp0": {
+   "title": "The Normal Distribution, Clearly Explained!!!",
+   "channel": "StatQuest with Josh Starmer",
+   "seconds": 312
+  },
+  "sDv4f4s2SB8": {
+   "title": "Gradient Descent, Step-by-Step",
+   "channel": "StatQuest with Josh Starmer",
+   "seconds": 1434
+  },
+  "sOPDGQjFcuM": {
+   "title": "A Visual Guide to Mixture of Experts (MoE) in LLMs",
+   "channel": "Maarten Grootendorst",
+   "seconds": 1184
+  },
+  "sVcwVQRHIc8": {
+   "title": "Learn RAG From Scratch – Python AI Tutorial from a LangChain Engineer",
+   "channel": "freeCodeCamp.org",
+   "seconds": 9191
+  },
+  "svn9-xV7wjk": {
+   "title": "How YOLO Object Detection Works",
+   "channel": "DeepBean",
+   "seconds": 1024
+  },
+  "tIeHLnjs5U8": {
+   "title": "Backpropagation calculus | Deep Learning Chapter 4",
+   "channel": "3Blue1Brown",
+   "seconds": 617
+  },
+  "uiza7wp1KrE": {
+   "title": "AI Evaluations Clearly Explained in 50 Minutes (Real Example) | Hamel Husain",
+   "channel": "Peter Yang",
+   "seconds": 3150
+  },
+  "vFdIrZyKEwQ": {
+   "title": "ReAct AI Agents, clearly explained!",
+   "channel": "Akshay Pachaar",
+   "seconds": 345
+  },
+  "vuBvf7ZRKTA": {
+   "title": "How to evaluate agents in practice",
+   "channel": "Google Cloud Tech",
+   "seconds": 653
+  },
+  "wjZofJX0v4M": {
+   "title": "Transformers, the tech behind LLMs | Deep Learning Chapter 5",
+   "channel": "3Blue1Brown",
+   "seconds": 1634
+  },
+  "xCRvOUykOX0": {
+   "title": "How do thinking and reasoning models work?",
+   "channel": "Google for Developers",
+   "seconds": 806
+  },
+  "xT4jxQUl0X8": {
+   "title": "DeepSeek's GRPO (Group Relative Policy Optimization) | Reinforcement Learning for LLMs",
+   "channel": "Julia Turc",
+   "seconds": 1396
+  },
+  "xpvFinvqRCA": {
+   "title": "Structured Output from LLMs: Grammars, Regex, and State Machines",
+   "channel": "Efficient NLP",
+   "seconds": 1040
+  },
+  "yIYKR4sgzI8": {
+   "title": "StatQuest: Logistic Regression",
+   "channel": "StatQuest with Josh Starmer",
+   "seconds": 527
+  },
+  "ysPbXH0LpIE": {
+   "title": "Prompting 101 | Code w/ Claude",
+   "channel": "Anthropic",
+   "seconds": 1492
+  },
+  "zduSFxRajkE": {
+   "title": "Let's build the GPT Tokenizer",
+   "channel": "Andrej Karpathy",
+   "seconds": 8014
+  },
+  "zjkBMFhNj_g": {
+   "title": "[1hr Talk] Intro to Large Language Models",
+   "channel": "Andrej Karpathy",
+   "seconds": 3588
+  }
+ },
+ "repos": {
+  "Comfy-Org/ComfyUI": {
+   "stars": 144674,
+   "description": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. The fastest local inference engine in the world."
+  },
+  "DataTalksClub/mlops-zoomcamp": {
+   "stars": 15517,
+   "description": "Free MLOps course from DataTalks.Club. Register here 👇🏼 to get notified about the next cohort"
+  },
+  "GokuMohandas/Made-With-ML": {
+   "stars": 49904,
+   "description": "Learn how to develop, deploy and iterate on production-grade ML applications."
+  },
+  "NirDiamant/RAG_Techniques": {
+   "stars": 30198,
+   "description": "This repository showcases various advanced techniques for Retrieval-Augmented Generation (RAG) systems. Each technique has a detailed notebook tutorial."
+  },
+  "SWE-agent/mini-swe-agent": {
+   "stars": 9038,
+   "description": "The 100 line AI agent that solves GitHub issues or helps you in your command line. Radically simple, no huge configs, no giant monorepo—but scores >74% on SWE-bench verified!"
+  },
+  "ageron/handson-ml3": {
+   "stars": 14423,
+   "description": "A series of Jupyter notebooks that walk you through the fundamentals of Machine Learning and Deep Learning in Python using Scikit-Learn, Keras and TensorFlow 2."
+  },
+  "anthropics/claude-cookbooks": {
+   "stars": 54120,
+   "description": "A collection of notebooks/recipes showcasing some fun and effective ways of using Claude."
+  },
+  "chiphuyen/aie-book": {
+   "stars": 18203,
+   "description": "[WIP] Resources for AI engineers. Also contains supporting materials for the book AI Engineering (Chip Huyen, 2025)"
+  },
+  "dair-ai/Prompt-Engineering-Guide": {
+   "stars": 79755,
+   "description": "🐙 Guides, papers, lessons, notebooks and resources for prompt engineering, context engineering, RAG, and AI Agents."
+  },
+  "facebookresearch/sam2": {
+   "stars": 20094,
+   "description": "The repository provides code for running inference with the Meta Segment Anything Model 2 (SAM 2), links for downloading the trained model checkpoints, and example notebooks that show how to use the model."
+  },
+  "ggml-org/llama.cpp": {
+   "stars": 133195,
+   "description": "LLM inference in C/C++"
+  },
+  "gpu-mode/lectures": {
+   "stars": 6944,
+   "description": "Material for gpu-mode lectures"
+  },
+  "guipsamora/pandas_exercises": {
+   "stars": 13309,
+   "description": "Practice your pandas skills!"
+  },
+  "huggingface/agents-course": {
+   "stars": 34372,
+   "description": "This repository contains the Hugging Face Agents Course. "
+  },
+  "huggingface/diffusers": {
+   "stars": 34852,
+   "description": "🤗 Diffusers: State-of-the-art diffusion models for image, video, and audio generation in PyTorch."
+  },
+  "huggingface/diffusion-models-class": {
+   "stars": 4385,
+   "description": "Materials for the Hugging Face Diffusion Models Course"
+  },
+  "huggingface/open-r1": {
+   "stars": 26475,
+   "description": "Fully open reproduction of DeepSeek-R1"
+  },
+  "huggingface/peft": {
+   "stars": 21866,
+   "description": "🤗 PEFT: State-of-the-art Parameter-Efficient Fine-Tuning."
+  },
+  "huggingface/pytorch-image-models": {
+   "stars": 37263,
+   "description": "The largest collection of PyTorch image encoders / backbones. Including train, eval, inference, export scripts, and pretrained weights -- ResNet, ResNeXT, EfficientNet, NFNet, Vision Transformer (ViT), MobileNetV4, MobileNet-V3 & V2, RegNet, DPN, CSPNet, Swin Transformer, MaxViT, CoAtNet, ConvNeXt, and more"
+  },
+  "huggingface/trl": {
+   "stars": 19660,
+   "description": "Train transformer language models with reinforcement learning."
+  },
+  "jakevdp/PythonDataScienceHandbook": {
+   "stars": 50334,
+   "description": "Python Data Science Handbook: full text in Jupyter Notebooks"
+  },
+  "karpathy/llm.c": {
+   "stars": 31377,
+   "description": "LLM training in simple, raw C/CUDA"
+  },
+  "karpathy/micrograd": {
+   "stars": 18619,
+   "description": "A tiny scalar-valued autograd engine and a neural net library on top of it with PyTorch-like API"
+  },
+  "karpathy/minbpe": {
+   "stars": 10998,
+   "description": "Minimal, clean code for the Byte Pair Encoding (BPE) algorithm commonly used in LLM tokenization."
+  },
+  "karpathy/nanoGPT": {
+   "stars": 64396,
+   "description": "The simplest, fastest repository for training/finetuning medium-sized GPTs."
+  },
+  "karpathy/nanochat": {
+   "stars": 59883,
+   "description": "The best ChatGPT that $100 can buy."
+  },
+  "karpathy/nn-zero-to-hero": {
+   "stars": 25235,
+   "description": "Neural Networks: Zero to Hero"
+  },
+  "langchain-ai/rag-from-scratch": {
+   "stars": 9586,
+   "description": ""
+  },
+  "lucidrains/denoising-diffusion-pytorch": {
+   "stars": 10724,
+   "description": "Implementation of Denoising Diffusion Probabilistic Model in Pytorch"
+  },
+  "microsoft/ML-For-Beginners": {
+   "stars": 91955,
+   "description": "12 weeks, 26 lessons, 52 quizzes, classic Machine Learning for all"
+  },
+  "microsoft/ai-agents-for-beginners": {
+   "stars": 78720,
+   "description": "18 Lessons to Get Started Building AI Agents"
+  },
+  "mlabonne/llm-course": {
+   "stars": 84862,
+   "description": "Course to get into Large Language Models (LLMs) with roadmaps and Colab notebooks."
+  },
+  "mlflow/mlflow": {
+   "stars": 28631,
+   "description": "The open source AI engineering platform for agents, LLMs, and ML models. MLflow enables teams of all sizes to debug, evaluate, monitor, and optimize production-quality AI applications while controlling costs and managing access to models and data."
+  },
+  "mml-book/mml-book.github.io": {
+   "stars": 16184,
+   "description": "Companion webpage to the book \"Mathematics For Machine Learning\""
+  },
+  "modelcontextprotocol/python-sdk": {
+   "stars": 24739,
+   "description": "The official Python SDK for Model Context Protocol servers and clients"
+  },
+  "modelcontextprotocol/servers": {
+   "stars": 91751,
+   "description": "Model Context Protocol Servers"
+  },
+  "mrdbourke/pytorch-deep-learning": {
+   "stars": 19344,
+   "description": "Materials for the Learn PyTorch for Deep Learning: Zero to Mastery course."
+  },
+  "naklecha/llama3-from-scratch": {
+   "stars": 15202,
+   "description": "llama3 implementation one matrix multiplication at a time"
+  },
+  "ollama/ollama": {
+   "stars": 185717,
+   "description": "Get up and running with Kimi, GLM, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models."
+  },
+  "openai/CLIP": {
+   "stars": 34559,
+   "description": "CLIP (Contrastive Language-Image Pretraining),  Predict the most relevant text snippet given an image"
+  },
+  "openai/openai-agents-python": {
+   "stars": 30462,
+   "description": "A lightweight, powerful framework for multi-agent workflows"
+  },
+  "rasbt/LLMs-from-scratch": {
+   "stars": 107712,
+   "description": "Implement a ChatGPT-like LLM in PyTorch from scratch, step by step"
+  },
+  "roboflow/notebooks": {
+   "stars": 9735,
+   "description": "A collection of tutorials on state-of-the-art computer vision models and techniques. Explore everything from foundational architectures like ResNet to cutting-edge models like RF-DETR, YOLO11, SAM 3, and Qwen3-VL."
+  },
+  "rougier/numpy-100": {
+   "stars": 14666,
+   "description": "100 numpy exercises (with solutions)"
+  },
+  "srush/GPU-Puzzles": {
+   "stars": 12556,
+   "description": "Solve puzzles. Learn CUDA."
+  },
+  "stanford-cs336/assignment1-basics": {
+   "stars": 3131,
+   "description": "Student version of Assignment 1 for Stanford CS336 - Language Modeling From Scratch"
+  },
+  "stas00/ml-engineering": {
+   "stars": 19655,
+   "description": "Machine Learning Engineering Open Book"
+  },
+  "ultralytics/ultralytics": {
+   "stars": 63046,
+   "description": "Ultralytics YOLO27, YOLO26, YOLO11, YOLOv8 — object detection, instance segmentation, semantic segmentation, image classification, pose estimation, object tracking"
+  },
+  "unslothai/unsloth": {
+   "stars": 78976,
+   "description": "Local UI to run and train LLMs and diffusion models. Supports GGUF, MLX, Qwen3.8, DeepSeek-V4.1, MiniMax-H3, Gemma 4, FLUX and more."
+  },
+  "vllm-project/vllm": {
+   "stars": 96162,
+   "description": "A high-throughput and memory-efficient inference and serving engine for LLMs"
+  }
+ }
+}

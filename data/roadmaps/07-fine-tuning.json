@@ -1,0 +1,75 @@
+{
+  "slug": "fine-tuning",
+  "order": 7,
+  "title": "Fine-Tuning & Reasoning Models",
+  "level": "Advanced",
+  "tagline": "Adapt open models with LoRA, align them with RLHF and DPO, and train reasoning with GRPO.",
+  "prereqs": "LLMs from Scratch.",
+  "steps": [
+    {
+      "title": "Do you even need fine-tuning?",
+      "video": "-W2JdSl1v48",
+      "why": "Prompting, RAG, or LoRA: choose before you spend GPU hours."
+    },
+    {
+      "title": "LoRA, by its inventor",
+      "video": "DhRoTONcyZE",
+      "why": "Why training a tiny low-rank update is enough.",
+      "repo": "huggingface/peft"
+    },
+    {
+      "title": "Fine-tune step by step",
+      "video": "bZcKYiwtw1I",
+      "why": "Data, tokenization, loss masking, and training with Hugging Face.",
+      "repo": "huggingface/trl"
+    },
+    {
+      "title": "Fine-tune on a free GPU",
+      "video": "W_xh6qNSfAQ",
+      "why": "Unsloth makes it fast and memory-light, then run it in Ollama.",
+      "repo": "unslothai/unsloth"
+    },
+    {
+      "title": "RLHF",
+      "video": "qPN_XZcJf_s",
+      "why": "How human preferences turned base models into assistants."
+    },
+    {
+      "title": "DPO",
+      "video": "XZLc09hkMwA",
+      "why": "Preference tuning without a reward model or RL loop."
+    },
+    {
+      "title": "Why reasoning models think",
+      "video": "xCRvOUykOX0",
+      "why": "Test-time compute: spending more effort on harder questions."
+    },
+    {
+      "title": "GRPO, visually",
+      "video": "xT4jxQUl0X8",
+      "why": "The RL algorithm behind DeepSeek's reasoning models."
+    },
+    {
+      "title": "GRPO, the paper",
+      "video": "bAWV_yrqx4w",
+      "why": "A deep read of DeepSeekMath with the math explained."
+    },
+    {
+      "title": "DeepSeek-R1",
+      "video": "DCqqCLlsIBU",
+      "why": "How pure RL with checkable rewards produced a reasoning model.",
+      "repo": "huggingface/open-r1"
+    },
+    {
+      "title": "RL for LLMs, hands on",
+      "video": "OkEGJ5G3foU",
+      "why": "A workshop covering RL, reasoning, kernels, and quantization.",
+      "repo": "mlabonne/llm-course"
+    }
+  ],
+  "projects": [
+    "Fine-tune a 0.5B–3B model with QLoRA on 1,000 examples of a narrow task and compare it with the base model on 50 held-out cases.",
+    "Train a small model with GRPO on GSM8K using exact-match rewards; plot reward, response length, and accuracy.",
+    "Collect 300 chosen/rejected pairs and run DPO on top of your fine-tuned model."
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "slug": "ai-engineering",
+  "order": 5,
+  "title": "AI Engineering",
+  "level": "Beginner",
+  "tagline": "Build real products on top of LLMs: prompting, APIs, structured output, RAG, evals, and local models.",
+  "prereqs": "Basic Python. No ML background needed.",
+  "steps": [
+    {
+      "title": "How to actually use LLMs",
+      "video": "EWvNQjAaOHw",
+      "why": "Practical habits from someone who builds them."
+    },
+    {
+      "title": "Prompting 101",
+      "video": "ysPbXH0LpIE",
+      "why": "How Anthropic's own team writes and debugs prompts.",
+      "repo": "dair-ai/Prompt-Engineering-Guide"
+    },
+    {
+      "title": "Call an LLM from code",
+      "video": "cy6EAp4iNN4",
+      "why": "Wrap a model in your own API with FastAPI.",
+      "repo": "anthropics/claude-cookbooks"
+    },
+    {
+      "title": "Structured output",
+      "video": "xpvFinvqRCA",
+      "why": "Get reliable JSON out of a model, and why it works."
+    },
+    {
+      "title": "Embeddings and vector databases",
+      "video": "dN0lsF2cvm4",
+      "why": "Turn text into numbers you can search by meaning."
+    },
+    {
+      "title": "What is RAG?",
+      "video": "T-D1OfcDW1M",
+      "why": "Give a model your data without retraining it."
+    },
+    {
+      "title": "RAG from scratch",
+      "video": "sVcwVQRHIc8",
+      "why": "Indexing, retrieval, and generation, built step by step.",
+      "repo": "langchain-ai/rag-from-scratch"
+    },
+    {
+      "title": "Hybrid search and reranking",
+      "video": "XvKiTfd6Xvo",
+      "why": "The upgrades that make RAG work on real documents.",
+      "repo": "NirDiamant/RAG_Techniques"
+    },
+    {
+      "title": "RAG vs. fine-tuning",
+      "video": "00Q0G84kq3M",
+      "why": "Pick the right tool before you build."
+    },
+    {
+      "title": "Context engineering",
+      "video": "BBPQYtR7oUk",
+      "why": "What goes into the context window matters more than the prompt."
+    },
+    {
+      "title": "Evals: common mistakes",
+      "video": "GL0XhAj5LPE",
+      "why": "Most AI products fail here. Learn to measure quality."
+    },
+    {
+      "title": "Evals on a real product",
+      "video": "uiza7wp1KrE",
+      "why": "Error analysis and LLM judges, worked end to end."
+    },
+    {
+      "title": "Run models locally",
+      "video": "UtSSMs6ObqY",
+      "why": "Free, private, offline LLMs on your laptop.",
+      "repo": "ollama/ollama"
+    },
+    {
+      "title": "The AI engineering big picture",
+      "video": "98o_L3jlixw",
+      "why": "How the job differs from ML engineering, from the author of AI Engineering.",
+      "repo": "chiphuyen/aie-book"
+    }
+  ],
+  "projects": [
+    "Build \"chat with my PDFs\" over 20 of your own documents. Cite the source chunk in every answer.",
+    "Write 30 test questions with known answers, then compare 3 chunk sizes and report retrieval hit rate.",
+    "Ship a small LLM app (summarizer, tutor, or support bot) with an eval set that runs on every change."
+  ]
+}

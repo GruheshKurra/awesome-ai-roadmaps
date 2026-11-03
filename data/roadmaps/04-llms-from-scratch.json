@@ -1,0 +1,97 @@
+{
+  "slug": "llms-from-scratch",
+  "order": 4,
+  "title": "LLMs from Scratch",
+  "level": "Intermediate",
+  "tagline": "Understand and build GPT: tokenizers, attention, transformers, GPT-2, Llama, mixture of experts.",
+  "prereqs": "Deep Learning.",
+  "steps": [
+    {
+      "title": "LLMs in 8 minutes",
+      "video": "LPZh9BOjkQs",
+      "why": "The whole idea before the details."
+    },
+    {
+      "title": "Intro to large language models",
+      "video": "zjkBMFhNj_g",
+      "why": "What they are, how they're trained, where they're going."
+    },
+    {
+      "title": "Transformers, visually",
+      "video": "wjZofJX0v4M",
+      "why": "The architecture behind every modern LLM."
+    },
+    {
+      "title": "Attention, step by step",
+      "video": "eMlx5fFNoYc",
+      "why": "The one mechanism everything depends on."
+    },
+    {
+      "title": "How LLMs store facts",
+      "video": "9-Jl0dxWQs8",
+      "why": "What the MLP layers are doing between attention blocks."
+    },
+    {
+      "title": "Build a tokenizer",
+      "video": "zduSFxRajkE",
+      "why": "Many LLM quirks are tokenizer quirks. Build BPE yourself.",
+      "repo": "karpathy/minbpe"
+    },
+    {
+      "title": "Build GPT from scratch",
+      "video": "kCc8FmEb1nY",
+      "why": "Code a transformer and watch it learn Shakespeare.",
+      "repo": "karpathy/nanoGPT"
+    },
+    {
+      "title": "LLM coding workshop",
+      "video": "quh7z1q7-uc",
+      "why": "Build, pretrain, and fine-tune an LLM in one 3-hour session.",
+      "repo": "rasbt/LLMs-from-scratch"
+    },
+    {
+      "title": "Reproduce GPT-2",
+      "video": "l8pRSuU81PU",
+      "why": "Real training: data, mixed precision, multi-GPU, and evals.",
+      "repo": "karpathy/llm.c"
+    },
+    {
+      "title": "From base model to ChatGPT",
+      "video": "7xTGNNLPyMI",
+      "why": "Pretraining, fine-tuning, and RL, end to end.",
+      "repo": "karpathy/nanochat"
+    },
+    {
+      "title": "Rotary position embeddings",
+      "video": "o29P0Kpobz0",
+      "why": "How modern models encode position."
+    },
+    {
+      "title": "Code Llama from scratch",
+      "video": "oM4VmoabDAI",
+      "why": "RMSNorm, RoPE, grouped-query attention, and the KV cache in PyTorch.",
+      "repo": "naklecha/llama3-from-scratch"
+    },
+    {
+      "title": "Mixture of experts",
+      "video": "sOPDGQjFcuM",
+      "why": "How models get huge without getting slow."
+    },
+    {
+      "title": "Multi-head latent attention",
+      "video": "0VLAoVGf_74",
+      "why": "DeepSeek's trick for shrinking the KV cache."
+    },
+    {
+      "title": "A university course on building LLMs",
+      "video": "SQ3fZ1sAqXI",
+      "why": "Stanford CS336, lecture 1. Continue with the full course if you want depth.",
+      "repo": "stanford-cs336/assignment1-basics"
+    }
+  ],
+  "projects": [
+    "Train nanoGPT on text you care about (your notes, song lyrics, a codebase) and sample from it.",
+    "Swap GPT-2's components for RoPE, RMSNorm, and SwiGLU one by one and compare loss on TinyStories.",
+    "Train your own BPE tokenizer and compare its token counts with GPT-2's on English, code, and another language."
+  ]
+}

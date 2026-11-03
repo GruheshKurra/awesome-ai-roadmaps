@@ -1,0 +1,79 @@
+{
+  "slug": "generative-ai",
+  "order": 9,
+  "title": "Generative AI: Images & Video",
+  "level": "Intermediate",
+  "tagline": "How machines create images and video: VAEs, GANs, diffusion, latent diffusion, and flow matching.",
+  "prereqs": "Deep Learning.",
+  "steps": [
+    {
+      "title": "Variational autoencoders",
+      "video": "qJeaCHQ1k2w",
+      "why": "Learn a latent space you can sample from."
+    },
+    {
+      "title": "GANs",
+      "video": "Sw9r8CL98N0",
+      "why": "A generator and a critic, trained against each other."
+    },
+    {
+      "title": "How AI images and videos work",
+      "video": "iv-5mZ_9CPY",
+      "why": "The best visual explanation of diffusion there is."
+    },
+    {
+      "title": "How image generators work",
+      "video": "1CIpzeNxIhU",
+      "why": "Noise in, picture out, explained simply."
+    },
+    {
+      "title": "DDPM, animated",
+      "video": "EhndHhIvWWw",
+      "why": "The math of denoising diffusion, made visual.",
+      "repo": "huggingface/diffusion-models-class"
+    },
+    {
+      "title": "Diffusion from scratch",
+      "video": "a4Yfz2FxXiY",
+      "why": "Code and train a small diffusion model in PyTorch.",
+      "repo": "lucidrains/denoising-diffusion-pytorch"
+    },
+    {
+      "title": "Latent diffusion",
+      "video": "J87hffSMB60",
+      "why": "Why Stable Diffusion works in a compressed space."
+    },
+    {
+      "title": "Stable Diffusion in code",
+      "video": "-lz30by8-sU",
+      "why": "Run the pipeline piece by piece.",
+      "repo": "huggingface/diffusers"
+    },
+    {
+      "title": "Code Stable Diffusion from scratch",
+      "video": "ZBKpAp_6TGI",
+      "why": "The full model, every component, in PyTorch."
+    },
+    {
+      "title": "Flow matching vs. diffusion",
+      "video": "firXjwZ_6KI",
+      "why": "The newer training recipe behind today's image models."
+    },
+    {
+      "title": "How video generation works",
+      "video": "Y5zHHoLrvAE",
+      "why": "From images to consistent motion."
+    },
+    {
+      "title": "ComfyUI",
+      "video": "23VkGD-4uwk",
+      "why": "Build image-generation workflows visually.",
+      "repo": "Comfy-Org/ComfyUI"
+    }
+  ],
+  "projects": [
+    "Train a VAE on MNIST and render a grid walking through its latent space.",
+    "Train a tiny DDPM on 32×32 images and show samples across denoising steps.",
+    "Train flow matching and diffusion on the same 2D toy distribution and compare sample quality per step."
+  ]
+}

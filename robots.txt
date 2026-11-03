@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://gruheshkurra.github.io/awesome-ai-roadmaps/sitemap.xml
