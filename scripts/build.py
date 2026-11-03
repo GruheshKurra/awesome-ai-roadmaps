@@ -295,6 +295,7 @@ def home_html(roadmaps, meta, upcoming):
         repo_cards.append(f'<a class="repo" href="https://github.com/{key}" target="_blank" rel="noopener"><span class="repo-name">{escape(key)}</span><span class="repo-desc">{escape(m["description"][:110])}</span><span class="repo-stars">★ {stars(m["stars"])}</span></a>')
     soon = "".join(f"<li>{escape(item)}</li>" for item in upcoming)
     first = roadmaps[0]
+    peek = "".join(f'<li><img src="{thumb(st["video"])}" alt="" loading="lazy" width="96" height="54"><span class="peek-title">{escape(st["title"])}</span><span class="muted peek-dur">{duration(meta["videos"][st["video"]]["seconds"])}</span></li>' for st in first["steps"][:5])
     faq = [
         ("How can I learn AI for free?", f"Pick a roadmap and watch its videos in order. All {len(roadmaps)} roadmaps are made of free YouTube videos and open-source GitHub repos, with no sign-up, paywall, or trial."),
         ("Where should a complete beginner start?", f"Start with {first['title']} ({duration(first['seconds'])} of video), then Machine Learning and Deep Learning. After that, choose a roadmap for what you want to build: LLMs, agents, computer vision, generative AI, or deployment."),
@@ -305,19 +306,19 @@ def home_html(roadmaps, meta, upcoming):
     faq_html = "".join(f"<details><summary>{escape(q)}</summary><p>{escape(a)}</p></details>" for q, a in faq)
     body = f"""<main>
 <section class="hero">
-  <p class="eyebrow">Free · Video-first · In order</p>
-  <h1>Learn AI from the best free videos, <span class="hl">in the right order.</span></h1>
-  <p class="lead">No books. No paywalls. No 40-hour playlists. Each step is one great YouTube video, plus the GitHub repo to code along with. Tick steps off as you go; progress is saved in your browser.</p>
-  <div class="cta">
-    <a class="btn primary" href="{roadmaps[0]['slug']}/">Start with {escape(roadmaps[0]['title'])}</a>
-    <a class="btn" href="#roadmaps">Browse all roadmaps</a>
+  <div class="hero-copy">
+    <h1>Learn AI from free YouTube videos, in a sensible order.</h1>
+    <p class="lead">Every step is one video and, where it helps, one GitHub repo to code along with. No books, no paywalls, no playlists to sort through. Tick steps off as you go; your progress stays in your browser.</p>
+    <div class="cta">
+      <a class="btn primary" href="{roadmaps[0]['slug']}/">Start with {escape(roadmaps[0]['title'])}</a>
+      <a class="btn" href="#roadmaps">Browse all roadmaps</a>
+    </div>
+    <p class="facts muted">{len(roadmaps)} roadmaps · {videos} videos · {total_hours(seconds)} hours · {len(repos)} repos · free, no account</p>
   </div>
-  <dl class="stats">
-    <div><dt>Roadmaps</dt><dd>{len(roadmaps)}</dd></div>
-    <div><dt>Videos</dt><dd>{videos}</dd></div>
-    <div><dt>Hours</dt><dd>{total_hours(seconds)}</dd></div>
-    <div><dt>Repos</dt><dd>{len(repos)}</dd></div>
-  </dl>
+  <a class="peek" href="{roadmaps[0]['slug']}/" aria-label="Preview of the {escape(roadmaps[0]['title'])} roadmap">
+    <span class="peek-head"><strong>{escape(roadmaps[0]['title'])}</strong><span class="muted">{len(roadmaps[0]['steps'])} steps · {duration(roadmaps[0]['seconds'])}</span></span>
+    <ol>{peek}</ol>
+  </a>
 </section>
 <section id="roadmaps" class="section">
   <div class="section-head">
