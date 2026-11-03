@@ -4,6 +4,8 @@ Goal: Represent audio for models, then cover ASR (CTC, wav2vec, Whisper) and syn
 
 Prereqs: [Deep Learning](../deep-learning/).
 
+Time: about 25 hours.
+
 Status: done
 
 Work through the steps in order. Bold links open YouTube.
@@ -21,3 +23,9 @@ Work through the steps in order. Bold links open YouTube.
 | 9 | Neural waveform synthesis | | [van den Oord et al. 2016 — WaveNet: A Generative Model for Raw Audio](https://arxiv.org/abs/1609.03499) |
 | 10 | Neural text-to-speech | | [Shen et al. 2018 — Natural TTS Synthesis by Conditioning WaveNet on Mel Spectrogram Predictions](https://arxiv.org/abs/1712.05884) |
 | 11 | Controllable music generation | | [Copet et al. 2023 — Simple and Controllable Music Generation](https://arxiv.org/abs/2306.05284) |
+
+## Build it
+
+- **Spectrogram explorer.** Plot waveform, STFT, and mel spectrogram for your own voice saying the same word three ways.
+- **Whisper subtitles.** Transcribe a lecture with Whisper, generate an SRT file, and measure word error rate on a hand-checked minute.
+- **Keyword spotter.** Train a small CNN on the Speech Commands dataset.

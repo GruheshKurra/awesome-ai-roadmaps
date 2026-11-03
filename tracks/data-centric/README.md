@@ -4,6 +4,8 @@ Goal: Learn how to improve models by improving data, from data-centric developme
 
 Prereqs: [ML Basics](../ml-basics/). Review GANs in [Generative Models](../generative-models/) before synthetic tabular data, and [LLMs](../llms/) before pretraining-data filtering.
 
+Time: about 25 hours.
+
 Status: done
 
 Step 9 puts label auditing into practice with cross-validation and a tabular classifier. Treat flagged labels as candidates for manual review before changing data or trusting evaluation scores.
@@ -23,3 +25,9 @@ Step 9 puts label auditing into practice with cross-validation and a tabular cla
 | 11 | Synthetic tabular data | | [Xu et al. 2019 — Modeling Tabular data using Conditional GAN](https://arxiv.org/abs/1907.00503) |
 | 12 | Deduplicating training data | | [Lee et al. 2022 — Deduplicating Training Data Makes Language Models Better](https://arxiv.org/abs/2107.06499) |
 | 13 | Filtering web-scale pretraining data | **[How to Create an LLM Dataset: FineWeb Overview](https://www.youtube.com/watch?v=vB9pHTZKoGQ)** | [Penedo et al. 2024 — The FineWeb Datasets: Decanting the Web for the Finest Text Data at Scale](https://arxiv.org/abs/2406.17557) |
+
+## Build it
+
+- **Find label errors.** Run cleanlab on a public dataset and verify the top 50 flagged examples by hand.
+- **Datasheet.** Write a datasheet for a dataset you used in another project.
+- **Dedup study.** Deduplicate a text dataset with MinHash and measure how much of the test set leaked into training.

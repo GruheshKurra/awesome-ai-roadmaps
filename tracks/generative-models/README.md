@@ -4,6 +4,8 @@ Goal: Learn how models sample new data: autoregressive likelihoods, VAEs, GANs, 
 
 Prereqs: [Deep Learning](../deep-learning/), plus probability and calculus from [Math for ML](../math-for-ml/). [Computer Vision](../computer-vision/) helps for the image papers.
 
+Time: about 35 hours.
+
 Status: done
 
 Work through the steps in order. Bold links open YouTube.
@@ -22,3 +24,9 @@ Work through the steps in order. Bold links open YouTube.
 | 10 | Classifier-free guidance | | [Ho & Salimans 2022 — Classifier-Free Diffusion Guidance](https://arxiv.org/abs/2207.12598) |
 | 11 | Latent diffusion | **[How does Stable Diffusion work? — Latent Diffusion Models Explained](https://www.youtube.com/watch?v=J87hffSMB60)** | [Rombach et al. 2022 — High-Resolution Image Synthesis with Latent Diffusion Models](https://arxiv.org/abs/2112.10752) |
 | 12 | Flow matching | | [Lipman et al. 2023 — Flow Matching for Generative Modeling](https://arxiv.org/abs/2210.02747) |
+
+## Build it
+
+- **VAE on MNIST.** Train it, then walk the latent space and render a grid of samples.
+- **DDPM from scratch.** Train a tiny diffusion model on 32×32 images and show samples across denoising steps.
+- **Flow matching vs. diffusion.** Train both on a 2D toy distribution and compare sample quality per step.

@@ -4,6 +4,8 @@ Goal: Fit and evaluate regression and classification models, then explore cluste
 
 Prereqs: [Python for ML](../python-for-ml/) and [Math for ML](../math-for-ml/).
 
+Time: about 25 hours.
+
 Status: done
 
 Use cross-validation to compare models and keep a separate test set for the final evaluation. Fit preprocessing on training data only; step 5 explains how pipelines keep it inside each training fold.
@@ -24,3 +26,9 @@ In step 6, choose classification metrics based on the costs of false positives a
 | 10 | Support vector machines | **[StatQuest — Support Vector Machines](https://www.youtube.com/watch?v=efR1C6CvhmE)** | [scikit-learn — Support vector machines](https://scikit-learn.org/stable/modules/svm.html) |
 | 11 | K-means clustering | **[StatQuest — K-means clustering](https://www.youtube.com/watch?v=4b5d3muPQmA)** | [scikit-learn — Clustering](https://scikit-learn.org/stable/modules/clustering.html) |
 | 12 | PCA and preprocessing pipelines | **[StatQuest — Principal Component Analysis](https://www.youtube.com/watch?v=FgakZw6K1QQ)** | [scikit-learn — Tune PCA and logistic regression in a pipeline](https://scikit-learn.org/stable/auto_examples/compose/plot_digits_pipe.html) |
+
+## Build it
+
+- **Kaggle baseline.** Pick a tabular competition (Titanic or House Prices), build a cross-validated scikit-learn pipeline, and beat a simple baseline.
+- **Metric trade-offs.** On an imbalanced dataset, plot precision/recall as you move the decision threshold and choose one for a stated cost.
+- **Model zoo.** Compare logistic regression, a random forest, and an SVM on the same splits and explain the differences.

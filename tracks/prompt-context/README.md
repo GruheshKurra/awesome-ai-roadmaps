@@ -2,7 +2,9 @@
 
 Goal: Compare prompt designs, select context, and test retrieval across context lengths.
 
-Prereqs: [LLMs](../llms/). [Eval Harnesses](../eval-harnesses/) helps with comparing prompt variants.
+Prereqs: [LLMs](../llms/). [LLM Evals](../eval-harnesses/) helps with comparing prompt variants.
+
+Time: about 8 hours.
 
 Status: done
 
@@ -16,3 +18,9 @@ Define success criteria before changing a prompt, then compare variants on the s
 | 4 | Prompting and tool use in practice | **[Andrej Karpathy — How I use LLMs](https://www.youtube.com/watch?v=EWvNQjAaOHw)** | |
 | 5 | Context engineering: beyond the prompt | | [Anthropic — Effective context engineering for AI agents](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents) |
 | 6 | Probe retrieval across context lengths and insertion depths | | [gkamradt — LLMTest_NeedleInAHaystack](https://github.com/gkamradt/LLMTest_NeedleInAHaystack) |
+
+## Build it
+
+- **Prompt A/B test.** Write 2 prompts for the same task, run both on 30 fixed inputs, and score the outputs blind.
+- **Structured output.** Get a model to return valid JSON for 100 messy inputs and count failures before and after adding examples.
+- **Needle test.** Hide a fact at 5 depths in a long document and chart retrieval accuracy for one model.

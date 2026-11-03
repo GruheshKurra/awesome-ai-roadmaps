@@ -4,6 +4,8 @@ Goal: Learn sequential decision making from MDPs and value methods through deep 
 
 Prereqs: [Deep Learning](../deep-learning/). Review probability in [Math for ML](../math-for-ml/).
 
+Time: about 35 hours.
+
 Status: done
 
 Work through the steps in order. Bold links open YouTube.
@@ -20,4 +22,10 @@ Work through the steps in order. Bold links open YouTube.
 | 8 | Soft actor-critic | **[Phil Tabor — Soft Actor Critic in PyTorch](https://www.youtube.com/watch?v=ioidsRlf79o)** | [Haarnoja et al. 2018 — Soft Actor-Critic](https://arxiv.org/abs/1801.01290) |
 | 9 | Twin delayed DDPG | | [Fujimoto et al. 2018 — Addressing Function Approximation Error in Actor-Critic Methods](https://arxiv.org/abs/1802.09477) |
 | 10 | MuZero model-based planning | **[Yannic Kilcher — MuZero](https://www.youtube.com/watch?v=We20YSAJZSE)** | [Schrittwieser et al. 2019 — Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model](https://arxiv.org/abs/1911.08265) |
-| 11 | RLHF pointer | | [Ouyang et al. 2022 — Training language models to follow instructions with human feedback](https://arxiv.org/abs/2203.02155) |
+| 11 | From RL to LLM post-training (continue in [Reasoning Models](../reasoning-models/)) | | [Ouyang et al. 2022 — Training language models to follow instructions with human feedback](https://arxiv.org/abs/2203.02155) |
+
+## Build it
+
+- **Q-learning on FrozenLake.** Implement tabular Q-learning and plot success rate over episodes.
+- **DQN on CartPole.** Write DQN with a replay buffer and target network; then remove each and watch it break.
+- **PPO with Gymnasium.** Train PPO from a clean single-file implementation on LunarLander and record a video of the result.

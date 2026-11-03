@@ -4,6 +4,8 @@ Goal: Image classification, detection, and segmentation with convolutional netwo
 
 Prereqs: [Deep Learning](../deep-learning/), especially backpropagation and convolutional networks.
 
+Time: about 30 hours.
+
 Status: done
 
 Work through the steps in order. Bold links open YouTube.
@@ -22,3 +24,9 @@ Work through the steps in order. Bold links open YouTube.
 | 10 | Instance segmentation | | [He et al. 2017 — Mask R-CNN](https://arxiv.org/abs/1703.06870) |
 | 11 | Vision transformers | **[Yannic Kilcher — An Image is Worth 16x16 Words](https://www.youtube.com/watch?v=TrdevFK_am4)** | [Dosovitskiy et al. 2020 — Vision Transformer](https://arxiv.org/abs/2010.11929) |
 | 12 | Fine-tuning practice | | [d2l — Fine-tuning](https://d2l.ai/chapter_computer-vision/fine-tuning.html) |
+
+## Build it
+
+- **Transfer learning.** Fine-tune a pretrained ResNet or ViT on 5 classes of your own photos (50 images each).
+- **Detection demo.** Run a pretrained YOLO model on a video from your phone and count objects per frame.
+- **Augmentation study.** Train the same small CNN with and without augmentation on a 10%-size CIFAR-10 subset.

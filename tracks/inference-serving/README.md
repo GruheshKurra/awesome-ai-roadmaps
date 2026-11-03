@@ -4,6 +4,8 @@ Goal: Run and benchmark LLM inference with quantization, KV caching, batching, l
 
 Prereqs: [Python for ML](../python-for-ml/) and [LLMs](../llms/), plus basic command-line use and HTTP requests.
 
+Time: about 20 hours.
+
 Status: done
 
 Start with a small model that fits your hardware. The llama.cpp server supports CPU inference; vLLM examples need a supported hardware setup. The readings are free, and local serving avoids paid API calls. Compare memory use, response quality, and throughput on the same workload. Record time to first token and inter-token latency separately. Keep cache state consistent: repeating a benchmark can reuse cached prompts and inflate throughput.
@@ -18,3 +20,9 @@ Start with a small model that fits your hardware. The llama.cpp server supports 
 | 6 | Serve requests with vLLM | | [vLLM — OpenAI-Compatible Server](https://docs.vllm.ai/en/latest/serving/online_serving/openai_compatible_server/) |
 | 7 | Reuse shared prompt prefixes during prefill | | [vLLM — Automatic Prefix Caching](https://docs.vllm.ai/en/latest/features/automatic_prefix_caching/) |
 | 8 | Measure first-token latency, inter-token latency, and throughput | | [vLLM — Benchmark CLI](https://docs.vllm.ai/en/latest/benchmarking/cli/) |
+
+## Build it
+
+- **Local server.** Serve a quantized model with llama.cpp and measure tokens/sec at 4-bit vs. 8-bit.
+- **vLLM load test.** Benchmark time-to-first-token and throughput at 1, 8, and 32 concurrent users.
+- **Prefix caching.** Measure the speedup from reusing a long shared system prompt.

@@ -4,6 +4,8 @@ Goal: Build, evaluate, document, and serve a tabular classification model locall
 
 Prereqs: [Python for ML](../python-for-ml/) and [ML Basics](../ml-basics/), plus basic Git and command-line use. Be able to fit and evaluate a scikit-learn classifier.
 
+Time: about 25 hours.
+
 Status: done
 
 Apply the lessons to one small classification dataset. Produce a baseline comparison, a saved preprocessing/model pipeline, a local prediction endpoint, and a model card. Use validation data for diagnosis and threshold selection; keep a separate test set untouched until those choices are fixed. Use local MLflow storage and serving. Continue with [MLOps](../mlops/) for data versioning, registries, and monitoring.
@@ -19,3 +21,9 @@ Apply the lessons to one small classification dataset. Produce a baseline compar
 | 7 | Choose a persistence format and record the training environment | | [scikit-learn — Model persistence](https://scikit-learn.org/stable/model_persistence.html) |
 | 8 | Serve the final logged model and test predictions and health checks | | [MLflow — Deploy a Model as a Local Inference Server](https://mlflow.org/docs/latest/ml/deployment/deploy-model-locally/) |
 | 9 | Document intended use, evaluation results, and limitations | | [Hugging Face — Model Cards](https://huggingface.co/docs/hub/en/model-cards) |
+
+## Build it
+
+- **Portfolio project.** Do this whole track on one real tabular dataset you care about and publish the repo with a model card.
+- **Leakage hunt.** Deliberately leak the target, show the inflated score, then fix the split.
+- **Ship it.** Containerize the model server and write a one-page handoff another engineer could run.

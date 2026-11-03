@@ -4,6 +4,8 @@ Goal: Use matrices, derivatives, gradient descent, and probability to follow bas
 
 Prereqs: School algebra, functions, and graphs.
 
+Time: about 25 hours.
+
 Status: done
 
 Start with the visual lessons. Step 8 assumes basic derivatives and familiarity with neural networks; you can return to it after the first three steps of [Deep Learning](../deep-learning/).
@@ -21,3 +23,9 @@ Start with the visual lessons. Step 8 assumes basic derivatives and familiarity 
 | 9 | Random variables, expectation, variance, and conditional probability | | [CS229 — Probability Theory Review](https://cs229.stanford.edu/section/cs229-prob.pdf) |
 | 10 | Bayes' theorem | **[StatQuest — Bayes' Theorem](https://www.youtube.com/watch?v=9wCnvr7Xw4E)** | |
 | 11 | Gaussian distributions | **[StatQuest — The Normal Distribution](https://www.youtube.com/watch?v=rzFX5NWojp0)** | |
+
+## Build it
+
+- **Gradient descent by hand.** Implement linear regression with NumPy using only the gradient you derived on paper. Plot the loss curve for three learning rates.
+- **PCA from eigenvectors.** Compute PCA on a small dataset with `np.linalg.eigh` and check your result against scikit-learn.
+- **Bayes in a spreadsheet.** Work through a medical-test example with real base rates and explain why the posterior surprises people.

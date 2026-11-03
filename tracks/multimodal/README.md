@@ -4,6 +4,8 @@ Goal: Connect vision and language with contrastive encoders, then generative VLM
 
 Prereqs: [Deep Learning](../deep-learning/), plus familiarity with vision encoders from [Computer Vision](../computer-vision/) and transformers from [LLMs](../llms/).
 
+Time: about 25 hours.
+
 Status: done
 
 Compare CLIP and SigLIP as image-text representation learners before studying generative models. After BLIP-2, examine how InstructBLIP makes its visual feature extraction depend on the instruction. Finish with ImageBind to extend the discussion beyond image-text pairs. Bold links open YouTube.
@@ -21,3 +23,9 @@ Compare CLIP and SigLIP as image-text representation learners before studying ge
 | 9 | Large multimodal models landscape | **[CVPR 2023 Tutorial — Large Multimodal Models: Towards Building and Surpassing Multimodal GPT-4](https://www.youtube.com/watch?v=mkI7EPD1vp8)** | [Li et al. 2023 — Large Multimodal Models: Notes on CVPR 2023 Tutorial](https://arxiv.org/html/2306.14895) |
 | 10 | Improved multimodal instruction baselines | | [Liu et al. 2023 — Improved Baselines with Visual Instruction Tuning](https://arxiv.org/abs/2310.03744) |
 | 11 | Binding many modalities | **[AI Bites — ImageBind: One Embedding Space To Bind Them All](https://www.youtube.com/watch?v=cfU_QPNcl2U)** | [Girdhar et al. 2023 — ImageBind: One Embedding Space To Bind Them All](https://arxiv.org/abs/2305.05665) |
+
+## Build it
+
+- **CLIP image search.** Index 1,000 of your photos with CLIP and search them with text.
+- **Zero-shot classifier.** Compare CLIP zero-shot accuracy with a linear probe on a small labeled dataset.
+- **VLM eval.** Ask a local open VLM 30 questions about charts and screenshots and record where it fails.

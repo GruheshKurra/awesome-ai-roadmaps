@@ -4,6 +4,8 @@ Goal: Learn how to estimate treatment effects from experiments and observational
 
 Prereqs: [ML Basics](../ml-basics/), especially regression. Review probability in [Math for ML](../math-for-ml/) before the identification arguments.
 
+Time: about 30 hours.
+
 Status: done
 
 Work through the steps in order. Bold links open YouTube.
@@ -20,4 +22,10 @@ Work through the steps in order. Bold links open YouTube.
 | 8 | Instrumental variables and LATE | **[8.4 - Nonparametric Identification of the Local ATE (LATE)](https://www.youtube.com/watch?v=jQIVjA6uBcU)** | [Imbens & Angrist 1994 — Identification and Estimation of Local Average Treatment Effects](https://www.nber.org/system/files/working_papers/t0118/t0118.pdf) |
 | 9 | Meta-learners and the X-learner | **[6.3 - TARNet and X-Learner](https://www.youtube.com/watch?v=88WHWv5QSWs)** | [Künzel et al. 2019 — Metalearners for Estimating Heterogeneous Treatment Effects using Machine Learning](https://arxiv.org/abs/1706.03461) |
 | 10 | Causal forests | **[Conditional Average Treatment Effects: Forests](https://www.youtube.com/watch?v=fNjToAQ9v3g)** | [Wager & Athey 2018 — Estimation and Inference of Heterogeneous Treatment Effects using Random Forests](https://arxiv.org/abs/1510.04342) |
-| 11 | Difference-in-differences | **[9.2 - Difference-in-Differences Overview](https://www.youtube.com/watch?v=tqnhW1tanAQ)** | [Cunningham — Difference-in-Differences Fundamentals](https://mixtape.scunning.com/08a-difference_in_differences) |
+| 11 | Difference-in-differences | **[9.2 - Difference-in-Differences Overview](https://www.youtube.com/watch?v=tqnhW1tanAQ)** | [Cunningham — Difference-in-Differences Fundamentals](https://mixtape.scunning.com/09-Difference_in_Differences.html) |
+
+## Build it
+
+- **Simulate confounding.** Generate data where a naive regression gets the wrong sign, then recover the effect with adjustment.
+- **Propensity weighting.** Estimate a treatment effect on the LaLonde job-training data with IPW and a doubly robust estimator.
+- **Heterogeneous effects.** Fit a causal forest with EconML and find who benefits most.

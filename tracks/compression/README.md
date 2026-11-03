@@ -4,6 +4,8 @@ Goal: Reduce model size and inference cost with pruning, quantization, distillat
 
 Prereqs: [Deep Learning](../deep-learning/) and a working PyTorch training loop. Review CNNs in [Computer Vision](../computer-vision/) for MobileNetV2 and transformers in [LLMs](../llms/) for the BERT example.
 
+Time: about 20 hours.
+
 Status: done
 
 Compare each compressed model with its original on the same evaluation data and hardware. Record accuracy, stored model size, and latency separately; fewer weights or bits do not guarantee faster inference. All lessons are free to read or watch. Running the quantization and sparse-inference examples requires compatible hardware; the final tutorial uses an NVIDIA GPU with compute capability 8.0 or later.
@@ -18,3 +20,9 @@ Compare each compressed model with its original on the same evaluation data and 
 | 6 | Transfer a teacher's predictions to a smaller student | **[MIT 6.5940 — Knowledge Distillation](https://www.youtube.com/watch?v=Ubj3QXv4rjw)** | [Hinton et al. 2015 — Distilling the Knowledge in a Neural Network](https://arxiv.org/abs/1503.02531) |
 | 7 | Train and evaluate a student with distillation losses | | [PyTorch — Knowledge Distillation Tutorial](https://docs.pytorch.org/tutorials/beginner/knowledge_distillation_tutorial.html) |
 | 8 | Turn 2:4 sparsity into measured speedups and check accuracy | | [PyTorch — Accelerating BERT with Semi-Structured Sparsity](https://docs.pytorch.org/tutorials/advanced/semi_structured_sparse.html) |
+
+## Build it
+
+- **Prune and fine-tune.** Prune a ResNet to 50% and 90% sparsity and plot accuracy against size.
+- **Distill.** Train a small student from a larger teacher on CIFAR-10 and compare with training the student alone.
+- **Quantize.** Export a model to int8 and measure CPU latency and accuracy change.

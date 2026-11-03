@@ -4,6 +4,8 @@ Goal: Make ML training reproducible, track and test models, deploy predictions, 
 
 Prereqs: [Python for ML](../python-for-ml/) and [ML Basics](../ml-basics/), plus basic Git and command-line use. Be able to train and evaluate a scikit-learn model.
 
+Time: about 20 hours.
+
 Status: done
 
 Use DVC's local-storage option and a local MLflow server for the hands-on steps. Follow the numbered order from training data to a deployed model and its maintenance.
@@ -18,3 +20,9 @@ Use DVC's local-storage option and a local MLflow server for the hands-on steps.
 | 6 | Register model versions and promotion aliases | | [MLflow — Model Registry Workflows](https://mlflow.org/docs/latest/ml/model-registry/workflow/) |
 | 7 | Serve predictions and check endpoint health | | [MLflow — Deploy a Model as a Local Inference Server](https://mlflow.org/docs/latest/ml/deployment/deploy-model-locally/) |
 | 8 | Monitor drift and decide when to retrain | **[FSDL 2022 — Continual Learning](https://www.youtube.com/watch?v=nra0Tt3a-Oc)** | [Evidently — Detecting and handling data drift](https://www.evidentlyai.com/ml-in-production/data-drift) |
+
+## Build it
+
+- **End-to-end pipeline.** Version data with DVC, track runs with MLflow, and serve the best model behind a FastAPI endpoint.
+- **CI for models.** Add a GitHub Action that retrains on a data sample and fails if accuracy drops.
+- **Drift monitor.** Simulate drift in incoming data and trigger an alert.

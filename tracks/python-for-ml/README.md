@@ -4,6 +4,8 @@ Goal: Use Python notebooks, NumPy arrays, pandas tables, and plots to prepare an
 
 Prereqs: Basic programming: variables, loops, and functions. No prior ML knowledge required.
 
+Time: about 10 hours.
+
 Status: done
 
 Start with the Python and notebook sections of step 1. Return to its NumPy examples as you work through the array steps.
@@ -19,3 +21,9 @@ Start with the Python and notebook sections of step 1. Return to its NumPy examp
 | 7 | Boolean masks | | [PDSH — Comparisons, Masks, and Boolean Logic](https://jakevdp.github.io/PythonDataScienceHandbook/02.06-boolean-arrays-and-masks.html) |
 | 8 | Pandas | **[Keith Galli — Complete Python Pandas Tutorial (2025)](https://www.youtube.com/watch?v=2uvysYbKdjM)** | [10 minutes to pandas](https://pandas.pydata.org/docs/user_guide/10min.html) |
 | 9 | Matplotlib | **[Corey Schafer — Matplotlib Tutorial (Part 1)](https://www.youtube.com/watch?v=UO98lJQ3QGI)** | [Matplotlib — Quick start guide](https://matplotlib.org/stable/users/explain/quick_start.html) |
+
+## Build it
+
+- **Clean a messy CSV.** Load a public dataset (e.g. NYC taxi trips), fix types and missing values with pandas, and answer five questions with one plot each.
+- **No-loop NumPy.** Rewrite a nested-loop distance calculation with broadcasting and time both versions.
+- **Notebook to script.** Turn your notebook into a script that takes a CSV path and writes a summary report.

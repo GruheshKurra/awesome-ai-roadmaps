@@ -4,6 +4,8 @@ Goal: Retrieval, chunking, embeddings, vector search, and evaluation for RAG pip
 
 Prereqs: [Python for ML](../python-for-ml/) and [LLMs](../llms/).
 
+Time: about 20 hours.
+
 Status: done
 
 Step 6 uses local embeddings, PostgreSQL/pgvector, and llama.cpp. In step 8, use the guide's Local Models (Ollama) option for the evaluator and a locally run RAG system.
@@ -18,3 +20,9 @@ Step 6 uses local embeddings, PostgreSQL/pgvector, and llama.cpp. In step 8, use
 | 6 | Build ingestion, retrieval, and generation with local components | | [LlamaIndex — Building RAG from Scratch (Open-source only!)](https://developers.llamaindex.ai/python/examples/low_level/oss_ingestion_retrieval/) |
 | 7 | Evaluating RAG without ground truth | | [Es et al. 2023 — Ragas: Automated Evaluation of Retrieval Augmented Generation](https://arxiv.org/abs/2309.15217) |
 | 8 | Run evaluations and save results | | [Ragas — Evaluation quickstart with a local-model option](https://docs.ragas.io/en/stable/getstarted/quickstart/) |
+
+## Build it
+
+- **Chat with your PDFs.** Build local RAG over 20 documents you own with an open embedding model and a vector index. Cite the source chunk in every answer.
+- **Chunking experiment.** Compare 3 chunk sizes on 30 questions with known answers and report retrieval hit rate.
+- **Hybrid search.** Add BM25 to vector search and measure whether recall improves.

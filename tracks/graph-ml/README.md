@@ -4,6 +4,8 @@ Goal: Learn representation learning on graphs from node embeddings through messa
 
 Prereqs: [Deep Learning](../deep-learning/) and a PyTorch training loop for the implementation step. [ML Basics](../ml-basics/) helps for the embedding and classification framing. Review the first three steps of [LLMs](../llms/) before the graph transformer paper.
 
+Time: about 25 hours.
+
 Status: done
 
 Step 6 predicts held-out node labels on a graph available during training. Step 7 introduces learning for unseen nodes; keep this distinction in mind when comparing results.
@@ -22,3 +24,9 @@ Step 6 predicts held-out node labels on a graph available during training. Step 
 | 10 | Knowledge graph embeddings | **[TransE — Translating Embedding for Knowledge Graphs](https://www.youtube.com/watch?v=SBqr5yJE_4g)** | [Bordes et al. 2013 — Translating Embeddings for Modeling Multi-relational Data](https://papers.nips.cc/paper/2013/hash/1cecc7a77928ca8133fa24680a88d2f9-Abstract.html) |
 | 11 | Deep generative models for graphs | | [You et al. 2018 — GraphRNN: Generating Realistic Graphs with Deep Auto-regressive Models](https://arxiv.org/abs/1802.08773) |
 | 12 | Graph transformers | **[Graphormer — Do Transformers Really Perform Bad for Graph Representation?](https://www.youtube.com/watch?v=xQ5ltOOxoFg)** | [Ying et al. 2021 — Do Transformers Really Perform Bad for Graph Representation?](https://arxiv.org/abs/2106.05234) |
+
+## Build it
+
+- **GCN on Cora.** Train a 2-layer GCN in PyTorch Geometric and visualize the learned node embeddings with t-SNE.
+- **Link prediction.** Predict missing friendships in a social graph and report ROC-AUC.
+- **GraphSAGE vs. GAT.** Compare both on an inductive split.

@@ -4,6 +4,8 @@ Goal: Learn forecasting for ordered observations, from stationarity and classica
 
 Prereqs: [ML Basics](../ml-basics/). [Deep Learning](../deep-learning/) helps for the neural forecasting papers. The simple forecasting chapter uses R; its equations can also be followed without running the code.
 
+Time: about 30 hours.
+
 Status: done
 
 Choose time-ordered evaluation splits before fitting models. Compare forecasts against naïve and seasonal-naïve baselines at the same forecast horizon before trying more complex methods. Bold links open YouTube.
@@ -24,3 +26,9 @@ Choose time-ordered evaluation splits before fitting models. Compare forecasts a
 | 12 | Informer for long sequences | **[Informer: Time series Transformer — EXPLAINED](https://www.youtube.com/watch?v=aETHYkoJeNY)** | [Zhou et al. 2020 — Informer: Beyond Efficient Transformer for Long Sequence Time-Series Forecasting](https://arxiv.org/abs/2012.07436) |
 | 13 | Linear baselines vs transformers | **[LTSF-Linear: Are Transformers Effective for Time Series Forecasting](https://www.youtube.com/watch?v=Su2Bj37rAFs)** | [Zeng et al. 2022 — Are Transformers Effective for Time Series Forecasting?](https://arxiv.org/abs/2205.13504) |
 | 14 | PatchTST patching | **[How PatchTST and Chronos differ for Time Series Forecasting](https://www.youtube.com/watch?v=8LD_OiTxtwQ)** | [Nie et al. 2022 — A Time Series is Worth 64 Words: Long-term Forecasting with Transformers](https://arxiv.org/abs/2211.14730) |
+
+## Build it
+
+- **Baselines first.** Forecast a public series (electricity or retail sales) with naïve, seasonal-naïve, and ETS, using rolling-origin evaluation.
+- **Beat the baseline.** Try ARIMA and one deep model, and report whether they beat seasonal-naïve.
+- **Probabilistic forecast.** Produce prediction intervals and check their coverage on held-out data.

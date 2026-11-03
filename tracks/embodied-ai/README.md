@@ -4,6 +4,8 @@ Goal: Connect observations to robot actions through simulation, imitation learni
 
 Prereqs: [Deep Learning](../deep-learning/), [Computer Vision](../computer-vision/), and MDPs from [Reinforcement Learning](../reinforcement-learning/). [Generative Models](../generative-models/) and [Multimodal](../multimodal/) help with the later policy papers.
 
+Time: about 30 hours.
+
 Status: done
 
 This track focuses on robot manipulation. Start with simulated observations and actions, then train a behavior-cloning baseline before studying larger policies. The readings are free; the simulation exercises need local compute, and reproducing hardware experiments requires a robot. Follow step 3's robosuite version requirement when running its rollouts.
@@ -18,3 +20,9 @@ This track focuses on robot manipulation. Start with simulated observations and 
 | 6 | Generate action sequences with diffusion and receding-horizon control | | [Chi et al. 2023 — Diffusion Policy: Visuomotor Policy Learning via Action Diffusion](https://arxiv.org/abs/2303.04137) |
 | 7 | Adapt a vision-language model to predict robot actions | | [Kim et al. 2024 — OpenVLA: An Open-Source Vision-Language-Action Model](https://arxiv.org/abs/2406.09246) |
 | 8 | Evaluate task success, knowledge transfer, and forgetting | | [Liu et al. 2023 — LIBERO: Benchmarking Knowledge Transfer for Lifelong Robot Learning](https://arxiv.org/abs/2306.03310) |
+
+## Build it
+
+- **Behavior cloning.** Train a BC policy in a simulated pick-and-place task and watch where it fails.
+- **DAgger.** Add DAgger and measure the improvement in success rate.
+- **LeRobot.** Train ACT or a diffusion policy on a public LeRobot dataset and evaluate in simulation.
