@@ -1,8 +1,10 @@
-# Eval Harnesses
+# LLM Evals
 
 Goal: Choose LLM benchmarks, recognize contamination, and run repeatable evaluations with custom tasks and metrics.
 
 Prereqs: [LLMs](../llms/) and [Python for ML](../python-for-ml/), plus basic command-line use.
+
+Time: about 15 hours.
 
 Status: done
 
@@ -18,3 +20,9 @@ For the hands-on steps, use the harness's local Hugging Face backend with a mode
 | 6 | LLM-as-judge: human agreement, position bias, and verbosity bias | | [Zheng et al. 2023 — Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena](https://arxiv.org/abs/2306.05685) |
 | 7 | Run benchmarks and save scores and sample outputs | | [EleutherAI — Evaluation harness user guide](https://github.com/EleutherAI/lm-evaluation-harness/blob/main/docs/interface.md) |
 | 8 | Define custom datasets, prompts, and scoring rules | | [EleutherAI — New Task Guide](https://github.com/EleutherAI/lm-evaluation-harness/blob/main/docs/new_task_guide.md) |
+
+## Build it
+
+- **Your own benchmark.** Write 50 questions from your own domain with exact answers and run 3 models through lm-evaluation-harness as a custom task.
+- **Judge the judge.** Grade 30 outputs yourself, then with an LLM judge, and measure agreement and position bias.
+- **Contamination check.** Search a public pretraining corpus sample for n-gram overlap with a benchmark's test set.

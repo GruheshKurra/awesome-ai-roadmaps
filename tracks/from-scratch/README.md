@@ -4,6 +4,8 @@ Goal: Build tiny nets, tokenizers, and a GPT by hand, in code, instead of only w
 
 Prereqs: [Deep Learning](../deep-learning/) and [Python for ML](../python-for-ml/). Review transformers in [LLMs](../llms/) before GPT-2. The final two steps need C arrays and pointers; use [GPU Systems](../gpu-systems/) for CUDA preparation before the last step.
 
+Time: about 40 hours.
+
 Status: done
 
 Implement each model alongside the lesson. The tokenizer and GPT-2 videos link their code and exercises in the descriptions. The lessons are free. The LayerNorm C exercise runs on a CPU; full GPT-2 training needs substantial GPU compute, and the final llm.c walkthrough uses NVIDIA GPUs. Its environment setup and cost estimates describe the author's 2024 run.
@@ -18,3 +20,9 @@ Implement each model alongside the lesson. The tokenizer and GPT-2 videos link t
 | 6 | Build, train, and evaluate GPT-2 (124M) | **[Karpathy — Let's reproduce GPT-2 (124M)](https://www.youtube.com/watch?v=l8pRSuU81PU)** | |
 | 7 | Implement LayerNorm forward and backward passes in C | | [Karpathy — llm.c LayerNorm tutorial](https://github.com/karpathy/llm.c/blob/master/doc/layernorm/layernorm.md) |
 | 8 | GPT-2 training in C/CUDA: data, validation, and sampling | | [Karpathy — Reproducing GPT-2 (124M) in llm.c](https://github.com/karpathy/llm.c/discussions/481) |
+
+## Build it
+
+- **micrograd, extended.** Add tanh, ReLU, and a softmax cross-entropy loss to your autograd engine and train a 2-layer net on moons.
+- **Your own BPE.** Train a tokenizer on your own corpus and compare its token counts with GPT-2's tokenizer.
+- **GPT-2 (124M) on a budget.** Reproduce the training curve on a rented GPU or a smaller dataset and write down every bug you hit.

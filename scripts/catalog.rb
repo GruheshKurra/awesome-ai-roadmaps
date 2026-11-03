@@ -59,7 +59,6 @@ class Catalog
     check(!readme.match?(/^\s*\{:/), 'README must use GitHub-compatible Markdown, not kramdown attributes')
     files = @root.glob('tracks/*/README.md').map { |path| path.parent.basename.to_s }
     check(files.sort == slugs.sort, 'Track folders and README Contents disagree')
-    ignore = read('.gitignore')
 
     tracks.each do |track|
       slug = track[:slug]
@@ -92,8 +91,6 @@ class Catalog
         check(link?(row[2], youtube: true), "#{step}: expected one bold YouTube watch link")
         check(link?(row[3]), "#{step}: expected one reading link")
       end
-      check(ignore.lines.map(&:chomp).include?("!tracks/#{slug}/") &&
-            ignore.lines.map(&:chomp).include?("!tracks/#{slug}/**"), "#{slug}: missing .gitignore exceptions")
     end
 
     config_text = read('_config.yml')
@@ -127,30 +124,16 @@ class Catalog
     # Parse before writing to avoid publishing a malformed generated config.
     YAML.safe_load(updated_config)
 
-    tracker = read('tracker.md')
-    queue_slugs = tracker.scan(/\[[ x]\] `([^`]+)`/).flatten
-    check(queue_slugs.uniq == queue_slugs, 'Tracker contains duplicate track slugs')
-    check((slugs - queue_slugs).empty?, 'Published tracks must have tracker entries')
-    updated_tracker = tracker.gsub(/\[([ x])\] `([^`]+)`/) do
-      checked, slug = Regexp.last_match.captures
-      check(checked != 'x' || slugs.include?(slug), "#{slug}: checked in tracker but not published")
-      "[#{slugs.include?(slug) ? 'x' : ' '}] `#{slug}`"
-    end
-    queue_count = updated_tracker.scan(/\[ \] `([^`]+)`/).length
-    check(tracker.match?(/^\| Done \| \d+ \|$/) && tracker.match?(/^\| Queue \| \d+ \|$/),
-          'Tracker is missing its Done or Queue totals')
-    updated_tracker = updated_tracker.sub(/^\| Done \| \d+ \|$/, "| Done | #{tracks.length} |")
-                                     .sub(/^\| Queue \| \d+ \|$/, "| Queue | #{queue_count} |")
     raise @errors.join("\n") unless @errors.empty?
 
-    changes = { 'README.md' => updated_readme, '_config.yml' => updated_config, 'tracker.md' => updated_tracker }
+    changes = { 'README.md' => updated_readme, '_config.yml' => updated_config }
               .reject { |path, text| read(path) == text }
     if write
       changes.each { |path, text| @root.join(path).write(text) }
     elsif !changes.empty?
       raise "Catalog metadata is stale: #{changes.keys.join(', ')}. Run ruby scripts/catalog.rb --write."
     end
-    puts "Catalog verified: #{tracks.length} tracks, #{total} steps, #{queue_count} queued."
+    puts "Catalog verified: #{tracks.length} tracks, #{total} steps."
   end
 end
 

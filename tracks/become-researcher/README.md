@@ -4,6 +4,8 @@ Goal: Read ML papers critically, reproduce a small empirical result, and write a
 
 Prereqs: [ML Basics](../ml-basics/), [Deep Learning](../deep-learning/), probability from [Math for ML](../math-for-ml/), and a PyTorch training loop.
 
+Time: about 25 hours.
+
 Status: done
 
 Choose one published experiment with public data and a model that fits hardware you already have. State the claim you will test, then record the data splits, baseline, tuning budget, and any departures from the paper. Produce an experiment log, a comparison with the reported result, one ablation, and a short cited report. Include failed replications and inconclusive comparisons.
@@ -18,3 +20,9 @@ Choose one published experiment with public data and a model that fits hardware 
 | 6 | Measure variation across runs and quantify uncertainty in comparisons | | [Bouthillier et al. 2021 — Accounting for Variance in Machine Learning Benchmarks](https://arxiv.org/abs/2103.03098) |
 | 7 | Document data, code, settings, and commands needed to reproduce results | | [Joelle Pineau — Machine Learning Reproducibility Checklist](https://www.cs.mcgill.ca/~jpineau/ReproducibilityChecklist-v2.0.pdf) |
 | 8 | Write a clear research argument with evidence and credit to prior work | **[Simon Peyton Jones — How to Write a Great Research Paper](https://www.youtube.com/watch?v=VK51E3gHENc)** | [Simon Peyton Jones — How to Write a Great Research Paper (slides)](https://www.microsoft.com/en-us/research/wp-content/uploads/2015/02/simon-peyton-jones_paper.pdf) |
+
+## Build it
+
+- **Reproduce a figure.** Pick one figure from a recent workshop paper and reproduce it with 3 seeds and error bars.
+- **Ablation table.** Remove each component of your method one at a time and report the results honestly, including null effects.
+- **Write it up.** Write a 4-page report and ask someone to find the weakest claim.

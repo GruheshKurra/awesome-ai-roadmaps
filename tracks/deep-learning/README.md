@@ -4,6 +4,8 @@ Goal: Build and train neural networks from feedforward models through convolutio
 
 Prereqs: [ML Basics](../ml-basics/) and [Math for ML](../math-for-ml/). Use [Python for ML](../python-for-ml/) for the coding exercises.
 
+Time: about 30 hours.
+
 Status: done
 
 Work through the steps in order. Bold links open YouTube.
@@ -22,3 +24,9 @@ Work through the steps in order. Bold links open YouTube.
 | 10 | Recurrent networks and BPTT | **[Andrej Karpathy — The unreasonable effectiveness of RNNs](https://www.youtube.com/watch?v=iX5V1WpxxkY)** | [cs231n — Recurrent neural networks](https://cs231n.github.io/rnn/) |
 | 11 | Layer normalisation | | [Ba et al. 2016 — Layer Normalization](https://arxiv.org/abs/1607.06450) |
 | 12 | Training loop in PyTorch | **[Patrick Loeber — PyTorch Tutorial — Training pipeline](https://www.youtube.com/watch?v=c36lUUr864M)** | [PyTorch — Training a classifier](https://docs.pytorch.org/tutorials/beginner/blitz/cifar10_tutorial.html) |
+
+## Build it
+
+- **MLP on MNIST in raw PyTorch.** Write the training loop yourself, then add batch norm and dropout one at a time and record what changes.
+- **Overfit one batch.** Make a model reach near-zero loss on one batch; it is the fastest bug check there is.
+- **Small ResNet on CIFAR-10.** Train with and without skip connections and compare training curves.

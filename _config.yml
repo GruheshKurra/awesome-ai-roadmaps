@@ -55,10 +55,6 @@ defaults:
     values:
       description: "Math for ML roadmap: Matrices, derivatives, gradient descent, random variables, Bayes. Free videos, papers, and chapters in learning order."
   - scope:
-      path: tracks/nlp
-    values:
-      description: "NLP roadmap: Word vectors, tokenization, parsing, RNNs, transformers, BERT. Free videos, papers, and chapters in learning order."
-  - scope:
       path: tracks/ml-basics
     values:
       description: "ML Basics roadmap: Regression, cross-validation, classification metrics, trees, SVM, clustering, PCA. Free videos, papers, and chapters in learning order."
@@ -67,49 +63,49 @@ defaults:
     values:
       description: "Deep Learning roadmap: Backprop, CNNs, RNNs, optimization. Free videos, papers, and chapters in learning order."
   - scope:
-      path: tracks/computer-vision
-    values:
-      description: "Computer Vision roadmap: CNNs, detection, segmentation, ViT. Free videos, papers, and chapters in learning order."
-  - scope:
       path: tracks/llms
     values:
       description: "LLMs roadmap: Transformers, GPT, decoding, sampling, scaling, RLHF. Free videos, papers, and chapters in learning order."
-  - scope:
-      path: tracks/build-deepseek-v3
-    values:
-      description: "DeepSeek-V3 Architecture roadmap: Sparse MoE, expert balancing, MLA, multi-token prediction, FP8 training. Free videos, papers, and chapters in learning order."
   - scope:
       path: tracks/from-scratch
     values:
       description: "From Scratch roadmap: Autograd, tokenizers, GPT-2, LayerNorm in C, C/CUDA training. Free videos, papers, and chapters in learning order."
   - scope:
-      path: tracks/eval-harnesses
+      path: tracks/modern-llm-architectures
     values:
-      description: "Eval Harnesses roadmap: Benchmarks, contamination, SWE-bench, LLM-as-judge, custom eval tasks. Free videos, papers, and chapters in learning order."
+      description: "Modern LLM Architectures roadmap: RoPE, GQA, FlashAttention, mixture of experts, MLA, DeepSeek-V3, Mamba. Free videos, papers, and chapters in learning order."
   - scope:
-      path: tracks/rag
+      path: tracks/reasoning-models
     values:
-      description: "RAG roadmap: Embeddings, chunking, vector search, eval. Free videos, papers, and chapters in learning order."
+      description: "Reasoning Models roadmap: RLHF, process rewards, test-time compute, GRPO, DeepSeek-R1, reward hacking. Free videos, papers, and chapters in learning order."
   - scope:
-      path: tracks/agents-tooling
+      path: tracks/fine-tuning
     values:
-      description: "Agents & Tooling roadmap: Tool use, ReAct, memory, browser/computer-use, task-completion evaluation. Free videos, papers, and chapters in learning order."
+      description: "Fine-Tuning roadmap: LoRA, QLoRA, supervised fine-tuning, DPO, data quality. Free videos, papers, and chapters in learning order."
   - scope:
-      path: tracks/coding-agents
+      path: tracks/nlp
     values:
-      description: "Coding Agents roadmap: Repository context, edit formats, test loops, SWE-agent, Agentless, patch evaluation. Free videos, papers, and chapters in learning order."
-  - scope:
-      path: tracks/ai-tools
-    values:
-      description: "AI Tools roadmap: Cursor, Claude Code, local models, MCP, hosted demos. Free videos, papers, and chapters in learning order."
+      description: "NLP roadmap: Word vectors, tokenization, parsing, RNNs, transformers, BERT. Free videos, papers, and chapters in learning order."
   - scope:
       path: tracks/prompt-context
     values:
       description: "Prompting & Context roadmap: Prompt structure, chain-of-thought, context engineering. Free videos, papers, and chapters in learning order."
   - scope:
-      path: tracks/fine-tuning
+      path: tracks/rag
     values:
-      description: "Fine-Tuning roadmap: LoRA, QLoRA, supervised fine-tuning, DPO, data for adapters. Free videos, papers, and chapters in learning order."
+      description: "RAG roadmap: Embeddings, chunking, vector search, eval. Free videos, papers, and chapters in learning order."
+  - scope:
+      path: tracks/agents
+    values:
+      description: "Agents roadmap: ReAct, tool calling, MCP servers, memory, multi-agent, coding agents, computer use. Free videos, papers, and chapters in learning order."
+  - scope:
+      path: tracks/eval-harnesses
+    values:
+      description: "LLM Evals roadmap: Benchmarks, contamination, SWE-bench, LLM-as-judge, custom eval tasks. Free videos, papers, and chapters in learning order."
+  - scope:
+      path: tracks/computer-vision
+    values:
+      description: "Computer Vision roadmap: CNNs, detection, segmentation, ViT. Free videos, papers, and chapters in learning order."
   - scope:
       path: tracks/speech-audio
     values:
@@ -147,29 +143,17 @@ defaults:
     values:
       description: "Causal ML roadmap: Potential outcomes, DAGs, propensity scores, double ML, LATE, causal forests. Free videos, papers, and chapters in learning order."
   - scope:
+      path: tracks/evals-safety
+    values:
+      description: "AI Safety & Alignment roadmap: Alignment, specification gaming, red teaming, toxicity, truthfulness, false refusals. Free videos, papers, and chapters in learning order."
+  - scope:
       path: tracks/interpretability
     values:
       description: "Interpretability roadmap: Permutation importance, PDP, LIME, SHAP, Grad-CAM, TCAV, circuits. Free videos, papers, and chapters in learning order."
   - scope:
-      path: tracks/evals-safety
-    values:
-      description: "Evals & Safety roadmap: Alignment, specification gaming, red teaming, toxicity, truthfulness, false refusals. Free videos, papers, and chapters in learning order."
-  - scope:
       path: tracks/data-centric
     values:
       description: "Data-Centric AI roadmap: Datasheets, weak supervision, label auditing, synthetic data, filtering. Free videos, papers, and chapters in learning order."
-  - scope:
-      path: tracks/mlops
-    values:
-      description: "MLOps roadmap: Data versioning, pipelines, experiment tracking, model registry, serving, monitoring. Free videos, papers, and chapters in learning order."
-  - scope:
-      path: tracks/become-ml-engineer
-    values:
-      description: "ML Engineering Project roadmap: Problem framing, data leakage, pipelines, threshold tuning, local serving, model cards. Free videos, papers, and chapters in learning order."
-  - scope:
-      path: tracks/become-researcher
-    values:
-      description: "ML Research Practice roadmap: Paper reading, baselines, ablations, reproducibility, uncertainty, research writing. Free videos, papers, and chapters in learning order."
   - scope:
       path: tracks/inference-serving
     values:
@@ -186,6 +170,18 @@ defaults:
       path: tracks/compression
     values:
       description: "Model Compression roadmap: Pruning, quantization, distillation, MobileNetV2, sparse inference. Free videos, papers, and chapters in learning order."
+  - scope:
+      path: tracks/mlops
+    values:
+      description: "MLOps roadmap: Data versioning, pipelines, experiment tracking, model registry, serving, monitoring. Free videos, papers, and chapters in learning order."
+  - scope:
+      path: tracks/become-ml-engineer
+    values:
+      description: "ML Engineering Project roadmap: Problem framing, data leakage, pipelines, threshold tuning, local serving, model cards. Free videos, papers, and chapters in learning order."
+  - scope:
+      path: tracks/become-researcher
+    values:
+      description: "ML Research Practice roadmap: Paper reading, baselines, ablations, reproducibility, uncertainty, research writing. Free videos, papers, and chapters in learning order."
   # END CATALOG DESCRIPTIONS
 
 track_nav:
@@ -193,34 +189,32 @@ track_nav:
     label: "Python for ML"
   - slug: math-for-ml
     label: "Math for ML"
-  - slug: nlp
-    label: "NLP"
   - slug: ml-basics
     label: "ML Basics"
   - slug: deep-learning
     label: "Deep Learning"
-  - slug: computer-vision
-    label: "Computer Vision"
   - slug: llms
     label: "LLMs"
-  - slug: build-deepseek-v3
-    label: "DeepSeek-V3 Architecture"
   - slug: from-scratch
     label: "From Scratch"
-  - slug: eval-harnesses
-    label: "Eval Harnesses"
-  - slug: rag
-    label: "RAG"
-  - slug: agents-tooling
-    label: "Agents & Tooling"
-  - slug: coding-agents
-    label: "Coding Agents"
-  - slug: ai-tools
-    label: "AI Tools"
-  - slug: prompt-context
-    label: "Prompting & Context"
+  - slug: modern-llm-architectures
+    label: "Modern LLM Architectures"
+  - slug: reasoning-models
+    label: "Reasoning Models"
   - slug: fine-tuning
     label: "Fine-Tuning"
+  - slug: nlp
+    label: "NLP"
+  - slug: prompt-context
+    label: "Prompting & Context"
+  - slug: rag
+    label: "RAG"
+  - slug: agents
+    label: "Agents"
+  - slug: eval-harnesses
+    label: "LLM Evals"
+  - slug: computer-vision
+    label: "Computer Vision"
   - slug: speech-audio
     label: "Speech & Audio"
   - slug: multimodal
@@ -239,18 +233,12 @@ track_nav:
     label: "Time Series"
   - slug: causal-ml
     label: "Causal ML"
+  - slug: evals-safety
+    label: "AI Safety & Alignment"
   - slug: interpretability
     label: "Interpretability"
-  - slug: evals-safety
-    label: "Evals & Safety"
   - slug: data-centric
     label: "Data-Centric AI"
-  - slug: mlops
-    label: "MLOps"
-  - slug: become-ml-engineer
-    label: "ML Engineering Project"
-  - slug: become-researcher
-    label: "ML Research Practice"
   - slug: inference-serving
     label: "Inference & Serving"
   - slug: gpu-systems
@@ -259,6 +247,12 @@ track_nav:
     label: "Distributed Training"
   - slug: compression
     label: "Model Compression"
+  - slug: mlops
+    label: "MLOps"
+  - slug: become-ml-engineer
+    label: "ML Engineering Project"
+  - slug: become-researcher
+    label: "ML Research Practice"
 
 exclude:
   - LICENSE
@@ -266,7 +260,6 @@ exclude:
   - AGENTS.md
   - LearningPreferences.md
   - tasks
-  - tracker.md
   - .gitignore
   - .github
   - scripts

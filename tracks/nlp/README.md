@@ -4,6 +4,8 @@ Goal: Follow text representations from word vectors and tokenization through rec
 
 Prereqs: [Python for ML](../python-for-ml/) and [ML Basics](../ml-basics/). Review neural networks and backpropagation in [Deep Learning](../deep-learning/) before the recurrent models and GPT implementation.
 
+Time: about 35 hours.
+
 Status: done
 
 Work through the steps in order. The dependency-parsing chapter provides a reading alternative to the lecture. The RNN chapter also covers LSTMs and encoder-decoder models for steps 8–9. Bold links open YouTube.
@@ -24,3 +26,9 @@ Work through the steps in order. The dependency-parsing chapter provides a readi
 | 12 | The Transformer paper | | [Attention Is All You Need](https://arxiv.org/abs/1706.03762) |
 | 13 | Build a GPT | **[Karpathy — Let's build GPT](https://www.youtube.com/watch?v=kCc8FmEb1nY)** | |
 | 14 | BERT | **[StatQuest — Encoder-Only Transformers (BERT)](https://www.youtube.com/watch?v=GDN649X_acE)** | [BERT paper](https://arxiv.org/abs/1810.04805) |
+
+## Build it
+
+- **Word vectors.** Train word2vec on a Wikipedia dump subset and find analogies that work and some that fail.
+- **Sentiment three ways.** Classify movie reviews with TF-IDF + logistic regression, an LSTM, and fine-tuned DistilBERT. Compare accuracy and cost.
+- **Tokenizer inspector.** Show how three different tokenizers split the same sentence in English, code, and another language.

@@ -1,8 +1,10 @@
-# Evals & Safety
+# AI Safety & Alignment
 
 Goal: Explain alignment failures and evaluate language-model toxicity, truthfulness, harmful compliance, and false refusals.
 
-Prereqs: [LLMs](../llms/). [Eval Harnesses](../eval-harnesses/) helps for harness tooling. [Fine-Tuning](../fine-tuning/) helps for preference training context.
+Prereqs: [LLMs](../llms/). [LLM Evals](../eval-harnesses/) helps for harness tooling. [Fine-Tuning](../fine-tuning/) helps for preference training context.
+
+Time: about 30 hours.
 
 Status: done
 
@@ -23,3 +25,9 @@ Start with alignment failures, then study red teaming and safety training before
 | 11 | Truthfulness evaluation | | [Lin, Hilton & Evans 2021 — TruthfulQA: Measuring How Models Mimic Human Falsehoods](https://arxiv.org/abs/2109.07958) |
 | 12 | Standardized red-team and refusal evals | | [Mazeika et al. 2024 — HarmBench: A Standardized Evaluation Framework for Automated Red Teaming and Robust Refusal](https://arxiv.org/abs/2402.04249) |
 | 13 | Detect false refusals with safe prompts and unsafe contrasts | | [Röttger et al. 2024 — XSTest: A Test Suite for Identifying Exaggerated Safety Behaviours in Large Language Models](https://arxiv.org/abs/2308.01263) |
+
+## Build it
+
+- **Refusal audit.** Build 50 safe prompts that look risky and 50 truly unsafe ones; measure over- and under-refusal for two open models.
+- **Jailbreak log.** Collect 10 published jailbreak patterns and test which still work on a current open model. Report, don't publish exploits.
+- **Spec-gaming hunt.** Find one example of specification gaming in a model or agent you built, and write down how you fixed the reward.

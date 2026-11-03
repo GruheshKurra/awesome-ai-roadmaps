@@ -1,36 +1,40 @@
 ---
-description: Suggest a free AI/ML learning resource or report a broken link, paywall, missing prerequisite, or unclear learning step.
+description: Suggest a free AI/ML learning resource, fix a link, or improve a roadmap step.
 permalink: /contributing/
 ---
 
 # Contributing
 
-Use the [issue forms](https://github.com/GruheshKurra/awesome-ai-roadmaps/issues/new/choose) to suggest a resource or report a problem. Please use issues for resource suggestions rather than pull requests.
+Thanks for helping people learn AI. The fastest way to contribute is an [issue](https://github.com/GruheshKurra/awesome-ai-roadmaps/issues/new/choose): suggest a resource, or report a broken link, a paywall, or a confusing step. Pull requests that fix links or improve a track are welcome too.
 
-For a suggestion, include the track, concept, URL, and what it improves over the current step. Resources must be free to read or watch. Link one specific video, paper, article, or chapter. Course homepages, semester playlists, other resource lists, paid material, and DSA/interview content are outside this catalog's scope.
+## What makes a good resource
 
-For a problem, include the track and step, what happened, and what you expected. Reports about missing prerequisites or confusing step order are welcome alongside broken links and paywalls.
+- **Free.** No paid course, trial, certificate funnel, or login wall for the core content.
+- **Specific.** One video, paper, article, or chapter. Not a course homepage, a playlist, a channel, or another list.
+- **Better than what's there.** Say why it teaches the concept more clearly, more correctly, or more currently than the existing step.
+- **Teaches, doesn't sell.** No product ads dressed as tutorials. Please say if you are affiliated with the author or publisher.
 
-## Repository checks
+DSA and interview prep are out of scope.
 
-The track tables and README Contents define the published catalog. After adding or editing a track, run:
+## Track format
+
+Each track lives in `tracks/<slug>/README.md` and has a title, `Goal:`, `Prereqs:`, `Time:`, `Status: done`, a numbered `Step | Concept | YouTube | Read` table with 5–15 steps, and a `## Build it` section with two or three projects. YouTube links are bold and use `youtube.com/watch?v=` URLs without playlists. Each cell holds one link.
+
+## Checks
+
+After editing a track or the README Contents tables, run:
 
 ```sh
 ruby scripts/catalog.rb --write
-ruby scripts/catalog.rb
 python3 -m unittest discover -s scripts/tests
 ```
 
-The first command updates counts, sidebar entries, page descriptions, and queue checkboxes. The second checks that those agree and that each published track has 5–15 numbered steps with valid link syntax. These checks do not verify remote availability or teaching quality; review the resources separately.
+The first command refreshes step counts, the site sidebar, and page descriptions. The tests check table structure and the built-site rules. A weekly GitHub Action checks every link, and pull requests that touch tracks run it too.
 
-The Pages workflow runs these checks, builds Jekyll, removes raw Markdown copies, and checks the resulting HTML before deployment. With Jekyll and the plugins in `_config.yml` installed, the same build can be checked locally:
+To preview the website locally, install Jekyll with the plugins in `_config.yml`, then:
 
 ```sh
 jekyll build --destination /tmp/roadmaps-site
 find /tmp/roadmaps-site -name '*.md' -delete
 python3 scripts/check_site.py /tmp/roadmaps-site
 ```
-
-The website adds a search box above Contents and a collapsible track menu on small screens. Search uses the names and descriptions already in the Contents table. All tracks and links remain available without JavaScript. When changing the layout, check search results, the empty state, Clear, mobile menu open/close, Escape, keyboard focus, and a track's resource links.
-
-The test suite also checks text contrast in light and dark modes. The built-site check covers all published pages, including the 404 page, internal anchors, image metadata, accessibility references, and private-file exclusions. Pull requests run the same validation as pushes. Deployment runs only from `main`.

@@ -4,6 +4,8 @@ Goal: Learn ranking and retrieval for personalized recommendations, from classic
 
 Prereqs: [ML Basics](../ml-basics/). Complete [Deep Learning](../deep-learning/) before the neural ranking and retrieval papers in steps 7–12.
 
+Time: about 25 hours.
+
 Status: done
 
 Work through the steps in order. Bold links open YouTube.
@@ -22,3 +24,9 @@ Work through the steps in order. Bold links open YouTube.
 | 10 | Two-stage candidate generation and ranking | **[Deep Neural Networks for YouTube Recommendations](https://www.youtube.com/watch?v=WK_Nr4tUtl8)** | [Covington, Adams & Sargin 2016 — Deep Neural Networks for YouTube Recommendations](https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/45530.pdf) |
 | 11 | Two-tower retrieval | **[Building Scalable Retrieval System with Two-Tower Models](https://www.youtube.com/watch?v=o-pZk5R0TZg)** | |
 | 12 | Self-attentive sequential recommendation | **[Self-Attentive Sequential Recommendation (SASRec)](https://www.youtube.com/watch?v=SLymtSkRJIE)** | [Kang & McAuley 2018 — Self-Attentive Sequential Recommendation](https://arxiv.org/abs/1808.09781) |
+
+## Build it
+
+- **MovieLens baseline.** Build popularity, item-kNN, and matrix-factorization recommenders and compare recall@10.
+- **Two-tower retrieval.** Train a two-tower model and serve top-k with an approximate nearest neighbor index.
+- **Sequential recs.** Train SASRec on user histories and compare with the non-sequential baseline.

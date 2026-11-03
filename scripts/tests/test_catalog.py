@@ -15,7 +15,7 @@ class CatalogTests(unittest.TestCase):
         self.addCleanup(self.temp.cleanup)
         self.root = Path(self.temp.name)
         source = Path(__file__).resolve().parents[2]
-        for file in ("README.md", "_config.yml", ".gitignore", "tracker.md"):
+        for file in ("README.md", "_config.yml"):
             shutil.copyfile(source / file, self.root / file)
         shutil.copytree(source / "tracks", self.root / "tracks")
         (self.root / "scripts").mkdir()
@@ -33,19 +33,17 @@ class CatalogTests(unittest.TestCase):
 
     def test_current_catalog_and_idempotent_sync(self):
         self.assertEqual(self.run_catalog().returncode, 0)
-        before = {p: (self.root / p).read_bytes() for p in ("README.md", "_config.yml", "tracker.md")}
+        before = {p: (self.root / p).read_bytes() for p in ("README.md", "_config.yml")}
         self.assertEqual(self.run_catalog("--write").returncode, 0)
         self.assertEqual(before, {p: (self.root / p).read_bytes() for p in before})
 
-    def test_stale_counts_and_queue_are_repaired(self):
+    def test_stale_counts_are_repaired(self):
         totals = re.search(r"\d+ tracks, \d+ steps", (self.root / "README.md").read_text())[0]
         self.replace("README.md", totals, "1 tracks, 1 steps")
-        self.replace("tracker.md", "[x] `evals-safety`", "[ ] `evals-safety`")
         self.assertNotEqual(self.run_catalog().returncode, 0)
         self.assertEqual(self.run_catalog("--write").returncode, 0)
         self.assertEqual(self.run_catalog().returncode, 0)
         self.assertIn(totals, (self.root / "README.md").read_text())
-        self.assertIn("[x] `evals-safety`", (self.root / "tracker.md").read_text())
 
     def test_unfinished_track_blocks_writes(self):
         self.replace("tracks/llms/README.md", "Status: done", "Status: filling")
@@ -98,16 +96,6 @@ class CatalogTests(unittest.TestCase):
         folder.mkdir()
         (folder / "README.md").write_text("# Unpublished\n")
         self.assertIn("folders and README Contents disagree", self.run_catalog().stderr)
-
-    def test_duplicate_tracker_entry_is_rejected(self):
-        self.replace("tracker.md", "[x] `llms`", "[x] `llms`\n- [x] `llms`")
-        self.assertIn("duplicate track slugs", self.run_catalog().stderr)
-
-    def test_missing_tracker_entry_blocks_writes(self):
-        self.replace("tracker.md", "[x] `llms`", "LLMs")
-        before = (self.root / "_config.yml").read_bytes()
-        self.assertIn("must have tracker entries", self.run_catalog("--write").stderr)
-        self.assertEqual(before, (self.root / "_config.yml").read_bytes())
 
     def test_duplicate_title_is_rejected(self):
         self.replace("tracks/llms/README.md", "# LLMs", "# LLMs\n\n# Second title")

@@ -4,6 +4,8 @@ Goal: Explain GPU bottlenecks in neural networks, measure runtime and memory use
 
 Prereqs: [Python for ML](../python-for-ml/), [Deep Learning](../deep-learning/), a PyTorch training loop, and basic C++ arrays and pointers for the CUDA examples.
 
+Time: about 30 hours.
+
 Status: done
 
 The lessons are free to read or watch. Running the CUDA examples requires a compatible NVIDIA GPU and CUDA Toolkit; the Triton exercises also need a supported GPU. Measure a baseline and check numerical correctness before comparing an optimization.
@@ -18,3 +20,9 @@ The lessons are free to read or watch. Running the CUDA examples requires a comp
 | 6 | Mixed precision, autocast, and gradient scaling | | [PyTorch — Automatic Mixed Precision](https://docs.pytorch.org/tutorials/recipes/recipes/amp_recipe.html) |
 | 7 | Write and validate a Triton kernel | | [Triton — Vector Addition](https://triton-lang.org/main/getting-started/tutorials/01-vector-add.html) |
 | 8 | Fuse softmax to reduce memory traffic | | [Triton — Fused Softmax](https://triton-lang.org/main/getting-started/tutorials/02-fused-softmax.html) |
+
+## Build it
+
+- **Profile a training step.** Use the PyTorch profiler to find the top 5 operators in a small transformer step.
+- **First Triton kernel.** Write a fused softmax in Triton and benchmark it against PyTorch.
+- **Mixed precision.** Measure speed and memory for fp32, fp16, and bf16 on the same model.

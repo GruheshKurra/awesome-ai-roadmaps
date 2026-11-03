@@ -4,6 +4,8 @@ Goal: Learn how to explain model predictions and inspect internals, from permuta
 
 Prereqs: [ML Basics](../ml-basics/). For neural-network attribution and circuits, study [Deep Learning](../deep-learning/); the final video also assumes the transformer basics in [LLMs](../llms/).
 
+Time: about 30 hours.
+
 Status: done
 
 Compare explanations of one prediction with effects averaged across a dataset. For PDPs, check whether correlated features create unrealistic inputs. Use the sanity checks in step 10 to test whether a saliency map depends on learned parameters and training labels.
@@ -23,3 +25,9 @@ Compare explanations of one prediction with effects averaged across a dataset. F
 | 11 | Attention is not explanation | | [Jain & Wallace 2019 — Attention is not Explanation](https://arxiv.org/abs/1902.10186) |
 | 12 | Counterfactual explanations | | [Wachter et al. 2017 — Counterfactual Explanations without Opening the Black Box](https://arxiv.org/abs/1711.00399) |
 | 13 | Circuits | **[A Walkthrough of A Mathematical Framework for Transformer Circuits](https://www.youtube.com/watch?v=KV5gbOmHbjU)** | [Distill — Zoom In: An Introduction to Circuits](https://distill.pub/2020/circuits/zoom-in/) |
+
+## Build it
+
+- **SHAP a model you built.** Explain a gradient-boosted model and find one feature that matters for the wrong reason.
+- **Grad-CAM on mistakes.** Visualize where a CNN looks on 20 misclassified images.
+- **Probe a transformer.** Train a linear probe on hidden states of a small LM for a property like part of speech.
