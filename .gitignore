@@ -21,4 +21,3 @@ tasks/
 !.env.example
 
 _site/
-.claude/
