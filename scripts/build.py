@@ -249,7 +249,7 @@ def page(title, description, body, path="", depth=0, schema=(), index=True):
 </head>
 <body>
 <header class="topbar">
-  <a class="brand" href="{up or './'}"><span class="logo" aria-hidden="true"></span>AI Roadmaps</a>
+  <a class="brand" href="{up or './'}">AI Roadmaps</a>
   <nav>
     <button class="theme-toggle" type="button" aria-label="Toggle dark mode"></button>
     <a class="star-btn" href="{REPO_URL}" target="_blank" rel="noopener"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"/></svg>Star on GitHub</a>
