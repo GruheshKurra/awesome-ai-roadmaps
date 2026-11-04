@@ -246,9 +246,6 @@ def page(title, description, body, path="", depth=0, schema=(), index=True):
 <meta name="twitter:description" content="{escape(description)}">
 <meta name="twitter:image" content="{SITE_URL}/assets/og.png">
 <link rel="icon" href="{up}assets/favicon.svg" type="image/svg+xml">{ld}
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{up}assets/style.css">
 <script>try{{document.documentElement.dataset.theme=localStorage.getItem('theme')||''}}catch(e){{}}</script>
 </head>
