@@ -280,7 +280,8 @@ def home_html(roadmaps, meta, upcoming):
     for r in roadmaps:
         thumbs = "".join(f'<img src="{thumb(s["video"])}" alt="" loading="lazy">' for s in r["steps"][:3])
         search = " ".join([r["title"], r["tagline"], r["level"]] + [s["title"] for s in r["steps"]]).lower()
-        cards.append(f"""<a class="card" href="{r['slug']}/" data-slug="{r['slug']}" data-total="{len(r['steps'])}" data-search="{escape(search)}">
+        ids = " ".join(s["video"] for s in r["steps"])
+        cards.append(f"""<a class="card" href="{r['slug']}/" data-slug="{r['slug']}" data-total="{len(r['steps'])}" data-ids="{ids}" data-search="{escape(search)}">
   <div class="mosaic">{thumbs}<span class="num">{r['order']:02d}</span></div>
   <div class="card-body">
     <div class="pills"><span class="pill level-{r['level'].lower()}">{r['level']}</span><span class="muted">{len(r['steps'])} steps · {duration(r['seconds'])}</span></div>
@@ -314,6 +315,11 @@ def home_html(roadmaps, meta, upcoming):
   <div class="hero-copy">
     <h1>Learn AI from free YouTube videos, in a sensible order.</h1>
     <p class="lead">Every step is one video and, where it helps, one GitHub repo to code along with. No books, no paywalls, no playlists to sort through. Tick steps off as you go; your progress stays in your browser.</p>
+    <a class="resume" id="resume" href="#roadmaps" hidden>
+      <span class="resume-kicker">Continue learning</span>
+      <strong class="resume-title"></strong>
+      <span class="resume-meta muted"></span>
+    </a>
     <div class="cta">
       <a class="btn primary" href="{roadmaps[0]['slug']}/">Start with {escape(roadmaps[0]['title'])}</a>
       <a class="btn" href="#roadmaps">Browse all roadmaps</a>

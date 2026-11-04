@@ -115,6 +115,13 @@ main, .topbar, .footer { max-width: 1120px; margin: 0 auto; padding: 0 20px; }
 h1 { font-size: clamp(32px, 4.6vw, 50px); line-height: 1.1; letter-spacing: -.025em; margin: 0 0 18px; font-weight: 700; }
 .lead { font-size: 18px; color: var(--muted); margin: 0 0 28px; max-width: 560px; }
 .cta { display: flex; flex-wrap: wrap; gap: 12px; }
+.resume { display: flex; flex-direction: column; gap: 2px; max-width: 560px; margin: 0 0 24px; padding: 14px 18px; border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: var(--radius); background: var(--surface); color: var(--ink); text-decoration: none; }
+.resume[hidden] { display: none; }
+.resume:hover { border-color: var(--ink); border-left-color: var(--accent); }
+.resume-kicker { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); }
+.resume-title { font-size: 18px; }
+.resume-title::after { content: " →"; color: var(--accent); }
+.resume-meta { font-size: 14px; }
 .btn {
   display: inline-flex; align-items: center; padding: 11px 18px; border-radius: 8px;
   border: 1px solid var(--line); background: var(--surface); text-decoration: none; font-weight: 600; font-size: 15px;

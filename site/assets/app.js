@@ -24,10 +24,31 @@
     try { localStorage.setItem('theme', root.dataset.theme); } catch { /* ignore */ }
   });
 
-  // Home: progress per card and search.
-  document.querySelectorAll('.card').forEach(card => {
-    paint(card, read(card.dataset.slug).size, Number(card.dataset.total));
-  });
+  // Home: progress per card, and a link back to the unfinished roadmap the learner is furthest into.
+  const resume = document.getElementById('resume');
+  const refreshHome = () => {
+    let best = null;
+    document.querySelectorAll('.card').forEach(card => {
+      const ids = card.dataset.ids.split(' ');
+      const done = read(card.dataset.slug);
+      paint(card, done.size, Number(card.dataset.total));
+      const count = ids.filter(id => done.has(id)).length;
+      if (!count || count === ids.length) return;
+      if (!best || count / ids.length > best.count / best.ids.length) best = { card, ids, done, count };
+    });
+    resume.hidden = !best;
+    if (!best) return;
+    const step = best.ids.findIndex(id => !best.done.has(id)) + 1;
+    resume.href = best.card.getAttribute('href') + '#step-' + step;
+    resume.querySelector('.resume-title').textContent = best.card.querySelector('h3').textContent;
+    resume.querySelector('.resume-meta').textContent = `${best.count} of ${best.ids.length} done · next up: step ${step}`;
+  };
+  if (resume) {
+    refreshHome();
+    // Stay current when progress changes in another tab or the page comes back from the back/forward cache.
+    addEventListener('storage', e => { if (!e.key || e.key.startsWith('progress:')) refreshHome(); });
+    addEventListener('pageshow', e => { if (e.persisted) refreshHome(); });
+  }
   const search = document.getElementById('search');
   if (search) {
     const cards = [...document.querySelectorAll('.card')];
