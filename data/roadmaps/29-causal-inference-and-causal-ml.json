@@ -1,0 +1,82 @@
+{
+  "slug": "causal-inference-and-causal-ml",
+  "order": 29,
+  "title": "Causal Inference & Causal ML",
+  "level": "Intermediate",
+  "tagline": "Go from 'X is correlated with Y' to 'X causes Y': potential outcomes, causal graphs, matching, natural experiments, and machine learning for treatment effects.",
+  "prereqs": "Machine Learning. Comfort with regression and basic probability from Python & Math for AI.",
+  "steps": [
+    {
+      "title": "Causal inference in 15 minutes",
+      "video": "Od6oAz1Op2k",
+      "why": "Why correlation misleads and what causal questions look like."
+    },
+    {
+      "title": "A brief introduction to causal inference",
+      "video": "DXBPtpBhGqo",
+      "why": "Brady Neal's course overview: confounding, interventions, and the big picture."
+    },
+    {
+      "title": "Potential outcomes",
+      "video": "LrmrH26EhSo",
+      "why": "The Rubin model: compare what happened with what would have happened."
+    },
+    {
+      "title": "Causal graphs",
+      "video": "vU7Vg6yaqmo",
+      "why": "Draw assumptions as arrows between variables."
+    },
+    {
+      "title": "Forks, chains, and colliders",
+      "video": "UA0vyBnzi9U",
+      "why": "The three graph patterns that decide what to control for."
+    },
+    {
+      "title": "Causal effects from graphs",
+      "video": "ASU5HG5EqTM",
+      "why": "Backdoor and front-door criteria for handling unobserved confounders."
+    },
+    {
+      "title": "Propensity score matching",
+      "video": "ACVyPp1Fy6Y",
+      "why": "Compare treated and untreated units that were equally likely to be treated."
+    },
+    {
+      "title": "Instrumental variables",
+      "video": "eoJUPd6104Q",
+      "why": "Use a variable that shifts treatment but not the outcome directly."
+    },
+    {
+      "title": "Difference-in-differences",
+      "video": "2nDgrNP7XSE",
+      "why": "Compare changes over time between a treated and a control group."
+    },
+    {
+      "title": "Causal inference in Python",
+      "video": "ilpSZiDjdv0",
+      "why": "A conference talk on framing and estimating cause and effect with Python libraries."
+    },
+    {
+      "title": "Machine learning for treatment effects",
+      "video": "xcv4FH-KnvA",
+      "why": "Estimate who benefits most from a treatment with EconML and CausalML.",
+      "repo": "py-why/EconML"
+    },
+    {
+      "title": "Double machine learning",
+      "video": "uTN-lH_q-8g",
+      "why": "Adjust for many observed confounders with ML; still assumes none are unmeasured.",
+      "repo": "DoubleML/doubleml-for-py"
+    },
+    {
+      "title": "Causal discovery",
+      "video": "tufdEUSjmNI",
+      "why": "Infer a plausible causal graph from observational data, with a Python example."
+    }
+  ],
+  "projects": [
+    "Draw a causal graph for a question you care about, list which variables to adjust for, and defend each choice in a short README.",
+    "Estimate the effect of job training on earnings with propensity score matching and compare it with a naive difference in means.",
+    "Use EconML on a public marketing or uplift dataset to find which customer groups respond most to a treatment."
+  ]
+}

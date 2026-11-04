@@ -1,0 +1,79 @@
+{
+  "slug": "evaluation-and-benchmarking-for-llms",
+  "order": 30,
+  "title": "Evaluation & Benchmarking for LLMs",
+  "level": "Intermediate",
+  "tagline": "Measure language models and LLM apps properly: classic metrics, public benchmarks and leaderboards, LLM judges, error analysis, and open-source eval tools.",
+  "prereqs": "AI Engineering. LLMs from Scratch helps for the perplexity step.",
+  "steps": [
+    {
+      "title": "What LLM benchmarks are",
+      "video": "kDY4TodQwbg",
+      "why": "Standard tests for comparing models, and what they leave out."
+    },
+    {
+      "title": "Perplexity",
+      "video": "NURcDHhYe98",
+      "why": "How surprised a language model is by text, the basic training metric."
+    },
+    {
+      "title": "BLEU",
+      "video": "M05L1DhFqcw",
+      "why": "Score generated text by n-gram overlap with references, and its limits."
+    },
+    {
+      "title": "Read and run benchmarks",
+      "video": "1JaL5eVqFq0",
+      "why": "How MMLU-style scores are computed, then run them yourself.",
+      "repo": "EleutherAI/lm-evaluation-harness"
+    },
+    {
+      "title": "How Arena ranks models",
+      "video": "GrEr8P66FfE",
+      "why": "Pairwise human votes turned into scores with Bradley-Terry."
+    },
+    {
+      "title": "LLM as a judge",
+      "video": "trfUBIDeI1Y",
+      "why": "Use one model to grade another's outputs, and where that goes wrong."
+    },
+    {
+      "title": "LLM evaluation, the full lecture",
+      "video": "8fNP4N46RRo",
+      "why": "Stanford lecture on metrics, judge biases, factuality, agents, and benchmarks."
+    },
+    {
+      "title": "Error analysis",
+      "video": "e2i6JbU2R-s",
+      "why": "Read real outputs and group failures before writing any metric."
+    },
+    {
+      "title": "Set up evals systematically",
+      "video": "a3SMraZWNNs",
+      "why": "Unit tests, human review, and aligned LLM judges for an app."
+    },
+    {
+      "title": "Evaluate RAG",
+      "video": "7_LTU0LA374",
+      "why": "Context precision, recall, and faithfulness, measured with RAGAS.",
+      "repo": "vibrantlabsai/ragas"
+    },
+    {
+      "title": "Test prompts with promptfoo",
+      "video": "7Z6_7XkXwj0",
+      "why": "Compare models on your prompts with assertions in a YAML file.",
+      "repo": "promptfoo/promptfoo"
+    },
+    {
+      "title": "Evals with Inspect",
+      "video": "_UY49Q_qFhs",
+      "why": "Its creator walks through the UK AISI's open-source eval framework.",
+      "repo": "UKGovernmentBEIS/inspect_ai"
+    }
+  ],
+  "projects": [
+    "Run two small open models on three lm-evaluation-harness tasks and write up where their scores differ and why.",
+    "Hand-label 50 outputs from an LLM app, build an LLM judge for the most common failure, and report how often it agrees with you.",
+    "Build a 20-question RAG test set and track RAGAS faithfulness and context recall as you change chunk size."
+  ]
+}

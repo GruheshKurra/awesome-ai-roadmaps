@@ -27,3 +27,5 @@ Level: **Intermediate** · 12 steps · 5h 11m of video · Prerequisites: Deep Le
 - Fold a small protein with ColabFold and compare it with its experimental structure from the PDB.
 - Use RDKit to compute properties for 100 drug molecules from SMILES and plot which ones pass Lipinski's rule of five.
 - Train a DeepChem graph model to predict solubility on the ESOL dataset and report its error on a held-out split.
+
+**Next:** [Knowledge Graphs & GraphRAG](knowledge-graphs-and-graphrag.md)

@@ -1,0 +1,78 @@
+{
+  "slug": "synthetic-data-and-data-centric-ai",
+  "order": 27,
+  "title": "Synthetic Data & Data-Centric AI",
+  "level": "Intermediate",
+  "tagline": "Improve models by improving their data: find label errors, label less, augment, generate synthetic tables and LLM training sets, and know when synthetic data backfires.",
+  "prereqs": "Machine Learning. Deep Learning helps for the GAN and VAE step; Fine-Tuning & Reasoning Models helps for the LLM steps.",
+  "steps": [
+    {
+      "title": "From model-centric to data-centric AI",
+      "video": "avoijDORAlc",
+      "why": "Andrew Ng's case for fixing data quality before tuning the model."
+    },
+    {
+      "title": "Find label errors",
+      "video": "AzU-G1Vww3c",
+      "why": "MIT lecture on confident learning: spot mislabeled examples automatically.",
+      "repo": "cleanlab/cleanlab"
+    },
+    {
+      "title": "Dataset creation and curation",
+      "video": "R9CHc1acGtk",
+      "why": "MIT lecture on sourcing, labeling, and cleaning a dataset."
+    },
+    {
+      "title": "Active learning",
+      "video": "ANIw1Mz1SRI",
+      "why": "Let the model choose which examples are worth labeling next."
+    },
+    {
+      "title": "Weak supervision",
+      "video": "ZSj3rwhABUg",
+      "why": "Combine noisy heuristic rules into training labels with Snorkel."
+    },
+    {
+      "title": "Data augmentation",
+      "video": "JI8saFjK84o",
+      "why": "Flips, crops, and color shifts that stretch a small image dataset."
+    },
+    {
+      "title": "What synthetic data is",
+      "video": "HIusawrGBN4",
+      "why": "Generated data that keeps real data's patterns, and where it helps."
+    },
+    {
+      "title": "Synthetic tables with SDV",
+      "video": "VD55NmNuhOw",
+      "why": "Generate single- and multi-table data with copulas and GANs.",
+      "repo": "sdv-dev/SDV"
+    },
+    {
+      "title": "CTGAN and TVAE in Python",
+      "video": "GigGd_rIDj8",
+      "why": "The theory behind two tabular generators, then code using both."
+    },
+    {
+      "title": "Synthetic datasets for LLM fine-tuning",
+      "video": "Cb8DZraP9n0",
+      "why": "Turn your documents into QA and reasoning pairs with a CLI.",
+      "repo": "meta-llama/synthetic-data-kit"
+    },
+    {
+      "title": "Curating data for LLM post-training",
+      "video": "ewtOo0scUh0",
+      "why": "Lessons from building the OpenThoughts reasoning dataset."
+    },
+    {
+      "title": "Model collapse",
+      "video": "Bs_VjCqyDfU",
+      "why": "What can go wrong when models train on model-generated data."
+    }
+  ],
+  "projects": [
+    "Run cleanlab on a public text classification dataset, review the 50 most suspicious labels by hand, and report how many were truly wrong.",
+    "Generate a synthetic copy of a tabular dataset with SDV, then compare a model trained on synthetic data with one trained on real data.",
+    "Create 200 QA pairs from your own notes with synthetic-data-kit, filter out the bad ones, and publish the dataset on Hugging Face."
+  ]
+}

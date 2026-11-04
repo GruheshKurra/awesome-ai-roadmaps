@@ -1,0 +1,84 @@
+{
+  "slug": "knowledge-graphs-and-graphrag",
+  "order": 26,
+  "title": "Knowledge Graphs & GraphRAG",
+  "level": "Intermediate",
+  "tagline": "Store facts as connected entities, query them with Cypher, build graphs from text with LLMs, and use them for retrieval that follows relationships.",
+  "prereqs": "AI Engineering (embeddings and RAG). Graph Neural Networks helps for the embeddings step but is optional.",
+  "steps": [
+    {
+      "title": "What is a knowledge graph?",
+      "video": "PZBm7M0HGzw",
+      "why": "Entities and relationships as a graph, and why that structure helps."
+    },
+    {
+      "title": "Taxonomies, ontologies, and semantics",
+      "video": "sr257blfdY8",
+      "why": "The vocabulary that defines what a graph's nodes and edges mean."
+    },
+    {
+      "title": "Graph databases",
+      "video": "T6L9EoBy8Zk",
+      "why": "A fast tour of Neo4j and the property graph model."
+    },
+    {
+      "title": "Cypher basics",
+      "video": "TfojDtTfzcc",
+      "why": "Create, match, and update nodes and relationships with Cypher."
+    },
+    {
+      "title": "Knowledge graph embeddings",
+      "video": "isI_TUMoP60",
+      "why": "TransE and friends: score missing links with learned vectors."
+    },
+    {
+      "title": "Extract a knowledge graph from text with an LLM",
+      "video": "O-T_6KOXML4",
+      "why": "Turn unstructured text into entities and relations using GPT-4o.",
+      "repo": "thu-vu92/knowledge-graph-llms"
+    },
+    {
+      "title": "GraphRAG vs. vector RAG",
+      "video": "Aw7iQjKAX2k",
+      "why": "Where retrieving connected facts beats retrieving similar chunks."
+    },
+    {
+      "title": "How GraphRAG works",
+      "video": "2o0Q85JUZNk",
+      "why": "Entity graphs, traversal, and multi-hop retrieval, and when you need them."
+    },
+    {
+      "title": "Retrieval with Cypher queries",
+      "video": "Za7aG-ooGLQ",
+      "why": "An LLM writes Cypher to answer questions from a graph database."
+    },
+    {
+      "title": "Build a GraphRAG pipeline",
+      "video": "JTVx6i6MzVw",
+      "why": "Ontology, extraction prompts, and graph retrieval in one Python project.",
+      "repo": "thu-vu92/graphRAG"
+    },
+    {
+      "title": "Microsoft GraphRAG",
+      "video": "vX3A96_F3FU",
+      "why": "Microsoft's community summaries for whole-corpus questions, and the indexing cost."
+    },
+    {
+      "title": "LightRAG",
+      "video": "5EmRZcJIfnw",
+      "why": "A cheaper graph index with dual-level retrieval.",
+      "repo": "HKUDS/LightRAG"
+    },
+    {
+      "title": "GraphRAG with Neo4j in practice",
+      "video": "LJ2a9nX3vlo",
+      "why": "A workshop combining vector search and a graph for an agent.",
+      "repo": "neo4j/neo4j-graphrag-python"
+    }
+  ],
+  "projects": [
+    "Extract a knowledge graph from 20 Wikipedia articles with an LLM, load it into Neo4j, and answer five multi-hop questions with Cypher.",
+    "Build plain vector RAG and GraphRAG over the same documents and compare their answers on 10 questions that need connected facts.",
+    "Index a small corpus with LightRAG and write up its indexing cost, speed, and answer quality next to Microsoft GraphRAG."
+  ]
+}

@@ -1,13 +1,13 @@
 [
-  "Knowledge Graphs & GraphRAG",
-  "Synthetic Data & Data-Centric AI",
-  "Federated Learning & Privacy-Preserving ML",
-  "Causal Inference & Causal ML",
-  "Evaluation & Benchmarking for LLMs",
   "Quantum Machine Learning",
   "LLM Security & Red Teaming",
   "Medical AI & Imaging",
   "Self-Driving Cars & Autonomous Systems",
   "Mixture of Experts & Efficient LLM Architectures",
-  "Classic NLP before LLMs"
+  "Classic NLP before LLMs",
+  "3D Vision, NeRFs & Gaussian Splatting",
+  "Explainable ML: SHAP, LIME & Model Debugging",
+  "Anomaly Detection",
+  "Search & Information Retrieval",
+  "AI Coding Assistants & Code Models"
 ]

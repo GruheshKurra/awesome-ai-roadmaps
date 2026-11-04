@@ -1,0 +1,76 @@
+{
+  "slug": "federated-learning-and-privacy-preserving-ml",
+  "order": 28,
+  "title": "Federated Learning & Privacy-Preserving ML",
+  "level": "Advanced",
+  "tagline": "Train models without collecting the data: federated averaging, Flower simulations, differential privacy, secure aggregation, encryption, and the attacks these defend against.",
+  "prereqs": "Deep Learning (PyTorch training loops). Basic probability from Python & Math for AI helps for the differential privacy steps.",
+  "steps": [
+    {
+      "title": "What is federated learning?",
+      "video": "VrEQBlEVri0",
+      "why": "Train on many devices and share model updates instead of raw data."
+    },
+    {
+      "title": "Federated learning in production",
+      "video": "89BGjQYA0uE",
+      "why": "How Google trains phone keyboard models across millions of devices."
+    },
+    {
+      "title": "Federated learning algorithms",
+      "video": "9pMQh9djClw",
+      "why": "University lecture on FedAvg and the algorithms built on it."
+    },
+    {
+      "title": "Your first Flower simulation",
+      "video": "VwGq16DMx3Q",
+      "why": "Simulate federated training of a PyTorch model with Flower.",
+      "repo": "flwrlabs/flower"
+    },
+    {
+      "title": "Stateful clients in Flower",
+      "video": "ir2okeinZ2g",
+      "why": "Keep per-client state across rounds, as personalized methods need."
+    },
+    {
+      "title": "Differential privacy",
+      "video": "gI0wk1CXlsQ",
+      "why": "Add calibrated noise so no single person changes the result much."
+    },
+    {
+      "title": "The definition of differential privacy",
+      "video": "lg-VhHlztqo",
+      "why": "Cynthia Dwork, who co-invented it, explains the formal definition."
+    },
+    {
+      "title": "Differential privacy in deep learning",
+      "video": "p6p9i1Hbcns",
+      "why": "Whether DP stops models memorizing data, and tips for using it."
+    },
+    {
+      "title": "Membership inference attacks",
+      "video": "1CNxfhMlk-A",
+      "why": "How attackers tell whether a record was in the training set."
+    },
+    {
+      "title": "Secure aggregation",
+      "video": "OCy9gPjl-XM",
+      "why": "The server learns the sum of client updates, not each update."
+    },
+    {
+      "title": "Homomorphic encryption",
+      "video": "PD48VtPls40",
+      "why": "Compute on encrypted data without decrypting it first."
+    },
+    {
+      "title": "Federated fine-tuning of LLMs",
+      "video": "Z-_XM7ldxVM",
+      "why": "A benchmark for fine-tuning language models across many data owners."
+    }
+  ],
+  "projects": [
+    "Simulate 10 Flower clients on CIFAR-10, split the data so each client sees only two classes, and compare accuracy with centralized training.",
+    "Train an MNIST model with and without DP-SGD using Opacus and plot accuracy against the privacy budget epsilon.",
+    "Run a simple loss-threshold membership inference attack on an overfit model and on a regularized one, and compare how often it succeeds."
+  ]
+}

@@ -10,7 +10,7 @@
 <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge-flat2.svg" height="28"></a>
 </p>
 
-<p align="center"><b>25 roadmaps · 316 videos · 182 hours of video · 102 GitHub repos</b></p>
+<p align="center"><b>30 roadmaps · 378 videos · 204 hours of video · 116 GitHub repos</b></p>
 
 <p align="center"><a href="https://gruheshkurra.github.io/awesome-ai-roadmaps/"><b>Open the interactive website →</b></a> (track your progress, step by step)</p>
 
@@ -45,6 +45,11 @@
 | 23 | **[Bayesian ML & Probabilistic Programming](roadmaps/bayesian-ml-and-probabilistic-programming.md)**<br><sub>Reason with uncertainty: priors and posteriors, MCMC, PyMC, hierarchical models, Gaussian processes, variational inference, and Bayesian deep learning.</sub> | Advanced | 15 | 7h 04m |
 | 24 | **[TinyML & Edge AI](roadmaps/tinyml-and-edge-ai.md)**<br><sub>Shrink models and run them on microcontrollers, phones, and small boards: pruning, quantization, distillation, TFLite Micro, Edge Impulse, ONNX, and ExecuTorch.</sub> | Advanced | 14 | 5h 27m |
 | 25 | **[AI for Science](roadmaps/ai-for-science.md)**<br><sub>How AI is changing biology and chemistry: protein folding, AlphaFold, protein language models, protein design, molecules in Python, and AI weather models.</sub> | Intermediate | 12 | 5h 11m |
+| 26 | **[Knowledge Graphs & GraphRAG](roadmaps/knowledge-graphs-and-graphrag.md)**<br><sub>Store facts as connected entities, query them with Cypher, build graphs from text with LLMs, and use them for retrieval that follows relationships.</sub> | Intermediate | 13 | 4h 27m |
+| 27 | **[Synthetic Data & Data-Centric AI](roadmaps/synthetic-data-and-data-centric-ai.md)**<br><sub>Improve models by improving their data: find label errors, label less, augment, generate synthetic tables and LLM training sets, and know when synthetic data backfires.</sub> | Intermediate | 12 | 4h 58m |
+| 28 | **[Federated Learning & Privacy-Preserving ML](roadmaps/federated-learning-and-privacy-preserving-ml.md)**<br><sub>Train models without collecting the data: federated averaging, Flower simulations, differential privacy, secure aggregation, encryption, and the attacks these defend against.</sub> | Advanced | 12 | 3h 26m |
+| 29 | **[Causal Inference & Causal ML](roadmaps/causal-inference-and-causal-ml.md)**<br><sub>Go from 'X is correlated with Y' to 'X causes Y': potential outcomes, causal graphs, matching, natural experiments, and machine learning for treatment effects.</sub> | Intermediate | 13 | 4h 13m |
+| 30 | **[Evaluation & Benchmarking for LLMs](roadmaps/evaluation-and-benchmarking-for-llms.md)**<br><sub>Measure language models and LLM apps properly: classic metrics, public benchmarks and leaderboards, LLM judges, error analysis, and open-source eval tools.</sub> | Intermediate | 12 | 5h 00m |
 
 ## Pick a path
 
@@ -71,18 +76,18 @@ The GitHub repos the roadmaps use most. Clone them and code along.
 
 | Repo | Stars | Used in |
 | --- | ---: | --- |
-| [ollama/ollama](https://github.com/ollama/ollama) | ★ 185.8k | [AI Engineering](roadmaps/ai-engineering.md) |
+| [ollama/ollama](https://github.com/ollama/ollama) | ★ 185.9k | [AI Engineering](roadmaps/ai-engineering.md) |
 | [Comfy-Org/ComfyUI](https://github.com/Comfy-Org/ComfyUI) | ★ 144.9k | [Generative AI: Images & Video](roadmaps/generative-ai.md) |
 | [ggml-org/llama.cpp](https://github.com/ggml-org/llama.cpp) | ★ 133.3k | [Run, Serve & Scale AI](roadmaps/deploy-and-scale.md), [TinyML & Edge AI](roadmaps/tinyml-and-edge-ai.md) |
 | [openai/whisper](https://github.com/openai/whisper) | ★ 111.9k | [Speech & Audio AI](roadmaps/speech-and-audio-ai.md) |
 | [rasbt/LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch) | ★ 107.8k | [LLMs from Scratch](roadmaps/llms-from-scratch.md) |
-| [vllm-project/vllm](https://github.com/vllm-project/vllm) | ★ 96.2k | [Run, Serve & Scale AI](roadmaps/deploy-and-scale.md) |
+| [vllm-project/vllm](https://github.com/vllm-project/vllm) | ★ 96.3k | [Run, Serve & Scale AI](roadmaps/deploy-and-scale.md) |
 | [microsoft/ML-For-Beginners](https://github.com/microsoft/ML-For-Beginners) | ★ 92k | [Machine Learning](roadmaps/machine-learning.md) |
 | [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) | ★ 91.8k | [AI Agents & MCP](roadmaps/ai-agents.md) |
 | [mlabonne/llm-course](https://github.com/mlabonne/llm-course) | ★ 84.9k | [Fine-Tuning & Reasoning Models](roadmaps/fine-tuning.md) |
 | [dair-ai/Prompt-Engineering-Guide](https://github.com/dair-ai/Prompt-Engineering-Guide) | ★ 79.8k | [AI Engineering](roadmaps/ai-engineering.md) |
 | [unslothai/unsloth](https://github.com/unslothai/unsloth) | ★ 79k | [Fine-Tuning & Reasoning Models](roadmaps/fine-tuning.md) |
-| [microsoft/ai-agents-for-beginners](https://github.com/microsoft/ai-agents-for-beginners) | ★ 78.8k | [AI Agents & MCP](roadmaps/ai-agents.md) |
+| [microsoft/ai-agents-for-beginners](https://github.com/microsoft/ai-agents-for-beginners) | ★ 78.9k | [AI Agents & MCP](roadmaps/ai-agents.md) |
 | [karpathy/nanoGPT](https://github.com/karpathy/nanoGPT) | ★ 64.4k | [LLMs from Scratch](roadmaps/llms-from-scratch.md) |
 | [ultralytics/ultralytics](https://github.com/ultralytics/ultralytics) | ★ 63.1k | [Computer Vision](roadmaps/computer-vision.md) |
 | [karpathy/nanochat](https://github.com/karpathy/nanochat) | ★ 60.2k | [LLMs from Scratch](roadmaps/llms-from-scratch.md) |
@@ -99,17 +104,17 @@ The GitHub repos the roadmaps use most. Clone them and code along.
 
 New roadmaps are added regularly. Next up:
 
-- Knowledge Graphs & GraphRAG
-- Synthetic Data & Data-Centric AI
-- Federated Learning & Privacy-Preserving ML
-- Causal Inference & Causal ML
-- Evaluation & Benchmarking for LLMs
 - Quantum Machine Learning
 - LLM Security & Red Teaming
 - Medical AI & Imaging
 - Self-Driving Cars & Autonomous Systems
 - Mixture of Experts & Efficient LLM Architectures
 - Classic NLP before LLMs
+- 3D Vision, NeRFs & Gaussian Splatting
+- Explainable ML: SHAP, LIME & Model Debugging
+- Anomaly Detection
+- Search & Information Retrieval
+- AI Coding Assistants & Code Models
 
 Watch or star the repo to get them as they land.
 
