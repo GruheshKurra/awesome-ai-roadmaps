@@ -216,7 +216,10 @@ def roadmap_md(r, roadmaps, meta):
 
 # ---------- website ----------
 
-def page(title, description, body, path="", depth=0, schema=(), index=True):
+def page(title, description, body, path="", depth=0, schema=(), index=True, social=None):
+    # Link previews (Slack, X, LinkedIn, Discord) cut titles near 60-70 characters,
+    # so pages can pass a shorter (title, description) pair for og: and twitter: tags.
+    social_title, social_description = social or (title, description)
     up = "../" * depth
     canonical = f"{SITE_URL}/{path}"
     robots = "max-image-preview:large" if index else "noindex"
@@ -234,16 +237,16 @@ def page(title, description, body, path="", depth=0, schema=(), index=True):
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="AI Roadmaps">
 <meta property="og:locale" content="en_US">
-<meta property="og:title" content="{escape(title)}">
-<meta property="og:description" content="{escape(description)}">
+<meta property="og:title" content="{escape(social_title)}">
+<meta property="og:description" content="{escape(social_description)}">
 <meta property="og:url" content="{canonical}">
 <meta property="og:image" content="{SITE_URL}/assets/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="AI Roadmaps: learn AI from free YouTube videos and GitHub repos">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{escape(title)}">
-<meta name="twitter:description" content="{escape(description)}">
+<meta name="twitter:title" content="{escape(social_title)}">
+<meta name="twitter:description" content="{escape(social_description)}">
 <meta name="twitter:image" content="{SITE_URL}/assets/og.png">
 <link rel="icon" href="{up}assets/favicon.svg" type="image/svg+xml">{ld}
 <link rel="stylesheet" href="{up}assets/style.css">
@@ -435,7 +438,8 @@ def roadmap_html(r, roadmaps, meta):
   <div class="more-links">{others}</div>
 </nav>
 </main>"""
-    return page(f"{r['title']} Roadmap: Free Video Course in {len(r['steps'])} Steps | AI Roadmaps", description, body, f"{r['slug']}/", 1, schema)
+    social = (f"{r['title']}: {len(r['steps'])} free videos", f"{r['tagline']} {r['level']} · {len(r['steps'])} steps · {duration(r['seconds'])} of video.")
+    return page(f"{r['title']} Roadmap: Free Video Course in {len(r['steps'])} Steps | AI Roadmaps", description, body, f"{r['slug']}/", 1, schema, social=social)
 
 
 def build_site(roadmaps, meta, upcoming):
