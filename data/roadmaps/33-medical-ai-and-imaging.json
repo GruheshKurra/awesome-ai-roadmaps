@@ -1,0 +1,79 @@
+{
+  "slug": "medical-ai-and-imaging",
+  "order": 33,
+  "title": "Medical AI & Imaging",
+  "level": "Intermediate",
+  "tagline": "Work with medical images and clinical data: DICOM, segmentation with U-Net, MONAI, and nnU-Net, pathology, foundation models, bias, and regulation.",
+  "prereqs": "Deep Learning. Computer Vision helps for the segmentation steps. No medical background needed.",
+  "steps": [
+    {
+      "title": "What makes healthcare data different",
+      "video": "vof7x8r_ZUA",
+      "why": "MIT lecture on clinical data, its messiness, and its stakes."
+    },
+    {
+      "title": "How ML reads medical images",
+      "video": "VKnoyiNxflk",
+      "why": "JAMA explainer on training image models against expert labels."
+    },
+    {
+      "title": "Read DICOM files in Python",
+      "video": "To7v7i7eB0A",
+      "why": "Load scans and their metadata with pydicom.",
+      "repo": "pydicom/pydicom"
+    },
+    {
+      "title": "Sensitivity and specificity",
+      "video": "vP06aMoz4v8",
+      "why": "The two error rates clinicians ask about first."
+    },
+    {
+      "title": "U-Net for segmentation",
+      "video": "oxcgx75k6yU",
+      "why": "The encoder-decoder with skip connections behind most medical segmentation."
+    },
+    {
+      "title": "Segment organs in 3D CT",
+      "video": "NA8_Yi_q7X4",
+      "why": "Train a 3D segmentation model on CT scans in Python.",
+      "repo": "Project-MONAI/MONAI"
+    },
+    {
+      "title": "nnU-Net",
+      "video": "3po8qVzz5Tc",
+      "why": "A U-Net that configures its own preprocessing and training per dataset.",
+      "repo": "MIC-DKFZ/nnUNet"
+    },
+    {
+      "title": "Segment anything in medical images",
+      "video": "XRkavmT9URY",
+      "why": "MedSAM adapts Segment Anything to prompt-based medical segmentation.",
+      "repo": "bowang-lab/MedSAM"
+    },
+    {
+      "title": "Machine learning for pathology",
+      "video": "PKCMH5KOcxQ",
+      "why": "MIT lecture on learning from huge whole-slide tissue images."
+    },
+    {
+      "title": "Foundation models in radiology",
+      "video": "6b1E3jdSs-k",
+      "why": "Stanford researchers on large pretrained models for medical images and reports."
+    },
+    {
+      "title": "Bias in health AI",
+      "video": "yd9q-o7E8Uw",
+      "why": "Where bias enters clinical models, from labels and proxies to deployment."
+    },
+    {
+      "title": "How AI medical devices get cleared",
+      "video": "c2dDTusHWRU",
+      "why": "How the FDA regulates diagnostic imaging AI software in the US."
+    }
+  ],
+  "projects": [
+    "Load a public CT series with pydicom, window it, and save an axial, coronal, and sagittal view.",
+    "Train a 2D U-Net on a public segmentation dataset and report Dice score per case.",
+    "Train a chest X-ray classifier and report sensitivity, specificity, and AUC on a held-out hospital split if available."
+  ]
+}

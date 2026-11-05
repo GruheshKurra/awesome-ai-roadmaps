@@ -1,0 +1,82 @@
+{
+  "slug": "mixture-of-experts-and-efficient-llm-architectures",
+  "order": 35,
+  "title": "Mixture of Experts & Efficient LLM Architectures",
+  "level": "Advanced",
+  "tagline": "See how modern LLMs grow without getting slower: sparse mixture of experts, cheaper attention, linear attention, state space models, and hybrids.",
+  "prereqs": "LLMs from Scratch. Run, Serve & Scale AI helps for the parallelism step.",
+  "steps": [
+    {
+      "title": "What mixture of experts is",
+      "video": "sYDlVVyJYn4",
+      "why": "Many expert networks, with only a few active per token."
+    },
+    {
+      "title": "MoE, visually explained",
+      "video": "0QQlYR1r6pQ",
+      "why": "Routers, top-k gating, and load balancing, drawn step by step."
+    },
+    {
+      "title": "Switch Transformers",
+      "video": "iAR8LkkMMIM",
+      "why": "Top-1 routing and a load-balancing loss that scaled MoE far."
+    },
+    {
+      "title": "Code token routing",
+      "video": "CDnkFbW-uEQ",
+      "why": "Hugging Face walkthrough of a router in code, with a Colab notebook."
+    },
+    {
+      "title": "Mixtral, line by line",
+      "video": "UiX8K-xBUpE",
+      "why": "Umar Jamil explains Mixtral's sparse experts and sliding-window attention in code.",
+      "repo": "hkproj/mistral-src-commented"
+    },
+    {
+      "title": "MoE at scale",
+      "video": "LPv1KfUXLCo",
+      "why": "Stanford CS336 lecture on training and routing in real MoE models."
+    },
+    {
+      "title": "Expert parallelism",
+      "video": "DdmgD5RMe1U",
+      "why": "Split experts, layers, and data across GPUs for inference."
+    },
+    {
+      "title": "Multi-query and grouped-query attention",
+      "video": "o68RRGxAtDo",
+      "why": "Share keys and values across heads to shrink the KV cache."
+    },
+    {
+      "title": "From GQA to latent and sparse attention",
+      "video": "Y-o545eYjXM",
+      "why": "How MLA and DeepSeek's sparse attention cut attention cost further."
+    },
+    {
+      "title": "Linear attention",
+      "video": "pUCWwGR5WmQ",
+      "why": "Drop softmax to make attention scale linearly and run like an RNN."
+    },
+    {
+      "title": "Mamba and state space models",
+      "video": "N6Piou4oYx8",
+      "why": "A recurrent model with input-dependent state updates and linear-time sequence cost.",
+      "repo": "state-spaces/mamba"
+    },
+    {
+      "title": "Hybrid Mamba-Transformer models",
+      "video": "9EdYwMMABnA",
+      "why": "NVIDIA's Hymba mixes attention and Mamba heads in one small model."
+    },
+    {
+      "title": "DeepSeek-V3, putting it together",
+      "video": "fTjPEE0fk-U",
+      "why": "How MoE, MLA, and training tricks combine in one frontier model."
+    }
+  ],
+  "projects": [
+    "Add a top-2 MoE feed-forward layer to a small GPT and compare loss per compute with the dense version.",
+    "Log how many tokens each expert receives during training, then add a load-balancing loss and show the change.",
+    "Measure KV-cache memory and generation speed for MHA versus GQA in a small model at several context lengths."
+  ]
+}

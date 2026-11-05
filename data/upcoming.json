@@ -1,13 +1,13 @@
 [
-  "Quantum Machine Learning",
-  "LLM Security & Red Teaming",
-  "Medical AI & Imaging",
-  "Self-Driving Cars & Autonomous Systems",
-  "Mixture of Experts & Efficient LLM Architectures",
   "Classic NLP before LLMs",
   "3D Vision, NeRFs & Gaussian Splatting",
   "Explainable ML: SHAP, LIME & Model Debugging",
   "Anomaly Detection",
   "Search & Information Retrieval",
-  "AI Coding Assistants & Code Models"
+  "AI Coding Assistants & Code Models",
+  "Tabular ML & Gradient Boosting",
+  "Document AI & OCR",
+  "Video Generation & World Models",
+  "Self-Supervised & Contrastive Learning",
+  "AI for Finance"
 ]

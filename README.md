@@ -10,7 +10,7 @@
 <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge-flat2.svg" height="28"></a>
 </p>
 
-<p align="center"><b>30 roadmaps · 378 videos · 204 hours of video · 116 GitHub repos</b></p>
+<p align="center"><b>35 roadmaps · 442 videos · 237 hours of video · 129 GitHub repos</b></p>
 
 <p align="center"><a href="https://gruheshkurra.github.io/awesome-ai-roadmaps/"><b>Open the interactive website →</b></a> (track your progress, step by step)</p>
 
@@ -50,6 +50,11 @@
 | 28 | **[Federated Learning & Privacy-Preserving ML](roadmaps/federated-learning-and-privacy-preserving-ml.md)**<br><sub>Train models without collecting the data: federated averaging, Flower simulations, differential privacy, secure aggregation, encryption, and the attacks these defend against.</sub> | Advanced | 12 | 3h 26m |
 | 29 | **[Causal Inference & Causal ML](roadmaps/causal-inference-and-causal-ml.md)**<br><sub>Go from 'X is correlated with Y' to 'X causes Y': potential outcomes, causal graphs, matching, natural experiments, and machine learning for treatment effects.</sub> | Intermediate | 13 | 4h 13m |
 | 30 | **[Evaluation & Benchmarking for LLMs](roadmaps/evaluation-and-benchmarking-for-llms.md)**<br><sub>Measure language models and LLM apps properly: classic metrics, public benchmarks and leaderboards, LLM judges, error analysis, and open-source eval tools.</sub> | Intermediate | 12 | 5h 00m |
+| 31 | **[Quantum Machine Learning](roadmaps/quantum-machine-learning.md)**<br><sub>Learn qubits, gates, and circuits, then train variational circuits, quantum classifiers, and quantum kernels, and see where the limits are.</sub> | Advanced | 14 | 5h 51m |
+| 32 | **[LLM Security & Red Teaming](roadmaps/llm-security-and-red-teaming.md)**<br><sub>Learn how LLM apps get attacked, from prompt injection and jailbreaks to data extraction and poisoning, then test and defend your own.</sub> | Intermediate | 12 | 5h 27m |
+| 33 | **[Medical AI & Imaging](roadmaps/medical-ai-and-imaging.md)**<br><sub>Work with medical images and clinical data: DICOM, segmentation with U-Net, MONAI, and nnU-Net, pathology, foundation models, bias, and regulation.</sub> | Intermediate | 12 | 6h 44m |
+| 34 | **[Self-Driving Cars & Autonomous Systems](roadmaps/self-driving-cars-and-autonomous-systems.md)**<br><sub>Follow the self-driving stack from sensors and localization through perception, prediction, and planning to end-to-end models and simulation.</sub> | Advanced | 13 | 8h 00m |
+| 35 | **[Mixture of Experts & Efficient LLM Architectures](roadmaps/mixture-of-experts-and-efficient-llm-architectures.md)**<br><sub>See how modern LLMs grow without getting slower: sparse mixture of experts, cheaper attention, linear attention, state space models, and hybrids.</sub> | Advanced | 13 | 6h 59m |
 
 ## Pick a path
 
@@ -76,21 +81,21 @@ The GitHub repos the roadmaps use most. Clone them and code along.
 
 | Repo | Stars | Used in |
 | --- | ---: | --- |
-| [ollama/ollama](https://github.com/ollama/ollama) | ★ 185.9k | [AI Engineering](roadmaps/ai-engineering.md) |
-| [Comfy-Org/ComfyUI](https://github.com/Comfy-Org/ComfyUI) | ★ 144.9k | [Generative AI: Images & Video](roadmaps/generative-ai.md) |
-| [ggml-org/llama.cpp](https://github.com/ggml-org/llama.cpp) | ★ 133.3k | [Run, Serve & Scale AI](roadmaps/deploy-and-scale.md), [TinyML & Edge AI](roadmaps/tinyml-and-edge-ai.md) |
-| [openai/whisper](https://github.com/openai/whisper) | ★ 111.9k | [Speech & Audio AI](roadmaps/speech-and-audio-ai.md) |
-| [rasbt/LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch) | ★ 107.8k | [LLMs from Scratch](roadmaps/llms-from-scratch.md) |
-| [vllm-project/vllm](https://github.com/vllm-project/vllm) | ★ 96.3k | [Run, Serve & Scale AI](roadmaps/deploy-and-scale.md) |
+| [ollama/ollama](https://github.com/ollama/ollama) | ★ 186k | [AI Engineering](roadmaps/ai-engineering.md) |
+| [Comfy-Org/ComfyUI](https://github.com/Comfy-Org/ComfyUI) | ★ 145.1k | [Generative AI: Images & Video](roadmaps/generative-ai.md) |
+| [ggml-org/llama.cpp](https://github.com/ggml-org/llama.cpp) | ★ 133.4k | [Run, Serve & Scale AI](roadmaps/deploy-and-scale.md), [TinyML & Edge AI](roadmaps/tinyml-and-edge-ai.md) |
+| [openai/whisper](https://github.com/openai/whisper) | ★ 112k | [Speech & Audio AI](roadmaps/speech-and-audio-ai.md) |
+| [rasbt/LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch) | ★ 107.9k | [LLMs from Scratch](roadmaps/llms-from-scratch.md) |
+| [vllm-project/vllm](https://github.com/vllm-project/vllm) | ★ 96.4k | [Run, Serve & Scale AI](roadmaps/deploy-and-scale.md) |
 | [microsoft/ML-For-Beginners](https://github.com/microsoft/ML-For-Beginners) | ★ 92k | [Machine Learning](roadmaps/machine-learning.md) |
 | [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) | ★ 91.8k | [AI Agents & MCP](roadmaps/ai-agents.md) |
 | [mlabonne/llm-course](https://github.com/mlabonne/llm-course) | ★ 84.9k | [Fine-Tuning & Reasoning Models](roadmaps/fine-tuning.md) |
 | [dair-ai/Prompt-Engineering-Guide](https://github.com/dair-ai/Prompt-Engineering-Guide) | ★ 79.8k | [AI Engineering](roadmaps/ai-engineering.md) |
-| [unslothai/unsloth](https://github.com/unslothai/unsloth) | ★ 79k | [Fine-Tuning & Reasoning Models](roadmaps/fine-tuning.md) |
-| [microsoft/ai-agents-for-beginners](https://github.com/microsoft/ai-agents-for-beginners) | ★ 78.9k | [AI Agents & MCP](roadmaps/ai-agents.md) |
-| [karpathy/nanoGPT](https://github.com/karpathy/nanoGPT) | ★ 64.4k | [LLMs from Scratch](roadmaps/llms-from-scratch.md) |
+| [unslothai/unsloth](https://github.com/unslothai/unsloth) | ★ 79.1k | [Fine-Tuning & Reasoning Models](roadmaps/fine-tuning.md) |
+| [microsoft/ai-agents-for-beginners](https://github.com/microsoft/ai-agents-for-beginners) | ★ 79k | [AI Agents & MCP](roadmaps/ai-agents.md) |
+| [karpathy/nanoGPT](https://github.com/karpathy/nanoGPT) | ★ 64.5k | [LLMs from Scratch](roadmaps/llms-from-scratch.md) |
+| [commaai/openpilot](https://github.com/commaai/openpilot) | ★ 64.1k | [Self-Driving Cars & Autonomous Systems](roadmaps/self-driving-cars-and-autonomous-systems.md) |
 | [ultralytics/ultralytics](https://github.com/ultralytics/ultralytics) | ★ 63.1k | [Computer Vision](roadmaps/computer-vision.md) |
-| [karpathy/nanochat](https://github.com/karpathy/nanochat) | ★ 60.2k | [LLMs from Scratch](roadmaps/llms-from-scratch.md) |
 
 ## How it works
 
@@ -104,17 +109,17 @@ The GitHub repos the roadmaps use most. Clone them and code along.
 
 New roadmaps are added regularly. Next up:
 
-- Quantum Machine Learning
-- LLM Security & Red Teaming
-- Medical AI & Imaging
-- Self-Driving Cars & Autonomous Systems
-- Mixture of Experts & Efficient LLM Architectures
 - Classic NLP before LLMs
 - 3D Vision, NeRFs & Gaussian Splatting
 - Explainable ML: SHAP, LIME & Model Debugging
 - Anomaly Detection
 - Search & Information Retrieval
 - AI Coding Assistants & Code Models
+- Tabular ML & Gradient Boosting
+- Document AI & OCR
+- Video Generation & World Models
+- Self-Supervised & Contrastive Learning
+- AI for Finance
 
 Watch or star the repo to get them as they land.
 

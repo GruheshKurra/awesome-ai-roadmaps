@@ -1,0 +1,88 @@
+{
+  "slug": "quantum-machine-learning",
+  "order": 31,
+  "title": "Quantum Machine Learning",
+  "level": "Advanced",
+  "tagline": "Learn qubits, gates, and circuits, then train variational circuits, quantum classifiers, and quantum kernels, and see where the limits are.",
+  "prereqs": "Machine Learning and Python & Math for AI (vectors, matrices, complex numbers help). No physics background needed.",
+  "steps": [
+    {
+      "title": "How quantum computers compute",
+      "video": "Kv8N9alyYNc",
+      "why": "A visual tour of the math behind qubits and quantum gates."
+    },
+    {
+      "title": "Qubits and superposition",
+      "video": "TZ-sUHK8vVQ",
+      "why": "What a qubit state is and what measuring it gives you."
+    },
+    {
+      "title": "Entanglement",
+      "video": "rGRUFzPeJI4",
+      "why": "Correlated qubits that can't be described one at a time."
+    },
+    {
+      "title": "Quantum gates",
+      "video": "HHV-P4_Xp1E",
+      "why": "The basic gates that rotate and combine qubit states."
+    },
+    {
+      "title": "Quantum circuits",
+      "video": "30U2DTfIrOU",
+      "why": "IBM lesson on reading and composing circuits of gates and measurements.",
+      "repo": "Qiskit/qiskit"
+    },
+    {
+      "title": "A quantum algorithm: Grover's search",
+      "video": "RQWpF2Gb-gU",
+      "why": "3Blue1Brown walks through Grover's search and its square-root speedup."
+    },
+    {
+      "title": "What quantum advantage means",
+      "video": "wGsK1iAKEoA",
+      "why": "Which problems might gain from quantum hardware, and which won't."
+    },
+    {
+      "title": "What quantum machine learning is",
+      "video": "CnSYsUhlx14",
+      "why": "Computerphile overview of mixing quantum circuits with machine learning."
+    },
+    {
+      "title": "Encoding classical data into qubits",
+      "video": "LHzWAyT5rMI",
+      "why": "Basis, angle, and amplitude ways to load data into a circuit."
+    },
+    {
+      "title": "Variational quantum circuits",
+      "video": "YtepXvx5zdI",
+      "why": "Circuits with trainable angles, optimized by a classical computer.",
+      "repo": "PennyLaneAI/pennylane"
+    },
+    {
+      "title": "Build a quantum classifier",
+      "video": "-sxlXNz7ZxU",
+      "why": "Qiskit summer school lecture: encode data, train a circuit, classify."
+    },
+    {
+      "title": "Quantum kernels and SVMs",
+      "video": "GVhCOTzAkCM",
+      "why": "Use a circuit as a feature map, then train a classical SVM on it.",
+      "repo": "stfc/qiskit-machine-learning"
+    },
+    {
+      "title": "Variational quantum eigensolver",
+      "video": "qiRtUUZ5s9s",
+      "why": "Find a molecule's ground-state energy with a trainable circuit in PennyLane."
+    },
+    {
+      "title": "Barren plateaus",
+      "video": "0ENQXz9tDww",
+      "why": "Why gradients of large random circuits vanish, and ways to avoid it."
+    }
+  ],
+  "projects": [
+    "Build and simulate Bell-state and Grover circuits in Qiskit, and plot the measurement counts.",
+    "Train a 2-qubit variational classifier in PennyLane on a small 2D dataset and compare it with logistic regression.",
+    "Compare a quantum-kernel SVM with an RBF-kernel SVM on the same dataset and write up accuracy and runtime."
+  ]
+}

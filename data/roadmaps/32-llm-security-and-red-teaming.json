@@ -1,0 +1,77 @@
+{
+  "slug": "llm-security-and-red-teaming",
+  "order": 32,
+  "title": "LLM Security & Red Teaming",
+  "level": "Intermediate",
+  "tagline": "Learn how LLM apps get attacked, from prompt injection and jailbreaks to data extraction and poisoning, then test and defend your own.",
+  "prereqs": "AI Engineering. AI Agents & MCP helps for the agent and tool-use steps.",
+  "steps": [
+    {
+      "title": "The OWASP Top 10 for LLMs",
+      "video": "gUNXZMcd2jU",
+      "why": "A map of the main ways LLM applications get attacked."
+    },
+    {
+      "title": "Prompt injection",
+      "video": "FgxwCaL6UTA",
+      "why": "Simon Willison on why mixing instructions and untrusted text is unsafe."
+    },
+    {
+      "title": "Jailbreaks",
+      "video": "zn2ukSnDqSg",
+      "why": "Computerphile on how prompts talk models past their safety training."
+    },
+    {
+      "title": "Automated adversarial suffixes",
+      "video": "v1FMHokdWXI",
+      "why": "Zico Kolter on optimized suffixes that jailbreak many aligned models."
+    },
+    {
+      "title": "Indirect prompt injection in the wild",
+      "video": "ADHAokjniE4",
+      "why": "Real exploits where web pages and documents hijack LLM apps."
+    },
+    {
+      "title": "Extracting training data",
+      "video": "A_P_9mmTuGA",
+      "why": "USENIX talk showing GPT-2 can regurgitate memorized training text."
+    },
+    {
+      "title": "Backdoors and sleeper agents",
+      "video": "Z3WMt_ncgUI",
+      "why": "Anthropic's study of hidden trigger behavior that survived safety training."
+    },
+    {
+      "title": "Design patterns for secure agents",
+      "video": "2Er7bmyhPfM",
+      "why": "Limit what an agent can do after it reads untrusted input."
+    },
+    {
+      "title": "Guardrails",
+      "video": "SwqusllMCnE",
+      "why": "Add input and output rails to a chatbot with NeMo Guardrails."
+    },
+    {
+      "title": "Automated red teaming with PyRIT",
+      "video": "wna5aIVfucI",
+      "why": "Microsoft's open tool for sending attack prompts and scoring replies.",
+      "repo": "microsoft/PyRIT"
+    },
+    {
+      "title": "Scan a model with garak",
+      "video": "f713_sFqItY",
+      "why": "Run garak's probes against your own chatbot and read the report.",
+      "repo": "NVIDIA/garak"
+    },
+    {
+      "title": "Defending against jailbreaks",
+      "video": "BaNXYqcfDyo",
+      "why": "Anthropic researchers on classifier defenses and their red-teaming results."
+    }
+  ],
+  "projects": [
+    "Build a small RAG chatbot, plant an indirect prompt injection in one document, and show the attack and a fix.",
+    "Run garak against a local open model and summarize which probe families succeeded.",
+    "Add an input and output safety filter to a chatbot and measure how many of 50 jailbreak prompts it blocks."
+  ]
+}
