@@ -19,6 +19,11 @@ REPO = "GruheshKurra/awesome-ai-roadmaps"
 REPO_URL = f"https://github.com/{REPO}"
 SITE_URL = "https://gruheshkurra.github.io/awesome-ai-roadmaps"
 LEVELS = ("Beginner", "Intermediate", "Advanced")
+# Search engine ownership tokens. Paste the content value from Google Search Console
+# ("HTML tag" method) or Bing Webmaster Tools; empty values are skipped.
+SITE_VERIFICATION = {"google-site-verification": "", "msvalidate.01": ""}
+# Public key that lets scripts/indexnow.py tell Bing and other IndexNow engines about updated pages.
+INDEXNOW_KEY = "0d573565547455f697c44fa5223bcaff"
 TAGLINE = "Learn AI from the best free YouTube videos and GitHub repos, in the right order."
 PATHS = [
     ("Total beginner", ["foundations", "machine-learning", "deep-learning"]),
@@ -224,6 +229,7 @@ def page(title, description, body, path="", depth=0, schema=(), index=True, soci
     canonical = f"{SITE_URL}/{path}"
     robots = "max-image-preview:large" if index else "noindex"
     ld = "".join(f"\n{json_ld(s)}" for s in schema)
+    verify = "".join(f'\n<meta name="{name}" content="{escape(value)}">' for name, value in SITE_VERIFICATION.items() if value and depth == 0 and index)
     return f"""<!doctype html>
 <html lang="en">
 <head>
@@ -232,7 +238,7 @@ def page(title, description, body, path="", depth=0, schema=(), index=True, soci
 <title>{escape(title)}</title>
 <meta name="description" content="{escape(description)}">
 <meta name="robots" content="{robots}">
-<link rel="canonical" href="{canonical}">
+<link rel="canonical" href="{canonical}">{verify}
 <meta name="theme-color" content="#ff5a1f">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="AI Roadmaps">
@@ -456,6 +462,7 @@ def build_site(roadmaps, meta, upcoming):
     urls += [(f"{SITE_URL}/{r['slug']}/", last_changed(str(f.relative_to(ROOT)), "data/meta.json")) for r, f in zip(roadmaps, files)]
     entries = "".join(f"  <url><loc>{u}</loc>{f'<lastmod>{d}</lastmod>' if d else ''}</url>\n" for u, d in urls)
     (site / "sitemap.xml").write_text(f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{entries}</urlset>\n')
+    (site / f"{INDEXNOW_KEY}.txt").write_text(INDEXNOW_KEY)
     (site / "robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {SITE_URL}/sitemap.xml\n")
     lines = [f"# AI Roadmaps\n\n> {TAGLINE} Free, video-first learning paths: each step is one YouTube video plus a GitHub repo to code along with.\n\n## Roadmaps\n"]
     lines += [f"- [{r['title']}]({SITE_URL}/{r['slug']}/): {r['level']}, {len(r['steps'])} steps, {duration(r['seconds'])} of video. {r['tagline']}" for r in roadmaps]
