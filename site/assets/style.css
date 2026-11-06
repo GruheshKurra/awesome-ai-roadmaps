@@ -191,6 +191,7 @@ h1 { font-size: clamp(32px, 4.6vw, 50px); line-height: 1.1; letter-spacing: -.02
 .chain a { padding: 4px 10px; border-radius: 8px; background: var(--surface-2); text-decoration: none; font-weight: 500; }
 .chain a:hover { color: var(--accent); }
 .arrow { color: var(--muted); }
+.chain .hop { display: inline-flex; align-items: center; gap: 6px; }
 
 /* Repos */
 .repos { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 12px; margin-top: 16px; }

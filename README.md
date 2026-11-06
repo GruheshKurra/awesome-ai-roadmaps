@@ -64,6 +64,10 @@
 - **Developer building with AI:** [AI Engineering](roadmaps/ai-engineering.md) → [AI Agents & MCP](roadmaps/ai-agents.md)
 - **How LLMs really work:** [Deep Learning](roadmaps/deep-learning.md) → [LLMs from Scratch](roadmaps/llms-from-scratch.md) → [Fine-Tuning & Reasoning Models](roadmaps/fine-tuning.md)
 - **Production and performance:** [Machine Learning](roadmaps/machine-learning.md) → [Run, Serve & Scale AI](roadmaps/deploy-and-scale.md)
+- **Data scientist:** [Machine Learning](roadmaps/machine-learning.md) → [Explainable ML: SHAP, LIME & Model Debugging](roadmaps/explainable-ml-shap-lime-and-model-debugging.md) → [Causal Inference & Causal ML](roadmaps/causal-inference-and-causal-ml.md)
+- **Trustworthy LLM apps:** [AI Engineering](roadmaps/ai-engineering.md) → [Evaluation & Benchmarking for LLMs](roadmaps/evaluation-and-benchmarking-for-llms.md) → [LLM Security & Red Teaming](roadmaps/llm-security-and-red-teaming.md)
+- **Vision to 3D worlds:** [Deep Learning](roadmaps/deep-learning.md) → [Computer Vision](roadmaps/computer-vision.md) → [3D Vision, NeRFs & Gaussian Splatting](roadmaps/3d-vision-nerfs-and-gaussian-splatting.md)
+- **Inside modern LLMs:** [LLMs from Scratch](roadmaps/llms-from-scratch.md) → [Mixture of Experts & Efficient LLM Architectures](roadmaps/mixture-of-experts-and-efficient-llm-architectures.md) → [Interpretability](roadmaps/interpretability.md)
 
 ## Start right now
 

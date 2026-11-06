@@ -30,6 +30,10 @@ PATHS = [
     ("Developer building with AI", ["ai-engineering", "ai-agents"]),
     ("How LLMs really work", ["deep-learning", "llms-from-scratch", "fine-tuning"]),
     ("Production and performance", ["machine-learning", "deploy-and-scale"]),
+    ("Data scientist", ["machine-learning", "explainable-ml-shap-lime-and-model-debugging", "causal-inference-and-causal-ml"]),
+    ("Trustworthy LLM apps", ["ai-engineering", "evaluation-and-benchmarking-for-llms", "llm-security-and-red-teaming"]),
+    ("Vision to 3D worlds", ["deep-learning", "computer-vision", "3d-vision-nerfs-and-gaussian-splatting"]),
+    ("Inside modern LLMs", ["llms-from-scratch", "mixture-of-experts-and-efficient-llm-architectures", "interpretability"]),
 ]
 
 
@@ -299,7 +303,9 @@ def home_html(roadmaps, meta, upcoming):
 </a>""")
     paths = []
     for name, slugs in PATHS:
-        chain = '<span class="arrow" aria-hidden="true">→</span>'.join(f'<a href="{s}/">{escape(by_slug[s]["title"])}</a>' for s in slugs)
+        links = [f'<a href="{s}/">{escape(by_slug[s]["title"])}</a>' for s in slugs]
+        # Keep each arrow on the same line as the roadmap it points to, so wrapping never strands it.
+        chain = links[0] + "".join(f'<span class="hop"><span class="arrow" aria-hidden="true">→</span>{link}</span>' for link in links[1:])
         paths.append(f'<div class="path"><h3>{escape(name)}</h3><div class="chain">{chain}</div></div>')
     repo_cards = []
     for key in repos[:12]:
