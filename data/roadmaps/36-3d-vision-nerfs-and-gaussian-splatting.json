@@ -1,0 +1,97 @@
+{
+  "slug": "3d-vision-nerfs-and-gaussian-splatting",
+  "order": 36,
+  "title": "3D Vision, NeRFs & Gaussian Splatting",
+  "level": "Advanced",
+  "tagline": "Turn photos into 3D: camera geometry, stereo, structure from motion, depth networks, neural radiance fields, Gaussian splatting, and feed-forward reconstruction.",
+  "prereqs": "Computer Vision. Python & Math for AI (linear algebra). Deep Learning for the NeRF and splatting code. Training steps want an NVIDIA GPU or a cloud GPU.",
+  "steps": [
+    {
+      "title": "Pinhole cameras and perspective projection",
+      "video": "_EhY31MSbNM",
+      "why": "How a 3D point lands on a 2D image, the base of everything after."
+    },
+    {
+      "title": "Camera intrinsics and extrinsics",
+      "video": "2XM2Rb2pfyQ",
+      "why": "The two matrices that describe a camera's lens and its pose."
+    },
+    {
+      "title": "Depth from stereo",
+      "video": "hUVyDabn1Mg",
+      "why": "Two calibrated cameras plus disparity give you depth by triangulation."
+    },
+    {
+      "title": "Epipolar geometry",
+      "video": "6kpBqfgSPRc",
+      "why": "The constraint linking matching points across two uncalibrated views."
+    },
+    {
+      "title": "Structure from motion with COLMAP",
+      "video": "EdIuDLicU0c",
+      "why": "Recover camera poses and sparse 3D points from a photo collection.",
+      "repo": "colmap/colmap"
+    },
+    {
+      "title": "Depth from a single image",
+      "video": "sz30TDttIBA",
+      "why": "How neural networks learn to guess depth from one photo.",
+      "repo": "DepthAnything/Depth-Anything-V2"
+    },
+    {
+      "title": "Deep learning on 3D data",
+      "video": "7lxrKDKtykM",
+      "why": "Stanford CS231n lecture on voxels, point clouds, meshes, and implicit shapes."
+    },
+    {
+      "title": "Neural radiance fields (NeRF)",
+      "video": "wKsoGiENBHU",
+      "why": "A network that maps position and view direction to color and density."
+    },
+    {
+      "title": "Code NeRF in 100 lines of PyTorch",
+      "video": "Q1zqf5tfeJw",
+      "why": "Ray sampling, volume rendering, and training, written out in short code.",
+      "repo": "MaximeVandegar/Papers-in-100-Lines-of-Code"
+    },
+    {
+      "title": "Train a NeRF on your own scene",
+      "video": "h5EWiRRxYEQ",
+      "why": "Capture, train, and export a mesh with the open-source Nerfstudio toolkit.",
+      "repo": "nerfstudio-project/nerfstudio"
+    },
+    {
+      "title": "3D Gaussian splatting",
+      "video": "VkIJbpdTujE",
+      "why": "Swap the network for millions of 3D Gaussians that rasterize in real time."
+    },
+    {
+      "title": "Code Gaussian splatting in PyTorch",
+      "video": "ZXmN2gWPHus",
+      "why": "Projection, sorting, and alpha blending of Gaussians in about 300 lines.",
+      "repo": "nerfstudio-project/gsplat"
+    },
+    {
+      "title": "From your video to a splat with free tools",
+      "video": "nd084X0n7t4",
+      "why": "A practical capture-to-viewer pipeline using RealityScan, Brush, and SuperSplat.",
+      "repo": "ArthurBrussee/brush"
+    },
+    {
+      "title": "Feed-forward reconstruction: DUSt3R and MASt3R",
+      "video": "OJzj7uCCYaM",
+      "why": "Talk by a co-author: one network predicts 3D points from image pairs.",
+      "repo": "naver/mast3r"
+    },
+    {
+      "title": "Generating 3D models with diffusion",
+      "video": "C1E500opYHA",
+      "why": "How 2D diffusion models are used to create new 3D objects."
+    }
+  ],
+  "projects": [
+    "Calibrate your phone camera with a printed checkerboard in OpenCV and report its focal length and distortion.",
+    "Photograph one object from 40 angles, reconstruct it with COLMAP, then train both a NeRF and a Gaussian splat and compare quality and render speed.",
+    "Run Depth Anything V2 on 20 of your photos and turn three of them into point clouds you can rotate in a viewer."
+  ]
+}

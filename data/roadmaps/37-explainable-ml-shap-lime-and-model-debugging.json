@@ -1,0 +1,91 @@
+{
+  "slug": "explainable-ml-shap-lime-and-model-debugging",
+  "order": 37,
+  "title": "Explainable ML: SHAP, LIME & Model Debugging",
+  "level": "Intermediate",
+  "tagline": "Explain what your models do and why: glass-box models, feature importance, PDPs, LIME, SHAP and its limits, counterfactuals, saliency maps, and error analysis.",
+  "prereqs": "Machine Learning. Deep Learning for the Grad-CAM and integrated gradients steps.",
+  "steps": [
+    {
+      "title": "What explainable AI is",
+      "video": "OZJ1IgSgP9E",
+      "why": "Why we need explanations and the main families of methods."
+    },
+    {
+      "title": "Interpretable vs. explainable models",
+      "video": "VY7SCl_DFho",
+      "why": "Models you can read directly versus explanations added after training."
+    },
+    {
+      "title": "Glass-box models: Explainable Boosting Machines",
+      "video": "MREiHgHgl0k",
+      "why": "Microsoft Research on additive models that stay readable yet accurate.",
+      "repo": "interpretml/interpret"
+    },
+    {
+      "title": "Permutation feature importance",
+      "video": "U-iahfXlSoY",
+      "why": "Shuffle one feature, measure the drop in score, coded from scratch."
+    },
+    {
+      "title": "Partial dependence and ICE plots",
+      "video": "dEhbS37Kglc",
+      "why": "See how predictions change as one feature moves, on average and per row."
+    },
+    {
+      "title": "LIME",
+      "video": "d6j6bofhj2M",
+      "why": "Fit a simple local model around one prediction to approximate the black box.",
+      "repo": "marcotcr/lime"
+    },
+    {
+      "title": "Shapley values",
+      "video": "NBg7YirBTN8",
+      "why": "The game theory idea behind SHAP: average each feature's marginal contribution."
+    },
+    {
+      "title": "SHAP in Python",
+      "video": "L8_sVRhBDLU",
+      "why": "Waterfall, force, beeswarm, and dependence plots on a real model.",
+      "repo": "shap/shap"
+    },
+    {
+      "title": "The limits of SHAP",
+      "video": "zIbQgYxRBUc",
+      "why": "Correlated features, baselines, and why SHAP values are not causal effects."
+    },
+    {
+      "title": "Fooling LIME and SHAP",
+      "video": "4HyJIOenIlI",
+      "why": "Talk showing a biased model can be built to get innocent-looking explanations."
+    },
+    {
+      "title": "Counterfactual explanations",
+      "video": "UUZxRct8rIk",
+      "why": "The smallest input change that flips a decision, and its link to adversarial examples.",
+      "repo": "interpretml/DiCE"
+    },
+    {
+      "title": "Saliency maps with Grad-CAM",
+      "video": "_QiebC9WxOc",
+      "why": "Highlight the image regions a CNN's prediction depends on.",
+      "repo": "jacobgil/pytorch-grad-cam"
+    },
+    {
+      "title": "Integrated gradients and feature attribution",
+      "video": "RFE6xdfJvag",
+      "why": "Stanford lecture on gradient attribution methods and the axioms they satisfy.",
+      "repo": "meta-pytorch/captum"
+    },
+    {
+      "title": "Debugging models with error analysis",
+      "video": "ORrStCArmP4",
+      "why": "Andrew Ng's process for diagnosing bias, variance, and pipeline errors."
+    }
+  ],
+  "projects": [
+    "Train a gradient-boosted model on a public tabular dataset and compare its SHAP, permutation, and built-in importances in one short report.",
+    "Fit an Explainable Boosting Machine and an XGBoost model on the same data, then compare accuracy and what each says about the top three features.",
+    "Run Grad-CAM on 20 images a pretrained CNN gets wrong and write down what the heatmaps suggest it was looking at."
+  ]
+}

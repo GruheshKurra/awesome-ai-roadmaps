@@ -10,7 +10,7 @@
 <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge-flat2.svg" height="28"></a>
 </p>
 
-<p align="center"><b>35 roadmaps · 442 videos · 237 hours of video · 129 GitHub repos</b></p>
+<p align="center"><b>37 roadmaps · 471 videos · 248 hours of video · 142 GitHub repos</b></p>
 
 <p align="center"><a href="https://gruheshkurra.github.io/awesome-ai-roadmaps/"><b>Open the interactive website →</b></a> (track your progress, step by step)</p>
 
@@ -55,6 +55,8 @@
 | 33 | **[Medical AI & Imaging](roadmaps/medical-ai-and-imaging.md)**<br><sub>Work with medical images and clinical data: DICOM, segmentation with U-Net, MONAI, and nnU-Net, pathology, foundation models, bias, and regulation.</sub> | Intermediate | 12 | 6h 44m |
 | 34 | **[Self-Driving Cars & Autonomous Systems](roadmaps/self-driving-cars-and-autonomous-systems.md)**<br><sub>Follow the self-driving stack from sensors and localization through perception, prediction, and planning to end-to-end models and simulation.</sub> | Advanced | 13 | 8h 00m |
 | 35 | **[Mixture of Experts & Efficient LLM Architectures](roadmaps/mixture-of-experts-and-efficient-llm-architectures.md)**<br><sub>See how modern LLMs grow without getting slower: sparse mixture of experts, cheaper attention, linear attention, state space models, and hybrids.</sub> | Advanced | 13 | 6h 59m |
+| 36 | **[3D Vision, NeRFs & Gaussian Splatting](roadmaps/3d-vision-nerfs-and-gaussian-splatting.md)**<br><sub>Turn photos into 3D: camera geometry, stereo, structure from motion, depth networks, neural radiance fields, Gaussian splatting, and feed-forward reconstruction.</sub> | Advanced | 15 | 6h 08m |
+| 37 | **[Explainable ML: SHAP, LIME & Model Debugging](roadmaps/explainable-ml-shap-lime-and-model-debugging.md)**<br><sub>Explain what your models do and why: glass-box models, feature importance, PDPs, LIME, SHAP and its limits, counterfactuals, saliency maps, and error analysis.</sub> | Intermediate | 14 | 4h 43m |
 
 ## Pick a path
 
@@ -81,21 +83,21 @@ The GitHub repos the roadmaps use most. Clone them and code along.
 
 | Repo | Stars | Used in |
 | --- | ---: | --- |
-| [ollama/ollama](https://github.com/ollama/ollama) | ★ 186k | [AI Engineering](roadmaps/ai-engineering.md) |
-| [Comfy-Org/ComfyUI](https://github.com/Comfy-Org/ComfyUI) | ★ 145.1k | [Generative AI: Images & Video](roadmaps/generative-ai.md) |
-| [ggml-org/llama.cpp](https://github.com/ggml-org/llama.cpp) | ★ 133.4k | [Run, Serve & Scale AI](roadmaps/deploy-and-scale.md), [TinyML & Edge AI](roadmaps/tinyml-and-edge-ai.md) |
-| [openai/whisper](https://github.com/openai/whisper) | ★ 112k | [Speech & Audio AI](roadmaps/speech-and-audio-ai.md) |
+| [ollama/ollama](https://github.com/ollama/ollama) | ★ 186.1k | [AI Engineering](roadmaps/ai-engineering.md) |
+| [Comfy-Org/ComfyUI](https://github.com/Comfy-Org/ComfyUI) | ★ 145.3k | [Generative AI: Images & Video](roadmaps/generative-ai.md) |
+| [ggml-org/llama.cpp](https://github.com/ggml-org/llama.cpp) | ★ 133.5k | [Run, Serve & Scale AI](roadmaps/deploy-and-scale.md), [TinyML & Edge AI](roadmaps/tinyml-and-edge-ai.md) |
+| [openai/whisper](https://github.com/openai/whisper) | ★ 112.1k | [Speech & Audio AI](roadmaps/speech-and-audio-ai.md) |
 | [rasbt/LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch) | ★ 107.9k | [LLMs from Scratch](roadmaps/llms-from-scratch.md) |
-| [vllm-project/vllm](https://github.com/vllm-project/vllm) | ★ 96.4k | [Run, Serve & Scale AI](roadmaps/deploy-and-scale.md) |
+| [vllm-project/vllm](https://github.com/vllm-project/vllm) | ★ 96.5k | [Run, Serve & Scale AI](roadmaps/deploy-and-scale.md) |
 | [microsoft/ML-For-Beginners](https://github.com/microsoft/ML-For-Beginners) | ★ 92k | [Machine Learning](roadmaps/machine-learning.md) |
 | [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) | ★ 91.8k | [AI Agents & MCP](roadmaps/ai-agents.md) |
 | [mlabonne/llm-course](https://github.com/mlabonne/llm-course) | ★ 84.9k | [Fine-Tuning & Reasoning Models](roadmaps/fine-tuning.md) |
-| [dair-ai/Prompt-Engineering-Guide](https://github.com/dair-ai/Prompt-Engineering-Guide) | ★ 79.8k | [AI Engineering](roadmaps/ai-engineering.md) |
+| [dair-ai/Prompt-Engineering-Guide](https://github.com/dair-ai/Prompt-Engineering-Guide) | ★ 79.9k | [AI Engineering](roadmaps/ai-engineering.md) |
 | [unslothai/unsloth](https://github.com/unslothai/unsloth) | ★ 79.1k | [Fine-Tuning & Reasoning Models](roadmaps/fine-tuning.md) |
 | [microsoft/ai-agents-for-beginners](https://github.com/microsoft/ai-agents-for-beginners) | ★ 79k | [AI Agents & MCP](roadmaps/ai-agents.md) |
 | [karpathy/nanoGPT](https://github.com/karpathy/nanoGPT) | ★ 64.5k | [LLMs from Scratch](roadmaps/llms-from-scratch.md) |
 | [commaai/openpilot](https://github.com/commaai/openpilot) | ★ 64.1k | [Self-Driving Cars & Autonomous Systems](roadmaps/self-driving-cars-and-autonomous-systems.md) |
-| [ultralytics/ultralytics](https://github.com/ultralytics/ultralytics) | ★ 63.1k | [Computer Vision](roadmaps/computer-vision.md) |
+| [ultralytics/ultralytics](https://github.com/ultralytics/ultralytics) | ★ 63.2k | [Computer Vision](roadmaps/computer-vision.md) |
 
 ## How it works
 
@@ -110,8 +112,6 @@ The GitHub repos the roadmaps use most. Clone them and code along.
 New roadmaps are added regularly. Next up:
 
 - Classic NLP before LLMs
-- 3D Vision, NeRFs & Gaussian Splatting
-- Explainable ML: SHAP, LIME & Model Debugging
 - Anomaly Detection
 - Search & Information Retrieval
 - AI Coding Assistants & Code Models
