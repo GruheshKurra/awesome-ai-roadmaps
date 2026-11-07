@@ -1,0 +1,72 @@
+{
+  "slug": "anomaly-detection",
+  "order": 39,
+  "title": "Anomaly Detection",
+  "level": "Intermediate",
+  "tagline": "Find the rare and the unusual: statistical outliers, distance and density methods, isolation forests, one-class SVMs, autoencoders, fraud with imbalanced data, and explaining why a point was flagged.",
+  "prereqs": "Machine Learning. Deep Learning for the autoencoder step; Time Series & Forecasting helps there too.",
+  "steps": [
+    {
+      "title": "What anomaly detection is",
+      "video": "1TJZUERSSUo",
+      "why": "Kinds of anomalies, and why you usually train on mostly normal data."
+    },
+    {
+      "title": "Outliers by z-score",
+      "video": "KFuEAGR3HS4",
+      "why": "Flag points far from the mean, which works best on roughly normal data."
+    },
+    {
+      "title": "Multivariate outliers with Mahalanobis distance",
+      "video": "xXhLvheEF7o",
+      "why": "Distance that accounts for correlation; assumes a roughly elliptical data cloud."
+    },
+    {
+      "title": "Outliers as DBSCAN noise points",
+      "video": "RDZUdRSDOok",
+      "why": "Points in no dense cluster become noise, a simple outlier signal."
+    },
+    {
+      "title": "Local outlier factor",
+      "video": "7L23sCOZjns",
+      "why": "Compare a point's density to its neighbors' to find local outliers."
+    },
+    {
+      "title": "Isolation forest",
+      "video": "O9VvmWj-JAk",
+      "why": "Anomalies tend to need fewer random splits to isolate, coded in Python.",
+      "repo": "yzhao062/pyod"
+    },
+    {
+      "title": "One-class SVM",
+      "video": "vmE9ScCb2KY",
+      "why": "Learn a boundary around normal-only data and flag what falls outside it."
+    },
+    {
+      "title": "LSTM autoencoder for time-series anomalies",
+      "video": "6S2v7G-OupA",
+      "why": "Train on normal sequences, then flag windows with high reconstruction error."
+    },
+    {
+      "title": "Fraud detection with imbalanced data",
+      "video": "M_Cu7r9gik4",
+      "why": "Credit card fraud with under 1% positives: resampling and the right metrics."
+    },
+    {
+      "title": "Explain anomalies with SHAP",
+      "video": "ucgR0E_LXCk",
+      "why": "See which features pushed an isolation forest to flag a point.",
+      "repo": "shap/shap"
+    },
+    {
+      "title": "Where the field stands",
+      "video": "12Xq9OLdQwQ",
+      "why": "A Microsoft Research talk on algorithms, benchmarks, and explaining anomalies."
+    }
+  ],
+  "projects": [
+    "Compare z-score, LOF, and isolation forest on a public credit card fraud dataset using PR-AUC.",
+    "Build an LSTM autoencoder that flags unusual windows in server CPU or sensor data, and plot the alerts.",
+    "For the top 20 flagged points of any detector, show a SHAP explanation of why each was flagged."
+  ]
+}

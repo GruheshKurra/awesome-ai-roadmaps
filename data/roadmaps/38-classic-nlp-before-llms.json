@@ -1,0 +1,94 @@
+{
+  "slug": "classic-nlp-before-llms",
+  "order": 38,
+  "title": "Classic NLP Before LLMs",
+  "level": "Intermediate",
+  "tagline": "The NLP toolkit that came before transformers: tokenizing and normalizing text, TF-IDF, n-grams, Naive Bayes, HMM tagging, NER, topic models, word vectors, and seq2seq with attention.",
+  "prereqs": "Machine Learning. Deep Learning for the seq2seq and attention steps.",
+  "steps": [
+    {
+      "title": "What NLP is",
+      "video": "fLvJ8VdHLA0",
+      "why": "The main NLP tasks and how a text pipeline fits together."
+    },
+    {
+      "title": "Text tokenization",
+      "video": "LZFriJ85BfM",
+      "why": "Split raw text into tokens and see why the choices matter."
+    },
+    {
+      "title": "Stemming and lemmatization",
+      "video": "HHAilAC3cXw",
+      "why": "Reduce words to a shared base form with NLTK and spaCy.",
+      "repo": "codebasics/nlp-tutorials"
+    },
+    {
+      "title": "TF-IDF",
+      "video": "zLMEnNbdh4Q",
+      "why": "Weight word counts by how rare each word is across documents."
+    },
+    {
+      "title": "N-gram language models",
+      "video": "GiyMGBuu45w",
+      "why": "Predict the next word from counts of the previous few words."
+    },
+    {
+      "title": "Naive Bayes for spam filtering",
+      "video": "O2L2Uv9pdDA",
+      "why": "A fast text classifier that assumes words are independent given the class."
+    },
+    {
+      "title": "Sentiment analysis: VADER to RoBERTa",
+      "video": "QpzMWQvxXWk",
+      "why": "Score reviews with a word-list method, then a pretrained model, and compare."
+    },
+    {
+      "title": "Part-of-speech tagging",
+      "video": "fv6Z3ZrAWuU",
+      "why": "Tag each word's grammatical role with a hidden Markov model."
+    },
+    {
+      "title": "The Viterbi algorithm",
+      "video": "IqXdjdOgXPM",
+      "why": "Find the most likely tag sequence with dynamic programming."
+    },
+    {
+      "title": "Named entity recognition",
+      "video": "2XUhKpH0p4M",
+      "why": "Pull people, places, and organizations out of text with spaCy.",
+      "repo": "explosion/spaCy"
+    },
+    {
+      "title": "Topic modeling with LDA",
+      "video": "T05t-SqKArY",
+      "why": "Model each document as a mix of topics, and each topic as a mix of words.",
+      "repo": "piskvorky/gensim"
+    },
+    {
+      "title": "Word embeddings and word2vec",
+      "video": "viZrOnJclY0",
+      "why": "Learn word vectors by predicting the words around each word."
+    },
+    {
+      "title": "GloVe and fastText",
+      "video": "9S0-OC4LFNo",
+      "why": "Word vectors from co-occurrence counts and from subword pieces."
+    },
+    {
+      "title": "Seq2seq encoder-decoder models",
+      "video": "L8HKweZIOmg",
+      "why": "Map one sequence to another, as in translation, with two LSTMs.",
+      "repo": "bentrevett/pytorch-seq2seq"
+    },
+    {
+      "title": "Attention for seq2seq",
+      "video": "PSs6nxngL6k",
+      "why": "Let the decoder look back at every input word, the step toward transformers."
+    }
+  ],
+  "projects": [
+    "Build a spam filter with TF-IDF and Naive Bayes, and report precision and recall on a held-out set.",
+    "Run LDA on a news or Reddit dataset with gensim and label the top 10 topics by their words.",
+    "Train word2vec on a book from Project Gutenberg and show nearest neighbors and analogies."
+  ]
+}

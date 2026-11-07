@@ -29,3 +29,5 @@ Level: **Intermediate** · 14 steps · 4h 43m of video · Prerequisites: Machine
 - Train a gradient-boosted model on a public tabular dataset and compare its SHAP, permutation, and built-in importances in one short report.
 - Fit an Explainable Boosting Machine and an XGBoost model on the same data, then compare accuracy and what each says about the top three features.
 - Run Grad-CAM on 20 images a pretrained CNN gets wrong and write down what the heatmaps suggest it was looking at.
+
+**Next:** [Classic NLP Before LLMs](classic-nlp-before-llms.md)
