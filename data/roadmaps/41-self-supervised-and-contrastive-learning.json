@@ -1,0 +1,80 @@
+{
+  "slug": "self-supervised-and-contrastive-learning",
+  "order": 41,
+  "title": "Self-Supervised & Contrastive Learning",
+  "level": "Advanced",
+  "tagline": "How models learn strong features from unlabeled data: contrastive losses, SimCLR, BYOL, masked autoencoders, DINO through DINOv3, and JEPA's predict-the-representation idea.",
+  "prereqs": "Deep Learning and Computer Vision, including vision transformers. Multimodal & Vision-Language Models covers CLIP, the image-text side of contrastive learning.",
+  "steps": [
+    {
+      "title": "What self-supervised learning is",
+      "video": "iGJ1XSkCyU0",
+      "why": "Learn features from unlabeled data with training targets made from the data itself."
+    },
+    {
+      "title": "Self-supervised learning in CS231N",
+      "video": "4howBU7THbM",
+      "why": "Stanford lecture tour from pretext tasks to contrastive and masked methods."
+    },
+    {
+      "title": "Contrastive learning in five minutes",
+      "video": "sftIkJ8MYL4",
+      "why": "The core idea: similar pairs close together, dissimilar pairs far apart."
+    },
+    {
+      "title": "Contrastive loss",
+      "video": "dC3_IKaBXTk",
+      "why": "The loss behind that idea, worked through step by step."
+    },
+    {
+      "title": "SimCLR",
+      "video": "UqJauYELn6c",
+      "why": "Two augmented views of one image should match; other batch images are negatives.",
+      "repo": "sthalles/SimCLR"
+    },
+    {
+      "title": "BYOL: no negative pairs",
+      "video": "YPfUiOMYOEE",
+      "why": "An online network predicts a slow momentum target's embedding, without negatives.",
+      "repo": "lucidrains/byol-pytorch"
+    },
+    {
+      "title": "Masked autoencoders",
+      "video": "Dp6iICL2dVI",
+      "why": "Mask most image patches and train a ViT to reconstruct the missing pixels."
+    },
+    {
+      "title": "DINO: self-distillation",
+      "video": "h3ij3F3cPIk",
+      "why": "A student matches a momentum teacher across image crops, with no labels."
+    },
+    {
+      "title": "DINOv2",
+      "video": "csEgtSh7jV4",
+      "why": "DINO-style training scaled on curated data, giving general-purpose frozen features.",
+      "repo": "facebookresearch/dinov2"
+    },
+    {
+      "title": "DINOv3",
+      "video": "oGTasd3cliM",
+      "why": "Larger-scale training that keeps dense patch features useful for many tasks.",
+      "repo": "facebookresearch/dinov3"
+    },
+    {
+      "title": "I-JEPA",
+      "video": "6bJIkfi8H-E",
+      "why": "Predict the representations of masked image regions instead of their pixels."
+    },
+    {
+      "title": "V-JEPA",
+      "video": "7UkJPwz_N_0",
+      "why": "The same feature-prediction idea applied to unlabeled video clips.",
+      "repo": "facebookresearch/jepa"
+    }
+  ],
+  "projects": [
+    "Pretrain SimCLR on CIFAR-10 without labels, then train a linear classifier on the frozen features and compare it with a supervised baseline.",
+    "Use frozen DINOv2 features for k-nearest-neighbor classification on a small image set you collect, and plot the embeddings in 2D.",
+    "Show PCA of DINOv2 patch features as colors on your own photos, and point out where objects separate without any labels."
+  ]
+}

@@ -26,3 +26,5 @@ Level: **Intermediate** · 11 steps · 4h 41m of video · Prerequisites: Machine
 - Compare z-score, LOF, and isolation forest on a public credit card fraud dataset using PR-AUC.
 - Build an LSTM autoencoder that flags unusual windows in server CPU or sensor data, and plot the alerts.
 - For the top 20 flagged points of any detector, show a SHAP explanation of why each was flagged.
+
+**Next:** [Document AI & OCR](document-ai-and-ocr.md)

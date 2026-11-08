@@ -1,0 +1,72 @@
+{
+  "slug": "document-ai-and-ocr",
+  "order": 40,
+  "title": "Document AI & OCR",
+  "level": "Intermediate",
+  "tagline": "Get text, tables, and fields out of scans and PDFs: image cleanup, classic OCR engines, handwriting recognition, layout-aware models, PDF-to-Markdown tools, and vision-language models that read pages directly.",
+  "prereqs": "Machine Learning and Deep Learning. Computer Vision helps for the handwriting and layout steps. The last two steps run 3B-7B vision-language models, so use a GPU or Colab there.",
+  "steps": [
+    {
+      "title": "What OCR is",
+      "video": "ZNrteLp_SvY",
+      "why": "How software goes from scanned pixels to recognized characters."
+    },
+    {
+      "title": "Clean up images before OCR",
+      "video": "ADV-AjAXHdc",
+      "why": "Binarize, denoise, deskew, and remove borders with OpenCV so OCR misreads less.",
+      "repo": "wjbmattingly/ocr_python_textbook"
+    },
+    {
+      "title": "Read text with pytesseract, EasyOCR, and keras-ocr",
+      "video": "oyqNdcbKhew",
+      "why": "Run three open OCR libraries on real photos and compare their results.",
+      "repo": "JaidedAI/EasyOCR"
+    },
+    {
+      "title": "Handwriting recognition with a CNN, LSTM, and CTC",
+      "video": "WhRC31SlXzA",
+      "why": "Train a CNN-LSTM with CTC loss to read handwritten words from IAM."
+    },
+    {
+      "title": "Extract tables from PDFs",
+      "video": "yKAuUAPREMw",
+      "why": "Compare Python libraries for pulling tables out of PDFs, and where each fails."
+    },
+    {
+      "title": "Layout-aware models with LayoutLM",
+      "video": "aGcLSH9TTLU",
+      "why": "Feed word positions with the text so a model can label form fields.",
+      "repo": "microsoft/unilm"
+    },
+    {
+      "title": "Parse documents with Docling",
+      "video": "zSA7ylHP6AY",
+      "why": "Turn PDFs and office files into structured text and tables for LLM apps.",
+      "repo": "docling-project/docling"
+    },
+    {
+      "title": "Convert PDFs to Markdown with Marker",
+      "video": "mdLBr9IMmgI",
+      "why": "Turn complex PDFs into Markdown that keeps headings and tables.",
+      "repo": "datalab-to/marker"
+    },
+    {
+      "title": "Vision-language models as OCR: olmOCR",
+      "video": "38loqDtlLok",
+      "why": "A fine-tuned 7B vision-language model reads page images into clean text.",
+      "repo": "allenai/olmocr"
+    },
+    {
+      "title": "DeepSeek-OCR and text as vision tokens",
+      "video": "uWrBH4iN5y4",
+      "why": "Encode a page as a few vision tokens, then decode its text from them.",
+      "repo": "deepseek-ai/DeepSeek-OCR"
+    }
+  ],
+  "projects": [
+    "Photograph 20 receipts, clean them with OpenCV, run two OCR engines, and report each one's character error rate against your own transcriptions.",
+    "Convert 10 PDFs with tables into Markdown using Docling and Marker, and write up where each one broke a table or the reading order.",
+    "Fine-tune LayoutLM on the FUNSD forms dataset to label questions and answers, and report per-label F1."
+  ]
+}
