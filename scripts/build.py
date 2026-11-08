@@ -372,7 +372,7 @@ def home_html(roadmaps, meta, upcoming):
   {faq_html}
 </section>
 </main>"""
-    description = f"{len(roadmaps)} free AI roadmaps built from {videos} YouTube videos and {len(repos)} GitHub repos: Python, ML, deep learning, LLMs, agents, fine-tuning, vision, diffusion, and deployment."
+    description = f"{len(roadmaps)} free AI roadmaps built from {videos} YouTube videos and {len(repos)} GitHub repos, from Python and ML basics to LLMs, agents, vision, robotics, and AI safety."
     schema = [
         {"@context": "https://schema.org", "@type": "WebSite", "name": "AI Roadmaps", "alternateName": "Awesome AI Roadmaps", "url": f"{SITE_URL}/", "description": description, "inLanguage": "en", "sameAs": [REPO_URL]},
         {"@context": "https://schema.org", "@type": "ItemList", "name": "AI roadmaps", "itemListElement": [{"@type": "ListItem", "position": i, "url": f"{SITE_URL}/{r['slug']}/", "name": r["title"]} for i, r in enumerate(roadmaps, 1)]},
