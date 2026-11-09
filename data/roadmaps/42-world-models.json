@@ -1,0 +1,69 @@
+{
+  "slug": "world-models",
+  "order": 42,
+  "title": "World Models",
+  "level": "Advanced",
+  "tagline": "Models that learn how an environment responds to actions, then plan or train agents inside it: model-based RL, Dreamer, MuZero, Genie, world foundation models, and JEPA-style planning.",
+  "prereqs": "Reinforcement Learning and Generative AI: Images & Video. Self-Supervised & Contrastive Learning helps for the JEPA steps.",
+  "steps": [
+    {
+      "title": "What world models are",
+      "video": "MqjvfJTCuqw",
+      "why": "The core idea: a learned model that predicts how a world changes after an action."
+    },
+    {
+      "title": "Model-based reinforcement learning",
+      "video": "2o1yrkbpcUk",
+      "why": "Learn a dynamics model from experience, then use it to plan or improve a policy."
+    },
+    {
+      "title": "World Models (Ha and Schmidhuber, 2018)",
+      "video": "dPsXxLyqpfs",
+      "why": "A VAE compresses frames, an RNN predicts the next latent, a tiny controller acts.",
+      "repo": "ctallec/world-models"
+    },
+    {
+      "title": "Dreamer: learn behaviour inside the model",
+      "video": "o75ybZ-6Uu8",
+      "why": "DreamerV2 trains its actor and critic on imagined latent rollouts, mastering Atari.",
+      "repo": "danijar/dreamerv2"
+    },
+    {
+      "title": "MuZero: plan with a learned model",
+      "video": "L0A86LmH7Yw",
+      "why": "Its author explains a model that predicts reward, value, and policy, not pixels.",
+      "repo": "werner-duvaud/muzero-general"
+    },
+    {
+      "title": "Genie: worlds you can walk through",
+      "video": "n5x6yXDj0uo",
+      "why": "The Genie 3 team on generating frames in real time from a user's actions."
+    },
+    {
+      "title": "World foundation models",
+      "video": "pdV9eaLy--E",
+      "why": "Large video-trained models used to generate training data and test robots and cars."
+    },
+    {
+      "title": "NVIDIA Cosmos, an overview",
+      "video": "kChwwFb5gMU",
+      "why": "NVIDIA's GTC 2025 introduction to its open world foundation model platform."
+    },
+    {
+      "title": "Predict in representation space: LeCun's case",
+      "video": "72Xj8k5WQX4",
+      "why": "Why LeCun argues world models should predict abstract features, not every pixel."
+    },
+    {
+      "title": "V-JEPA 2: plan robot actions",
+      "video": "LY_J9-7BjOc",
+      "why": "A self-supervised video model gets an action-conditioned predictor for robot planning.",
+      "repo": "facebookresearch/vjepa2"
+    }
+  ],
+  "projects": [
+    "Recreate the 2018 World Models pipeline on CarRacing: train the VAE, the next-latent RNN, and a small controller, and compare a policy trained in the dream with one trained on real frames.",
+    "Train muzero-general on a small game such as tic-tac-toe or CartPole, then plot how often its learned-model rollouts predict the true reward a few steps ahead.",
+    "Learn a dynamics model for a Gymnasium environment from random play, then use it for model-predictive control and compare reward against a model-free baseline."
+  ]
+}

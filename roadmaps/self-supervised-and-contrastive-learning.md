@@ -27,3 +27,5 @@ Level: **Advanced** · 12 steps · 4h 52m of video · Prerequisites: Deep Learni
 - Pretrain SimCLR on CIFAR-10 without labels, then train a linear classifier on the frozen features and compare it with a supervised baseline.
 - Use frozen DINOv2 features for k-nearest-neighbor classification on a small image set you collect, and plot the embeddings in 2D.
 - Show PCA of DINOv2 patch features as colors on your own photos, and point out where objects separate without any labels.
+
+**Next:** [World Models](world-models.md)

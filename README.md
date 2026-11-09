@@ -10,11 +10,24 @@
 <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge-flat2.svg" height="28"></a>
 </p>
 
-<p align="center"><b>41 roadmaps · 519 videos · 265 hours of video · 159 GitHub repos</b></p>
+<p align="center"><b>42 roadmaps · 529 videos · 271 hours of video · 163 GitHub repos</b></p>
 
 <p align="center"><a href="https://gruheshkurra.github.io/awesome-ai-roadmaps/"><b>Open the interactive website →</b></a> (track your progress, step by step)</p>
 
 <p align="center"><a href="https://gruheshkurra.github.io/awesome-ai-roadmaps/"><picture><source media="(prefers-color-scheme: dark)" srcset=".github/assets/website-dark.jpg"><img src=".github/assets/website-light.jpg" width="800" alt="The AI Roadmaps website: a short headline, a Start button, and the first roadmap's videos in order"></picture></a></p>
+
+## Pick a path
+
+New here? Follow the path that matches your goal, or browse [all 42 roadmaps](#roadmaps) below.
+
+- **Total beginner:** [Python & Math for AI](roadmaps/foundations.md) → [Machine Learning](roadmaps/machine-learning.md) → [Deep Learning](roadmaps/deep-learning.md)
+- **Developer building with AI:** [AI Engineering](roadmaps/ai-engineering.md) → [AI Agents & MCP](roadmaps/ai-agents.md)
+- **How LLMs really work:** [Deep Learning](roadmaps/deep-learning.md) → [LLMs from Scratch](roadmaps/llms-from-scratch.md) → [Fine-Tuning & Reasoning Models](roadmaps/fine-tuning.md)
+- **Production and performance:** [Machine Learning](roadmaps/machine-learning.md) → [Run, Serve & Scale AI](roadmaps/deploy-and-scale.md)
+- **Data scientist:** [Machine Learning](roadmaps/machine-learning.md) → [Explainable ML: SHAP, LIME & Model Debugging](roadmaps/explainable-ml-shap-lime-and-model-debugging.md) → [Causal Inference & Causal ML](roadmaps/causal-inference-and-causal-ml.md)
+- **Trustworthy LLM apps:** [AI Engineering](roadmaps/ai-engineering.md) → [Evaluation & Benchmarking for LLMs](roadmaps/evaluation-and-benchmarking-for-llms.md) → [LLM Security & Red Teaming](roadmaps/llm-security-and-red-teaming.md)
+- **Vision to 3D worlds:** [Deep Learning](roadmaps/deep-learning.md) → [Computer Vision](roadmaps/computer-vision.md) → [3D Vision, NeRFs & Gaussian Splatting](roadmaps/3d-vision-nerfs-and-gaussian-splatting.md)
+- **Inside modern LLMs:** [LLMs from Scratch](roadmaps/llms-from-scratch.md) → [Mixture of Experts & Efficient LLM Architectures](roadmaps/mixture-of-experts-and-efficient-llm-architectures.md) → [Interpretability](roadmaps/interpretability.md)
 
 ## Roadmaps
 
@@ -61,17 +74,7 @@
 | 39 | **[Anomaly Detection](roadmaps/anomaly-detection.md)**<br><sub>Find the rare and the unusual: statistical outliers, distance and density methods, isolation forests, one-class SVMs, autoencoders, fraud with imbalanced data, and explaining why a point was flagged.</sub> | Intermediate | 11 | 4h 41m |
 | 40 | **[Document AI & OCR](roadmaps/document-ai-and-ocr.md)**<br><sub>Get text, tables, and fields out of scans and PDFs: image cleanup, classic OCR engines, handwriting recognition, layout-aware models, PDF-to-Markdown tools, and vision-language models that read pages directly.</sub> | Intermediate | 10 | 3h 35m |
 | 41 | **[Self-Supervised & Contrastive Learning](roadmaps/self-supervised-and-contrastive-learning.md)**<br><sub>How models learn strong features from unlabeled data: contrastive losses, SimCLR, BYOL, masked autoencoders, DINO through DINOv3, and JEPA's predict-the-representation idea.</sub> | Advanced | 12 | 4h 52m |
-
-## Pick a path
-
-- **Total beginner:** [Python & Math for AI](roadmaps/foundations.md) → [Machine Learning](roadmaps/machine-learning.md) → [Deep Learning](roadmaps/deep-learning.md)
-- **Developer building with AI:** [AI Engineering](roadmaps/ai-engineering.md) → [AI Agents & MCP](roadmaps/ai-agents.md)
-- **How LLMs really work:** [Deep Learning](roadmaps/deep-learning.md) → [LLMs from Scratch](roadmaps/llms-from-scratch.md) → [Fine-Tuning & Reasoning Models](roadmaps/fine-tuning.md)
-- **Production and performance:** [Machine Learning](roadmaps/machine-learning.md) → [Run, Serve & Scale AI](roadmaps/deploy-and-scale.md)
-- **Data scientist:** [Machine Learning](roadmaps/machine-learning.md) → [Explainable ML: SHAP, LIME & Model Debugging](roadmaps/explainable-ml-shap-lime-and-model-debugging.md) → [Causal Inference & Causal ML](roadmaps/causal-inference-and-causal-ml.md)
-- **Trustworthy LLM apps:** [AI Engineering](roadmaps/ai-engineering.md) → [Evaluation & Benchmarking for LLMs](roadmaps/evaluation-and-benchmarking-for-llms.md) → [LLM Security & Red Teaming](roadmaps/llm-security-and-red-teaming.md)
-- **Vision to 3D worlds:** [Deep Learning](roadmaps/deep-learning.md) → [Computer Vision](roadmaps/computer-vision.md) → [3D Vision, NeRFs & Gaussian Splatting](roadmaps/3d-vision-nerfs-and-gaussian-splatting.md)
-- **Inside modern LLMs:** [LLMs from Scratch](roadmaps/llms-from-scratch.md) → [Mixture of Experts & Efficient LLM Architectures](roadmaps/mixture-of-experts-and-efficient-llm-architectures.md) → [Interpretability](roadmaps/interpretability.md)
+| 42 | **[World Models](roadmaps/world-models.md)**<br><sub>Models that learn how an environment responds to actions, then plan or train agents inside it: model-based RL, Dreamer, MuZero, Genie, world foundation models, and JEPA-style planning.</sub> | Advanced | 10 | 6h 07m |
 
 ## Start right now
 
@@ -91,20 +94,20 @@ The GitHub repos the roadmaps use most. Clone them and code along.
 
 | Repo | Stars | Used in |
 | --- | ---: | --- |
-| [ollama/ollama](https://github.com/ollama/ollama) | ★ 186.3k | [AI Engineering](roadmaps/ai-engineering.md) |
-| [Comfy-Org/ComfyUI](https://github.com/Comfy-Org/ComfyUI) | ★ 145.7k | [Generative AI: Images & Video](roadmaps/generative-ai.md) |
-| [ggml-org/llama.cpp](https://github.com/ggml-org/llama.cpp) | ★ 133.7k | [Run, Serve & Scale AI](roadmaps/deploy-and-scale.md), [TinyML & Edge AI](roadmaps/tinyml-and-edge-ai.md) |
-| [openai/whisper](https://github.com/openai/whisper) | ★ 112.2k | [Speech & Audio AI](roadmaps/speech-and-audio-ai.md) |
-| [rasbt/LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch) | ★ 108k | [LLMs from Scratch](roadmaps/llms-from-scratch.md) |
-| [vllm-project/vllm](https://github.com/vllm-project/vllm) | ★ 96.5k | [Run, Serve & Scale AI](roadmaps/deploy-and-scale.md) |
+| [ollama/ollama](https://github.com/ollama/ollama) | ★ 186.4k | [AI Engineering](roadmaps/ai-engineering.md) |
+| [Comfy-Org/ComfyUI](https://github.com/Comfy-Org/ComfyUI) | ★ 145.9k | [Generative AI: Images & Video](roadmaps/generative-ai.md) |
+| [ggml-org/llama.cpp](https://github.com/ggml-org/llama.cpp) | ★ 133.8k | [Run, Serve & Scale AI](roadmaps/deploy-and-scale.md), [TinyML & Edge AI](roadmaps/tinyml-and-edge-ai.md) |
+| [openai/whisper](https://github.com/openai/whisper) | ★ 112.3k | [Speech & Audio AI](roadmaps/speech-and-audio-ai.md) |
+| [rasbt/LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch) | ★ 108.1k | [LLMs from Scratch](roadmaps/llms-from-scratch.md) |
+| [vllm-project/vllm](https://github.com/vllm-project/vllm) | ★ 96.6k | [Run, Serve & Scale AI](roadmaps/deploy-and-scale.md) |
 | [microsoft/ML-For-Beginners](https://github.com/microsoft/ML-For-Beginners) | ★ 92.1k | [Machine Learning](roadmaps/machine-learning.md) |
 | [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) | ★ 91.9k | [AI Agents & MCP](roadmaps/ai-agents.md) |
 | [mlabonne/llm-course](https://github.com/mlabonne/llm-course) | ★ 85k | [Fine-Tuning & Reasoning Models](roadmaps/fine-tuning.md) |
 | [dair-ai/Prompt-Engineering-Guide](https://github.com/dair-ai/Prompt-Engineering-Guide) | ★ 79.9k | [AI Engineering](roadmaps/ai-engineering.md) |
-| [unslothai/unsloth](https://github.com/unslothai/unsloth) | ★ 79.2k | [Fine-Tuning & Reasoning Models](roadmaps/fine-tuning.md) |
 | [microsoft/ai-agents-for-beginners](https://github.com/microsoft/ai-agents-for-beginners) | ★ 79.2k | [AI Agents & MCP](roadmaps/ai-agents.md) |
+| [unslothai/unsloth](https://github.com/unslothai/unsloth) | ★ 79.2k | [Fine-Tuning & Reasoning Models](roadmaps/fine-tuning.md) |
 | [docling-project/docling](https://github.com/docling-project/docling) | ★ 70.3k | [Document AI & OCR](roadmaps/document-ai-and-ocr.md) |
-| [karpathy/nanoGPT](https://github.com/karpathy/nanoGPT) | ★ 64.5k | [LLMs from Scratch](roadmaps/llms-from-scratch.md) |
+| [karpathy/nanoGPT](https://github.com/karpathy/nanoGPT) | ★ 64.6k | [LLMs from Scratch](roadmaps/llms-from-scratch.md) |
 | [commaai/openpilot](https://github.com/commaai/openpilot) | ★ 64.1k | [Self-Driving Cars & Autonomous Systems](roadmaps/self-driving-cars-and-autonomous-systems.md) |
 
 ## How it works
@@ -120,9 +123,7 @@ The GitHub repos the roadmaps use most. Clone them and code along.
 New roadmaps are added regularly. Next up:
 
 - Search & Information Retrieval
-- AI Coding Assistants & Code Models
 - Tabular ML & Gradient Boosting
-- Video Generation & World Models
 - AI for Finance
 
 Watch or star the repo to get them as they land.
