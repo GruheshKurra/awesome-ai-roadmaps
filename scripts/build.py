@@ -150,17 +150,17 @@ def readme(roadmaps, meta, upcoming):
         '<img src=".github/assets/website-light.jpg" width="800" alt="The AI Roadmaps website: a short headline, a Start button, and the first roadmap\'s videos in order">'
         '</picture></a></p>',
         "",
-        "## Roadmaps",
+        "## Pick a path",
         "",
-        "| # | Roadmap | Level | Steps | Video time |",
-        "| ---: | --- | --- | ---: | ---: |",
+        f"New here? Follow the path that matches your goal, or browse [all {len(roadmaps)} roadmaps](#roadmaps) below.",
+        "",
     ]
-    for r in roadmaps:
-        out.append(f"| {r['order']} | **[{r['title']}](roadmaps/{r['slug']}.md)**<br><sub>{md_cell(r['tagline'])}</sub> | {r['level']} | {len(r['steps'])} | {duration(r['seconds'])} |")
-    out += ["", "## Pick a path", ""]
     for name, slugs in PATHS:
         chain = " → ".join(f"[{by_slug[s]['title']}](roadmaps/{s}.md)" for s in slugs)
         out.append(f"- **{name}:** {chain}")
+    out += ["", "## Roadmaps", "", "| # | Roadmap | Level | Steps | Video time |", "| ---: | --- | --- | ---: | ---: |"]
+    for r in roadmaps:
+        out.append(f"| {r['order']} | **[{r['title']}](roadmaps/{r['slug']}.md)**<br><sub>{md_cell(r['tagline'])}</sub> | {r['level']} | {len(r['steps'])} | {duration(r['seconds'])} |")
     start = roadmaps[0]
     out += ["", "## Start right now", "", f"The first five steps of **{start['title']}**. Click a thumbnail to watch.", "", "<table><tr>"]
     for step in start["steps"][:5]:
