@@ -3,7 +3,7 @@
 
 **Learn qubits, gates, and circuits, then train variational circuits, quantum classifiers, and quantum kernels, and see where the limits are.**
 
-Level: **Advanced** · 14 steps · 5h 51m of video · Prerequisites: Machine Learning and Python & Math for AI (vectors, matrices, complex numbers help). No physics background needed.
+Level: **Advanced** · 14 steps · 5h 51m of video · Prerequisites: [Machine Learning](machine-learning.md) and [Python & Math for AI](foundations.md) (vectors, matrices, complex numbers help). No physics background needed.
 
 [Track your progress on the website](https://gruheshkurra.github.io/awesome-ai-roadmaps/quantum-machine-learning/) · [All roadmaps](../README.md)
 

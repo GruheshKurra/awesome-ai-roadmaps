@@ -3,7 +3,7 @@
 
 **Models that learn how an environment responds to actions, then plan or train agents inside it: model-based RL, Dreamer, MuZero, Genie, world foundation models, and JEPA-style planning.**
 
-Level: **Advanced** · 10 steps · 6h 07m of video · Prerequisites: Reinforcement Learning and Generative AI: Images & Video. Self-Supervised & Contrastive Learning helps for the JEPA steps.
+Level: **Advanced** · 10 steps · 6h 07m of video · Prerequisites: [Reinforcement Learning](reinforcement-learning.md) and [Generative AI: Images & Video](generative-ai.md). [Self-Supervised & Contrastive Learning](self-supervised-and-contrastive-learning.md) helps for the JEPA steps.
 
 [Track your progress on the website](https://gruheshkurra.github.io/awesome-ai-roadmaps/world-models/) · [All roadmaps](../README.md)
 

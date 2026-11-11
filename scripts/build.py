@@ -8,6 +8,7 @@ data/meta.json, which scripts/refresh_meta.py fills in.
 """
 
 import json
+import re
 import shutil
 import subprocess
 import sys
@@ -117,6 +118,16 @@ def json_ld(data):
     return f'<script type="application/ld+json">{text}</script>'
 
 
+def link_prereqs(text, roadmaps, href, fmt):
+    by_title = {escape(r["title"]) if fmt == "html" else r["title"]: r["slug"] for r in roadmaps}
+    text = escape(text) if fmt == "html" else text
+    pattern = re.compile("|".join(re.escape(t) for t in sorted(by_title, key=len, reverse=True)))
+    def repl(m):
+        label = m.group(0)
+        return f'<a href="{href(by_title[label])}">{label}</a>' if fmt == "html" else f"[{label}]({href(by_title[label])})"
+    return pattern.sub(repl, text)
+
+
 def md_cell(text):
     return text.replace("|", "\\|")
 
@@ -201,7 +212,7 @@ def roadmap_md(r, roadmaps, meta):
         "",
         f"**{r['tagline']}**",
         "",
-        f"Level: **{r['level']}** · {len(r['steps'])} steps · {duration(r['seconds'])} of video · Prerequisites: {r['prereqs']}",
+        f"Level: **{r['level']}** · {len(r['steps'])} steps · {duration(r['seconds'])} of video · Prerequisites: {link_prereqs(r['prereqs'], roadmaps, lambda slug: slug + '.md', 'md')}",
         "",
         f"[Track your progress on the website]({SITE_URL}/{r['slug']}/) · [All roadmaps](../README.md)",
         "",
@@ -429,7 +440,7 @@ def roadmap_html(r, roadmaps, meta):
   <div class="pills"><span class="pill level-{r['level'].lower()}">{r['level']}</span><span class="muted">Roadmap {r['order']:02d} · {len(r['steps'])} steps · {duration(r['seconds'])} of video</span></div>
   <h1>{escape(r['title'])}</h1>
   <p class="lead">{escape(r['tagline'])}</p>
-  <p class="muted"><strong>Before this:</strong> {escape(r['prereqs'])}</p>
+  <p class="muted"><strong>Before this:</strong> {link_prereqs(r['prereqs'], roadmaps, lambda slug: '../' + slug + '/', 'html')}</p>
   <div class="rm-progress">
     <div class="progress big" aria-hidden="true"><span></span></div>
     <div class="rm-progress-row"><span class="progress-label"></span><button type="button" class="reset">Reset</button></div>

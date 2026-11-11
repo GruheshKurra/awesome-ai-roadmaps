@@ -3,7 +3,7 @@
 
 **Open the black box: circuits, superposition, sparse autoencoders, induction heads, grokking, and tracing what LLMs compute.**
 
-Level: **Advanced** · 12 steps · 5h 36m of video · Prerequisites: LLMs from Scratch.
+Level: **Advanced** · 12 steps · 5h 36m of video · Prerequisites: [LLMs from Scratch](llms-from-scratch.md).
 
 [Track your progress on the website](https://gruheshkurra.github.io/awesome-ai-roadmaps/interpretability/) · [All roadmaps](../README.md)
 

@@ -80,6 +80,7 @@ img { display: block; max-width: 100%; }
 main, .topbar, .footer { max-width: 1120px; margin: 0 auto; padding: 0 20px; }
 
 .muted { color: var(--muted); }
+.rm-hero p.muted a { color: var(--ink); text-decoration: underline; text-underline-offset: 2px; }
 
 .visually-hidden {
   position: absolute; width: 1px; height: 1px; overflow: hidden;

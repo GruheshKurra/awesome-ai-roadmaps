@@ -3,7 +3,7 @@
 
 **Improve models by improving their data: find label errors, label less, augment, generate synthetic tables and LLM training sets, and know when synthetic data backfires.**
 
-Level: **Intermediate** · 12 steps · 4h 58m of video · Prerequisites: Machine Learning. Deep Learning helps for the GAN and VAE step; Fine-Tuning & Reasoning Models helps for the LLM steps.
+Level: **Intermediate** · 12 steps · 4h 58m of video · Prerequisites: [Machine Learning](machine-learning.md). [Deep Learning](deep-learning.md) helps for the GAN and VAE step; [Fine-Tuning & Reasoning Models](fine-tuning.md) helps for the LLM steps.
 
 [Track your progress on the website](https://gruheshkurra.github.io/awesome-ai-roadmaps/synthetic-data-and-data-centric-ai/) · [All roadmaps](../README.md)
 

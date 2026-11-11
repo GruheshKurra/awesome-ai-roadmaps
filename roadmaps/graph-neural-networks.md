@@ -3,7 +3,7 @@
 
 **Learn from data shaped like networks: node embeddings, message passing, GCN, GAT, GraphSAGE, link prediction, and real uses.**
 
-Level: **Advanced** · 11 steps · 3h 26m of video · Prerequisites: Deep Learning. Linear algebra helps.
+Level: **Advanced** · 11 steps · 3h 26m of video · Prerequisites: [Deep Learning](deep-learning.md). Linear algebra helps.
 
 [Track your progress on the website](https://gruheshkurra.github.io/awesome-ai-roadmaps/graph-neural-networks/) · [All roadmaps](../README.md)
 

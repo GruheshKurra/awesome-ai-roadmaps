@@ -3,7 +3,7 @@
 
 **Find the rare and the unusual: statistical outliers, distance and density methods, isolation forests, one-class SVMs, autoencoders, fraud with imbalanced data, and explaining why a point was flagged.**
 
-Level: **Intermediate** · 11 steps · 4h 41m of video · Prerequisites: Machine Learning. Deep Learning for the autoencoder step; Time Series & Forecasting helps there too.
+Level: **Intermediate** · 11 steps · 4h 41m of video · Prerequisites: [Machine Learning](machine-learning.md). [Deep Learning](deep-learning.md) for the autoencoder step; [Time Series & Forecasting](time-series-and-forecasting.md) helps there too.
 
 [Track your progress on the website](https://gruheshkurra.github.io/awesome-ai-roadmaps/anomaly-detection/) · [All roadmaps](../README.md)
 

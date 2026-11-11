@@ -3,7 +3,7 @@
 
 **Agents that learn by trial and error: from Bellman equations and Q-learning to PPO, AlphaGo, and the RL behind reasoning models.**
 
-Level: **Intermediate** · 11 steps · 3h 28m of video · Prerequisites: Deep Learning. Fine-Tuning & Reasoning Models pairs well at the end.
+Level: **Intermediate** · 11 steps · 3h 28m of video · Prerequisites: [Deep Learning](deep-learning.md). [Fine-Tuning & Reasoning Models](fine-tuning.md) pairs well at the end.
 
 [Track your progress on the website](https://gruheshkurra.github.io/awesome-ai-roadmaps/reinforcement-learning/) · [All roadmaps](../README.md)
 

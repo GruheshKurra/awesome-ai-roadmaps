@@ -3,7 +3,7 @@
 
 **Train models without collecting the data: federated averaging, Flower simulations, differential privacy, secure aggregation, encryption, and the attacks these defend against.**
 
-Level: **Advanced** · 12 steps · 3h 26m of video · Prerequisites: Deep Learning (PyTorch training loops). Basic probability from Python & Math for AI helps for the differential privacy steps.
+Level: **Advanced** · 12 steps · 3h 26m of video · Prerequisites: [Deep Learning](deep-learning.md) (PyTorch training loops). Basic probability from [Python & Math for AI](foundations.md) helps for the differential privacy steps.
 
 [Track your progress on the website](https://gruheshkurra.github.io/awesome-ai-roadmaps/federated-learning-and-privacy-preserving-ml/) · [All roadmaps](../README.md)
 

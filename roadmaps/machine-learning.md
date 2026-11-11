@@ -3,7 +3,7 @@
 
 **Classic ML the way practitioners use it: regression, trees, boosting, evaluation, and scikit-learn.**
 
-Level: **Beginner** · 14 steps · 5h 10m of video · Prerequisites: Python & Math for AI.
+Level: **Beginner** · 14 steps · 5h 10m of video · Prerequisites: [Python & Math for AI](foundations.md).
 
 [Track your progress on the website](https://gruheshkurra.github.io/awesome-ai-roadmaps/machine-learning/) · [All roadmaps](../README.md)
 
@@ -22,7 +22,7 @@ Level: **Beginner** · 14 steps · 5h 10m of video · Prerequisites: Python & Ma
 | 11 | <a href="https://www.youtube.com/watch?v=OtD8wVaFm6E"><img src="https://i.ytimg.com/vi/OtD8wVaFm6E/mqdefault.jpg" width="200" alt="XGBoost"></a> | **XGBoost**<br>[XGBoost Part 1 (of 4): Regression](https://www.youtube.com/watch?v=OtD8wVaFm6E)<br><sub>StatQuest with Josh Starmer · 26 min</sub><br>The library that made boosting fast and famous. |  |
 | 12 | <a href="https://www.youtube.com/watch?v=4b5d3muPQmA"><img src="https://i.ytimg.com/vi/4b5d3muPQmA/mqdefault.jpg" width="200" alt="K-means clustering"></a> | **K-means clustering**<br>[StatQuest: K-means clustering](https://www.youtube.com/watch?v=4b5d3muPQmA)<br><sub>StatQuest with Josh Starmer · 8 min</sub><br>Find groups in data with no labels. |  |
 | 13 | <a href="https://www.youtube.com/watch?v=HMOI_lkzW08"><img src="https://i.ytimg.com/vi/HMOI_lkzW08/mqdefault.jpg" width="200" alt="PCA"></a> | **PCA**<br>[StatQuest: PCA main ideas in only 5 minutes!!!](https://www.youtube.com/watch?v=HMOI_lkzW08)<br><sub>StatQuest with Josh Starmer · 6 min</sub><br>Squash many features into a few you can actually look at. |  |
-| 14 | <a href="https://www.youtube.com/watch?v=0B5eIE_1vpU"><img src="https://i.ytimg.com/vi/0B5eIE_1vpU/mqdefault.jpg" width="200" alt="Scikit-learn in practice"></a> | **Scikit-learn in practice**<br>[Scikit-learn Crash Course - Machine Learning Library for Python](https://www.youtube.com/watch?v=0B5eIE_1vpU)<br><sub>freeCodeCamp.org · 2h 09m</sub><br>Put it all together with the library everyone uses. | [ageron/handson-ml3](https://github.com/ageron/handson-ml3)<br><sub>★ 14.4k</sub> |
+| 14 | <a href="https://www.youtube.com/watch?v=0B5eIE_1vpU"><img src="https://i.ytimg.com/vi/0B5eIE_1vpU/mqdefault.jpg" width="200" alt="Scikit-learn in practice"></a> | **Scikit-learn in practice**<br>[Scikit-learn Crash Course - Machine Learning Library for Python](https://www.youtube.com/watch?v=0B5eIE_1vpU)<br><sub>freeCodeCamp.org · 2h 09m</sub><br>Put it all together with the library everyone uses. | [ageron/handson-ml3](https://github.com/ageron/handson-ml3)<br><sub>★ 14.5k</sub> |
 
 ## Build it
 

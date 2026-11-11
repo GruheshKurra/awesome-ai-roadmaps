@@ -3,7 +3,7 @@
 
 **The NLP toolkit that came before transformers: tokenizing and normalizing text, TF-IDF, n-grams, Naive Bayes, HMM tagging, NER, topic models, word vectors, and seq2seq with attention.**
 
-Level: **Intermediate** · 15 steps · 4h 18m of video · Prerequisites: Machine Learning. Deep Learning for the seq2seq and attention steps.
+Level: **Intermediate** · 15 steps · 4h 18m of video · Prerequisites: [Machine Learning](machine-learning.md). [Deep Learning](deep-learning.md) for the seq2seq and attention steps.
 
 [Track your progress on the website](https://gruheshkurra.github.io/awesome-ai-roadmaps/classic-nlp-before-llms/) · [All roadmaps](../README.md)
 

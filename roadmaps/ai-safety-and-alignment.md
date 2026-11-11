@@ -3,7 +3,7 @@
 
 **Why powerful AI can go wrong and what researchers do about it: specification gaming, inner alignment, deception, oversight, and evals.**
 
-Level: **Intermediate** · 12 steps · 4h 17m of video · Prerequisites: Basic ML helps. Reinforcement Learning is useful context.
+Level: **Intermediate** · 12 steps · 4h 17m of video · Prerequisites: Basic ML helps. [Reinforcement Learning](reinforcement-learning.md) is useful context.
 
 [Track your progress on the website](https://gruheshkurra.github.io/awesome-ai-roadmaps/ai-safety-and-alignment/) · [All roadmaps](../README.md)
 

@@ -3,7 +3,7 @@
 
 **Reason with uncertainty: priors and posteriors, MCMC, PyMC, hierarchical models, Gaussian processes, variational inference, and Bayesian deep learning.**
 
-Level: **Advanced** · 15 steps · 7h 04m of video · Prerequisites: Machine Learning and Math for ML, Deeper (probability distributions, MLE, the multivariate Gaussian, KL divergence).
+Level: **Advanced** · 15 steps · 7h 04m of video · Prerequisites: [Machine Learning](machine-learning.md) and [Math for ML, Deeper](math-for-ml-deeper.md) (probability distributions, MLE, the multivariate Gaussian, KL divergence).
 
 [Track your progress on the website](https://gruheshkurra.github.io/awesome-ai-roadmaps/bayesian-ml-and-probabilistic-programming/) · [All roadmaps](../README.md)
 

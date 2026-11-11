@@ -3,7 +3,7 @@
 
 **How AI is changing biology and chemistry: protein folding, AlphaFold, protein language models, protein design, molecules in Python, and AI weather models.**
 
-Level: **Intermediate** · 12 steps · 5h 11m of video · Prerequisites: Deep Learning (transformers help). Graph Neural Networks helps for the molecule steps. No biology background needed; step 1 covers it.
+Level: **Intermediate** · 12 steps · 5h 11m of video · Prerequisites: [Deep Learning](deep-learning.md) (transformers help). [Graph Neural Networks](graph-neural-networks.md) helps for the molecule steps. No biology background needed; step 1 covers it.
 
 [Track your progress on the website](https://gruheshkurra.github.io/awesome-ai-roadmaps/ai-for-science/) · [All roadmaps](../README.md)
 

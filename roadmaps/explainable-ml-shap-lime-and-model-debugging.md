@@ -3,7 +3,7 @@
 
 **Explain what your models do and why: glass-box models, feature importance, PDPs, LIME, SHAP and its limits, counterfactuals, saliency maps, and error analysis.**
 
-Level: **Intermediate** · 14 steps · 4h 43m of video · Prerequisites: Machine Learning. Deep Learning for the Grad-CAM and integrated gradients steps.
+Level: **Intermediate** · 14 steps · 4h 43m of video · Prerequisites: [Machine Learning](machine-learning.md). [Deep Learning](deep-learning.md) for the Grad-CAM and integrated gradients steps.
 
 [Track your progress on the website](https://gruheshkurra.github.io/awesome-ai-roadmaps/explainable-ml-shap-lime-and-model-debugging/) · [All roadmaps](../README.md)
 

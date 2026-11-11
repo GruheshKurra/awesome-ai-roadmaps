@@ -3,7 +3,7 @@
 
 **Work with medical images and clinical data: DICOM, segmentation with U-Net, MONAI, and nnU-Net, pathology, foundation models, bias, and regulation.**
 
-Level: **Intermediate** · 12 steps · 6h 44m of video · Prerequisites: Deep Learning. Computer Vision helps for the segmentation steps. No medical background needed.
+Level: **Intermediate** · 12 steps · 6h 44m of video · Prerequisites: [Deep Learning](deep-learning.md). [Computer Vision](computer-vision.md) helps for the segmentation steps. No medical background needed.
 
 [Track your progress on the website](https://gruheshkurra.github.io/awesome-ai-roadmaps/medical-ai-and-imaging/) · [All roadmaps](../README.md)
 

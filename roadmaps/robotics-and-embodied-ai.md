@@ -3,7 +3,7 @@
 
 **Teach robots with data: robot learning basics, imitation learning, ACT, diffusion policies, vision-language-action models, and sim-to-real.**
 
-Level: **Advanced** · 10 steps · 7h 28m of video · Prerequisites: Reinforcement Learning. Deep Learning. Hardware: step 9 wants a recent NVIDIA GPU or a cloud GPU; step 10 needs a physical SO-101 arm, so treat it as optional and use the ACT and Diffusion Policy steps with LeRobot simulation datasets instead.
+Level: **Advanced** · 10 steps · 7h 28m of video · Prerequisites: [Reinforcement Learning](reinforcement-learning.md). [Deep Learning](deep-learning.md). Hardware: step 9 wants a recent NVIDIA GPU or a cloud GPU; step 10 needs a physical SO-101 arm, so treat it as optional and use the ACT and Diffusion Policy steps with LeRobot simulation datasets instead.
 
 [Track your progress on the website](https://gruheshkurra.github.io/awesome-ai-roadmaps/robotics-and-embodied-ai/) · [All roadmaps](../README.md)
 

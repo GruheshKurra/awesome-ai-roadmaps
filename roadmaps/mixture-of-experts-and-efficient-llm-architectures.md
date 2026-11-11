@@ -3,7 +3,7 @@
 
 **See how modern LLMs grow without getting slower: sparse mixture of experts, cheaper attention, linear attention, state space models, and hybrids.**
 
-Level: **Advanced** · 13 steps · 6h 59m of video · Prerequisites: LLMs from Scratch. Run, Serve & Scale AI helps for the parallelism step.
+Level: **Advanced** · 13 steps · 6h 59m of video · Prerequisites: [LLMs from Scratch](llms-from-scratch.md). [Run, Serve & Scale AI](deploy-and-scale.md) helps for the parallelism step.
 
 [Track your progress on the website](https://gruheshkurra.github.io/awesome-ai-roadmaps/mixture-of-experts-and-efficient-llm-architectures/) · [All roadmaps](../README.md)
 

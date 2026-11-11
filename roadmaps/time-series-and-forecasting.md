@@ -3,7 +3,7 @@
 
 **Predict what happens next: trend, seasonality, ARIMA, boosted trees, deep models, and today's pretrained forecasting models.**
 
-Level: **Intermediate** · 11 steps · 3h 48m of video · Prerequisites: Machine Learning. Deep Learning helps for the later steps.
+Level: **Intermediate** · 11 steps · 3h 48m of video · Prerequisites: [Machine Learning](machine-learning.md). [Deep Learning](deep-learning.md) helps for the later steps.
 
 [Track your progress on the website](https://gruheshkurra.github.io/awesome-ai-roadmaps/time-series-and-forecasting/) · [All roadmaps](../README.md)
 

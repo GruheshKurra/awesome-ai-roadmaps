@@ -3,7 +3,7 @@
 
 **How models learn strong features from unlabeled data: contrastive losses, SimCLR, BYOL, masked autoencoders, DINO through DINOv3, and JEPA's predict-the-representation idea.**
 
-Level: **Advanced** · 12 steps · 4h 52m of video · Prerequisites: Deep Learning and Computer Vision, including vision transformers. Multimodal & Vision-Language Models covers CLIP, the image-text side of contrastive learning.
+Level: **Advanced** · 12 steps · 4h 52m of video · Prerequisites: [Deep Learning](deep-learning.md) and [Computer Vision](computer-vision.md), including vision transformers. [Multimodal & Vision-Language Models](multimodal-and-vision-language-models.md) covers CLIP, the image-text side of contrastive learning.
 
 [Track your progress on the website](https://gruheshkurra.github.io/awesome-ai-roadmaps/self-supervised-and-contrastive-learning/) · [All roadmaps](../README.md)
 

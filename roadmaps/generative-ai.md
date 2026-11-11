@@ -3,7 +3,7 @@
 
 **How machines create images and video: VAEs, GANs, diffusion, latent diffusion, and flow matching.**
 
-Level: **Intermediate** · 12 steps · 9h 21m of video · Prerequisites: Deep Learning.
+Level: **Intermediate** · 12 steps · 9h 21m of video · Prerequisites: [Deep Learning](deep-learning.md).
 
 [Track your progress on the website](https://gruheshkurra.github.io/awesome-ai-roadmaps/generative-ai/) · [All roadmaps](../README.md)
 
@@ -20,7 +20,7 @@ Level: **Intermediate** · 12 steps · 9h 21m of video · Prerequisites: Deep Le
 | 9 | <a href="https://www.youtube.com/watch?v=ZBKpAp_6TGI"><img src="https://i.ytimg.com/vi/ZBKpAp_6TGI/mqdefault.jpg" width="200" alt="Code Stable Diffusion from scratch"></a> | **Code Stable Diffusion from scratch**<br>[Coding Stable Diffusion from scratch in PyTorch](https://www.youtube.com/watch?v=ZBKpAp_6TGI)<br><sub>Umar Jamil · 5h 04m</sub><br>The full model, every component, in PyTorch. |  |
 | 10 | <a href="https://www.youtube.com/watch?v=firXjwZ_6KI"><img src="https://i.ytimg.com/vi/firXjwZ_6KI/mqdefault.jpg" width="200" alt="Flow matching vs. diffusion"></a> | **Flow matching vs. diffusion**<br>[Flow-Matching vs Diffusion Models explained side by side](https://www.youtube.com/watch?v=firXjwZ_6KI)<br><sub>AI Coffee Break with Letitia · 16 min</sub><br>The newer training recipe behind today's image models. |  |
 | 11 | <a href="https://www.youtube.com/watch?v=Y5zHHoLrvAE"><img src="https://i.ytimg.com/vi/Y5zHHoLrvAE/mqdefault.jpg" width="200" alt="How video generation works"></a> | **How video generation works**<br>[How do AI video generation models work?](https://www.youtube.com/watch?v=Y5zHHoLrvAE)<br><sub>Google for Developers · 12 min</sub><br>From images to consistent motion. |  |
-| 12 | <a href="https://www.youtube.com/watch?v=23VkGD-4uwk"><img src="https://i.ytimg.com/vi/23VkGD-4uwk/mqdefault.jpg" width="200" alt="ComfyUI"></a> | **ComfyUI**<br>[How to use ComfyUI for beginners.](https://www.youtube.com/watch?v=23VkGD-4uwk)<br><sub>Sebastian Kamph · 39 min</sub><br>Build image-generation workflows visually. | [Comfy-Org/ComfyUI](https://github.com/Comfy-Org/ComfyUI)<br><sub>★ 145.9k</sub> |
+| 12 | <a href="https://www.youtube.com/watch?v=23VkGD-4uwk"><img src="https://i.ytimg.com/vi/23VkGD-4uwk/mqdefault.jpg" width="200" alt="ComfyUI"></a> | **ComfyUI**<br>[How to use ComfyUI for beginners.](https://www.youtube.com/watch?v=23VkGD-4uwk)<br><sub>Sebastian Kamph · 39 min</sub><br>Build image-generation workflows visually. | [Comfy-Org/ComfyUI](https://github.com/Comfy-Org/ComfyUI)<br><sub>★ 146.3k</sub> |
 
 ## Build it
 

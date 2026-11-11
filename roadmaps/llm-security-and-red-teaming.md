@@ -3,7 +3,7 @@
 
 **Learn how LLM apps get attacked, from prompt injection and jailbreaks to data extraction and poisoning, then test and defend your own.**
 
-Level: **Intermediate** · 12 steps · 5h 27m of video · Prerequisites: AI Engineering. AI Agents & MCP helps for the agent and tool-use steps.
+Level: **Intermediate** · 12 steps · 5h 27m of video · Prerequisites: [AI Engineering](ai-engineering.md). [AI Agents & MCP](ai-agents.md) helps for the agent and tool-use steps.
 
 [Track your progress on the website](https://gruheshkurra.github.io/awesome-ai-roadmaps/llm-security-and-red-teaming/) · [All roadmaps](../README.md)
 

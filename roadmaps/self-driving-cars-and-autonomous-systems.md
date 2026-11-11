@@ -3,7 +3,7 @@
 
 **Follow the self-driving stack from sensors and localization through perception, prediction, and planning to end-to-end models and simulation.**
 
-Level: **Advanced** · 13 steps · 8h 00m of video · Prerequisites: Deep Learning and Computer Vision. Robotics & Embodied AI helps for the planning and imitation steps.
+Level: **Advanced** · 13 steps · 8h 00m of video · Prerequisites: [Deep Learning](deep-learning.md) and [Computer Vision](computer-vision.md). [Robotics & Embodied AI](robotics-and-embodied-ai.md) helps for the planning and imitation steps.
 
 [Track your progress on the website](https://gruheshkurra.github.io/awesome-ai-roadmaps/self-driving-cars-and-autonomous-systems/) · [All roadmaps](../README.md)
 

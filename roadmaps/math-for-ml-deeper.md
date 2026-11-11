@@ -3,7 +3,7 @@
 
 **The next layer of math behind ML papers: change of basis, SVD, Jacobians, Hessians, convexity, Lagrange multipliers, Gaussians, and KL divergence.**
 
-Level: **Intermediate** · 14 steps · 3h 06m of video · Prerequisites: Python & Math for AI (vectors, matrices, derivatives, Bayes' theorem, the normal distribution).
+Level: **Intermediate** · 14 steps · 3h 06m of video · Prerequisites: [Python & Math for AI](foundations.md) (vectors, matrices, derivatives, Bayes' theorem, the normal distribution).
 
 [Track your progress on the website](https://gruheshkurra.github.io/awesome-ai-roadmaps/math-for-ml-deeper/) · [All roadmaps](../README.md)
 

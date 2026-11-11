@@ -3,7 +3,7 @@
 
 **Turn photos into 3D: camera geometry, stereo, structure from motion, depth networks, neural radiance fields, Gaussian splatting, and feed-forward reconstruction.**
 
-Level: **Advanced** · 15 steps · 6h 08m of video · Prerequisites: Computer Vision. Python & Math for AI (linear algebra). Deep Learning for the NeRF and splatting code. Training steps want an NVIDIA GPU or a cloud GPU.
+Level: **Advanced** · 15 steps · 6h 08m of video · Prerequisites: [Computer Vision](computer-vision.md). [Python & Math for AI](foundations.md) (linear algebra). [Deep Learning](deep-learning.md) for the NeRF and splatting code. Training steps want an NVIDIA GPU or a cloud GPU.
 
 [Track your progress on the website](https://gruheshkurra.github.io/awesome-ai-roadmaps/3d-vision-nerfs-and-gaussian-splatting/) · [All roadmaps](../README.md)
 
