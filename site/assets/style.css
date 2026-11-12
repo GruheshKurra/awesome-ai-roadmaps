@@ -155,6 +155,15 @@ h1 { font-size: clamp(32px, 4.6vw, 50px); line-height: 1.1; letter-spacing: -.02
 }
 .search { flex: 1 1 260px; display: flex; justify-content: flex-end; }
 
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
+.chip {
+  padding: 7px 14px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface);
+  color: var(--ink); font: inherit; font-size: 14px; font-weight: 600; cursor: pointer;
+}
+.chip:hover { border-color: var(--ink); }
+.chip[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: var(--bg); }
+.chip[aria-pressed="true"] .muted { color: inherit; opacity: .75; }
+
 /* Roadmap cards */
 .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; }
 .card {

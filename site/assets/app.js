@@ -52,17 +52,25 @@
   const search = document.getElementById('search');
   if (search) {
     const cards = [...document.querySelectorAll('.card')];
+    const chips = [...document.querySelectorAll('.chip')];
     const empty = document.getElementById('empty');
-    search.addEventListener('input', () => {
+    let level = 'all';
+    const apply = () => {
       const terms = search.value.toLowerCase().split(/\s+/).filter(Boolean);
       let shown = 0;
       cards.forEach(card => {
-        const hit = terms.every(t => card.dataset.search.includes(t));
+        const hit = (level === 'all' || card.dataset.level === level) && terms.every(t => card.dataset.search.includes(t));
         card.hidden = !hit;
         shown += hit;
       });
       empty.hidden = shown > 0;
-    });
+    };
+    search.addEventListener('input', apply);
+    chips.forEach(chip => chip.addEventListener('click', () => {
+      level = chip.dataset.level;
+      chips.forEach(c => c.setAttribute('aria-pressed', String(c === chip)));
+      apply();
+    }));
   }
 
   // Roadmap page: checkboxes.

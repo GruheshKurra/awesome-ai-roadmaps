@@ -302,7 +302,7 @@ def home_html(roadmaps, meta, upcoming):
         thumbs = "".join(f'<img src="{thumb(s["video"])}" alt="" loading="lazy">' for s in r["steps"][:3])
         search = " ".join([r["title"], r["tagline"], r["level"]] + [s["title"] for s in r["steps"]]).lower()
         ids = " ".join(s["video"] for s in r["steps"])
-        cards.append(f"""<a class="card" href="{r['slug']}/" data-slug="{r['slug']}" data-total="{len(r['steps'])}" data-ids="{ids}" data-search="{escape(search)}">
+        cards.append(f"""<a class="card" href="{r['slug']}/" data-slug="{r['slug']}" data-level="{r['level'].lower()}" data-total="{len(r['steps'])}" data-ids="{ids}" data-search="{escape(search)}">
   <div class="mosaic">{thumbs}<span class="num">{r['order']:02d}</span></div>
   <div class="card-body">
     <div class="pills"><span class="pill level-{r['level'].lower()}">{r['level']}</span><span class="muted">{len(r['steps'])} steps · {duration(r['seconds'])}</span></div>
@@ -323,6 +323,9 @@ def home_html(roadmaps, meta, upcoming):
         m = meta["repos"][key]
         repo_cards.append(f'<a class="repo" href="https://github.com/{key}" target="_blank" rel="noopener"><span class="repo-name">{escape(key)}</span><span class="repo-desc">{escape(m["description"][:110])}</span><span class="repo-stars">★ {stars(m["stars"])}</span></a>')
     soon = "".join(f"<li>{escape(item)}</li>" for item in upcoming)
+    levels = ["Beginner", "Intermediate", "Advanced"]
+    chips = f'<button type="button" class="chip" data-level="all" aria-pressed="true">All <span class="muted">{len(roadmaps)}</span></button>' + "".join(
+        f'<button type="button" class="chip" data-level="{lv.lower()}" aria-pressed="false">{lv} <span class="muted">{sum(1 for r in roadmaps if r["level"] == lv)}</span></button>' for lv in levels)
     first = roadmaps[0]
     peek = "".join(f'<li><img src="{thumb(st["video"])}" alt="" loading="lazy" width="96" height="54"><span class="peek-title">{escape(st["title"])}</span><span class="muted peek-dur">{duration(meta["videos"][st["video"]]["seconds"])}</span></li>' for st in first["steps"][:5])
     faq = [
@@ -359,6 +362,7 @@ def home_html(roadmaps, meta, upcoming):
     <h2>Roadmaps</h2>
     <label class="search"><span class="visually-hidden">Search roadmaps</span><input type="search" id="search" placeholder="Search: transformers, RAG, YOLO, CUDA…" autocomplete="off"></label>
   </div>
+  <div class="chips" role="group" aria-label="Filter by level">{chips}</div>
   <div class="grid" id="grid">
 {''.join(cards)}
   </div>

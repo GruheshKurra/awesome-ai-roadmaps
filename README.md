@@ -94,20 +94,20 @@ The GitHub repos the roadmaps use most. Clone them and code along.
 
 | Repo | Stars | Used in |
 | --- | ---: | --- |
-| [ollama/ollama](https://github.com/ollama/ollama) | ★ 186.6k | [AI Engineering](roadmaps/ai-engineering.md) |
-| [Comfy-Org/ComfyUI](https://github.com/Comfy-Org/ComfyUI) | ★ 146.3k | [Generative AI: Images & Video](roadmaps/generative-ai.md) |
-| [ggml-org/llama.cpp](https://github.com/ggml-org/llama.cpp) | ★ 134.1k | [Run, Serve & Scale AI](roadmaps/deploy-and-scale.md), [TinyML & Edge AI](roadmaps/tinyml-and-edge-ai.md) |
-| [openai/whisper](https://github.com/openai/whisper) | ★ 112.4k | [Speech & Audio AI](roadmaps/speech-and-audio-ai.md) |
-| [rasbt/LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch) | ★ 108.2k | [LLMs from Scratch](roadmaps/llms-from-scratch.md) |
-| [vllm-project/vllm](https://github.com/vllm-project/vllm) | ★ 96.7k | [Run, Serve & Scale AI](roadmaps/deploy-and-scale.md) |
+| [ollama/ollama](https://github.com/ollama/ollama) | ★ 186.7k | [AI Engineering](roadmaps/ai-engineering.md) |
+| [Comfy-Org/ComfyUI](https://github.com/Comfy-Org/ComfyUI) | ★ 146.4k | [Generative AI: Images & Video](roadmaps/generative-ai.md) |
+| [ggml-org/llama.cpp](https://github.com/ggml-org/llama.cpp) | ★ 134.2k | [Run, Serve & Scale AI](roadmaps/deploy-and-scale.md), [TinyML & Edge AI](roadmaps/tinyml-and-edge-ai.md) |
+| [openai/whisper](https://github.com/openai/whisper) | ★ 112.5k | [Speech & Audio AI](roadmaps/speech-and-audio-ai.md) |
+| [rasbt/LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch) | ★ 108.3k | [LLMs from Scratch](roadmaps/llms-from-scratch.md) |
+| [vllm-project/vllm](https://github.com/vllm-project/vllm) | ★ 96.8k | [Run, Serve & Scale AI](roadmaps/deploy-and-scale.md) |
 | [microsoft/ML-For-Beginners](https://github.com/microsoft/ML-For-Beginners) | ★ 92.1k | [Machine Learning](roadmaps/machine-learning.md) |
 | [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) | ★ 91.9k | [AI Agents & MCP](roadmaps/ai-agents.md) |
-| [mlabonne/llm-course](https://github.com/mlabonne/llm-course) | ★ 85k | [Fine-Tuning & Reasoning Models](roadmaps/fine-tuning.md) |
+| [mlabonne/llm-course](https://github.com/mlabonne/llm-course) | ★ 85.1k | [Fine-Tuning & Reasoning Models](roadmaps/fine-tuning.md) |
 | [dair-ai/Prompt-Engineering-Guide](https://github.com/dair-ai/Prompt-Engineering-Guide) | ★ 80k | [AI Engineering](roadmaps/ai-engineering.md) |
-| [microsoft/ai-agents-for-beginners](https://github.com/microsoft/ai-agents-for-beginners) | ★ 79.4k | [AI Agents & MCP](roadmaps/ai-agents.md) |
-| [unslothai/unsloth](https://github.com/unslothai/unsloth) | ★ 79.3k | [Fine-Tuning & Reasoning Models](roadmaps/fine-tuning.md) |
-| [docling-project/docling](https://github.com/docling-project/docling) | ★ 70.4k | [Document AI & OCR](roadmaps/document-ai-and-ocr.md) |
-| [karpathy/nanoGPT](https://github.com/karpathy/nanoGPT) | ★ 64.6k | [LLMs from Scratch](roadmaps/llms-from-scratch.md) |
+| [microsoft/ai-agents-for-beginners](https://github.com/microsoft/ai-agents-for-beginners) | ★ 79.5k | [AI Agents & MCP](roadmaps/ai-agents.md) |
+| [unslothai/unsloth](https://github.com/unslothai/unsloth) | ★ 79.4k | [Fine-Tuning & Reasoning Models](roadmaps/fine-tuning.md) |
+| [docling-project/docling](https://github.com/docling-project/docling) | ★ 70.5k | [Document AI & OCR](roadmaps/document-ai-and-ocr.md) |
+| [karpathy/nanoGPT](https://github.com/karpathy/nanoGPT) | ★ 64.7k | [LLMs from Scratch](roadmaps/llms-from-scratch.md) |
 | [commaai/openpilot](https://github.com/commaai/openpilot) | ★ 64.1k | [Self-Driving Cars & Autonomous Systems](roadmaps/self-driving-cars-and-autonomous-systems.md) |
 
 ## How it works
