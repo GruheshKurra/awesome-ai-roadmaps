@@ -1,6 +1,7 @@
 {
   "slug": "bayesian-ml-and-probabilistic-programming",
   "order": 23,
+  "added": "2026-11-03",
   "title": "Bayesian ML & Probabilistic Programming",
   "level": "Advanced",
   "tagline": "Reason with uncertainty: priors and posteriors, MCMC, PyMC, hierarchical models, Gaussian processes, variational inference, and Bayesian deep learning.",

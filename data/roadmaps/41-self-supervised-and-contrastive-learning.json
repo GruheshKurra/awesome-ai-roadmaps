@@ -1,6 +1,7 @@
 {
   "slug": "self-supervised-and-contrastive-learning",
   "order": 41,
+  "added": "2026-11-08",
   "title": "Self-Supervised & Contrastive Learning",
   "level": "Advanced",
   "tagline": "How models learn strong features from unlabeled data: contrastive losses, SimCLR, BYOL, masked autoencoders, DINO through DINOv3, and JEPA's predict-the-representation idea.",

@@ -1,6 +1,7 @@
 {
   "slug": "synthetic-data-and-data-centric-ai",
   "order": 27,
+  "added": "2026-11-04",
   "title": "Synthetic Data & Data-Centric AI",
   "level": "Intermediate",
   "tagline": "Improve models by improving their data: find label errors, label less, augment, generate synthetic tables and LLM training sets, and know when synthetic data backfires.",

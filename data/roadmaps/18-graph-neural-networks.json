@@ -1,6 +1,7 @@
 {
   "slug": "graph-neural-networks",
   "order": 18,
+  "added": "2026-11-03",
   "title": "Graph Neural Networks",
   "level": "Advanced",
   "tagline": "Learn from data shaped like networks: node embeddings, message passing, GCN, GAT, GraphSAGE, link prediction, and real uses.",

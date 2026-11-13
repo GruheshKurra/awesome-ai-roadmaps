@@ -1,6 +1,7 @@
 {
   "slug": "ai-safety-and-alignment",
   "order": 15,
+  "added": "2026-11-03",
   "title": "AI Safety & Alignment",
   "level": "Intermediate",
   "tagline": "Why powerful AI can go wrong and what researchers do about it: specification gaming, inner alignment, deception, oversight, and evals.",

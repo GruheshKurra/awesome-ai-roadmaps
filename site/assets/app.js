@@ -24,6 +24,13 @@
     try { localStorage.setItem('theme', root.dataset.theme); } catch { /* ignore */ }
   });
 
+  // Home: badge roadmaps added in the last 7 days, so returning visitors see what changed.
+  document.querySelectorAll('.card[data-added]').forEach(card => {
+    const days = (Date.now() - Date.parse(card.dataset.added + 'T00:00:00Z')) / 864e5;
+    const badge = card.querySelector('.pill.new');
+    if (badge && days >= 0 && days < 7) badge.hidden = false;
+  });
+
   // Home: progress per card, and a link back to the unfinished roadmap the learner is furthest into.
   const resume = document.getElementById('resume');
   const refreshHome = () => {

@@ -1,6 +1,7 @@
 {
   "slug": "deploy-and-scale",
   "order": 10,
+  "added": "2026-11-03",
   "title": "Run, Serve & Scale AI",
   "level": "Advanced",
   "tagline": "Get models into production and make them fast: Docker, MLOps, quantization, vLLM, GPUs, CUDA, and FSDP.",

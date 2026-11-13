@@ -1,6 +1,7 @@
 {
   "slug": "llm-security-and-red-teaming",
   "order": 32,
+  "added": "2026-11-05",
   "title": "LLM Security & Red Teaming",
   "level": "Intermediate",
   "tagline": "Learn how LLM apps get attacked, from prompt injection and jailbreaks to data extraction and poisoning, then test and defend your own.",

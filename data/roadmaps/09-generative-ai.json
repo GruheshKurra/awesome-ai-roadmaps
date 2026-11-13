@@ -1,6 +1,7 @@
 {
   "slug": "generative-ai",
   "order": 9,
+  "added": "2026-11-03",
   "title": "Generative AI: Images & Video",
   "level": "Intermediate",
   "tagline": "How machines create images and video: VAEs, GANs, diffusion, latent diffusion, and flow matching.",

@@ -1,6 +1,7 @@
 {
   "slug": "reinforcement-learning",
   "order": 11,
+  "added": "2026-11-03",
   "title": "Reinforcement Learning",
   "level": "Intermediate",
   "tagline": "Agents that learn by trial and error: from Bellman equations and Q-learning to PPO, AlphaGo, and the RL behind reasoning models.",

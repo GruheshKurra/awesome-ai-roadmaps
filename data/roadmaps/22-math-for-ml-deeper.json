@@ -1,6 +1,7 @@
 {
   "slug": "math-for-ml-deeper",
   "order": 22,
+  "added": "2026-11-03",
   "title": "Math for ML, Deeper",
   "level": "Intermediate",
   "tagline": "The next layer of math behind ML papers: change of basis, SVD, Jacobians, Hessians, convexity, Lagrange multipliers, Gaussians, and KL divergence.",

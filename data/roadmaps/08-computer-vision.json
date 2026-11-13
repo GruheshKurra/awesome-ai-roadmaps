@@ -1,6 +1,7 @@
 {
   "slug": "computer-vision",
   "order": 8,
+  "added": "2026-11-03",
   "title": "Computer Vision",
   "level": "Intermediate",
   "tagline": "Teach machines to see: CNNs, transfer learning, YOLO detection, segmentation, ViT, and CLIP.",

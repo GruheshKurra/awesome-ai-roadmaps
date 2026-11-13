@@ -1,6 +1,7 @@
 {
   "slug": "ai-agents",
   "order": 6,
+  "added": "2026-11-03",
   "title": "AI Agents & MCP",
   "level": "Intermediate",
   "tagline": "Agents that call tools, use MCP servers, plan, and coordinate, and how to tell if they work.",

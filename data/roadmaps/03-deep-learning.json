@@ -1,6 +1,7 @@
 {
   "slug": "deep-learning",
   "order": 3,
+  "added": "2026-11-03",
   "title": "Deep Learning",
   "level": "Intermediate",
   "tagline": "Neural networks from the inside: backprop, build your own autograd, CNNs, RNNs, and PyTorch.",

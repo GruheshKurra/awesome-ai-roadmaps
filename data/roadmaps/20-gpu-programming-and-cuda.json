@@ -1,6 +1,7 @@
 {
   "slug": "gpu-programming-and-cuda",
   "order": 20,
+  "added": "2026-11-03",
   "title": "GPU Programming & CUDA",
   "level": "Advanced",
   "tagline": "Understand why GPUs are fast and write your own kernels: CUDA basics, memory, tiled matmul, Triton, and FlashAttention.",

@@ -1,6 +1,7 @@
 {
   "slug": "llms-from-scratch",
   "order": 4,
+  "added": "2026-11-03",
   "title": "LLMs from Scratch",
   "level": "Intermediate",
   "tagline": "Understand and build GPT: tokenizers, attention, transformers, GPT-2, Llama, mixture of experts.",

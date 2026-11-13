@@ -1,6 +1,7 @@
 {
   "slug": "data-engineering-for-ai",
   "order": 21,
+  "added": "2026-11-03",
   "title": "Data Engineering for AI",
   "level": "Intermediate",
   "tagline": "Move, store, clean, and version the data that models learn from: SQL, Parquet, DuckDB, pipelines, labeling, and LLM-scale dataset curation.",

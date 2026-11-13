@@ -1,6 +1,7 @@
 {
   "slug": "explainable-ml-shap-lime-and-model-debugging",
   "order": 37,
+  "added": "2026-11-06",
   "title": "Explainable ML: SHAP, LIME & Model Debugging",
   "level": "Intermediate",
   "tagline": "Explain what your models do and why: glass-box models, feature importance, PDPs, LIME, SHAP and its limits, counterfactuals, saliency maps, and error analysis.",

@@ -1,6 +1,7 @@
 {
   "slug": "time-series-and-forecasting",
   "order": 17,
+  "added": "2026-11-03",
   "title": "Time Series & Forecasting",
   "level": "Intermediate",
   "tagline": "Predict what happens next: trend, seasonality, ARIMA, boosted trees, deep models, and today's pretrained forecasting models.",

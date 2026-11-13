@@ -1,6 +1,7 @@
 {
   "slug": "machine-learning",
   "order": 2,
+  "added": "2026-11-03",
   "title": "Machine Learning",
   "level": "Beginner",
   "tagline": "Classic ML the way practitioners use it: regression, trees, boosting, evaluation, and scikit-learn.",

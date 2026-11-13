@@ -1,6 +1,7 @@
 {
   "slug": "tinyml-and-edge-ai",
   "order": 24,
+  "added": "2026-11-03",
   "title": "TinyML & Edge AI",
   "level": "Advanced",
   "tagline": "Shrink models and run them on microcontrollers, phones, and small boards: pruning, quantization, distillation, TFLite Micro, Edge Impulse, ONNX, and ExecuTorch.",

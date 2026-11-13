@@ -1,6 +1,7 @@
 {
   "slug": "quantum-machine-learning",
   "order": 31,
+  "added": "2026-11-05",
   "title": "Quantum Machine Learning",
   "level": "Advanced",
   "tagline": "Learn qubits, gates, and circuits, then train variational circuits, quantum classifiers, and quantum kernels, and see where the limits are.",

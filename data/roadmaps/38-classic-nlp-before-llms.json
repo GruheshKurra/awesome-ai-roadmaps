@@ -1,6 +1,7 @@
 {
   "slug": "classic-nlp-before-llms",
   "order": 38,
+  "added": "2026-11-07",
   "title": "Classic NLP Before LLMs",
   "level": "Intermediate",
   "tagline": "The NLP toolkit that came before transformers: tokenizing and normalizing text, TF-IDF, n-grams, Naive Bayes, HMM tagging, NER, topic models, word vectors, and seq2seq with attention.",

@@ -1,6 +1,7 @@
 {
   "slug": "evaluation-and-benchmarking-for-llms",
   "order": 30,
+  "added": "2026-11-04",
   "title": "Evaluation & Benchmarking for LLMs",
   "level": "Intermediate",
   "tagline": "Measure language models and LLM apps properly: classic metrics, public benchmarks and leaderboards, LLM judges, error analysis, and open-source eval tools.",

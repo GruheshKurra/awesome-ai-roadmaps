@@ -1,6 +1,7 @@
 {
   "slug": "causal-inference-and-causal-ml",
   "order": 29,
+  "added": "2026-11-04",
   "title": "Causal Inference & Causal ML",
   "level": "Intermediate",
   "tagline": "Go from 'X is correlated with Y' to 'X causes Y': potential outcomes, causal graphs, matching, natural experiments, and machine learning for treatment effects.",

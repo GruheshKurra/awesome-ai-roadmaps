@@ -1,6 +1,7 @@
 {
   "slug": "anomaly-detection",
   "order": 39,
+  "added": "2026-11-07",
   "title": "Anomaly Detection",
   "level": "Intermediate",
   "tagline": "Find the rare and the unusual: statistical outliers, distance and density methods, isolation forests, one-class SVMs, autoencoders, fraud with imbalanced data, and explaining why a point was flagged.",

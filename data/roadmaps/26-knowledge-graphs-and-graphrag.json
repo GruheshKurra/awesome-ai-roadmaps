@@ -1,6 +1,7 @@
 {
   "slug": "knowledge-graphs-and-graphrag",
   "order": 26,
+  "added": "2026-11-04",
   "title": "Knowledge Graphs & GraphRAG",
   "level": "Intermediate",
   "tagline": "Store facts as connected entities, query them with Cypher, build graphs from text with LLMs, and use them for retrieval that follows relationships.",

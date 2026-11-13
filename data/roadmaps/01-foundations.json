@@ -1,6 +1,7 @@
 {
   "slug": "foundations",
   "order": 1,
+  "added": "2026-11-03",
   "title": "Python & Math for AI",
   "level": "Beginner",
   "tagline": "The Python, NumPy, linear algebra, calculus, and probability you actually need before touching models.",

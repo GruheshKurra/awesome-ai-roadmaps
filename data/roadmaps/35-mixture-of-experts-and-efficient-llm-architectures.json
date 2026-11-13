@@ -1,6 +1,7 @@
 {
   "slug": "mixture-of-experts-and-efficient-llm-architectures",
   "order": 35,
+  "added": "2026-11-05",
   "title": "Mixture of Experts & Efficient LLM Architectures",
   "level": "Advanced",
   "tagline": "See how modern LLMs grow without getting slower: sparse mixture of experts, cheaper attention, linear attention, state space models, and hybrids.",

@@ -1,6 +1,7 @@
 {
   "slug": "world-models",
   "order": 42,
+  "added": "2026-11-09",
   "title": "World Models",
   "level": "Advanced",
   "tagline": "Models that learn how an environment responds to actions, then plan or train agents inside it: model-based RL, Dreamer, MuZero, Genie, world foundation models, and JEPA-style planning.",

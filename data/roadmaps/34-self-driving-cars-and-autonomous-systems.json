@@ -1,6 +1,7 @@
 {
   "slug": "self-driving-cars-and-autonomous-systems",
   "order": 34,
+  "added": "2026-11-05",
   "title": "Self-Driving Cars & Autonomous Systems",
   "level": "Advanced",
   "tagline": "Follow the self-driving stack from sensors and localization through perception, prediction, and planning to end-to-end models and simulation.",

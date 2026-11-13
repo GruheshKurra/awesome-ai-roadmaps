@@ -1,6 +1,7 @@
 {
   "slug": "multimodal-and-vision-language-models",
   "order": 19,
+  "added": "2026-11-03",
   "title": "Multimodal & Vision-Language Models",
   "level": "Advanced",
   "tagline": "How models see and talk: CLIP, SigLIP, Flamingo, BLIP-2, LLaVA-style models, and building a vision-language model yourself.",

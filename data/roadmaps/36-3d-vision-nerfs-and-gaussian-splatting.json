@@ -1,6 +1,7 @@
 {
   "slug": "3d-vision-nerfs-and-gaussian-splatting",
   "order": 36,
+  "added": "2026-11-06",
   "title": "3D Vision, NeRFs & Gaussian Splatting",
   "level": "Advanced",
   "tagline": "Turn photos into 3D: camera geometry, stereo, structure from motion, depth networks, neural radiance fields, Gaussian splatting, and feed-forward reconstruction.",

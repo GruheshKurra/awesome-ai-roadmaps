@@ -1,6 +1,7 @@
 {
   "slug": "recommender-systems",
   "order": 16,
+  "added": "2026-11-03",
   "title": "Recommender Systems",
   "level": "Intermediate",
   "tagline": "How Netflix, YouTube, and TikTok pick what you see: collaborative filtering, matrix factorization, two-tower retrieval, ranking, and evaluation.",

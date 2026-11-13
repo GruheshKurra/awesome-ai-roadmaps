@@ -1,6 +1,7 @@
 {
   "slug": "speech-and-audio-ai",
   "order": 12,
+  "added": "2026-11-03",
   "title": "Speech & Audio AI",
   "level": "Intermediate",
   "tagline": "How machines hear and speak: waveforms, spectrograms, speech recognition with Whisper, text-to-speech, audio codecs, and voice agents.",

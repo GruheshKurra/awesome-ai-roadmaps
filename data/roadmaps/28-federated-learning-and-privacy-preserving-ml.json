@@ -1,6 +1,7 @@
 {
   "slug": "federated-learning-and-privacy-preserving-ml",
   "order": 28,
+  "added": "2026-11-04",
   "title": "Federated Learning & Privacy-Preserving ML",
   "level": "Advanced",
   "tagline": "Train models without collecting the data: federated averaging, Flower simulations, differential privacy, secure aggregation, encryption, and the attacks these defend against.",

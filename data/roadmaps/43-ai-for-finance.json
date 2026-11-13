@@ -1,0 +1,74 @@
+{
+  "slug": "ai-for-finance",
+  "order": 43,
+  "added": "2026-11-13",
+  "title": "AI for Finance",
+  "level": "Intermediate",
+  "tagline": "Machine learning for markets and money: how quant firms work, portfolios and factors, honest backtesting, financial text, credit risk, and LLMs in finance. Education, not investment advice.",
+  "prereqs": "Machine Learning and Python & Math for AI. Time Series & Forecasting helps.",
+  "steps": [
+    {
+      "title": "How quantitative trading firms work",
+      "video": "mkzcntzznMc",
+      "why": "Market making versus market taking, and how quants turn forecasts into trades."
+    },
+    {
+      "title": "Option pricing and the Black-Scholes story",
+      "video": "A5w-dEgIU1M",
+      "why": "From Bachelier's random walks to Black-Scholes, hedging, and the rise of quant funds."
+    },
+    {
+      "title": "Factor models: Fama and French",
+      "video": "N3TDfykju44",
+      "why": "John Cochrane on adding size and value factors to the market to explain returns."
+    },
+    {
+      "title": "Portfolio optimization in Python",
+      "video": "9GA2WlYFeBU",
+      "why": "Mean-variance weights built from estimated returns and covariances, so estimates drive results."
+    },
+    {
+      "title": "Backtest a strategy in Python",
+      "video": "T3PT4eV8xFU",
+      "why": "Code a simple strategy and replay it on historical prices with backtesting.py.",
+      "repo": "kernc/backtesting.py"
+    },
+    {
+      "title": "Test a backtest against chance",
+      "video": "NLBXgSmRBgU",
+      "why": "Permuting price changes and rebuilding price paths gives a chance baseline; passing doesn't promise profit.",
+      "repo": "neurotrader888/mcpt"
+    },
+    {
+      "title": "Why most machine learning funds fail",
+      "video": "BRUlSm4gdQ4",
+      "why": "López de Prado's seven pitfalls, including bad labels, leaky cross-validation, overfit backtests."
+    },
+    {
+      "title": "Three ML trading strategies, end to end",
+      "video": "9Y3yaoi9rUQ",
+      "why": "Clustering S&P 500 stocks, Twitter sentiment ranking, and a GARCH intraday signal, all coded."
+    },
+    {
+      "title": "Financial sentiment with FinBERT",
+      "video": "EeoCcjPuJwE",
+      "why": "Label financial text positive, negative, or neutral with a BERT tuned on finance.",
+      "repo": "ProsusAI/finBERT"
+    },
+    {
+      "title": "Credit risk modeling with machine learning",
+      "video": "lhI999ETwmA",
+      "why": "Predict loan risk on German credit data, handle imbalance, and serve it with Streamlit."
+    },
+    {
+      "title": "LLMs in financial advice and risk",
+      "video": "ui7kRlJMqjM",
+      "why": "MIT's Andrew Lo on LLMs for financial advice and risk, and their current limits."
+    }
+  ],
+  "projects": [
+    "Backtest a moving-average crossover with backtesting.py, then run a permutation test on permuted price changes to see if it beats chance.",
+    "Score a month of financial headlines with FinBERT and plot daily sentiment next to the stock's daily returns.",
+    "Train a credit-risk classifier on the German credit data, report precision and recall, and explain it with SHAP."
+  ]
+}

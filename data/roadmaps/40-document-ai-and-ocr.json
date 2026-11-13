@@ -1,6 +1,7 @@
 {
   "slug": "document-ai-and-ocr",
   "order": 40,
+  "added": "2026-11-08",
   "title": "Document AI & OCR",
   "level": "Intermediate",
   "tagline": "Get text, tables, and fields out of scans and PDFs: image cleanup, classic OCR engines, handwriting recognition, layout-aware models, PDF-to-Markdown tools, and vision-language models that read pages directly.",

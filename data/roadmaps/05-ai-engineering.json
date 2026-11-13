@@ -1,6 +1,7 @@
 {
   "slug": "ai-engineering",
   "order": 5,
+  "added": "2026-11-03",
   "title": "AI Engineering",
   "level": "Beginner",
   "tagline": "Build real products on top of LLMs: prompting, APIs, structured output, RAG, evals, and local models.",

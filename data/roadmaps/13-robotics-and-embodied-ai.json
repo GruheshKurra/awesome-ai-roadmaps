@@ -1,6 +1,7 @@
 {
   "slug": "robotics-and-embodied-ai",
   "order": 13,
+  "added": "2026-11-03",
   "title": "Robotics & Embodied AI",
   "level": "Advanced",
   "tagline": "Teach robots with data: robot learning basics, imitation learning, ACT, diffusion policies, vision-language-action models, and sim-to-real.",

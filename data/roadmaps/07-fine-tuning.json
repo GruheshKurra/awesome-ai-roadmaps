@@ -1,6 +1,7 @@
 {
   "slug": "fine-tuning",
   "order": 7,
+  "added": "2026-11-03",
   "title": "Fine-Tuning & Reasoning Models",
   "level": "Advanced",
   "tagline": "Adapt open models with LoRA, align them with RLHF and DPO, and train reasoning with GRPO.",

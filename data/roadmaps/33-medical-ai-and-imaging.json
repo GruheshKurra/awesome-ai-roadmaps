@@ -1,6 +1,7 @@
 {
   "slug": "medical-ai-and-imaging",
   "order": 33,
+  "added": "2026-11-05",
   "title": "Medical AI & Imaging",
   "level": "Intermediate",
   "tagline": "Work with medical images and clinical data: DICOM, segmentation with U-Net, MONAI, and nnU-Net, pathology, foundation models, bias, and regulation.",

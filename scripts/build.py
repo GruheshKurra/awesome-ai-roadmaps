@@ -7,6 +7,7 @@ Roadmaps live in data/roadmaps/NN-slug.json. Video and repo metadata comes from
 data/meta.json, which scripts/refresh_meta.py fills in.
 """
 
+import datetime
 import json
 import re
 import shutil
@@ -50,9 +51,13 @@ def load():
         errors.append("duplicate roadmap slugs")
     seen = {}
     for r in roadmaps:
-        for key in ("slug", "order", "title", "level", "tagline", "prereqs", "steps", "projects"):
+        for key in ("slug", "order", "added", "title", "level", "tagline", "prereqs", "steps", "projects"):
             if key not in r:
                 errors.append(f"{r.get('slug')}: missing {key}")
+        try:
+            datetime.date.fromisoformat(r.get("added", ""))
+        except ValueError:
+            errors.append(f"{r.get('slug')}: added must be a YYYY-MM-DD date")
         if r.get("level") not in LEVELS:
             errors.append(f"{r['slug']}: level must be one of {LEVELS}")
         if not 6 <= len(r.get("steps", [])) <= 16:
@@ -302,10 +307,10 @@ def home_html(roadmaps, meta, upcoming):
         thumbs = "".join(f'<img src="{thumb(s["video"])}" alt="" loading="lazy">' for s in r["steps"][:3])
         search = " ".join([r["title"], r["tagline"], r["level"]] + [s["title"] for s in r["steps"]]).lower()
         ids = " ".join(s["video"] for s in r["steps"])
-        cards.append(f"""<a class="card" href="{r['slug']}/" data-slug="{r['slug']}" data-level="{r['level'].lower()}" data-total="{len(r['steps'])}" data-ids="{ids}" data-search="{escape(search)}">
+        cards.append(f"""<a class="card" href="{r['slug']}/" data-slug="{r['slug']}" data-level="{r['level'].lower()}" data-added="{r['added']}" data-total="{len(r['steps'])}" data-ids="{ids}" data-search="{escape(search)}">
   <div class="mosaic">{thumbs}<span class="num">{r['order']:02d}</span></div>
   <div class="card-body">
-    <div class="pills"><span class="pill level-{r['level'].lower()}">{r['level']}</span><span class="muted">{len(r['steps'])} steps · {duration(r['seconds'])}</span></div>
+    <div class="pills"><span class="pill level-{r['level'].lower()}">{r['level']}</span><span class="pill new" hidden>New</span><span class="muted">{len(r['steps'])} steps · {duration(r['seconds'])}</span></div>
     <h3>{escape(r['title'])}</h3>
     <p>{escape(r['tagline'])}</p>
     <div class="progress" aria-hidden="true"><span></span></div>

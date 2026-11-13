@@ -1,6 +1,7 @@
 {
   "slug": "interpretability",
   "order": 14,
+  "added": "2026-11-03",
   "title": "Interpretability",
   "level": "Advanced",
   "tagline": "Open the black box: circuits, superposition, sparse autoencoders, induction heads, grokking, and tracing what LLMs compute.",
