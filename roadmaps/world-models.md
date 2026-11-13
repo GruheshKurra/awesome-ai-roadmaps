@@ -25,3 +25,5 @@ Level: **Advanced** · 10 steps · 6h 07m of video · Prerequisites: [Reinforcem
 - Recreate the 2018 World Models pipeline on CarRacing: train the VAE, the next-latent RNN, and a small controller, and compare a policy trained in the dream with one trained on real frames.
 - Train muzero-general on a small game such as tic-tac-toe or CartPole, then plot how often its learned-model rollouts predict the true reward a few steps ahead.
 - Learn a dynamics model for a Gymnasium environment from random play, then use it for model-predictive control and compare reward against a model-free baseline.
+
+**Next:** [AI for Finance](ai-for-finance.md)

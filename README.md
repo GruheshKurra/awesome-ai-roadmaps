@@ -10,7 +10,7 @@
 <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge-flat2.svg" height="28"></a>
 </p>
 
-<p align="center"><b>42 roadmaps · 529 videos · 271 hours of video · 163 GitHub repos</b></p>
+<p align="center"><b>43 roadmaps · 540 videos · 280 hours of video · 166 GitHub repos</b></p>
 
 <p align="center"><a href="https://gruheshkurra.github.io/awesome-ai-roadmaps/"><b>Open the interactive website →</b></a> (track your progress, step by step)</p>
 
@@ -18,7 +18,7 @@
 
 ## Pick a path
 
-New here? Follow the path that matches your goal, or browse [all 42 roadmaps](#roadmaps) below.
+New here? Follow the path that matches your goal, or browse [all 43 roadmaps](#roadmaps) below.
 
 - **Total beginner:** [Python & Math for AI](roadmaps/foundations.md) → [Machine Learning](roadmaps/machine-learning.md) → [Deep Learning](roadmaps/deep-learning.md)
 - **Developer building with AI:** [AI Engineering](roadmaps/ai-engineering.md) → [AI Agents & MCP](roadmaps/ai-agents.md)
@@ -75,6 +75,7 @@ New here? Follow the path that matches your goal, or browse [all 42 roadmaps](#r
 | 40 | **[Document AI & OCR](roadmaps/document-ai-and-ocr.md)**<br><sub>Get text, tables, and fields out of scans and PDFs: image cleanup, classic OCR engines, handwriting recognition, layout-aware models, PDF-to-Markdown tools, and vision-language models that read pages directly.</sub> | Intermediate | 10 | 3h 35m |
 | 41 | **[Self-Supervised & Contrastive Learning](roadmaps/self-supervised-and-contrastive-learning.md)**<br><sub>How models learn strong features from unlabeled data: contrastive losses, SimCLR, BYOL, masked autoencoders, DINO through DINOv3, and JEPA's predict-the-representation idea.</sub> | Advanced | 12 | 4h 52m |
 | 42 | **[World Models](roadmaps/world-models.md)**<br><sub>Models that learn how an environment responds to actions, then plan or train agents inside it: model-based RL, Dreamer, MuZero, Genie, world foundation models, and JEPA-style planning.</sub> | Advanced | 10 | 6h 07m |
+| 43 | **[AI for Finance](roadmaps/ai-for-finance.md)**<br><sub>Machine learning for markets and money: how quant firms work, portfolios and factors, honest backtesting, financial text, credit risk, and LLMs in finance. Education, not investment advice.</sub> | Intermediate | 11 | 8h 26m |
 
 ## Start right now
 
@@ -94,14 +95,14 @@ The GitHub repos the roadmaps use most. Clone them and code along.
 
 | Repo | Stars | Used in |
 | --- | ---: | --- |
-| [ollama/ollama](https://github.com/ollama/ollama) | ★ 186.7k | [AI Engineering](roadmaps/ai-engineering.md) |
-| [Comfy-Org/ComfyUI](https://github.com/Comfy-Org/ComfyUI) | ★ 146.4k | [Generative AI: Images & Video](roadmaps/generative-ai.md) |
-| [ggml-org/llama.cpp](https://github.com/ggml-org/llama.cpp) | ★ 134.2k | [Run, Serve & Scale AI](roadmaps/deploy-and-scale.md), [TinyML & Edge AI](roadmaps/tinyml-and-edge-ai.md) |
-| [openai/whisper](https://github.com/openai/whisper) | ★ 112.5k | [Speech & Audio AI](roadmaps/speech-and-audio-ai.md) |
+| [ollama/ollama](https://github.com/ollama/ollama) | ★ 186.9k | [AI Engineering](roadmaps/ai-engineering.md) |
+| [Comfy-Org/ComfyUI](https://github.com/Comfy-Org/ComfyUI) | ★ 146.6k | [Generative AI: Images & Video](roadmaps/generative-ai.md) |
+| [ggml-org/llama.cpp](https://github.com/ggml-org/llama.cpp) | ★ 134.8k | [Run, Serve & Scale AI](roadmaps/deploy-and-scale.md), [TinyML & Edge AI](roadmaps/tinyml-and-edge-ai.md) |
+| [openai/whisper](https://github.com/openai/whisper) | ★ 112.6k | [Speech & Audio AI](roadmaps/speech-and-audio-ai.md) |
 | [rasbt/LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch) | ★ 108.3k | [LLMs from Scratch](roadmaps/llms-from-scratch.md) |
-| [vllm-project/vllm](https://github.com/vllm-project/vllm) | ★ 96.8k | [Run, Serve & Scale AI](roadmaps/deploy-and-scale.md) |
-| [microsoft/ML-For-Beginners](https://github.com/microsoft/ML-For-Beginners) | ★ 92.1k | [Machine Learning](roadmaps/machine-learning.md) |
-| [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) | ★ 91.9k | [AI Agents & MCP](roadmaps/ai-agents.md) |
+| [vllm-project/vllm](https://github.com/vllm-project/vllm) | ★ 96.9k | [Run, Serve & Scale AI](roadmaps/deploy-and-scale.md) |
+| [microsoft/ML-For-Beginners](https://github.com/microsoft/ML-For-Beginners) | ★ 92.2k | [Machine Learning](roadmaps/machine-learning.md) |
+| [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) | ★ 92k | [AI Agents & MCP](roadmaps/ai-agents.md) |
 | [mlabonne/llm-course](https://github.com/mlabonne/llm-course) | ★ 85.1k | [Fine-Tuning & Reasoning Models](roadmaps/fine-tuning.md) |
 | [dair-ai/Prompt-Engineering-Guide](https://github.com/dair-ai/Prompt-Engineering-Guide) | ★ 80k | [AI Engineering](roadmaps/ai-engineering.md) |
 | [microsoft/ai-agents-for-beginners](https://github.com/microsoft/ai-agents-for-beginners) | ★ 79.5k | [AI Agents & MCP](roadmaps/ai-agents.md) |
@@ -124,7 +125,6 @@ New roadmaps are added regularly. Next up:
 
 - Search & Information Retrieval
 - Tabular ML & Gradient Boosting
-- AI for Finance
 
 Watch or star the repo to get them as they land.
 
