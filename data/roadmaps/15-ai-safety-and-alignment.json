@@ -60,12 +60,14 @@
     {
       "title": "Alignment faking in LLMs",
       "video": "9eXV64O2Xp8",
-      "why": "A model behaving differently when it thinks it is watched."
+      "why": "A model behaving differently when it thinks it is watched.",
+      "repo": "redwoodresearch/alignment_faking_public"
     },
     {
       "title": "Dangerous capability evaluations",
       "video": "pO8IcIqhHuk",
-      "why": "How labs test frontier models for serious risks."
+      "why": "How labs test frontier models for serious risks.",
+      "repo": "UKGovernmentBEIS/inspect_ai"
     }
   ],
   "projects": [
