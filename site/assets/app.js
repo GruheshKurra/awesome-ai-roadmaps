@@ -38,8 +38,8 @@
     document.querySelectorAll('.card').forEach(card => {
       const ids = card.dataset.ids.split(' ');
       const done = read(card.dataset.slug);
-      paint(card, done.size, Number(card.dataset.total));
       const count = ids.filter(id => done.has(id)).length;
+      paint(card, count, ids.length);
       if (!count || count === ids.length) return;
       if (!best || count / ids.length > best.count / best.ids.length) best = { card, ids, done, count };
     });

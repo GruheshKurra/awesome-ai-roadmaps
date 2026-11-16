@@ -4,7 +4,7 @@
   "added": "2026-11-03",
   "title": "Run, Serve & Scale AI",
   "level": "Advanced",
-  "tagline": "Get models into production and make them fast: Docker, MLOps, quantization, vLLM, GPUs, CUDA, and FSDP.",
+  "tagline": "Get models into production and make them fast: Docker, MLOps, monitoring, quantization, vLLM, GPUs, and FSDP.",
   "prereqs": "Deep Learning. LLMs from Scratch for the inference steps.",
   "steps": [
     {
@@ -36,6 +36,11 @@
       "repo": "mlflow/mlflow"
     },
     {
+      "title": "Monitor models for drift",
+      "video": "cgc3dSEAel0",
+      "why": "Compare live inputs to training data and flag drift with Evidently reports."
+    },
+    {
       "title": "Quantization",
       "video": "3EDI4akymhA",
       "why": "8-bit, 4-bit, and GGUF: smaller models, small quality loss."
@@ -58,6 +63,11 @@
       "repo": "vllm-project/vllm"
     },
     {
+      "title": "Speculative decoding",
+      "video": "l8gWQlrVOKQ",
+      "why": "A small draft model proposes tokens; the big model verifies several in one pass."
+    },
+    {
       "title": "Inference engines",
       "video": "_xM8scs4_x4",
       "why": "How serving systems batch, cache, and schedule."
@@ -68,21 +78,10 @@
       "why": "The hardware every model runs on, beautifully animated."
     },
     {
-      "title": "CUDA in 100 seconds",
-      "video": "pPStdjuYzSI",
-      "why": "What GPU programming is, in under 4 minutes."
-    },
-    {
       "title": "GPUs for LLMs",
       "video": "6OBtO9niT00",
       "why": "Stanford CS336: memory hierarchy, arithmetic intensity, and why kernels matter.",
       "repo": "gpu-mode/lectures"
-    },
-    {
-      "title": "CUDA programming",
-      "video": "86FAWCzIe_4",
-      "why": "Write your own kernels, from scratch.",
-      "repo": "srush/GPU-Puzzles"
     },
     {
       "title": "Sharded training with FSDP",
@@ -94,6 +93,6 @@
   "projects": [
     "Serve a quantized model with llama.cpp and compare tokens/sec at 4-bit and 8-bit.",
     "Load-test vLLM at 1, 8, and 32 concurrent users and chart time-to-first-token.",
-    "Solve the first 10 GPU Puzzles, then write a fused softmax kernel and benchmark it."
+    "Train a scikit-learn model, serve it with FastAPI, then shift the input data and catch the drift in an Evidently report."
   ]
 }
