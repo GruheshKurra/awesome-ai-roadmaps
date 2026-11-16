@@ -31,7 +31,7 @@ PATHS = [
     ("Total beginner", ["foundations", "machine-learning", "deep-learning"]),
     ("Developer building with AI", ["ai-engineering", "ai-agents"]),
     ("How LLMs really work", ["deep-learning", "llms-from-scratch", "fine-tuning"]),
-    ("Production and performance", ["machine-learning", "deploy-and-scale"]),
+    ("Production and performance", ["deep-learning", "deploy-and-scale", "gpu-programming-and-cuda"]),
     ("Data scientist", ["machine-learning", "explainable-ml-shap-lime-and-model-debugging", "causal-inference-and-causal-ml"]),
     ("Trustworthy LLM apps", ["ai-engineering", "evaluation-and-benchmarking-for-llms", "llm-security-and-red-teaming"]),
     ("Vision to 3D worlds", ["deep-learning", "computer-vision", "3d-vision-nerfs-and-gaussian-splatting"]),
