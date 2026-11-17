@@ -27,4 +27,4 @@ Level: **Intermediate** · 11 steps · 3h 48m of video · Prerequisites: [Machin
 - Compare a pretrained model such as Chronos with your best classical model on three series.
 - Build an anomaly detector for sensor or server data using z-scores and Isolation Forest, and plot its alerts.
 
-**Next:** [Graph Neural Networks](graph-neural-networks.md)
+**Next:** [Anomaly Detection](anomaly-detection.md) · [AI for Finance](ai-for-finance.md)

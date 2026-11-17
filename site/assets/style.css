@@ -282,6 +282,9 @@ h1 { font-size: clamp(32px, 4.6vw, 50px); line-height: 1.1; letter-spacing: -.02
   border-radius: var(--radius); border: 1px solid var(--line); background: var(--surface); text-decoration: none;
 }
 .next strong { font-size: 20px; }
+.next-wrap { margin: 24px 0 0; }
+.next-wrap > p { margin: 0 0 8px; font-size: 14px; font-weight: 600; }
+.next-wrap .next { margin: 8px 0 0; }
 .next:hover { border-color: var(--accent); }
 .more { margin: 40px 0 0; }
 .more h2 { margin: 0 0 12px; font-size: 18px; }

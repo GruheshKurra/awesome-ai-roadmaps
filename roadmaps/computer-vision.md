@@ -28,4 +28,4 @@ Level: **Intermediate** · 12 steps · 4h 40m of video · Prerequisites: [Deep L
 - Train a YOLO detector on a custom dataset and run it on a video from your phone.
 - Build text-to-image search over 1,000 of your photos with CLIP embeddings.
 
-**Next:** [Generative AI: Images & Video](generative-ai.md)
+**Next:** [Multimodal & Vision-Language Models](multimodal-and-vision-language-models.md) · [Medical AI & Imaging](medical-ai-and-imaging.md) · [Self-Driving Cars & Autonomous Systems](self-driving-cars-and-autonomous-systems.md)

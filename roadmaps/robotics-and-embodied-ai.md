@@ -26,4 +26,4 @@ Level: **Advanced** · 10 steps · 7h 28m of video · Prerequisites: [Reinforcem
 - Write behavior cloning for a simulated task and show where it drifts, then add DAgger-style corrections.
 - Train a quadruped to walk in Isaac Lab and compare two reward designs.
 
-**Next:** [Interpretability](interpretability.md)
+**Next:** [Self-Driving Cars & Autonomous Systems](self-driving-cars-and-autonomous-systems.md)

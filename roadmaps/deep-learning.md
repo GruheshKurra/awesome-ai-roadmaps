@@ -30,4 +30,4 @@ Level: **Intermediate** · 14 steps · 11h 01m of video · Prerequisites: [Pytho
 - Train an MLP on MNIST in raw PyTorch, then add BatchNorm and dropout one at a time and record what changes.
 - Train a small ResNet on CIFAR-10 with and without skip connections and compare the curves.
 
-**Next:** [LLMs from Scratch](llms-from-scratch.md)
+**Next:** [LLMs from Scratch](llms-from-scratch.md) · [Computer Vision](computer-vision.md) · [Generative AI: Images & Video](generative-ai.md)

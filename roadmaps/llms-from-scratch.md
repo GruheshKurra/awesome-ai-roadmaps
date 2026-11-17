@@ -31,4 +31,4 @@ Level: **Intermediate** · 15 steps · 22h 04m of video · Prerequisites: [Deep 
 - Swap GPT-2's components for RoPE, RMSNorm, and SwiGLU one by one and compare loss on TinyStories.
 - Train your own BPE tokenizer and compare its token counts with GPT-2's on English, code, and another language.
 
-**Next:** [AI Engineering](ai-engineering.md)
+**Next:** [Fine-Tuning & Reasoning Models](fine-tuning.md) · [Run, Serve & Scale AI](deploy-and-scale.md) · [Speech & Audio AI](speech-and-audio-ai.md)

@@ -27,4 +27,4 @@ Level: **Intermediate** · 11 steps · 3h 28m of video · Prerequisites: [Deep L
 - Solve LunarLander with PPO in Stable Baselines3 and record a video of the trained agent.
 - Write tabular Q-learning for FrozenLake from scratch and visualize the learned policy.
 
-**Next:** [Speech & Audio AI](speech-and-audio-ai.md)
+**Next:** [Robotics & Embodied AI](robotics-and-embodied-ai.md) · [AI Safety & Alignment](ai-safety-and-alignment.md) · [World Models](world-models.md)

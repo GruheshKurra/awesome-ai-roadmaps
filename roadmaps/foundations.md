@@ -29,4 +29,4 @@ Level: **Beginner** · 13 steps · 6h 54m of video · Prerequisites: None. Start
 - Solve the first 30 numpy-100 exercises without a single Python loop.
 - Implement linear regression with plain NumPy and gradient descent, then plot the loss curve.
 
-**Next:** [Machine Learning](machine-learning.md)
+**Next:** [Machine Learning](machine-learning.md) · [Deep Learning](deep-learning.md) · [Data Engineering for AI](data-engineering-for-ai.md)

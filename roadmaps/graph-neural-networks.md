@@ -27,4 +27,4 @@ Level: **Advanced** · 11 steps · 3h 26m of video · Prerequisites: [Deep Learn
 - Predict missing links on a citation graph and report ROC-AUC against a node2vec baseline.
 - Train a GNN on the MUTAG molecule dataset in PyTorch Geometric to classify whole graphs, and compare it with a simple baseline.
 
-**Next:** [Multimodal & Vision-Language Models](multimodal-and-vision-language-models.md)
+**Next:** [AI for Science](ai-for-science.md) · [Knowledge Graphs & GraphRAG](knowledge-graphs-and-graphrag.md)
