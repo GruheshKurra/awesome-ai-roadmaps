@@ -60,10 +60,9 @@
       "why": "Run a tiny detector on a cheap camera board."
     },
     {
-      "title": "ONNX Runtime",
+      "title": "ONNX Runtime for generative models",
       "video": "Wp5PaRpudlk",
-      "why": "Export once, then run the model fast on many devices.",
-      "repo": "microsoft/onnxruntime"
+      "why": "See how ONNX Runtime GenAI runs language models on a device."
     },
     {
       "title": "On-device PyTorch with ExecuTorch",
@@ -86,6 +85,6 @@
   "projects": [
     "Quantize a small CNN to int8 and report size, latency, and accuracy before and after.",
     "Train a two-word keyword spotter and run it on a microcontroller board (or the board's simulator).",
-    "Export a PyTorch image classifier to ONNX and compare its speed with ONNX Runtime and plain PyTorch on your laptop."
+    "Run a small language model locally with ONNX Runtime GenAI and measure its tokens per second on your laptop."
   ]
 }

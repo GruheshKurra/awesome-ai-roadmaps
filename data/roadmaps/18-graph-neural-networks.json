@@ -15,7 +15,8 @@
     {
       "title": "Node embeddings and node2vec",
       "video": "pS_POUVFXvk",
-      "why": "Map nodes to vectors with random walks."
+      "why": "Use examples/node2vec.py to turn random walks into node embeddings.",
+      "repo": "pyg-team/pytorch_geometric"
     },
     {
       "title": "Message passing",
@@ -30,7 +31,8 @@
     {
       "title": "Graph attention networks",
       "video": "A-yKQamf2Fc",
-      "why": "Let nodes weigh their neighbors differently."
+      "why": "Use examples/gat.py to train a network that weights its neighbors.",
+      "repo": "pyg-team/pytorch_geometric"
     },
     {
       "title": "GraphSAGE",
@@ -45,13 +47,13 @@
     {
       "title": "Hands-on with PyTorch Geometric",
       "video": "-UjytpbqX4A",
-      "why": "Build and train GNNs with the standard library.",
+      "why": "Build and train a graph neural network with PyTorch Geometric.",
       "repo": "pyg-team/pytorch_geometric"
     },
     {
       "title": "Link prediction",
       "video": "4dVwlE9jYxY",
-      "why": "Predict missing edges with features and learned embeddings."
+      "why": "Score candidate links using features computed from the graph."
     },
     {
       "title": "Recommenders with GNNs",
