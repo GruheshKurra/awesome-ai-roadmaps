@@ -29,4 +29,4 @@ Level: **Advanced** · 13 steps · 8h 00m of video · Prerequisites: [Deep Learn
 - Drive a car along waypoints in the CARLA simulator with a PID controller and plot the tracking error.
 - Train a small behavior-cloning model in CARLA or a 2D driving sim and report how often it leaves the lane.
 
-**Next:** [Mixture of Experts & Efficient LLM Architectures](mixture-of-experts-and-efficient-llm-architectures.md)
+[Browse all roadmaps](../README.md#roadmaps)

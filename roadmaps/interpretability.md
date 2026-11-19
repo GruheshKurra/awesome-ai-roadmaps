@@ -28,4 +28,4 @@ Level: **Advanced** · 12 steps · 5h 36m of video · Prerequisites: [LLMs from 
 - Train a small sparse autoencoder on one layer of a small model and list five features you can name.
 - Use activation patching to locate which layer decides the answer on a simple factual prompt.
 
-**Next:** [AI Safety & Alignment](ai-safety-and-alignment.md)
+[Browse all roadmaps](../README.md#roadmaps)

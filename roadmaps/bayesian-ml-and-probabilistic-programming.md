@@ -31,4 +31,4 @@ Level: **Advanced** · 15 steps · 7h 04m of video · Prerequisites: [Machine Le
 - Fit a hierarchical PyMC model to per-group data (e.g. ratings by restaurant) and compare it with no pooling and full pooling.
 - Use Bayesian optimization to tune two hyperparameters of a scikit-learn model and compare it with random search.
 
-**Next:** [TinyML & Edge AI](tinyml-and-edge-ai.md)
+[Browse all roadmaps](../README.md#roadmaps)

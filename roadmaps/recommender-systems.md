@@ -28,4 +28,4 @@ Level: **Intermediate** · 12 steps · 3h 14m of video · Prerequisites: [Machin
 - Build a two-tower model on MovieLens and serve its embeddings through a FAISS index.
 - Write a short comparison of three recommenders on one dataset, with metrics and failure cases.
 
-**Next:** [Time Series & Forecasting](time-series-and-forecasting.md)
+[Browse all roadmaps](../README.md#roadmaps)

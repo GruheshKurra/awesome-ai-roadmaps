@@ -31,4 +31,4 @@ Level: **Intermediate** · 15 steps · 4h 18m of video · Prerequisites: [Machin
 - Run LDA on a news or Reddit dataset with gensim and label the top 10 topics by their words.
 - Train word2vec on a book from Project Gutenberg and show nearest neighbors and analogies.
 
-**Next:** [Anomaly Detection](anomaly-detection.md)
+[Browse all roadmaps](../README.md#roadmaps)

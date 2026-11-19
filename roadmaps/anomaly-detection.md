@@ -27,4 +27,4 @@ Level: **Intermediate** · 11 steps · 4h 41m of video · Prerequisites: [Machin
 - Build an LSTM autoencoder that flags unusual windows in server CPU or sensor data, and plot the alerts.
 - For the top 20 flagged points of any detector, show a SHAP explanation of why each was flagged.
 
-**Next:** [Document AI & OCR](document-ai-and-ocr.md)
+[Browse all roadmaps](../README.md#roadmaps)

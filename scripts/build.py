@@ -134,13 +134,10 @@ def link_prereqs(text, roadmaps, href, fmt):
 
 
 def next_roadmaps(r, roadmaps, limit=3):
-    """Roadmaps whose prerequisites name this one; falls back to the following roadmap."""
+    """Roadmaps whose prerequisites name this one."""
     titles = sorted((o["title"] for o in roadmaps), key=len, reverse=True)
     pattern = re.compile("|".join(re.escape(t) for t in titles))
     found = [o for o in roadmaps if o is not r and r["title"] in pattern.findall(o["prereqs"])]
-    if not found:
-        i = roadmaps.index(r)
-        found = roadmaps[i + 1:i + 2]
     return found[:limit]
 
 
@@ -204,11 +201,11 @@ def readme(roadmaps, meta, upcoming):
         "- **In order.** Steps build on each other. Follow a roadmap top to bottom.",
         "- **Build something.** Every roadmap ends with small projects. They make a better portfolio than certificates.",
         "- **Checked.** A script verifies every video is still up and every repo still exists.",
-        "", "## Coming next", "", "New roadmaps are added regularly. Next up:", "",
     ]
-    out += [f"- {item}" for item in upcoming]
+    if upcoming:
+        out += ["", "## Coming next", ""] + [f"- {item}" for item in upcoming]
     out += [
-        "", "Watch or star the repo to get them as they land.", "",
+        "",
         "## Contributing", "",
         f"Know a better video for a step, or found a dead link? [Open an issue]({REPO_URL}/issues/new/choose) or read [contributing.md](contributing.md).",
         "", "## Star history", "",
@@ -246,6 +243,8 @@ def roadmap_md(r, roadmaps, meta):
     nxt = next_roadmaps(r, roadmaps)
     if nxt:
         out += ["**Next:** " + " · ".join(f"[{n['title']}]({n['slug']}.md)" for n in nxt), ""]
+    else:
+        out += ["[Browse all roadmaps](../README.md#roadmaps)", ""]
     return "\n".join(out)
 
 
@@ -338,6 +337,11 @@ def home_html(roadmaps, meta, upcoming):
         m = meta["repos"][key]
         repo_cards.append(f'<a class="repo" href="https://github.com/{key}" target="_blank" rel="noopener"><span class="repo-name">{escape(key)}</span><span class="repo-desc">{escape(m["description"][:110])}</span><span class="repo-stars">★ {stars(m["stars"])}</span></a>')
     soon = "".join(f"<li>{escape(item)}</li>" for item in upcoming)
+    upcoming_section = f'''<section class="section soon">
+  <h2>Coming next</h2>
+  <p class="muted">New roadmaps land regularly. <a href="{REPO_URL}">Star the repo</a> to catch them.</p>
+  <ul>{soon}</ul>
+</section>''' if upcoming else ""
     levels = ["Beginner", "Intermediate", "Advanced"]
     chips = f'<button type="button" class="chip" data-level="all" aria-pressed="true">All <span class="muted">{len(roadmaps)}</span></button>' + "".join(
         f'<button type="button" class="chip" data-level="{lv.lower()}" aria-pressed="false">{lv} <span class="muted">{sum(1 for r in roadmaps if r["level"] == lv)}</span></button>' for lv in levels)
@@ -392,11 +396,7 @@ def home_html(roadmaps, meta, upcoming):
   <p class="muted">The repositories these roadmaps code along with.</p>
   <div class="repos">{''.join(repo_cards)}</div>
 </section>
-<section class="section soon">
-  <h2>Coming next</h2>
-  <p class="muted">New roadmaps land regularly. <a href="{REPO_URL}">Star the repo</a> to catch them.</p>
-  <ul>{soon}</ul>
-</section>
+{upcoming_section}
 <section class="section faq">
   <h2>Questions</h2>
   {faq_html}
@@ -434,7 +434,7 @@ def roadmap_html(r, roadmaps, meta):
   </div>
 </li>""")
     projects = "".join(f"<li>{escape(p)}</li>" for p in r["projects"])
-    nav = ""
+    nav = '<p class="next-wrap"><a href="../#roadmaps">Browse all roadmaps →</a></p>'
     nxt = next_roadmaps(r, roadmaps)
     if nxt:
         label = "Next roadmap" if len(nxt) == 1 else "Where to go next"

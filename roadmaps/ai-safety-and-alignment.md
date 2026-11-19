@@ -28,4 +28,4 @@ Level: **Intermediate** · 12 steps · 4h 17m of video · Prerequisites: Basic M
 - Build a tiny RL environment with a deliberate reward loophole and show an agent exploiting it.
 - Design 10 eval prompts for one risky behavior, run them on a model, and report the failure rate.
 
-**Next:** [Recommender Systems](recommender-systems.md)
+[Browse all roadmaps](../README.md#roadmaps)

@@ -30,4 +30,4 @@ Level: **Advanced** · 14 steps · 5h 51m of video · Prerequisites: [Machine Le
 - Train a 2-qubit variational classifier in PennyLane on a small 2D dataset and compare it with logistic regression.
 - Compare a quantum-kernel SVM with an RBF-kernel SVM on the same dataset and write up accuracy and runtime.
 
-**Next:** [LLM Security & Red Teaming](llm-security-and-red-teaming.md)
+[Browse all roadmaps](../README.md#roadmaps)

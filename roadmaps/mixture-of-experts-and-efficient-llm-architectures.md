@@ -29,4 +29,4 @@ Level: **Advanced** · 13 steps · 6h 59m of video · Prerequisites: [LLMs from 
 - Log how many tokens each expert receives during training, then add a load-balancing loss and show the change.
 - Measure KV-cache memory and generation speed for MHA versus GQA in a small model at several context lengths.
 
-**Next:** [3D Vision, NeRFs & Gaussian Splatting](3d-vision-nerfs-and-gaussian-splatting.md)
+[Browse all roadmaps](../README.md#roadmaps)
