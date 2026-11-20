@@ -61,6 +61,7 @@
     const cards = [...document.querySelectorAll('.card')];
     const chips = [...document.querySelectorAll('.chip')];
     const empty = document.getElementById('empty');
+    const recent = document.querySelector('.recent');
     let level = 'all';
     const apply = () => {
       const terms = search.value.toLowerCase().split(/\s+/).filter(Boolean);
@@ -71,6 +72,8 @@
         shown += hit;
       });
       empty.hidden = shown > 0;
+      // The recently added links ignore the filters, so only show them on the full list.
+      if (recent) recent.hidden = level !== 'all' || terms.length > 0;
     };
     search.addEventListener('input', apply);
     chips.forEach(chip => chip.addEventListener('click', () => {

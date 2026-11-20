@@ -9,6 +9,7 @@
   --accent-ink: #ffffff;
   --accent-soft: #fff0e8;
   --good: #12a150;
+  --star: #8a5a00;
   --beginner: #e7f6ec;
   --beginner-ink: #146c3a;
   --intermediate: #e8f0ff;
@@ -30,6 +31,7 @@
     --line: #2c2820;
     --accent: #ff6a33;
     --accent-soft: #2c1a10;
+    --star: #c98a00;
     --beginner: #12291b;
     --beginner-ink: #7ddc9f;
     --intermediate: #141f38;
@@ -50,6 +52,7 @@
   --line: #2c2820;
   --accent: #ff6a33;
   --accent-soft: #2c1a10;
+  --star: #c98a00;
   --beginner: #12291b;
   --beginner-ink: #7ddc9f;
   --intermediate: #141f38;
@@ -163,6 +166,9 @@ h1 { font-size: clamp(32px, 4.6vw, 50px); line-height: 1.1; letter-spacing: -.02
 .chip:hover { border-color: var(--ink); }
 .chip[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: var(--bg); }
 .chip[aria-pressed="true"] .muted { color: inherit; opacity: .75; }
+.recent { margin: -6px 0 20px; font-size: 14px; }
+.recent a { color: var(--ink); font-weight: 500; text-decoration: underline; text-underline-offset: 2px; }
+.recent a:hover { text-decoration-thickness: 2px; }
 
 /* Roadmap cards */
 .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; }
@@ -214,7 +220,7 @@ h1 { font-size: clamp(32px, 4.6vw, 50px); line-height: 1.1; letter-spacing: -.02
 .repo:hover { border-color: var(--accent); }
 .repo-name { font-weight: 700; font-size: 15px; word-break: break-word; }
 .repo-desc { color: var(--muted); font-size: 14px; flex: 1; }
-.repo-stars { font-weight: 700; font-size: 14px; color: #c98a00; }
+.repo-stars { font-weight: 700; font-size: 14px; color: var(--star); }
 
 .soon ul { display: flex; flex-wrap: wrap; gap: 10px; padding: 0; margin: 16px 0 0; list-style: none; }
 .soon li { padding: 8px 14px; border-radius: 999px; border: 1px dashed var(--line); color: var(--muted); font-weight: 500; }
@@ -270,7 +276,7 @@ h1 { font-size: clamp(32px, 4.6vw, 50px); line-height: 1.1; letter-spacing: -.02
   text-decoration: none; font-size: 14px; font-weight: 600; word-break: break-all;
 }
 .repo-chip svg { width: 15px; height: 15px; fill: currentColor; flex: none; }
-.repo-chip span { color: #c98a00; white-space: nowrap; }
+.repo-chip span { color: var(--star); white-space: nowrap; }
 .repo-chip:hover { outline: 1px solid var(--accent); }
 
 .build { margin: 40px 0 0; padding: 24px; border-radius: var(--radius); background: var(--accent-soft); }

@@ -31,6 +31,8 @@ New here? Follow the path that matches your goal, or browse [all 43 roadmaps](#r
 
 ## Roadmaps
 
+**Recently added:** [AI for Finance](roadmaps/ai-for-finance.md) (Nov 13) · [World Models](roadmaps/world-models.md) (Nov 9) · [Self-Supervised & Contrastive Learning](roadmaps/self-supervised-and-contrastive-learning.md) (Nov 8)
+
 | # | Roadmap | Level | Steps | Video time |
 | ---: | --- | --- | ---: | ---: |
 | 1 | **[Python & Math for AI](roadmaps/foundations.md)**<br><sub>The Python, NumPy, linear algebra, calculus, and probability you actually need before touching models.</sub> | Beginner | 13 | 6h 54m |

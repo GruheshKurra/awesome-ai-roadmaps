@@ -141,6 +141,16 @@ def next_roadmaps(r, roadmaps, limit=3):
     return found[:limit]
 
 
+def recent(roadmaps, limit=3):
+    """The newest roadmaps by the date they were added, latest first."""
+    return sorted(roadmaps, key=lambda r: (r["added"], r["order"]), reverse=True)[:limit]
+
+
+def short_date(iso):
+    day = datetime.date.fromisoformat(iso)
+    return f"{day:%b} {day.day}"
+
+
 def md_cell(text):
     return text.replace("|", "\\|")
 
@@ -182,7 +192,8 @@ def readme(roadmaps, meta, upcoming):
     for name, slugs in PATHS:
         chain = " → ".join(f"[{by_slug[s]['title']}](roadmaps/{s}.md)" for s in slugs)
         out.append(f"- **{name}:** {chain}")
-    out += ["", "## Roadmaps", "", "| # | Roadmap | Level | Steps | Video time |", "| ---: | --- | --- | ---: | ---: |"]
+    latest = " · ".join(f"[{r['title']}](roadmaps/{r['slug']}.md) ({short_date(r['added'])})" for r in recent(roadmaps))
+    out += ["", "## Roadmaps", "", f"**Recently added:** {latest}", "", "| # | Roadmap | Level | Steps | Video time |", "| ---: | --- | --- | ---: | ---: |"]
     for r in roadmaps:
         out.append(f"| {r['order']} | **[{r['title']}](roadmaps/{r['slug']}.md)**<br><sub>{md_cell(r['tagline'])}</sub> | {r['level']} | {len(r['steps'])} | {duration(r['seconds'])} |")
     start = roadmaps[0]
@@ -345,6 +356,7 @@ def home_html(roadmaps, meta, upcoming):
     levels = ["Beginner", "Intermediate", "Advanced"]
     chips = f'<button type="button" class="chip" data-level="all" aria-pressed="true">All <span class="muted">{len(roadmaps)}</span></button>' + "".join(
         f'<button type="button" class="chip" data-level="{lv.lower()}" aria-pressed="false">{lv} <span class="muted">{sum(1 for r in roadmaps if r["level"] == lv)}</span></button>' for lv in levels)
+    latest = " · ".join(f'<a href="{r["slug"]}/">{escape(r["title"])}</a> ({short_date(r["added"])})' for r in recent(roadmaps))
     first = roadmaps[0]
     peek = "".join(f'<li><img src="{thumb(st["video"])}" alt="" loading="lazy" width="96" height="54"><span class="peek-title">{escape(st["title"])}</span><span class="muted peek-dur">{duration(meta["videos"][st["video"]]["seconds"])}</span></li>' for st in first["steps"][:5])
     faq = [
@@ -382,6 +394,7 @@ def home_html(roadmaps, meta, upcoming):
     <label class="search"><span class="visually-hidden">Search roadmaps</span><input type="search" id="search" placeholder="Search: transformers, RAG, YOLO, CUDA…" autocomplete="off"></label>
   </div>
   <div class="chips" role="group" aria-label="Filter by level">{chips}</div>
+  <p class="recent muted">Recently added: {latest}</p>
   <div class="grid" id="grid">
 {''.join(cards)}
   </div>
