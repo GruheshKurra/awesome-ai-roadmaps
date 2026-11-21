@@ -5,7 +5,7 @@
   "title": "Federated Learning & Privacy-Preserving ML",
   "level": "Advanced",
   "tagline": "Train models without collecting the data: federated averaging, Flower simulations, differential privacy, secure aggregation, encryption, and the attacks these defend against.",
-  "prereqs": "Deep Learning (PyTorch training loops). Basic probability from Python & Math for AI helps for the differential privacy steps.",
+  "prereqs": "Deep Learning (PyTorch training loops). Basic probability from Python & Math for AI helps for the differential privacy steps. Hardware: running the FlowerTune benchmark code in step 12 with its default 4-bit Mistral-7B model needs roughly 17 to 26 GB of GPU memory per active client, depending on the challenge; without that, watch the talk and read the code.",
   "steps": [
     {
       "title": "What is federated learning?",
@@ -46,7 +46,8 @@
     {
       "title": "Differential privacy in deep learning",
       "video": "p6p9i1Hbcns",
-      "why": "Whether DP stops models memorizing data, and tips for using it."
+      "why": "Whether DP stops models memorizing data, and tips for using it.",
+      "repo": "meta-pytorch/opacus"
     },
     {
       "title": "Membership inference attacks",
@@ -61,12 +62,14 @@
     {
       "title": "Homomorphic encryption",
       "video": "PD48VtPls40",
-      "why": "Compute on encrypted data without decrypting it first."
+      "why": "Compute on encrypted data without decrypting it first.",
+      "repo": "zama-ai/concrete-ml"
     },
     {
       "title": "Federated fine-tuning of LLMs",
       "video": "Z-_XM7ldxVM",
-      "why": "A benchmark for fine-tuning language models across many data owners."
+      "why": "A benchmark for fine-tuning language models across many data owners.",
+      "repo": "flwrlabs/flower"
     }
   ],
   "projects": [
