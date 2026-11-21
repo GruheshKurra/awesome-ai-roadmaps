@@ -8,6 +8,7 @@
   --accent: #ff5a1f;
   --accent-ink: #ffffff;
   --accent-soft: #fff0e8;
+  --accent-text: #b8400e;
   --good: #12a150;
   --star: #8a5a00;
   --beginner: #e7f6ec;
@@ -31,6 +32,7 @@
     --line: #2c2820;
     --accent: #ff6a33;
     --accent-soft: #2c1a10;
+    --accent-text: #ff6a33;
     --star: #c98a00;
     --beginner: #12291b;
     --beginner-ink: #7ddc9f;
@@ -52,6 +54,7 @@
   --line: #2c2820;
   --accent: #ff6a33;
   --accent-soft: #2c1a10;
+  --accent-text: #ff6a33;
   --star: #c98a00;
   --beginner: #12291b;
   --beginner-ink: #7ddc9f;
@@ -125,7 +128,7 @@ h1 { font-size: clamp(32px, 4.6vw, 50px); line-height: 1.1; letter-spacing: -.02
 .resume:hover { border-color: var(--ink); border-left-color: var(--accent); }
 .resume-kicker { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); }
 .resume-title { font-size: 18px; }
-.resume-title::after { content: " →"; color: var(--accent); }
+.resume-title::after { content: " →"; color: var(--accent-text); }
 .resume-meta { font-size: 14px; }
 .btn {
   display: inline-flex; align-items: center; padding: 11px 18px; border-radius: 8px;
@@ -207,7 +210,7 @@ h1 { font-size: clamp(32px, 4.6vw, 50px); line-height: 1.1; letter-spacing: -.02
 .path h3 { margin: 0 0 10px; font-size: 16px; }
 .chain { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; font-size: 14px; }
 .chain a { padding: 4px 10px; border-radius: 8px; background: var(--surface-2); text-decoration: none; font-weight: 500; }
-.chain a:hover { color: var(--accent); }
+.chain a:hover { color: var(--accent-text); }
 .arrow { color: var(--muted); }
 .chain .hop { display: inline-flex; align-items: center; gap: 6px; }
 
@@ -262,13 +265,13 @@ h1 { font-size: clamp(32px, 4.6vw, 50px); line-height: 1.1; letter-spacing: -.02
   background: rgba(14, 13, 11, .85); color: #fff; font-size: 12px; font-weight: 700;
 }
 .step-top { display: flex; justify-content: space-between; align-items: center; }
-.step-num { font-size: 13px; font-weight: 800; color: var(--accent); text-transform: uppercase; letter-spacing: .05em; }
+.step-num { font-size: 13px; font-weight: 800; color: var(--accent-text); text-transform: uppercase; letter-spacing: .05em; }
 .done { display: inline-flex; align-items: center; gap: 8px; cursor: pointer; font-size: 14px; font-weight: 600; user-select: none; }
 .done input { width: 20px; height: 20px; accent-color: var(--good); cursor: pointer; }
 .step h3 { margin: 4px 0 6px; font-size: 21px; letter-spacing: -.015em; line-height: 1.25; }
 .why { margin: 0 0 12px; }
 .vtitle { font-weight: 600; font-size: 14px; text-decoration: none; display: inline-block; }
-.vtitle:hover { color: var(--accent); text-decoration: underline; }
+.vtitle:hover { color: var(--accent-text); text-decoration: underline; }
 .channel { margin: 2px 0 12px; font-size: 14px; }
 .repo-chip {
   display: inline-flex; align-items: center; gap: 8px; max-width: 100%;
@@ -296,12 +299,12 @@ h1 { font-size: clamp(32px, 4.6vw, 50px); line-height: 1.1; letter-spacing: -.02
 .more h2 { margin: 0 0 12px; font-size: 18px; }
 .more-links { display: flex; flex-wrap: wrap; gap: 8px; font-size: 14px; }
 .more-links a { padding: 6px 12px; border-radius: 8px; background: var(--surface-2); text-decoration: none; font-weight: 500; }
-.more-links a:hover { color: var(--accent); }
+.more-links a:hover { color: var(--accent-text); }
 
 /* FAQ */
 .faq details { max-width: 760px; border-bottom: 1px solid var(--line); }
 .faq summary { padding: 16px 0; font-weight: 600; cursor: pointer; }
-.faq summary:hover { color: var(--accent); }
+.faq summary:hover { color: var(--accent-text); }
 .faq details p { margin: 0 0 16px; color: var(--muted); }
 
 .notfound { padding: 80px 20px; text-align: center; }
