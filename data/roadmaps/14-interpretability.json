@@ -5,7 +5,7 @@
   "title": "Interpretability",
   "level": "Advanced",
   "tagline": "Open the black box: circuits, superposition, sparse autoencoders, induction heads, grokking, and tracing what LLMs compute.",
-  "prereqs": "LLMs from Scratch.",
+  "prereqs": "LLMs from Scratch. Hardware: the circuit-tracer tutorial for step 12 uses Gemma-2 (2B) and runs on a free Colab GPU (15 GB), after you log in to Hugging Face and accept the Gemma license; to skip that setup, use its Neuronpedia web version.",
   "steps": [
     {
       "title": "What is interpretability?",
@@ -36,7 +36,7 @@
     {
       "title": "Transformer circuits and induction heads",
       "video": "pC4zRb_5noQ",
-      "why": "The circuit behind in-context learning."
+      "why": "How induction heads use repeated token patterns to predict what comes next."
     },
     {
       "title": "Grokking, reverse-engineered",
@@ -46,7 +46,8 @@
     {
       "title": "Sparse autoencoders",
       "video": "HPLIl9ZOpUQ",
-      "why": "Pull interpretable features out of model activations."
+      "why": "Pull interpretable features out of model activations.",
+      "repo": "decoderesearch/SAELens"
     },
     {
       "title": "Intro to mechanistic interpretability (ARENA)",
@@ -67,12 +68,13 @@
     {
       "title": "Circuit tracing in practice",
       "video": "ig5RNJJaFJE",
-      "why": "How the circuit-tracing methods work and what they found."
+      "why": "How the circuit-tracing methods work and what they found.",
+      "repo": "decoderesearch/circuit-tracer"
     }
   ],
   "projects": [
     "Load GPT-2 in TransformerLens and find which heads attend to previous tokens on repeated text.",
     "Train a small sparse autoencoder on one layer of a small model and list five features you can name.",
-    "Use activation patching to locate which layer decides the answer on a simple factual prompt."
+    "Patch each layer of a small model on a clean and corrupted prompt pair and plot how much each restores the right answer."
   ]
 }
