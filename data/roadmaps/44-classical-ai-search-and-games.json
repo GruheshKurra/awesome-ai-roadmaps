@@ -11,10 +11,10 @@
     {
       "title": "Search problems, the big picture",
       "video": "WbzNRTTrX0g",
-      "why": "Overview: CS50 frames states, actions and goals, runs BFS and DFS on mazes, then sketches A* and minimax."
+      "why": "Watch to 1h12m: states, actions, DFS, BFS, greedy best-first and A*."
     },
     {
-      "title": "Breadth-first search, visualized",
+      "title": "Breadth-first search (BFS), visualized",
       "video": "xlVX7dXLS64",
       "why": "Animated walk through BFS: the queue, visit order, and why it finds fewest-edge paths."
     },
@@ -66,7 +66,7 @@
       "why": "Score game trees assuming best play by both sides, then skip branches that can't matter."
     },
     {
-      "title": "Monte Carlo tree search",
+      "title": "Monte Carlo tree search (MCTS)",
       "video": "UXW2yZndl7U",
       "why": "Grow a game tree from random playouts, balancing promising and unexplored moves with UCB."
     },

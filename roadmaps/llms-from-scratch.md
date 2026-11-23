@@ -27,7 +27,7 @@ Level: **Intermediate** · 15 steps · 22h 04m of video · Prerequisites: [Deep 
 
 ## About this roadmap
 
-Learn how large language models work and build them in code: tokenizers, attention, a small GPT, GPT-2, Llama and mixture of experts. It is for people who already know the basics of deep learning and PyTorch. Short overviews set the scene, then visual explanations of transformers and attention lead into building a tokenizer and a small GPT you can train on a laptop. Reproducing GPT-2 follows; its full training run needs a rented GPU, so treat that as optional. Later steps cover how a base model becomes a chat assistant, rotary position embeddings, a Llama implementation, mixture of experts and multi-head latent attention, closing with the first lecture of Stanford's CS336.
+Learn how large language models work and build them in code: tokenizers, attention, a small GPT, GPT-2, Llama and mixture of experts. It is for people who already know the basics of deep learning and PyTorch. Short overviews set the scene, then visual explanations of transformers and attention lead into building a tokenizer and a small GPT you can train on a laptop. Reproducing GPT-2 follows; its full training run needs substantial GPU compute (renting one is one option), so treat it as optional. Later steps cover how a base model becomes a chat assistant, rotary position embeddings, a Llama implementation, mixture of experts and multi-head latent attention, closing with the first lecture of Stanford's CS336.
 
 ## Build it
 
