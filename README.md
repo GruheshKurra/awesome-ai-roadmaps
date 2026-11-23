@@ -10,7 +10,7 @@
 <a href="https://awesome.re"><img alt="Awesome" src="https://awesome.re/badge-flat2.svg" height="28"></a>
 </p>
 
-<p align="center"><b>43 roadmaps · 540 videos · 269 hours of video · 169 GitHub repos</b></p>
+<p align="center"><b>44 roadmaps · 553 videos · 274 hours of video · 171 GitHub repos</b></p>
 
 <p align="center"><a href="https://gruheshkurra.github.io/awesome-ai-roadmaps/"><b>Open the interactive website →</b></a> (track your progress, step by step)</p>
 
@@ -18,7 +18,7 @@
 
 ## Pick a path
 
-New here? Follow the path that matches your goal, or browse [all 43 roadmaps](#roadmaps) below.
+New here? Follow the path that matches your goal, or browse [all 44 roadmaps](#roadmaps) below.
 
 - **Total beginner:** [Python & Math for AI](roadmaps/foundations.md) → [Machine Learning](roadmaps/machine-learning.md) → [Deep Learning](roadmaps/deep-learning.md)
 - **Developer building with AI:** [AI Engineering](roadmaps/ai-engineering.md) → [AI Agents & MCP](roadmaps/ai-agents.md)
@@ -31,7 +31,7 @@ New here? Follow the path that matches your goal, or browse [all 43 roadmaps](#r
 
 ## Roadmaps
 
-**Recently added:** [AI for Finance](roadmaps/ai-for-finance.md) (Nov 13) · [World Models](roadmaps/world-models.md) (Nov 9) · [Self-Supervised & Contrastive Learning](roadmaps/self-supervised-and-contrastive-learning.md) (Nov 8)
+**Recently added:** [Classical AI: Search and Games](roadmaps/classical-ai-search-and-games.md) (Nov 23) · [AI for Finance](roadmaps/ai-for-finance.md) (Nov 13) · [World Models](roadmaps/world-models.md) (Nov 9)
 
 | # | Roadmap | Level | Steps | Video time |
 | ---: | --- | --- | ---: | ---: |
@@ -78,6 +78,7 @@ New here? Follow the path that matches your goal, or browse [all 43 roadmaps](#r
 | 41 | **[Self-Supervised & Contrastive Learning](roadmaps/self-supervised-and-contrastive-learning.md)**<br><sub>How models learn strong features from unlabeled data: contrastive losses, SimCLR, BYOL, masked autoencoders, DINO through DINOv3, and JEPA's predict-the-representation idea.</sub> | Advanced | 12 | 4h 52m |
 | 42 | **[World Models](roadmaps/world-models.md)**<br><sub>Models that learn how an environment responds to actions, then plan or train agents inside it: model-based RL, Dreamer, MuZero, Genie, world foundation models, and JEPA-style planning.</sub> | Advanced | 10 | 6h 07m |
 | 43 | **[AI for Finance](roadmaps/ai-for-finance.md)**<br><sub>Machine learning for markets and money: how quant firms work, portfolios and factors, honest backtesting, financial text, credit risk, and LLMs in finance. Education, not investment advice.</sub> | Intermediate | 11 | 8h 26m |
+| 44 | **[Classical AI: Search and Games](roadmaps/classical-ai-search-and-games.md)**<br><sub>Solving problems by searching instead of learning from data: route finding, local search, constraint solving, game trees and logic, the methods behind puzzle solvers and game bots.</sub> | Beginner | 13 | 5h 32m |
 
 ## Start right now
 
@@ -97,16 +98,16 @@ The GitHub repos the roadmaps use most. Clone them and code along.
 
 | Repo | Stars | Used in |
 | --- | ---: | --- |
-| [ollama/ollama](https://github.com/ollama/ollama) | ★ 187.8k | [AI Engineering](roadmaps/ai-engineering.md) |
-| [Comfy-Org/ComfyUI](https://github.com/Comfy-Org/ComfyUI) | ★ 148.1k | [Generative AI: Images & Video](roadmaps/generative-ai.md) |
-| [ggml-org/llama.cpp](https://github.com/ggml-org/llama.cpp) | ★ 136.1k | [Run, Serve & Scale AI](roadmaps/deploy-and-scale.md), [TinyML & Edge AI](roadmaps/tinyml-and-edge-ai.md) |
-| [openai/whisper](https://github.com/openai/whisper) | ★ 113.3k | [Speech & Audio AI](roadmaps/speech-and-audio-ai.md) |
-| [rasbt/LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch) | ★ 108.8k | [LLMs from Scratch](roadmaps/llms-from-scratch.md) |
-| [vllm-project/vllm](https://github.com/vllm-project/vllm) | ★ 97.3k | [Run, Serve & Scale AI](roadmaps/deploy-and-scale.md) |
+| [ollama/ollama](https://github.com/ollama/ollama) | ★ 187.9k | [AI Engineering](roadmaps/ai-engineering.md) |
+| [Comfy-Org/ComfyUI](https://github.com/Comfy-Org/ComfyUI) | ★ 148.2k | [Generative AI: Images & Video](roadmaps/generative-ai.md) |
+| [ggml-org/llama.cpp](https://github.com/ggml-org/llama.cpp) | ★ 136.2k | [Run, Serve & Scale AI](roadmaps/deploy-and-scale.md), [TinyML & Edge AI](roadmaps/tinyml-and-edge-ai.md) |
+| [openai/whisper](https://github.com/openai/whisper) | ★ 113.4k | [Speech & Audio AI](roadmaps/speech-and-audio-ai.md) |
+| [rasbt/LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch) | ★ 108.9k | [LLMs from Scratch](roadmaps/llms-from-scratch.md) |
+| [vllm-project/vllm](https://github.com/vllm-project/vllm) | ★ 97.4k | [Run, Serve & Scale AI](roadmaps/deploy-and-scale.md) |
 | [microsoft/ML-For-Beginners](https://github.com/microsoft/ML-For-Beginners) | ★ 92.4k | [Machine Learning](roadmaps/machine-learning.md) |
 | [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) | ★ 92.2k | [AI Agents & MCP](roadmaps/ai-agents.md) |
 | [mlabonne/llm-course](https://github.com/mlabonne/llm-course) | ★ 85.2k | [Fine-Tuning & Reasoning Models](roadmaps/fine-tuning.md) |
-| [microsoft/ai-agents-for-beginners](https://github.com/microsoft/ai-agents-for-beginners) | ★ 80.7k | [AI Agents & MCP](roadmaps/ai-agents.md) |
+| [microsoft/ai-agents-for-beginners](https://github.com/microsoft/ai-agents-for-beginners) | ★ 80.8k | [AI Agents & MCP](roadmaps/ai-agents.md) |
 | [dair-ai/Prompt-Engineering-Guide](https://github.com/dair-ai/Prompt-Engineering-Guide) | ★ 80.3k | [AI Engineering](roadmaps/ai-engineering.md) |
 | [unslothai/unsloth](https://github.com/unslothai/unsloth) | ★ 80k | [Fine-Tuning & Reasoning Models](roadmaps/fine-tuning.md) |
 | [docling-project/docling](https://github.com/docling-project/docling) | ★ 70.9k | [Document AI & OCR](roadmaps/document-ai-and-ocr.md) |

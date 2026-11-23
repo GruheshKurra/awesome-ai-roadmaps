@@ -1,0 +1,84 @@
+{
+  "slug": "classical-ai-search-and-games",
+  "order": 44,
+  "added": "2026-11-23",
+  "title": "Classical AI: Search and Games",
+  "level": "Beginner",
+  "tagline": "Solving problems by searching instead of learning from data: route finding, local search, constraint solving, game trees and logic, the methods behind puzzle solvers and game bots.",
+  "intro": "Learn the search side of AI: BFS, Dijkstra, A*, local search, constraint solving, minimax and Monte Carlo tree search, from free videos. It is the part of the field that solves problems by searching rather than by learning from data, so no machine learning is needed, but you should be comfortable with Python lists, dictionaries and recursive functions. You start with graph search and heuristics, then local search with hill climbing, simulated annealing and genetic algorithms, followed by constraint satisfaction, arc consistency and a backtracking Sudoku solver. It finishes with game playing and a lecture on propositional logic. Afterwards you can write maze solvers, puzzle solvers and simple game bots.",
+  "prereqs": "Python & Math for AI (the Python part), plus comfort with lists, dictionaries and recursive functions. No machine learning needed.",
+  "steps": [
+    {
+      "title": "Search problems, the big picture",
+      "video": "WbzNRTTrX0g",
+      "why": "Overview: CS50 frames states, actions and goals, runs BFS and DFS on mazes, then sketches A* and minimax."
+    },
+    {
+      "title": "Breadth-first search, visualized",
+      "video": "xlVX7dXLS64",
+      "why": "Animated walk through BFS: the queue, visit order, and why it finds fewest-edge paths."
+    },
+    {
+      "title": "Dijkstra's algorithm and uniform-cost search",
+      "video": "GazC3A4OQTE",
+      "why": "With nonnegative edge costs, expanding the cheapest path first finds the shortest route."
+    },
+    {
+      "title": "A* search and heuristics",
+      "video": "ySN5Wnu88nE",
+      "why": "Add a remaining-cost estimate that never overestimates; it can cut nodes expanded."
+    },
+    {
+      "title": "Hill climbing",
+      "video": "oSdPmxRCWws",
+      "why": "Try a neighbouring change, keep it if it's better, and watch it stall on local maxima."
+    },
+    {
+      "title": "Simulated annealing",
+      "video": "FyyVbuLZav8",
+      "why": "Accept some worse moves early, fewer as it cools, shown by solving a Sudoku."
+    },
+    {
+      "title": "Genetic algorithms",
+      "video": "uQj5UNhCPuo",
+      "why": "Selection, crossover and mutation evolve solutions to a knapsack problem.",
+      "repo": "kiecodes/genetic-algorithms"
+    },
+    {
+      "title": "Constraint satisfaction problems",
+      "video": "_e64FiDWvqs",
+      "why": "Model puzzles and scheduling as variables, domains and constraints.",
+      "repo": "aimacode/aima-python"
+    },
+    {
+      "title": "Arc consistency with AC-3",
+      "video": "4cCS8rrYT14",
+      "why": "Prune values that can't satisfy a constraint before or during search."
+    },
+    {
+      "title": "Backtracking: a Sudoku solver in Python",
+      "video": "G_UYXzGuqvM",
+      "why": "Short recursive code that tries a digit, recurses, and undoes it on a dead end."
+    },
+    {
+      "title": "Minimax and alpha-beta pruning",
+      "video": "l-hh51ncgDI",
+      "why": "Score game trees assuming best play by both sides, then skip branches that can't matter."
+    },
+    {
+      "title": "Monte Carlo tree search",
+      "video": "UXW2yZndl7U",
+      "why": "Grow a game tree from random playouts, balancing promising and unexplored moves with UCB."
+    },
+    {
+      "title": "Logic and knowledge-based agents",
+      "video": "HWQLez87vqM",
+      "why": "CS50 on propositional logic, entailment and model checking, coded in Python."
+    }
+  ],
+  "projects": [
+    "A grid maze solver with weighted cells that runs BFS, Dijkstra and A* on the same maze and prints path cost and nodes expanded for each.",
+    "A Sudoku solver with plain backtracking and with AC-3 added, comparing how many guesses each needs on a hard puzzle.",
+    "A Connect Four bot using minimax with alpha-beta pruning, then an MCTS version, and a script that plays them against each other."
+  ]
+}
