@@ -5,6 +5,7 @@
   "title": "Reinforcement Learning",
   "level": "Intermediate",
   "tagline": "Agents that learn by trial and error: from Bellman equations and Q-learning to PPO, AlphaGo, and the RL behind reasoning models.",
+  "intro": "Learn reinforcement learning from Bellman equations and Q-learning to deep Q-networks, PPO, AlphaGo and the RL used to train reasoning models. It is for people who have done some deep learning and want agents that learn by trial and error. It starts with the core ideas and the textbook framework of states, actions and rewards, then dynamic programming and Q-learning. From there it moves to deep Q-networks, policy gradients and PPO, and you train agents yourself with Stable Baselines3. The last steps show PPO for language models and GRPO for reasoning models. Afterwards you can train an agent on a standard environment and follow how RL is used to fine-tune LLMs.",
   "prereqs": "Deep Learning. Fine-Tuning & Reasoning Models pairs well at the end.",
   "steps": [
     {

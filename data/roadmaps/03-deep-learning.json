@@ -5,6 +5,7 @@
   "title": "Deep Learning",
   "level": "Intermediate",
   "tagline": "Neural networks from the inside: backprop, build your own autograd, CNNs, RNNs, and PyTorch.",
+  "intro": "Learn how neural networks work from the inside: backpropagation, your own autograd engine, CNNs, RNNs, LSTMs, residual networks and PyTorch. It begins with what a neural network is and how backpropagation works, both intuitively and with the calculus, then you build a tiny autograd engine and a first character-level language model in Python. Next come multilayer perceptrons, activations and BatchNorm, optimizers from SGD to Adam, convolutions, RNNs, LSTMs and residual connections, and it ends with a PyTorch crash course. It suits learners who know some Python, basic calculus and linear algebra; earlier machine learning helps. Afterwards you can read and train standard architectures in PyTorch.",
   "prereqs": "Python & Math for AI. Machine Learning helps.",
   "steps": [
     {

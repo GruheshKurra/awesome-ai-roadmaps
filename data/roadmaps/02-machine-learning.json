@@ -5,6 +5,7 @@
   "title": "Machine Learning",
   "level": "Beginner",
   "tagline": "Classic ML the way practitioners use it: regression, trees, boosting, evaluation, and scikit-learn.",
+  "intro": "Learn regression, decision trees, boosting, clustering and model evaluation from free videos, then fit and compare models in scikit-learn. It is for people who can write basic Python. You start with the bias-variance trade-off and linear regression, learn how gradient descent fits a model, then move to classification, cross-validation and the metrics that tell you whether a model is any good. After that come decision trees, random forests, gradient boosting and XGBoost, plus clustering and PCA, and it ends with scikit-learn used on real projects. By the end you can train, tune and fairly compare models on a real dataset.",
   "prereqs": "Python & Math for AI.",
   "steps": [
     {

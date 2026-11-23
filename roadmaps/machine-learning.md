@@ -24,6 +24,10 @@ Level: **Beginner** · 14 steps · 5h 10m of video · Prerequisites: [Python & M
 | 13 | <a href="https://www.youtube.com/watch?v=HMOI_lkzW08"><img src="https://i.ytimg.com/vi/HMOI_lkzW08/mqdefault.jpg" width="200" alt="PCA"></a> | **PCA**<br>[StatQuest: PCA main ideas in only 5 minutes!!!](https://www.youtube.com/watch?v=HMOI_lkzW08)<br><sub>StatQuest with Josh Starmer · 6 min</sub><br>Squash many features into a few you can actually look at. |  |
 | 14 | <a href="https://www.youtube.com/watch?v=0B5eIE_1vpU"><img src="https://i.ytimg.com/vi/0B5eIE_1vpU/mqdefault.jpg" width="200" alt="Scikit-learn in practice"></a> | **Scikit-learn in practice**<br>[Scikit-learn Crash Course - Machine Learning Library for Python](https://www.youtube.com/watch?v=0B5eIE_1vpU)<br><sub>freeCodeCamp.org · 2h 09m</sub><br>Put it all together with the library everyone uses. | [ageron/handson-ml3](https://github.com/ageron/handson-ml3)<br><sub>★ 14.5k</sub> |
 
+## About this roadmap
+
+Learn regression, decision trees, boosting, clustering and model evaluation from free videos, then fit and compare models in scikit-learn. It is for people who can write basic Python. You start with the bias-variance trade-off and linear regression, learn how gradient descent fits a model, then move to classification, cross-validation and the metrics that tell you whether a model is any good. After that come decision trees, random forests, gradient boosting and XGBoost, plus clustering and PCA, and it ends with scikit-learn used on real projects. By the end you can train, tune and fairly compare models on a real dataset.
+
 ## Build it
 
 - Enter Kaggle's Titanic or House Prices competition with a cross-validated scikit-learn pipeline.

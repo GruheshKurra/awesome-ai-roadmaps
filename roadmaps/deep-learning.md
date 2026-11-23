@@ -24,6 +24,10 @@ Level: **Intermediate** · 14 steps · 11h 01m of video · Prerequisites: [Pytho
 | 13 | <a href="https://www.youtube.com/watch?v=o_3mboe1jYI"><img src="https://i.ytimg.com/vi/o_3mboe1jYI/mqdefault.jpg" width="200" alt="Residual connections"></a> | **Residual connections**<br>[ResNet (actually) explained in under 10 minutes](https://www.youtube.com/watch?v=o_3mboe1jYI)<br><sub>rupert ai · 10 min</sub><br>The skip connection that lets networks go hundreds of layers deep. |  |
 | 14 | <a href="https://www.youtube.com/watch?v=OIenNRt2bjg"><img src="https://i.ytimg.com/vi/OIenNRt2bjg/mqdefault.jpg" width="200" alt="PyTorch crash course"></a> | **PyTorch crash course**<br>[PyTorch Crash Course - Getting Started with Deep Learning](https://www.youtube.com/watch?v=OIenNRt2bjg)<br><sub>AssemblyAI · 50 min</sub><br>Tensors, autograd, models, and the training loop in under an hour. The repo has a full free course when you want more. | [mrdbourke/pytorch-deep-learning](https://github.com/mrdbourke/pytorch-deep-learning)<br><sub>★ 19.4k</sub> |
 
+## About this roadmap
+
+Learn how neural networks work from the inside: backpropagation, your own autograd engine, CNNs, RNNs, LSTMs, residual networks and PyTorch. It begins with what a neural network is and how backpropagation works, both intuitively and with the calculus, then you build a tiny autograd engine and a first character-level language model in Python. Next come multilayer perceptrons, activations and BatchNorm, optimizers from SGD to Adam, convolutions, RNNs, LSTMs and residual connections, and it ends with a PyTorch crash course. It suits learners who know some Python, basic calculus and linear algebra; earlier machine learning helps. Afterwards you can read and train standard architectures in PyTorch.
+
 ## Build it
 
 - Extend micrograd with ReLU and a softmax loss, then train it on a toy dataset.

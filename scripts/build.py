@@ -60,6 +60,10 @@ def load():
             errors.append(f"{r.get('slug')}: added must be a YYYY-MM-DD date")
         if r.get("level") not in LEVELS:
             errors.append(f"{r['slug']}: level must be one of {LEVELS}")
+        if "intro" in r and not 60 <= len(r["intro"].split()) <= 120:
+            errors.append(f"{r['slug']}: intro must be 60-120 words")
+        if "intro" in r and len(intro_summary(r["intro"])) > 160:
+            errors.append(f"{r['slug']}: intro's first sentence must be at most 160 characters")
         if not 6 <= len(r.get("steps", [])) <= 16:
             errors.append(f"{r['slug']}: expected 6-16 steps")
         for step in r.get("steps", []):
@@ -151,8 +155,13 @@ def short_date(iso):
     return f"{day:%b} {day.day}"
 
 
+def intro_summary(text):
+    """The intro's first sentence, used as the search description."""
+    return " ".join(text.split()).split(". ")[0].rstrip(".") + "."
+
+
 def md_cell(text):
-    return text.replace("|", "\\|")
+    return text.replace("|", "\\|").replace("*", "\\*")
 
 
 # ---------- markdown ----------
@@ -250,6 +259,8 @@ def roadmap_md(r, roadmaps, meta):
         if step.get("repo"):
             repo = f"[{step['repo']}](https://github.com/{step['repo']})<br><sub>★ {stars(meta['repos'][step['repo']]['stars'])}</sub>"
         out.append(f"| {i} | {watch} | {text} | {repo} |")
+    if r.get("intro"):
+        out += ["", "## About this roadmap", "", " ".join(r["intro"].split()).replace("*", "\\*")]
     out += ["", "## Build it", ""] + [f"- {p}" for p in r["projects"]] + [""]
     nxt = next_roadmaps(r, roadmaps)
     if nxt:
@@ -454,9 +465,9 @@ def roadmap_html(r, roadmaps, meta):
         nav = f'<div class="next-wrap"><p class="muted">{label}</p>' + "".join(f'<a class="next" href="../{n["slug"]}/"><strong>{escape(n["title"])} →</strong><span class="muted">{escape(n["tagline"])}</span></a>' for n in nxt) + "</div>"
     others = "".join(f'<a href="../{o["slug"]}/">{escape(o["title"])}</a>' for o in roadmaps if o is not r)
     url = f"{SITE_URL}/{r['slug']}/"
-    description = f"{r['title']}: {r['tagline']} {len(r['steps'])} free YouTube videos with GitHub repos to code along."
+    description = intro_summary(r["intro"]) if r.get("intro") else f"{r['title']}: {r['tagline']} {len(r['steps'])} free YouTube videos with GitHub repos to code along."
     schema = [
-        {"@context": "https://schema.org", "@type": "Course", "name": f"{r['title']} roadmap", "description": r["tagline"], "url": url, "inLanguage": "en",
+        {"@context": "https://schema.org", "@type": "Course", "name": f"{r['title']} roadmap", "description": description if r.get("intro") else r["tagline"], "url": url, "inLanguage": "en",
          "provider": {"@type": "Organization", "name": "AI Roadmaps", "url": f"{SITE_URL}/"},
          "isAccessibleForFree": True, "educationalLevel": r["level"], "coursePrerequisites": r["prereqs"], "timeRequired": iso_duration(r["seconds"]),
          "offers": {"@type": "Offer", "category": "Free", "price": 0, "priceCurrency": "USD"},
@@ -482,6 +493,7 @@ def roadmap_html(r, roadmaps, meta):
 <ol class="steps">
 {''.join(steps)}
 </ol>
+{f'<section class="about"><h2>About this roadmap</h2><p>{escape(" ".join(r["intro"].split()))}</p></section>' if r.get("intro") else ""}
 <section class="build">
   <h2>Build it</h2>
   <p class="muted">Watching isn't learning. Pick one and put it on GitHub.</p>
