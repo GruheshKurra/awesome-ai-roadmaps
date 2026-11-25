@@ -4,8 +4,9 @@
   "added": "2026-11-03",
   "title": "Computer Vision",
   "level": "Intermediate",
+  "intro": "Learn how computers see images with deep learning: CNNs, transfer learning, YOLO object detection, segmentation, vision transformers and CLIP. It is for people who have done the Deep Learning roadmap and can train a small network in PyTorch. Two Stanford CS231n lectures frame the field and the classic CNN architectures from AlexNet to ResNet, and short explainers cover convolutions, data augmentation, U-Net and Segment Anything. In between you build a CNN classifier in PyTorch, fine-tune a pretrained network, and train a YOLO detector on your own data in Google Colab. It ends with vision transformers and CLIP, which links images and text. It takes about 4 hours 40 minutes of video.",
   "tagline": "Teach machines to see: CNNs, transfer learning, YOLO detection, segmentation, ViT, and CLIP.",
-  "prereqs": "Deep Learning.",
+  "prereqs": "Deep Learning. Hardware: step 8 trains on a free Colab GPU; a GPU also helps if you run SAM from the step 10 repo.",
   "steps": [
     {
       "title": "Deep learning for vision",
@@ -15,7 +16,7 @@
     {
       "title": "CNNs explained",
       "video": "YRhxdVk_sIs",
-      "why": "Filters, feature maps, and pooling."
+      "why": "Filters and feature maps: how a convolution layer looks at an image."
     },
     {
       "title": "Build a CNN in PyTorch",
@@ -47,19 +48,19 @@
     {
       "title": "Train YOLO on your own data",
       "video": "r0RspiLG260",
-      "why": "Label, train, and run a detector in Colab.",
-      "repo": "ultralytics/ultralytics"
+      "why": "Label images in Label Studio, train in Colab, then run the detector locally.",
+      "repo": "EdjeElectronics/Train-and-Deploy-YOLO-Models"
     },
     {
       "title": "U-Net segmentation",
       "video": "NhdzGfB1q74",
-      "why": "Classify every pixel, the architecture diffusion models also use."
+      "why": "Classify every pixel with an encoder-decoder; Stable Diffusion v1 denoises with one."
     },
     {
       "title": "Segment Anything",
       "video": "OhxJkqD1vuE",
-      "why": "A foundation model that segments any object from a click.",
-      "repo": "facebookresearch/sam2"
+      "why": "Meta's original SAM: a promptable model that masks objects from a point or box.",
+      "repo": "facebookresearch/segment-anything"
     },
     {
       "title": "Vision transformers",
